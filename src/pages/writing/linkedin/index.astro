@@ -10,7 +10,7 @@ const all = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <Base
-  title="LinkedIn Articles by Lutz Finger — AI, Data, Product Strategy"
+  title="LinkedIn Articles by Lutz Finger | AI, Data, Product Strategy"
   description={`Lutz Finger's LinkedIn articles, ${all.length} pieces. Each card opens the original on LinkedIn.`}
   wide
 >

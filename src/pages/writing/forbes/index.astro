@@ -10,7 +10,7 @@ const all = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <Base
-  title="Forbes Column on AI — Lutz Finger's 50+ Articles"
+  title="Forbes Column on AI | Lutz Finger's 50+ Articles"
   description={`Lutz Finger's Forbes column, ${all.length} articles on AI products, search, GEO, LLM moats, and applied AI. Each card opens the original on forbes.com.`}
   wide
 >

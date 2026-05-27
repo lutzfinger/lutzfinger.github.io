@@ -35,7 +35,7 @@ const {
 // trust it as-is (caller wrote a fully-qualified, SEO-tuned title). Otherwise
 // we append a short brand suffix so SERPs always carry the author name.
 const fullTitle = title
-  ? (title.includes(SITE.author) ? title : `${title} — ${SITE.author}`)
+  ? (title.includes(SITE.author) ? title : `${title} | ${SITE.author}`)
   : SITE.title;
 
 // Per-page OG image with default fallback. The build emits one PNG per page

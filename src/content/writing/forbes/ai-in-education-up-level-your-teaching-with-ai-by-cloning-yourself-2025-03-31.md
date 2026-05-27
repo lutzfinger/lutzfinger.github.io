@@ -1,5 +1,5 @@
 ---
-title: "AI In Education, Up-level Your Teaching With AI By Cloning Yourself"
+title: "AI In Education — Up-level Your Teaching With AI By Cloning Yourself"
 date: "2025-03-31"
 source: "Forbes"
 sourceType: "column"

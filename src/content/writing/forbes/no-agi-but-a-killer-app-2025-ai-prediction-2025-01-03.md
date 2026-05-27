@@ -1,5 +1,5 @@
 ---
-title: "No AGI But A 'Killer App', 2025 AI Prediction"
+title: "No AGI But A 'Killer App' — 2025 AI Prediction"
 date: "2025-01-03"
 source: "Forbes"
 sourceType: "column"

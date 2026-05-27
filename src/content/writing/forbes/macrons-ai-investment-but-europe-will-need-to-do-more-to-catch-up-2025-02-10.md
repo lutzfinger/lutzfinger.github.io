@@ -1,5 +1,5 @@
 ---
-title: "Macron's AI Investment, But Europe Will Need To Do More To Catch Up"
+title: "Macron's AI Investment — But Europe Will Need To Do More To Catch Up"
 date: "2025-02-10"
 source: "Forbes"
 sourceType: "column"

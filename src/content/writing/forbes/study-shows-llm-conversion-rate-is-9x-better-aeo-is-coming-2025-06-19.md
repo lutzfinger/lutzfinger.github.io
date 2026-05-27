@@ -1,5 +1,5 @@
 ---
-title: "Study Shows LLM Conversion Rate Is 9x Better, AEO Is Coming"
+title: "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming"
 date: "2025-06-19"
 source: "Forbes"
 sourceType: "column"

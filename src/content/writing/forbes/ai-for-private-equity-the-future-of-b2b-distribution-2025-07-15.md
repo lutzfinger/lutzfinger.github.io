@@ -1,5 +1,5 @@
 ---
-title: "AI For Private Equity, The Future Of B2B Distribution"
+title: "AI For Private Equity — The Future Of B2B Distribution"
 date: "2025-07-15"
 source: "Forbes"
 sourceType: "column"

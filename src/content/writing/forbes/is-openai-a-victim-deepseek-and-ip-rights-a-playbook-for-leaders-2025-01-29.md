@@ -1,5 +1,5 @@
 ---
-title: "Is OpenAI A Victim, DeepSeek And IP Rights, A Playbook For Leaders"
+title: "Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders"
 date: "2025-01-29"
 source: "Forbes"
 sourceType: "column"

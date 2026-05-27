@@ -1,5 +1,5 @@
 ---
-title: "Is AI Replacing Us, Good News For Knowledge Workers"
+title: "Is AI Replacing Us — Good News For Knowledge Workers"
 date: "2025-01-22"
 source: "Forbes"
 sourceType: "column"

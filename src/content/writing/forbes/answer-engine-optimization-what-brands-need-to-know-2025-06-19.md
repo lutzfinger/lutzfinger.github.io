@@ -1,5 +1,5 @@
 ---
-title: "Answer Engine Optimization, What Brands Need To Know"
+title: "Answer Engine Optimization — What Brands Need To Know"
 date: "2025-06-19"
 source: "Forbes"
 sourceType: "column"

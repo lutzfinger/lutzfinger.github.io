@@ -1,5 +1,5 @@
 ---
-title: "AI Fail, Trump Says 'Merz' , YouTube Transcribes 'Merkel'"
+title: "AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'"
 date: "2025-08-18"
 source: "Forbes"
 sourceType: "column"

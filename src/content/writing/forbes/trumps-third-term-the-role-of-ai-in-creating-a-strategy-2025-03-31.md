@@ -1,5 +1,5 @@
 ---
-title: "Trump's Third Term, The Role Of AI In Creating A Strategy"
+title: "Trump's Third Term — The Role Of AI In Creating A Strategy"
 date: "2025-03-31"
 source: "Forbes"
 sourceType: "column"

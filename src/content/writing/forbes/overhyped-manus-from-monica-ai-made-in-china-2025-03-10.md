@@ -1,5 +1,5 @@
 ---
-title: "Overhyped: Manus From Monica, AI Made In China"
+title: "Overhyped: Manus From Monica — AI Made In China"
 date: "2025-03-10"
 source: "Forbes"
 sourceType: "column"

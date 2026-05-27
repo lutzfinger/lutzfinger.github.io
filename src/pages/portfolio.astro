@@ -6,12 +6,16 @@ interface UseCase {
   id: string;
   title: string;
   oneliner: string;
-  what: string;       // What it does, in one paragraph
-  how: string;        // How it works / the technique
-  outcome: string;    // Result, impact, or what it proves
-  context?: string;   // Where it ran / who built it
+  what: string;
+  how: string;
+  outcome: string;
+  context?: string;
   links?: { label: string; url: string }[];
   status: 'sold' | 'shipping' | 'shipped';
+  // Visual: emoji or short-phrase used as a typographic glyph in a colored block.
+  glyph: string;
+  glyphColor: string;
+  glyphBg: string;
 }
 
 const CASES: UseCase[] = [
@@ -21,28 +25,35 @@ const CASES: UseCase[] = [
     oneliner: 'Reading the social graph for signal — influence, propaganda, and emerging events.',
     what: 'Fisheye Analytics applied NLP and graph analysis to social-media streams for governments, NGOs, defense agencies, and Fortune 500 brands.',
     how: 'Entity extraction, topic modeling, bot detection, and influence-graph analysis across X/Twitter, Facebook, news, and forums. Pipeline built in the pre-LLM era when this was hard.',
-    outcome: 'Sold in 2013. The data and methods became the spine of my Forbes coverage of bots, deepfakes, and information warfare.',
+    outcome: 'Sold in 2013. The data and methods became the spine of my Forbes coverage of bots, deepfakes, and information warfare — and they shaped the framework in <em>Ask, Measure, Learn</em>.',
     context: 'Fisheye Analytics, 2008–2013. Co-founded.',
     links: [
-      { label: 'How to spot social media bots — they are often lonely', url: 'https://www.linkedin.com/pulse/20140618141134-6074593-how-to-spot-social-media-bots' },
-      { label: 'Do Evil — the business of social media bots', url: 'https://scholar.google.com/citations?user=tg0FO3wAAAAJ' },
+      { label: 'Book — Ask, Measure, Learn (O\'Reilly)', url: '/book/' },
+      { label: 'Forbes: Do Evil — the business of social media bots', url: 'https://www.forbes.com/sites/lutzfinger/2015/02/17/do-evil-the-business-of-social-media-bots/' },
     ],
     status: 'sold',
+    glyph: '📡',
+    glyphColor: '#1d6f60',
+    glyphBg: '#e8f4f1',
   },
   {
     id: 'search-discovery',
     title: 'AI-driven search & discovery for e-commerce',
     oneliner: "Turn a product catalog into a conversation that ends in 'this is the one'.",
-    what: 'R2Decide and its successors replace keyword-and-facet search with intent-aware, conversational discovery. The shopper says what they want in natural language; the system surfaces the right product, configured, with reasons.',
+    what: 'R2Decide replaced keyword-and-facet search with intent-aware, conversational discovery. The shopper says what they want in natural language; the system surfaces the right product, configured, with reasons.',
     how: 'Fine-tuned models per category, vector retrieval over enriched catalog embeddings, intent classification, attribute extraction, and re-ranking with a learned reward model trained on real conversions.',
-    outcome: 'R2Decide was sold in 2025. The thesis — eval data is the moat, not the model — became the through-line of my Forbes column and informs the AI work I lead now.',
+    outcome: 'R2Decide acquired in 2025. The thesis — eval data is the moat, not the model — became the through-line of my Forbes column and informs the AI work I lead at Zoovu.',
     context: 'R2Decide (founder, sold 2025) → ongoing work as Head of AI at Zoovu.',
     links: [
+      { label: 'Announcement: R2Decide joins Zoovu (LinkedIn)', url: 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/' },
       { label: 'Zoovu', url: 'https://zoovu.com' },
+      { label: 'After the Gold Rush — eCornell keynote', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
       { label: 'GEO Playbook for Online Retailers — Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/' },
-      { label: 'Why I sold — After the Gold Rush (eCornell keynote)', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
     ],
     status: 'sold',
+    glyph: '🛍',
+    glyphColor: '#c14a1c',
+    glyphBg: '#fff2eb',
   },
   {
     id: 'cloning-influencers',
@@ -50,12 +61,15 @@ const CASES: UseCase[] = [
     oneliner: "Train a system on a person's published corpus; answer in their voice with citations.",
     what: 'A system that ingests everything a public figure has written and said — articles, transcripts, talks, social posts — then answers new questions in their voice, with the original source attached.',
     how: 'Embed and structure the corpus. For each question, retrieve relevant passages, score by lexical overlap with the question, and select the sentences a human would actually quote. Always cite the source URL inline.',
-    outcome: 'Powers the live Q&A on this site — every answer is mine, drawn from my Forbes column, LinkedIn writing, book, and Cornell course material.',
-    context: 'Built on top of the same RAG pipeline that I open-sourced as the public MCP endpoint.',
+    outcome: 'Powers the live Q&A on this site. Built as an advisor-style tool — see the demo I shared on LinkedIn.',
     links: [
-      { label: 'See it live (this site)', url: '/qa/' },
+      { label: 'Clone-Advisor demo on LinkedIn', url: 'https://www.linkedin.com/posts/lutzfinger_clone-advisor-form-share-7178902812364292096-GSIv/' },
+      { label: 'Live demo on this site → /qa', url: '/qa/' },
     ],
     status: 'shipping',
+    glyph: '🗣',
+    glyphColor: '#6e3aaf',
+    glyphBg: '#f3eef8',
   },
   {
     id: 'audiobook-summarizer',
@@ -63,8 +77,14 @@ const CASES: UseCase[] = [
     oneliner: "Compress a non-fiction audiobook into a structured, listenable summary.",
     what: "Turns a 10-hour non-fiction audiobook into a 30-minute structured summary you can actually listen to — keeping the spine of the argument and the strongest evidence, dropping the padding.",
     how: "Transcribe → segment by argumentative beat (not by chapter) → extract claim + supporting evidence per beat → re-narrate with consistent pacing and a learned voice. The hard part isn't the LLM, it's the structural pacing.",
-    outcome: "A personal-productivity tool that turned out to teach me something useful: most non-fiction books are ~30% argument and ~70% support. Compressing the argument while keeping the strongest support is a real craft.",
+    outcome: 'Working prototype. The lesson: most non-fiction is ~30% argument and ~70% support; the craft is compressing argument while keeping the strongest support.',
+    links: [
+      { label: 'Prototype audio (Google Drive)', url: 'https://drive.google.com/file/d/10qTSxWIUm52dxAXp85HXVMaD5H8-81eg/view' },
+    ],
     status: 'shipping',
+    glyph: '🎧',
+    glyphColor: '#a86b08',
+    glyphBg: '#fef5e6',
   },
   {
     id: 'preventable-admissions',
@@ -74,19 +94,28 @@ const CASES: UseCase[] = [
     how: 'Time-series features over claims and labs, structured-text features over notes, and a calibrated risk score. Cohort framing is value-based care: rather than predict any admission, predict the avoidable ones, where the model output ties to a concrete action.',
     outcome: 'Sits at the intersection of value-based care and the predictive-analytics thesis I have argued in Forbes — that healthcare AI lives or dies on data-quality discipline, not model size.',
     links: [
-      { label: "Healthcare's AI Lesson: Autocomplete Isn't Understanding — Forbes", url: 'https://www.forbes.com/sites/lutzfinger/2024/05/02/healthcares-ai-lesson-autocomplete-isnt-understanding/' },
-      { label: 'Healthcare and Data — How To Measure Quality', url: 'https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/' },
+      { label: 'Forbes: Three Trends — AI + Value-Based Care (VBC)', url: 'https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/' },
     ],
     status: 'shipping',
+    glyph: '🩺',
+    glyphColor: '#3d7a1b',
+    glyphBg: '#eef5e9',
   },
   {
     id: 'sai',
     title: 'SAI — a thin personal AI client',
     oneliner: "A daily-driver AI assistant built on top of Anthropic's Claude.",
     what: "My own personal assistant. A thin client on Anthropic's Claude with workflow skills, scheduled tasks, and tight integrations into my email, calendar, and writing pipeline. Think 'Claude with my muscle memory'.",
-    how: "Skill-based architecture: each capability is a small, composable skill (process an incoming email, add a calendar event from a one-liner, sync content into the RAG, draft a Forbes piece) that the model invokes when relevant. Local-first, with structured logs.",
-    outcome: 'Drives the SAI@ inbox — emails sent there get classified, calendared, and acknowledged automatically. Also runs the content pipelines that keep this site current.',
+    how: "Skill-based architecture: each capability is a small, composable skill (process an incoming email, add a calendar event from a one-liner, sync content into the RAG, draft a Forbes piece) that the model invokes when relevant. Local-first, structured logs.",
+    outcome: 'Drives the SAI@ inbox — emails sent there get classified, calendared, and acknowledged automatically. Also runs the content pipelines that keep this site current. The base architecture is open-sourced.',
+    links: [
+      { label: 'Repo — SAI base version (GitHub)', url: 'https://github.com/lutzfinger/SAI-baseversion' },
+      { label: 'Forbes: The Missing Moat in AI — Your Eval Data', url: 'https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/' },
+    ],
     status: 'shipping',
+    glyph: '🤖',
+    glyphColor: '#0a66c2',
+    glyphBg: '#e9f1f8',
   },
   {
     id: 'future-me',
@@ -94,12 +123,15 @@ const CASES: UseCase[] = [
     oneliner: "Use the LinkedIn graph to predict what someone will be doing in five years.",
     what: "A model that, given a person's LinkedIn profile, predicts their likely next role and trajectory — by matching their pattern to thousands of others who started in the same place.",
     how: "Career-graph traversal across hundreds of millions of LinkedIn profiles. For a given profile, find structurally similar earlier-stage members, then look at where THEY ended up — that is the prediction. The trick is good similarity scoring at scale.",
-    outcome: "Featured in Mashable's 'How LinkedIn Found My Future Self' (2014). Demonstrated the principle that for career questions, retrieval-over-people beats forecasting-over-features.",
+    outcome: "Featured in Mashable's <em>How LinkedIn Found My Future Self</em> (2014). Demonstrated the principle that for career questions, retrieval-over-people beats forecasting-over-features.",
     context: 'Built during my time at LinkedIn (Director, Data Science).',
     links: [
       { label: "Mashable — How LinkedIn Found My 'Future' Self", url: 'https://mashable.com/archive/linkedin-future-self' },
     ],
     status: 'shipped',
+    glyph: '🔮',
+    glyphColor: '#5b3e8a',
+    glyphBg: '#f0eee7',
   },
 ];
 
@@ -119,50 +151,68 @@ const ROLES_PAST: Role[] = [
 const itemListJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: "Lutz Finger — portfolio of AI use cases",
+  name: "Lutz Finger — AI portfolio in use cases",
   itemListElement: CASES.map((c, i) => ({
     '@type': 'ListItem',
     position: i + 1,
-    name: c.title,
-    description: c.oneliner,
+    item: {
+      '@type': 'CreativeWork',
+      name: c.title,
+      description: c.oneliner,
+      url: `${SITE.url}/portfolio/#${c.id}`,
+      creator: { '@type': 'Person', name: SITE.author, url: SITE.url },
+    },
   })),
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio', item: `${SITE.url}/portfolio/` },
+  ],
 };
 ---
 <Base
   title="Portfolio"
   description="Lutz Finger's AI portfolio in use cases — social-media analytics, search & discovery, cloning influencers, audiobook summarization, preventable-admissions prediction, the SAI personal client, and the LinkedIn 'Future Me' model."
-  jsonLd={itemListJsonLd}
+  jsonLd={[itemListJsonLd, breadcrumbJsonLd]}
   wide
 >
   <h1>Portfolio</h1>
   <p class="hero-sub">
-    AI by use case — what the problem is, how the system solves it, and what
-    it actually produced.
+    AI by use case — what the problem is, how the system solves it, what it
+    produced.
   </p>
 
-  <ul class="card-list" style="margin-top:2rem">
+  <ul class="card-list portfolio-list">
     {CASES.map(c => (
       <li id={c.id}>
-        <article class="card" style="padding:1.5rem 1.75rem">
-          <div class="card-meta">
-            <span class={`tag tag-${c.status === 'sold' ? 'forbes' : 'workshop'}`}>{c.status}</span>
-            {c.context && <span style="color:var(--c-text-muted)">· {c.context}</span>}
+        <article class="card portfolio-card">
+          <div class="portfolio-glyph" style={`color:${c.glyphColor}; background:${c.glyphBg}`} aria-hidden="true">
+            <span>{c.glyph}</span>
           </div>
-          <h2 class="card-title" style="margin-top:0.5rem; font-size:1.35rem">{c.title}</h2>
-          <p style="font-style:italic; color:var(--c-text-soft); margin:0.4rem 0 0.8rem">{c.oneliner}</p>
-          <p><strong>What it does.</strong> {c.what}</p>
-          <p><strong>How it works.</strong> {c.how}</p>
-          <p><strong>Outcome.</strong> {c.outcome}</p>
-          {c.links && c.links.length > 0 && (
-            <p style="margin-top:0.8rem; font-family:var(--font-sans); font-size:0.92rem">
-              {c.links.map((l, i) => (
-                <>
-                  {i > 0 && ' · '}
-                  <a href={l.url} rel="noopener" target={l.url.startsWith('http') ? '_blank' : undefined}>{l.label}</a>
-                </>
-              ))}
-            </p>
-          )}
+          <div class="portfolio-body">
+            <div class="card-meta">
+              <span class={`tag tag-${c.status === 'sold' ? 'forbes' : 'workshop'}`}>{c.status}</span>
+              {c.context && <span style="color:var(--c-text-muted)">· {c.context}</span>}
+            </div>
+            <h2 class="card-title portfolio-title">{c.title}</h2>
+            <p class="portfolio-oneliner">{c.oneliner}</p>
+            <p><strong>What it does.</strong> {c.what}</p>
+            <p><strong>How it works.</strong> {c.how}</p>
+            <p><strong>Outcome.</strong> <span set:html={c.outcome} /></p>
+            {c.links && c.links.length > 0 && (
+              <p class="portfolio-links">
+                {c.links.map((l, i) => (
+                  <>
+                    {i > 0 && ' · '}
+                    <a href={l.url} rel="noopener" target={l.url.startsWith('http') ? '_blank' : undefined}>{l.label}</a>
+                  </>
+                ))}
+              </p>
+            )}
+          </div>
         </article>
       </li>
     ))}
@@ -203,3 +253,43 @@ const itemListJsonLd = {
     <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
 </Base>
+
+<style>
+  .portfolio-list { gap: 1.5rem; }
+  .portfolio-card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.5rem 1.75rem;
+  }
+  .portfolio-glyph {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .portfolio-glyph span { line-height: 1; }
+  .portfolio-body p { margin: 0.45em 0; }
+  .portfolio-title { margin: 0.5rem 0 0; font-size: 1.32rem; line-height: 1.25; }
+  .portfolio-oneliner {
+    font-style: italic;
+    color: var(--c-text-soft);
+    margin: 0.4rem 0 0.9rem !important;
+  }
+  .portfolio-links {
+    margin-top: 0.8rem;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+  }
+  @media (max-width: 640px) {
+    .portfolio-card { grid-template-columns: 56px 1fr; gap: 0.9rem; padding: 1rem 1.1rem; }
+    .portfolio-glyph { width: 56px; height: 56px; font-size: 1.7rem; border-radius: 8px; }
+    .portfolio-title { font-size: 1.15rem; }
+  }
+</style>

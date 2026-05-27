@@ -3,7 +3,6 @@ import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
 import { getCollection } from 'astro:content';
 
-// Auto-pull the latest from /writing and /speaking so the homepage never goes stale.
 const writing = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 5);
@@ -14,44 +13,66 @@ const upcoming = (await getCollection('events'))
   .sort((a, b) => a.data.date.getTime() - b.data.date.getTime())
   .slice(0, 4);
 
-const recentPast = (await getCollection('events'))
-  .filter(e => e.data.status === 'past' || e.data.date.getTime() < now)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3);
-
 const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: SITE.author,
   url: SITE.url,
   email: `mailto:${SITE.email}`,
+  image: `${SITE.url}/img/lutz-headshot-800.jpg`,
   jobTitle: 'Head of AI · Cornell Data Scientist in Residence · Forbes contributor',
   description: "Lutz Finger builds AI products and teaches leaders how to ship them. Head of AI at Zoovu, Data Scientist in Residence at Cornell, Forbes contributor, Venture Partner at Cherry Ventures. Two founder exits. Ex-Google, ex-LinkedIn, ex-Snap.",
   knowsAbout: ['Artificial Intelligence', 'AI Workflows', 'Generative Engine Optimization',
                'Large Language Models', 'AI in E-commerce', 'AI in Healthcare', 'AI in Education',
                'Data Products', 'AI Product Management'],
   sameAs: [SITE.social.forbes, SITE.social.linkedin, SITE.social.x,
-           SITE.social.youtube, SITE.social.instagram],
+           SITE.social.youtube, SITE.social.instagram,
+           'https://scholar.google.com/citations?user=tg0FO3wAAAAJ'],
+};
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.author,
+  url: SITE.url,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/writing/?q={search_term_string}` },
+    'query-input': 'required name=search_term_string',
+  },
 };
 ---
-<Base jsonLd={personJsonLd}>
-  <section class="hero">
-    <h1 class="hero-title">AI isn't the future. Shipping it is.</h1>
-    <p class="hero-sub">
-      I help people turn AI from a headline into a product. I write the
-      <a href={SITE.social.forbes} rel="noopener">Forbes column on AI</a>,
-      teach the <a href="/ecornell/">Cornell AI certificate</a> taken by
-      thousands of operators, and run
-      <a href="/keynote/">a live keynote series</a> with the people actually
-      shipping it — Aneesh Chopra, Richard Socher, Lila Tretikov, Martín Casado,
-      Lucilla Sioli, and more.
-    </p>
-    <p>
-      Two founder exits, ex-Google, ex-LinkedIn, ex-Snap. These days I focus on
-      <strong>AI workflows</strong>, <strong>Generative Engine Optimization</strong>,
-      and AI in e-commerce, healthcare, and education — plus the data moats
-      behind them.
-    </p>
+<Base jsonLd={[personJsonLd, websiteJsonLd]}>
+  <section class="hero hero-flex">
+    <div class="hero-text">
+      <h1 class="hero-title">AI isn't the future. Shipping it is.</h1>
+      <p class="hero-sub">
+        I help people turn AI from a headline into a product. I write the
+        <a href={SITE.social.forbes} rel="noopener">Forbes column on AI</a>,
+        teach the <a href="/ecornell/">Cornell AI certificate</a> taken by
+        thousands of operators, and run
+        <a href="/keynote/">a live keynote series</a> with the people actually
+        shipping it — Aneesh Chopra, Richard Socher, Lila Tretikov, Martín Casado,
+        Lucilla Sioli, and more.
+      </p>
+      <p>
+        Two founder exits, ex-Google, ex-LinkedIn, ex-Snap. These days I focus on
+        <strong>AI workflows</strong>, <strong>Generative Engine Optimization</strong>,
+        and AI in e-commerce, healthcare, and education — plus the data moats
+        behind them.
+      </p>
+    </div>
+    <figure class="hero-photo">
+      <img
+        src="/img/lutz-headshot-800.jpg"
+        srcset="/img/lutz-headshot-400.jpg 400w, /img/lutz-headshot-800.jpg 800w"
+        sizes="(max-width: 640px) 200px, 280px"
+        alt="Portrait of Lutz Finger"
+        width="280"
+        height="280"
+        loading="eager"
+        decoding="async"
+      />
+    </figure>
   </section>
 
   {writing.length > 0 && (
@@ -107,8 +128,30 @@ const personJsonLd = {
       <li style="margin-bottom:0.8rem">🛠 <a href="/workshop/"><strong>Three-hour AI Agent workshops.</strong></a> Personal-productivity or production-grade. Hosted by eCornell.</li>
       <li style="margin-bottom:0.8rem">🎓 <a href="/ecornell/"><strong>The Cornell certificate.</strong></a> Five courses on designing and building AI solutions.</li>
       <li style="margin-bottom:0.8rem">💬 <a href="/qa/"><strong>Q&A.</strong></a> Common questions, answered from my Forbes column and writing.</li>
+      <li style="margin-bottom:0.8rem">🧪 <a href="/portfolio/"><strong>Portfolio.</strong></a> The AI use cases I've actually built.</li>
       <li style="margin-bottom:0.8rem">📘 <a href="/book/"><strong>Ask, Measure, Learn.</strong></a> The book on using data to learn.</li>
       <li style="margin-bottom:0.8rem">✉️ <a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
     </ul>
   </section>
 </Base>
+
+<style>
+  .hero-flex {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  .hero-photo img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--c-border);
+    display: block;
+  }
+  @media (max-width: 720px) {
+    .hero-flex { grid-template-columns: 1fr; gap: 1.5rem; }
+    .hero-photo img { width: 200px; height: 200px; margin: 0 auto; }
+  }
+</style>

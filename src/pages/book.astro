@@ -6,6 +6,7 @@ const bookJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Book',
   name: 'Ask, Measure, Learn',
+  image: `${SITE.url}/img/book-cover.jpg`,
   author: [
     { '@type': 'Person', name: 'Lutz Finger', url: SITE.url },
     { '@type': 'Person', name: 'Soumitra Dutta' },
@@ -15,24 +16,45 @@ const bookJsonLd = {
   isbn: '978-1449336752',
   numberOfPages: 188,
   datePublished: '2014-02-04',
-  publisher: {
-    '@type': 'Organization',
-    name: "O'Reilly Media",
-  },
+  publisher: { '@type': 'Organization', name: "O'Reilly Media" },
   about: ['Social Media Analytics', 'Data Science', 'Marketing Measurement', 'Business Intelligence'],
   url: `${SITE.url}/book/`,
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Book', item: `${SITE.url}/book/` },
+  ],
 };
 ---
 <Base
   title="Ask, Measure, Learn"
-  description="Ask, Measure, Learn — by Lutz Finger and Soumitra Dutta (O'Reilly, 2014). A practical guide to using social media data and analytics to ask the right questions, measure what matters, and actually learn from the answers."
-  jsonLd={bookJsonLd}
+  description="Ask, Measure, Learn — by Lutz Finger and Soumitra Dutta (O'Reilly, 2014). A practical guide to using social and behavioral data to ask the right questions, measure what matters, and actually learn from the answers."
+  image="/img/book-cover.jpg"
+  jsonLd={[bookJsonLd, breadcrumbJsonLd]}
 >
-  <h1>Ask, Measure, Learn</h1>
-  <p class="hero-sub">
-    Using data — social media, behavior, signals — to actually learn something
-    useful. Co-authored with <strong>Soumitra Dutta</strong>; published by O'Reilly.
-  </p>
+  <div class="book-hero">
+    <figure class="book-cover-wrap">
+      <img
+        src="/img/book-cover.jpg"
+        alt="Cover of the book Ask, Measure, Learn by Lutz Finger and Soumitra Dutta"
+        width="300"
+        height="240"
+        loading="eager"
+        decoding="async"
+      />
+    </figure>
+    <div>
+      <h1 style="margin-top:0">Ask, Measure, Learn</h1>
+      <p class="hero-sub">
+        Using data — social media, behavior, signals — to actually learn
+        something useful. Co-authored with <strong>Soumitra Dutta</strong>;
+        published by O'Reilly.
+      </p>
+    </div>
+  </div>
 
   <p>
     <strong>Authors:</strong> Lutz Finger and Soumitra Dutta (then Dean of
@@ -69,3 +91,24 @@ const bookJsonLd = {
     <em>Global Innovation Index</em>.
   </p>
 </Base>
+
+<style>
+  .book-hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .book-cover-wrap img {
+    border-radius: 6px;
+    border: 1px solid var(--c-border);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    width: 220px;
+    height: auto;
+  }
+  @media (max-width: 640px) {
+    .book-hero { grid-template-columns: 1fr; gap: 1rem; text-align: center; }
+    .book-cover-wrap img { width: 160px; margin: 0 auto; }
+  }
+</style>

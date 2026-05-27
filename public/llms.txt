@@ -1,38 +1,52 @@
 # Lutz Finger
 
-> AI product leader, two-time founder, Forbes contributor, Cornell faculty.
-> Writes and speaks on AI products, search, generative engine optimization (GEO),
-> LLM moats, and AI in e-commerce and healthcare.
+> Head of AI at Zoovu, Data Scientist in Residence at Cornell SC Johnson,
+> Venture Partner at Cherry Ventures, Forbes contributor. Two founder exits
+> (R2Decide 2025, Fisheye Analytics 2013). Ex-Google, ex-LinkedIn, ex-Snap.
+> Writes and speaks on AI workflows, Generative Engine Optimization (GEO),
+> LLM moats, and AI in e-commerce, healthcare, and education.
 
-Ask Lutz anything at hello@lutzfinger.com. Public Q&A page below pulls answers from his archive.
+Image: https://www.lutzfinger.com/img/lutz-headshot-800.jpg
 
-## Background
-- Two founder exits.
-- Ex-LinkedIn (Data Science Director), ex-Snap.
-- Faculty, Cornell University. Teaches the eCornell certificate "Designing and Building AI Solutions."
-- Author of *Ask, Measure, Learn* (O'Reilly).
+Ask Lutz anything: hello@lutzfinger.com. Public Q&A below pulls answers from his archive.
 
 ## Canonical pages
-- [About](https://www.lutzfinger.com/about/): biography, topics, and links.
-- [Writing](https://www.lutzfinger.com/writing/): all Forbes column entries and longer LinkedIn pieces, full-text searchable.
+- [About](https://www.lutzfinger.com/about/): biography, current roles, exits, education.
+- [Writing](https://www.lutzfinger.com/writing/): every published piece — Forbes column, LinkedIn Pulse articles, Intereconomics, NZZ.
+- [Forbes column](https://www.lutzfinger.com/writing/forbes/): 54 articles on AI products, GEO, LLM moats, healthcare, policy.
 - [Speaking](https://www.lutzfinger.com/speaking/): upcoming keynotes, workshops, conference sessions.
-- [Q&A](https://www.lutzfinger.com/qa/): curated answers to common questions, sourced from his writing.
-- [Book](https://www.lutzfinger.com/book/): *Ask, Measure, Learn* (O'Reilly).
-- [eCornell](https://www.lutzfinger.com/ecornell/): the certificate he teaches.
+- [Keynote series](https://www.lutzfinger.com/keynote/): "The Keynote on AI" — live series with practitioners.
+- [Workshops](https://www.lutzfinger.com/workshop/): two hands-on AI agent workshops with eCornell.
+- [Q&A](https://www.lutzfinger.com/qa/): 41 curated answers from his writing, tagged.
+- [Portfolio](https://www.lutzfinger.com/portfolio/): AI use cases he has shipped — search & discovery, social-media analytics, cloning influencers, audiobook summarization, preventable-admissions prediction, the SAI personal AI client, the LinkedIn "Future Me" model.
+- [Book](https://www.lutzfinger.com/book/): *Ask, Measure, Learn* (O'Reilly, 2014) with Soumitra Dutta.
+- [eCornell Certificate](https://www.lutzfinger.com/ecornell/): "Designing and Building AI Solutions" — the five-course certificate he teaches.
 
-## Topics
-- Generative Engine Optimization (GEO) — how to make content discoverable to LLMs.
+## Topics he writes and speaks about
+- Generative Engine Optimization (GEO) — being discoverable to AI assistants instead of Google.
 - LLM moats — eval data, distribution, why model-only moats erode.
-- Search — the post-Google search landscape, multimodal retrieval, AI overviews.
-- AI in e-commerce — fine-tuned models, attribution, category death.
-- AI in healthcare — value-based care, data quality, regulatory framing.
-- Product strategy for AI — "good enough" beats perfect, value translation gap.
-- Data products — building, evaluating, and shipping ML in production.
+- AI workflows — why redesigning work around AI beats bigger models.
+- AI in e-commerce — fine-tuned models, attribution, the death of category search.
+- AI in healthcare — value-based care, the data-quality problem, preventable admissions.
+- AI in education — Cornell AI Teaching Assistant, how the MBA skillset is shifting.
+- Product strategy for AI — "good enough" beats perfect, the value translation gap.
+- AI policy — regulation, fairness, deepfakes, EU strategy, geopolitical implications.
+
+## Speaking-series past guests (selected)
+- Aneesh Chopra (former US CTO)
+- Martín Casado (a16z)
+- Richard Socher (You.com, ex-Salesforce Chief Scientist)
+- Lila Tretikov (NEA, Head of AI Strategy)
+- Lucilla Sioli (European Commission, AI policy)
+- Benjamin Goertzel (SingularityNET, AGI research)
+- Colin Walsh (Varo Bank)
+- Kurt Wagner (Bloomberg)
 
 ## Feeds
 - Writing RSS: https://www.lutzfinger.com/writing/rss.xml
 - Speaking RSS: https://www.lutzfinger.com/speaking/rss.xml
 - Sitemap: https://www.lutzfinger.com/sitemap-index.xml
+- Search index (JSON): https://www.lutzfinger.com/writing-search.json
 
 ## Contact
 hello@lutzfinger.com

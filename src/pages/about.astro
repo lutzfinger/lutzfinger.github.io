@@ -2,34 +2,62 @@
 import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
 
-const personJsonLd = {
+const profileJsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: SITE.author,
-  url: `${SITE.url}/about/`,
-  jobTitle: 'Head of AI, Zoovu · Data Scientist in Residence, Cornell · Venture Partner, Cherry Ventures',
-  worksFor: { '@type': 'Organization', name: 'Zoovu' },
-  alumniOf: [
-    { '@type': 'CollegeOrUniversity', name: 'INSEAD' },
-    { '@type': 'CollegeOrUniversity', name: 'Technische Universität Berlin' },
-  ],
-  sameAs: [
-    SITE.social.linkedin, SITE.social.forbes, SITE.social.x,
-    SITE.social.youtube, SITE.social.instagram,
-    'https://scholar.google.com/citations?user=tg0FO3wAAAAJ',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: SITE.author,
+    url: `${SITE.url}/about/`,
+    image: `${SITE.url}/img/lutz-headshot-800.jpg`,
+    jobTitle: 'Head of AI, Zoovu · Data Scientist in Residence, Cornell · Venture Partner, Cherry Ventures',
+    worksFor: { '@type': 'Organization', name: 'Zoovu', url: 'https://zoovu.com' },
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'INSEAD' },
+      { '@type': 'CollegeOrUniversity', name: 'Technische Universität Berlin' },
+    ],
+    sameAs: [
+      SITE.social.linkedin, SITE.social.forbes, SITE.social.x,
+      SITE.social.youtube, SITE.social.instagram,
+      'https://scholar.google.com/citations?user=tg0FO3wAAAAJ',
+    ],
+  },
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'About', item: `${SITE.url}/about/` },
   ],
 };
 ---
 <Base
   title="About"
   description="Lutz Finger — Head of AI at Zoovu, Data Scientist in Residence at Cornell, Venture Partner at Cherry Ventures. Two founder exits (R2Decide 2025, Fisheye Analytics 2013). Ex-Google, ex-LinkedIn, ex-Snap."
-  jsonLd={personJsonLd}
+  image="/img/og-default.jpg"
+  jsonLd={[profileJsonLd, breadcrumbJsonLd]}
 >
-  <h1>About</h1>
-
-  <p style="font-size:1.15rem; line-height:1.55">
-    I help people turn AI from a headline into a product.
-  </p>
+  <div class="about-hero">
+    <figure class="about-photo">
+      <img
+        src="/img/lutz-headshot-800.jpg"
+        srcset="/img/lutz-headshot-400.jpg 400w, /img/lutz-headshot-800.jpg 800w"
+        sizes="(max-width: 640px) 160px, 220px"
+        alt="Portrait of Lutz Finger"
+        width="220"
+        height="220"
+        loading="eager"
+        decoding="async"
+      />
+    </figure>
+    <div>
+      <h1>About</h1>
+      <p style="font-size:1.15rem; line-height:1.55; margin-top:0.6rem">
+        I help people turn AI from a headline into a product.
+      </p>
+    </div>
+  </div>
 
   <h2>Currently</h2>
   <ul>
@@ -64,3 +92,25 @@ const personJsonLd = {
     More on <a href={SITE.social.linkedin} rel="noopener">LinkedIn</a> · talk to me at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
 </Base>
+
+<style>
+  .about-hero {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.75rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .about-photo img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--c-border);
+    display: block;
+  }
+  @media (max-width: 640px) {
+    .about-hero { grid-template-columns: 1fr; gap: 1rem; text-align: center; }
+    .about-photo img { width: 160px; height: 160px; margin: 0 auto; }
+  }
+</style>

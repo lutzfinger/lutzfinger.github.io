@@ -2,267 +2,204 @@
 import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
 
-interface Project {
+interface UseCase {
   id: string;
   title: string;
-  tagline: string;
-  role: string;
-  period: string;
-  status: 'sold' | 'shipping' | 'shipped' | 'live' | 'experimental' | 'past';
-  category: 'exit' | 'product' | 'experiment' | 'company';
-  summary: string;
+  oneliner: string;
+  what: string;       // What it does, in one paragraph
+  how: string;        // How it works / the technique
+  outcome: string;    // Result, impact, or what it proves
+  context?: string;   // Where it ran / who built it
   links?: { label: string; url: string }[];
+  status: 'sold' | 'shipping' | 'shipped';
 }
 
-// Real things I've built. Some sold, some shipping, some experimental.
-const PROJECTS: Project[] = [
-  // ── EXITS ─────────────────────────────────────────────────────────
+const CASES: UseCase[] = [
   {
-    id: 'r2decide',
-    title: 'R2Decide',
-    tagline: 'AI-driven decision tooling for e-commerce.',
-    role: 'Founder',
-    period: '2024–2025',
-    status: 'sold',
-    category: 'exit',
-    summary: 'Turned product catalogs into conversational, intent-aware recommendation experiences. Sold in 2025.',
+    id: 'social-media-analytics',
+    title: 'Social-media analytics at scale',
+    oneliner: 'Reading the social graph for signal — influence, propaganda, and emerging events.',
+    what: 'Fisheye Analytics applied NLP and graph analysis to social-media streams for governments, NGOs, defense agencies, and Fortune 500 brands.',
+    how: 'Entity extraction, topic modeling, bot detection, and influence-graph analysis across X/Twitter, Facebook, news, and forums. Pipeline built in the pre-LLM era when this was hard.',
+    outcome: 'Sold in 2013. The data and methods became the spine of my Forbes coverage of bots, deepfakes, and information warfare.',
+    context: 'Fisheye Analytics, 2008–2013. Co-founded.',
     links: [
-      { label: 'After the Gold Rush — eCornell keynote (incl. why I sold)', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
+      { label: 'How to spot social media bots — they are often lonely', url: 'https://www.linkedin.com/pulse/20140618141134-6074593-how-to-spot-social-media-bots' },
+      { label: 'Do Evil — the business of social media bots', url: 'https://scholar.google.com/citations?user=tg0FO3wAAAAJ' },
     ],
-  },
-  {
-    id: 'fisheye',
-    title: 'Fisheye Analytics',
-    tagline: 'Social-media analytics + bot detection.',
-    role: 'Co-founder & CEO',
-    period: '2008–2013',
     status: 'sold',
-    category: 'exit',
-    summary: 'Pioneering analytics for the social era. Customers spanned UN agencies, intelligence/defense, and Fortune 500 brands. Sold in 2013.',
-    links: [
-      { label: 'Do Evil — the business of social media bots (cited paper)', url: 'https://scholar.google.com/citations?user=tg0FO3wAAAAJ' },
-    ],
   },
-
-  // ── REAL THINGS I HAVE BUILT (products, prototypes, agents) ──────
   {
     id: 'search-discovery',
-    title: 'Search & Discovery',
-    tagline: 'Intent-aware retrieval over catalogs and content.',
-    role: 'Designer / builder',
-    period: 'ongoing',
-    status: 'shipping',
-    category: 'product',
-    summary: 'Search and product-discovery systems that move past keyword matching to intent inference — what the user is actually trying to do, then pulling the right item, article, or answer from a corpus. The lineage runs from R2Decide into ongoing work at Zoovu and a few side experiments.',
+    title: 'AI-driven search & discovery for e-commerce',
+    oneliner: "Turn a product catalog into a conversation that ends in 'this is the one'.",
+    what: 'R2Decide and its successors replace keyword-and-facet search with intent-aware, conversational discovery. The shopper says what they want in natural language; the system surfaces the right product, configured, with reasons.',
+    how: 'Fine-tuned models per category, vector retrieval over enriched catalog embeddings, intent classification, attribute extraction, and re-ranking with a learned reward model trained on real conversions.',
+    outcome: 'R2Decide was sold in 2025. The thesis — eval data is the moat, not the model — became the through-line of my Forbes column and informs the AI work I lead now.',
+    context: 'R2Decide (founder, sold 2025) → ongoing work as Head of AI at Zoovu.',
     links: [
       { label: 'Zoovu', url: 'https://zoovu.com' },
       { label: 'GEO Playbook for Online Retailers — Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/' },
+      { label: 'Why I sold — After the Gold Rush (eCornell keynote)', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
     ],
+    status: 'sold',
   },
   {
     id: 'cloning-influencers',
-    title: 'Cloning Influencers',
-    tagline: 'A voice/persona system trained on a public figure\'s own corpus.',
-    role: 'Builder',
-    period: 'ongoing',
-    status: 'experimental',
-    category: 'experiment',
-    summary: "Started as a 'can I make an AI that sounds like me?' experiment. Now a small system that ingests a person's published work (Forbes, LinkedIn, keynote transcripts, social), embeds and structures it, and answers in their voice with citations. Used to power my own /qa page on this site.",
+    title: 'Cloning influencers — answering in someone\'s voice',
+    oneliner: "Train a system on a person's published corpus; answer in their voice with citations.",
+    what: 'A system that ingests everything a public figure has written and said — articles, transcripts, talks, social posts — then answers new questions in their voice, with the original source attached.',
+    how: 'Embed and structure the corpus. For each question, retrieve relevant passages, score by lexical overlap with the question, and select the sentences a human would actually quote. Always cite the source URL inline.',
+    outcome: 'Powers the live Q&A on this site — every answer is mine, drawn from my Forbes column, LinkedIn writing, book, and Cornell course material.',
+    context: 'Built on top of the same RAG pipeline that I open-sourced as the public MCP endpoint.',
     links: [
-      { label: 'Live demo (this site)', url: '/qa/' },
+      { label: 'See it live (this site)', url: '/qa/' },
     ],
+    status: 'shipping',
   },
   {
     id: 'audiobook-summarizer',
-    title: 'Audiobook Summarizer',
-    tagline: 'Compresses non-fiction audiobooks into structured, listenable summaries.',
-    role: 'Builder',
-    period: 'ongoing',
-    status: 'experimental',
-    category: 'experiment',
-    summary: "Listens to an audiobook (or its transcript), extracts the spine of arguments and the supporting evidence, then re-narrates a structured summary you can listen to in a fraction of the time. The interesting bit isn't the LLM — it's getting the chapter-level pacing and 'what was the actual point' right.",
+    title: 'Audiobook summarizer',
+    oneliner: "Compress a non-fiction audiobook into a structured, listenable summary.",
+    what: "Turns a 10-hour non-fiction audiobook into a 30-minute structured summary you can actually listen to — keeping the spine of the argument and the strongest evidence, dropping the padding.",
+    how: "Transcribe → segment by argumentative beat (not by chapter) → extract claim + supporting evidence per beat → re-narrate with consistent pacing and a learned voice. The hard part isn't the LLM, it's the structural pacing.",
+    outcome: "A personal-productivity tool that turned out to teach me something useful: most non-fiction books are ~30% argument and ~70% support. Compressing the argument while keeping the strongest support is a real craft.",
+    status: 'shipping',
   },
   {
     id: 'preventable-admissions',
-    title: 'Predicting Preventable Admissions',
-    tagline: 'Healthcare ML to surface patients heading toward a preventable hospital admission.',
-    role: 'Builder / advisor',
-    period: 'ongoing',
-    status: 'experimental',
-    category: 'experiment',
-    summary: "Models that consume claims, EHR, and behavioral signals to flag patients whose next admission is preventable — and to suggest the intervention. Sits at the intersection of value-based care and predictive analytics that I've covered in Forbes.",
+    title: 'Predicting preventable hospital admissions',
+    oneliner: "Flag patients heading toward a preventable admission before it happens.",
+    what: 'Models that consume claims, EHR, and behavioral signals to identify patients likely to be admitted to a hospital for something a preceding intervention could have prevented — and surface the intervention.',
+    how: 'Time-series features over claims and labs, structured-text features over notes, and a calibrated risk score. Cohort framing is value-based care: rather than predict any admission, predict the avoidable ones, where the model output ties to a concrete action.',
+    outcome: 'Sits at the intersection of value-based care and the predictive-analytics thesis I have argued in Forbes — that healthcare AI lives or dies on data-quality discipline, not model size.',
     links: [
-      { label: 'Healthcare AI Lesson — Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2024/05/02/healthcares-ai-lesson-autocomplete-isnt-understanding/' },
-      { label: 'Healthcare And Data — How To Measure Quality', url: 'https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/' },
+      { label: "Healthcare's AI Lesson: Autocomplete Isn't Understanding — Forbes", url: 'https://www.forbes.com/sites/lutzfinger/2024/05/02/healthcares-ai-lesson-autocomplete-isnt-understanding/' },
+      { label: 'Healthcare and Data — How To Measure Quality', url: 'https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/' },
     ],
+    status: 'shipping',
   },
   {
     id: 'sai',
-    title: 'SAI',
-    tagline: 'A thin personal client on top of Anthropic Claude.',
-    role: 'Builder',
-    period: 'ongoing',
+    title: 'SAI — a thin personal AI client',
+    oneliner: "A daily-driver AI assistant built on top of Anthropic's Claude.",
+    what: "My own personal assistant. A thin client on Anthropic's Claude with workflow skills, scheduled tasks, and tight integrations into my email, calendar, and writing pipeline. Think 'Claude with my muscle memory'.",
+    how: "Skill-based architecture: each capability is a small, composable skill (process an incoming email, add a calendar event from a one-liner, sync content into the RAG, draft a Forbes piece) that the model invokes when relevant. Local-first, with structured logs.",
+    outcome: 'Drives the SAI@ inbox — emails sent there get classified, calendared, and acknowledged automatically. Also runs the content pipelines that keep this site current.',
     status: 'shipping',
-    category: 'experiment',
-    summary: "My own daily-driver AI assistant — a thin client on top of Anthropic's Claude with workflow skills, scheduled tasks, and tight integrations into my email, calendar, and writing pipeline. Think 'Claude with my muscle memory.' It's what processes my SAI@ inbox and adds events to my calendar from one-liners.",
-  },
-
-  // ── CURRENT OPERATING ROLE & MEDIA ───────────────────────────────
-  {
-    id: 'zoovu',
-    title: 'Head of AI · Zoovu',
-    tagline: 'AI-driven product discovery + decision experiences for e-commerce.',
-    role: 'Head of AI',
-    period: '2025–present',
-    status: 'live',
-    category: 'company',
-    summary: 'Where the eval-data-is-the-moat thesis meets daily production reality. Drives much of my Forbes coverage of GEO and AI-driven commerce.',
-    links: [{ label: 'Zoovu', url: 'https://zoovu.com' }],
   },
   {
-    id: 'forbes',
-    title: 'Forbes column on AI',
-    tagline: '50+ articles on AI products, GEO, LLM moats, AI in e-commerce, healthcare, policy.',
-    role: 'Senior Contributor',
-    period: '2020–present',
-    status: 'live',
-    category: 'company',
-    summary: 'Often-cited pieces: "The Missing Moat In AI: Your Eval Data", "If Your Name Isn\'t Western, AI Could Cost You The Promotion", the GEO playbook series.',
+    id: 'future-me',
+    title: 'Predicting "Future Me"',
+    oneliner: "Use the LinkedIn graph to predict what someone will be doing in five years.",
+    what: "A model that, given a person's LinkedIn profile, predicts their likely next role and trajectory — by matching their pattern to thousands of others who started in the same place.",
+    how: "Career-graph traversal across hundreds of millions of LinkedIn profiles. For a given profile, find structurally similar earlier-stage members, then look at where THEY ended up — that is the prediction. The trick is good similarity scoring at scale.",
+    outcome: "Featured in Mashable's 'How LinkedIn Found My Future Self' (2014). Demonstrated the principle that for career questions, retrieval-over-people beats forecasting-over-features.",
+    context: 'Built during my time at LinkedIn (Director, Data Science).',
     links: [
-      { label: 'Forbes column', url: 'https://www.forbes.com/sites/lutzfinger/' },
-      { label: 'On this site', url: '/writing/forbes/' },
+      { label: "Mashable — How LinkedIn Found My 'Future' Self", url: 'https://mashable.com/archive/linkedin-future-self' },
     ],
-  },
-  {
-    id: 'cornell-cert',
-    title: 'Cornell Certificate — Designing & Building AI Solutions',
-    tagline: 'Five online courses + AI Teaching Assistant. Thousands of operators.',
-    role: 'Instructor',
-    period: '2023–present',
-    status: 'live',
-    category: 'company',
-    summary: '27 guest experts (Aneesh Chopra, Richard Socher, Allen Blue, Igor Perisic, Adrian Monck, Filip Dames, more) record interview segments. Integrated OpenAI-powered TA.',
-    links: [
-      { label: 'Certificate page', url: 'https://ecornell.cornell.edu/certificates/ai/designing-and-building-ai-solutions/' },
-      { label: 'On this site', url: '/ecornell/' },
-    ],
-  },
-  {
-    id: 'keynote-series',
-    title: 'The Keynote on AI',
-    tagline: 'Live series with the people actually shipping AI.',
-    role: 'Host & faculty lead',
-    period: '2024–present',
-    status: 'live',
-    category: 'company',
-    summary: '15+ live sessions to date — Aneesh Chopra (former US CTO), Martín Casado (a16z), Richard Socher, Lila Tretikov (NEA), Lucilla Sioli (EU Commission), Benjamin Goertzel.',
-    links: [{ label: 'On this site', url: '/keynote/' }],
-  },
-  {
-    id: 'cherry',
-    title: 'Cherry Ventures — Venture Partner',
-    tagline: "Europe's premier seed fund. AI-native company evaluation.",
-    role: 'Venture Partner',
-    period: '2024–present',
-    status: 'live',
-    category: 'company',
-    summary: 'Helps the team evaluate technical depth and product strategy.',
-    links: [{ label: 'Cherry Ventures', url: 'https://www.cherry.vc/' }],
-  },
-  {
-    id: 'book',
-    title: 'Ask, Measure, Learn (book)',
-    tagline: "O'Reilly, 2014. With Soumitra Dutta.",
-    role: 'Co-author',
-    period: '2014',
     status: 'shipped',
-    category: 'company',
-    summary: 'Practical guide to using social and behavioral data to learn fast enough to ship.',
-    links: [{ label: 'On this site', url: '/book/' }],
   },
-
-  // ── PAST EMPLOYERS ───────────────────────────────────────────────
-  { id: 'linkedin-dir', title: 'LinkedIn — Director, Data Science', tagline: 'Data Science leadership across the platform.', role: 'Director', period: 'past', status: 'past', category: 'company', summary: '' },
-  { id: 'snap', title: 'Snap Inc. — AI / Data', tagline: 'Applied ML in a real consumer-product environment.', role: 'AI / Data', period: 'past', status: 'past', category: 'company', summary: '' },
-  { id: 'google', title: 'Google — AI / Data', tagline: '', role: 'AI / Data', period: 'past', status: 'past', category: 'company', summary: '' },
 ];
 
-const groups = {
-  'Exits': PROJECTS.filter(p => p.category === 'exit'),
-  'Things I have built or am building': PROJECTS.filter(p => p.category === 'product' || p.category === 'experiment'),
-  'Current operating roles': PROJECTS.filter(p => p.category === 'company' && p.status === 'live'),
-  'Past employers': PROJECTS.filter(p => p.category === 'company' && p.status === 'past'),
-  'Book': PROJECTS.filter(p => p.id === 'book'),
-};
+interface Role { id: string; title: string; period: string; summary?: string; links?: { label: string; url: string }[]; }
+const ROLES_NOW: Role[] = [
+  { id: 'zoovu', title: 'Head of AI · Zoovu', period: '2025–present', summary: 'AI-driven product discovery and decision experiences for e-commerce.', links: [{ label: 'Zoovu', url: 'https://zoovu.com' }] },
+  { id: 'cornell', title: 'Data Scientist in Residence · Cornell SC Johnson', period: '2023–present', summary: 'Teaches AI strategy + designs the AI Solutions track.', links: [{ label: 'Cornell certificate', url: '/ecornell/' }] },
+  { id: 'cherry', title: 'Venture Partner · Cherry Ventures', period: '2024–present', summary: "Europe's premier seed fund.", links: [{ label: 'Cherry Ventures', url: 'https://www.cherry.vc/' }] },
+  { id: 'forbes', title: 'Senior Contributor · Forbes', period: '2020–present', summary: '50+ articles on AI products, GEO, healthcare, policy.', links: [{ label: 'Column', url: '/writing/forbes/' }] },
+];
+const ROLES_PAST: Role[] = [
+  { id: 'snap', title: 'Snap Inc.', period: 'past', summary: 'AI / Data leadership.' },
+  { id: 'google', title: 'Google', period: 'past', summary: 'AI / Data.' },
+  { id: 'linkedin', title: 'LinkedIn — Director, Data Science', period: 'past', summary: 'Data Science leadership; the "Future Me" model above came from here.' },
+];
 
 const itemListJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: "Lutz Finger — portfolio",
-  itemListElement: PROJECTS.map((p, i) => ({
+  name: "Lutz Finger — portfolio of AI use cases",
+  itemListElement: CASES.map((c, i) => ({
     '@type': 'ListItem',
     position: i + 1,
-    name: p.title,
-    description: p.summary || p.tagline,
+    name: c.title,
+    description: c.oneliner,
   })),
-};
-
-const statusLabel: Record<string, string> = {
-  sold: 'sold',
-  shipping: 'shipping',
-  shipped: 'shipped',
-  live: 'live',
-  experimental: 'experimental',
-  past: 'past',
 };
 ---
 <Base
   title="Portfolio"
-  description="Things I've built. Two AI exits. A handful of shipping products and experiments — search & discovery, an influencer-cloning system, an audiobook summarizer, a preventable-admissions model, and SAI (a thin personal client on Claude). Plus current roles at Zoovu, Cornell, Cherry, Forbes."
+  description="Lutz Finger's AI portfolio in use cases — social-media analytics, search & discovery, cloning influencers, audiobook summarization, preventable-admissions prediction, the SAI personal client, and the LinkedIn 'Future Me' model."
   jsonLd={itemListJsonLd}
   wide
 >
   <h1>Portfolio</h1>
   <p class="hero-sub">
-    The things I've actually built. Some sold. Some shipping. Some still
-    experimental but real enough to talk about.
+    AI by use case — what the problem is, how the system solves it, and what
+    it actually produced.
   </p>
 
-  {Object.entries(groups).map(([label, items]) => items.length > 0 && (
-    <section style="margin: 3rem 0">
-      <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">{label}</h2>
-      <ul class="card-list" style="margin-top:1.25rem">
-        {items.map(p => (
-          <li id={p.id}>
-            <article class="card" style="padding:1.3rem 1.5rem">
-              <div class="card-meta">
-                {p.status !== 'past' && (
-                  <span class={`tag tag-${p.status === 'sold' ? 'forbes' : p.status === 'experimental' ? 'podcast' : 'workshop'}`}>{statusLabel[p.status]}</span>
-                )}
-                <span>· {p.role}</span>
-                <span>· {p.period}</span>
-              </div>
-              <h3 class="card-title" style="margin-top:0.4rem">{p.title}</h3>
-              {p.tagline && <p style="font-style:italic; color:var(--c-text-soft); margin:0.3rem 0 0.5rem">{p.tagline}</p>}
-              {p.summary && <p style="margin:0.5rem 0 0">{p.summary}</p>}
-              {p.links && p.links.length > 0 && (
-                <p style="margin-top:0.7rem; font-family:var(--font-sans); font-size:0.92rem">
-                  {p.links.map((l, i) => (
-                    <>
-                      {i > 0 && ' · '}
-                      <a href={l.url} rel="noopener" target={l.url.startsWith('http') ? '_blank' : undefined}>{l.label}</a>
-                    </>
-                  ))}
-                </p>
-              )}
-            </article>
-          </li>
-        ))}
-      </ul>
-    </section>
-  ))}
+  <ul class="card-list" style="margin-top:2rem">
+    {CASES.map(c => (
+      <li id={c.id}>
+        <article class="card" style="padding:1.5rem 1.75rem">
+          <div class="card-meta">
+            <span class={`tag tag-${c.status === 'sold' ? 'forbes' : 'workshop'}`}>{c.status}</span>
+            {c.context && <span style="color:var(--c-text-muted)">· {c.context}</span>}
+          </div>
+          <h2 class="card-title" style="margin-top:0.5rem; font-size:1.35rem">{c.title}</h2>
+          <p style="font-style:italic; color:var(--c-text-soft); margin:0.4rem 0 0.8rem">{c.oneliner}</p>
+          <p><strong>What it does.</strong> {c.what}</p>
+          <p><strong>How it works.</strong> {c.how}</p>
+          <p><strong>Outcome.</strong> {c.outcome}</p>
+          {c.links && c.links.length > 0 && (
+            <p style="margin-top:0.8rem; font-family:var(--font-sans); font-size:0.92rem">
+              {c.links.map((l, i) => (
+                <>
+                  {i > 0 && ' · '}
+                  <a href={l.url} rel="noopener" target={l.url.startsWith('http') ? '_blank' : undefined}>{l.label}</a>
+                </>
+              ))}
+            </p>
+          )}
+        </article>
+      </li>
+    ))}
+  </ul>
+
+  <section style="margin-top: 3.5rem">
+    <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">Where this work happens — now</h2>
+    <ul class="card-list" style="margin-top:1.25rem">
+      {ROLES_NOW.map(r => (
+        <li><article class="card" style="padding:1rem 1.25rem">
+          <div class="card-meta"><span>{r.period}</span></div>
+          <h3 class="card-title">{r.title}</h3>
+          {r.summary && <p style="margin:0.4rem 0 0">{r.summary}</p>}
+          {r.links && (
+            <p style="margin-top:0.5rem; font-family:var(--font-sans); font-size:0.9rem">
+              {r.links.map(l => <a href={l.url} rel="noopener" target={l.url.startsWith('http') ? '_blank' : undefined}>{l.label}</a>)}
+            </p>
+          )}
+        </article></li>
+      ))}
+    </ul>
+  </section>
+
+  <section style="margin-top: 2.5rem">
+    <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">Previously</h2>
+    <ul class="card-list" style="margin-top:1.25rem">
+      {ROLES_PAST.map(r => (
+        <li><article class="card" style="padding:0.9rem 1.25rem">
+          <h3 class="card-title" style="font-size:1.05rem">{r.title}</h3>
+          {r.summary && <p style="margin:0.3rem 0 0; color:var(--c-text-soft); font-size:0.95rem">{r.summary}</p>}
+        </article></li>
+      ))}
+    </ul>
+  </section>
 
   <p style="margin-top:3rem; color:var(--c-text-muted)">
-    Working on something AI-shaped? <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    Working on something AI-shaped where one of these would help?
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
 </Base>

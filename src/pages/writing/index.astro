@@ -14,7 +14,7 @@ const counts = {
   nzz: countBySource('NZZ'),
 };
 
-const description = `Every article and post by Lutz Finger — ${all.length} pieces across the Forbes column, LinkedIn, and other publications. Each card links to the original source.`;
+const description = `Every article by Lutz Finger — ${all.length} pieces across the Forbes column, LinkedIn, Intereconomics, NZZ, and elsewhere. Each card opens the original source.`;
 ---
 <Base
   title="Writing"
@@ -23,13 +23,14 @@ const description = `Every article and post by Lutz Finger — ${all.length} pie
 >
   <h1>Writing</h1>
   <p class="hero-sub">
-    {all.length} pieces. Each card opens the original — Forbes, LinkedIn, or
-    the publication that hosts it. Filter by source below.
+    {all.length} pieces. Each card opens the original — Forbes, LinkedIn,
+    Intereconomics, NZZ. Filter by source below, or search.
   </p>
 
   <div id="search">
-    <input type="search" placeholder="Search all writing (offline, instant)…" />
-    <ul id="search-results" class="card-list" style="margin-top:1rem"></ul>
+    <input id="writing-search-input" type="search" placeholder={`Search ${all.length} pieces by title, excerpt, source…`} autocomplete="off" />
+    <p id="writing-search-status" style="font-family:var(--font-sans); font-size:0.85rem; color:var(--c-text-muted); margin:0.4rem 0 0; display:none"></p>
+    <ul id="writing-search-results" class="card-list" style="margin-top:1rem; display:none"></ul>
   </div>
 
   <div class="filters">
@@ -37,42 +38,118 @@ const description = `Every article and post by Lutz Finger — ${all.length} pie
     <a href="/writing/forbes/" class="filter-chip tag-forbes">Forbes ({counts.forbes})</a>
     <a href="/writing/linkedin/" class="filter-chip tag-linkedin">LinkedIn ({counts.linkedin})</a>
     {counts.intereconomics > 0 && (
-      <a href="/writing/intereconomics/" class="filter-chip">Intereconomics ({counts.intereconomics})</a>
+      <a href="/writing/intereconomics/" class="filter-chip tag-intereconomics">Intereconomics ({counts.intereconomics})</a>
     )}
     {counts.nzz > 0 && (
-      <a href="/writing/nzz/" class="filter-chip">NZZ ({counts.nzz})</a>
+      <a href="/writing/nzz/" class="filter-chip tag-nzz">NZZ ({counts.nzz})</a>
     )}
   </div>
 
-  <WritingList posts={all} />
+  <div id="writing-full-list">
+    <WritingList posts={all} />
+  </div>
 </Base>
 
 <script is:inline>
-  (async () => {
-    const input = document.querySelector('#search input');
-    const resultsEl = document.querySelector('#search-results');
-    if (!input) return;
-    let pagefind;
-    try {
-      pagefind = await import(new URL('/pagefind/pagefind.js', window.location.origin).href);
-      await pagefind.options({ showImages: false });
-    } catch (e) {
-      input.placeholder = 'Search index not yet built — try again after deploy.';
-      return;
+  (() => {
+    const input = document.getElementById('writing-search-input');
+    const resultsEl = document.getElementById('writing-search-results');
+    const statusEl = document.getElementById('writing-search-status');
+    const fullList = document.getElementById('writing-full-list');
+    if (!input || !resultsEl || !fullList) return;
+
+    let entries = [];
+    let loaded = false;
+
+    function highlight(text, terms) {
+      if (!text || !terms.length) return text || '';
+      const escapedTerms = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+      const re = new RegExp('(' + escapedTerms.join('|') + ')', 'gi');
+      return String(text).replace(re, '<mark>$1</mark>');
     }
+
+    function fmtDate(iso) {
+      try {
+        return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+      } catch { return iso; }
+    }
+
+    function renderResults(items, terms) {
+      if (items.length === 0) {
+        resultsEl.style.display = 'none';
+        statusEl.textContent = 'No matches — try a different word.';
+        statusEl.style.display = '';
+        return;
+      }
+      resultsEl.style.display = '';
+      statusEl.style.display = '';
+      statusEl.textContent = `${items.length} match${items.length === 1 ? '' : 'es'}.`;
+      resultsEl.innerHTML = items.map(e => {
+        const src = (e.source || '').toLowerCase();
+        return `<li><a class="card" href="${e.url}" target="_blank" rel="noopener">
+          <div class="card-meta">
+            <time datetime="${e.date}">${fmtDate(e.date)}</time>
+            <span class="tag tag-${src}">${e.source}</span>
+          </div>
+          <h3 class="card-title">${highlight(e.title, terms)}</h3>
+          ${e.excerpt ? `<p class="card-excerpt">${highlight(e.excerpt, terms)}</p>` : ''}
+        </a></li>`;
+      }).join('');
+    }
+
+    function search(q) {
+      const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+      if (terms.length === 0) {
+        resultsEl.style.display = 'none';
+        statusEl.style.display = 'none';
+        fullList.style.display = '';
+        return;
+      }
+      fullList.style.display = 'none';
+      const matches = entries.filter(e => {
+        const hay = (e.title + ' ' + e.excerpt + ' ' + e.source + ' ' + (e.tags || []).join(' ')).toLowerCase();
+        return terms.every(t => hay.includes(t));
+      });
+      // Score: title matches first, then most-recent.
+      matches.sort((a, b) => {
+        const aT = terms.every(t => a.title.toLowerCase().includes(t)) ? 1 : 0;
+        const bT = terms.every(t => b.title.toLowerCase().includes(t)) ? 1 : 0;
+        if (aT !== bT) return bT - aT;
+        return b.date.localeCompare(a.date);
+      });
+      renderResults(matches.slice(0, 50), terms);
+    }
+
+    async function ensureLoaded() {
+      if (loaded) return;
+      try {
+        const res = await fetch('/writing-search.json');
+        entries = await res.json();
+        loaded = true;
+      } catch (e) {
+        statusEl.textContent = 'Search index failed to load. Reload and try again.';
+        statusEl.style.display = '';
+      }
+    }
+
     let timer;
-    input.addEventListener('input', () => {
+    input.addEventListener('input', async () => {
       clearTimeout(timer);
       timer = setTimeout(async () => {
-        const q = input.value.trim();
-        if (!resultsEl) return;
-        if (!q) { resultsEl.innerHTML = ''; return; }
-        const search = await pagefind.search(q);
-        const top = await Promise.all(search.results.slice(0, 12).map(r => r.data()));
-        resultsEl.innerHTML = top.map(r =>
-          `<li><a class="card" href="${r.url}" target="_blank" rel="noopener"><h3 class="card-title">${r.meta.title ?? r.url}</h3><p class="card-excerpt">${r.excerpt}</p></a></li>`
-        ).join('');
-      }, 200);
+        await ensureLoaded();
+        search(input.value.trim());
+      }, 100);
     });
+
+    // Allow ?q=foo in URL to pre-fill.
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) { input.value = q; input.dispatchEvent(new Event('input')); }
   })();
 </script>
+
+<style>
+  mark { background: #fcecbb; color: inherit; padding: 0 1px; }
+  @media (prefers-color-scheme: dark) {
+    mark { background: #5a4a18; color: #f9efc9; }
+  }
+</style>

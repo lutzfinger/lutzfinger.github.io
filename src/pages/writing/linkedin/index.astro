@@ -1,0 +1,42 @@
+---
+import Base from '~/layouts/Base.astro';
+import WritingList from '~/components/WritingList.astro';
+import { getCollection } from 'astro:content';
+
+const all = (await getCollection('writing'))
+  .filter(p => p.data.source === 'LinkedIn')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const articles = all.filter(p => p.data.sourceType === 'article');
+const posts = all.filter(p => p.data.sourceType === 'post');
+---
+<Base
+  title="Writing — LinkedIn"
+  description={`Lutz Finger's LinkedIn writing — ${articles.length} long-form articles and ${posts.length} substantive posts (>50 words, no Forbes duplicates). Cards open the original on LinkedIn.`}
+  wide
+>
+  <h1>LinkedIn</h1>
+  <p class="hero-sub">
+    {articles.length} articles and {posts.length} substantive posts (≥50 words,
+    no Forbes duplicates). Cards open the originals on LinkedIn.
+  </p>
+
+  <div class="filters">
+    <a href="/writing/" class="filter-chip">← All writing</a>
+    <a href="/writing/forbes/" class="filter-chip tag-forbes">Forbes</a>
+    <span class="filter-chip active tag-linkedin">LinkedIn ({all.length})</span>
+  </div>
+
+  {articles.length > 0 && (
+    <>
+      <h2 style="margin-top:2rem; font-size:1.3rem">Articles</h2>
+      <WritingList posts={articles} />
+    </>
+  )}
+  {posts.length > 0 && (
+    <>
+      <h2 style="margin-top:3rem; font-size:1.3rem">Posts</h2>
+      <WritingList posts={posts} />
+    </>
+  )}
+</Base>

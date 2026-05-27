@@ -3,9 +3,7 @@ title: "Thank you Shaayaan Sayed for joining our AI Strategy class at Cornell Jo
 date: "2022-10-05"
 source: "LinkedIn"
 sourceType: "post"
-excerpt: "Thank you Shaayaan Sayed for joining our AI Strategy class at Cornell Johnson Graduate School of Management. You gave us an amazing overview of how AI can be used successful to improve healthcare and that it sometimes…"
+url: "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A6983255910794080256"
+excerpt: "Thank you Shaayaan Sayed for joining our AI Strategy class at Cornell Johnson Graduate School of Management. You gave us an amazing overview of how AI can be used successful to improve healthcare and that it sometimes can have unintended…"
 wordCount: 63
-bodyAvailable: true
 ---
-
-Thank you Shaayaan Sayed for joining our AI Strategy class at Cornell Johnson Graduate School of Management. You gave us an amazing overview of how #AI can be used successful to improve #healthcare and that it sometimes can have unintended consequences. It's impressive what your team has done at ClosedLoop and how you combined good #PM and #UXR work with actionable #ML models.

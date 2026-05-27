@@ -1,0 +1,28 @@
+---
+import Base from '~/layouts/Base.astro';
+import WritingList from '~/components/WritingList.astro';
+import { getCollection } from 'astro:content';
+
+const all = (await getCollection('writing'))
+  .filter(p => p.data.source === 'Forbes')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<Base
+  title="Writing — Forbes column"
+  description={`Lutz Finger's Forbes column — ${all.length} articles on AI products, search, GEO, LLM moats, and applied AI. Each card opens the original on forbes.com.`}
+  wide
+>
+  <h1>Forbes column</h1>
+  <p class="hero-sub">
+    {all.length} pieces on AI, search, and product strategy. Hosted by Forbes;
+    cards open the originals.
+  </p>
+
+  <div class="filters">
+    <a href="/writing/" class="filter-chip">← All writing</a>
+    <span class="filter-chip active tag-forbes">Forbes ({all.length})</span>
+    <a href="/writing/linkedin/" class="filter-chip tag-linkedin">LinkedIn</a>
+  </div>
+
+  <WritingList posts={all} />
+</Base>

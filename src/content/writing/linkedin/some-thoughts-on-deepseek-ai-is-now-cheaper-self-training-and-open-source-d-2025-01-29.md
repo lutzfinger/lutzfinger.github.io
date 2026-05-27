@@ -3,10 +3,7 @@ title: "Some thoughts on DeepSeek: AI is now cheaper, self-training, and open-so
 date: "2025-01-29"
 source: "LinkedIn"
 sourceType: "post"
-excerpt: "Some thoughts on DeepSeek: AI is now cheaper, self-training, and open-source — does not sound like “news” — because it isn’t! Only that Wall Street just realized that AI is software, not nuclear power — it can't be…"
+url: "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7290426006325092352"
+excerpt: "Some thoughts on DeepSeek: AI is now cheaper, self-training, and open-source — does not sound like “news” — because it isn’t! Only that Wall Street just realized that AI is software, not nuclear power — it can't be protected, regulated, or…"
 wordCount: 83
-bodyAvailable: true
 ---
-
-Some thoughts on DeepSeek: AI is now cheaper, self-training, and open-source — does not sound like “news” — because it isn’t! Only that Wall Street just realized that AI is software, not nuclear power  — it can't be protected, regulated, or banned the same way. Does it mean that AI stocks are doomed? No not at all… cost will go down and Jevons paradox will be still true. Increased efficiency and lower costs will lead to increased consumption of AI… good news for everyone. 🙂"
-"

@@ -2,12 +2,13 @@
 """
 Generate the static Q&A page content from the Lutz-author RAG.
 
-For each anchor question, retrieve top-K passages, build a markdown file with:
-- frontmatter: question, category, sources, updated
-- body: short framing line + the most relevant excerpt(s) with citation
+For each anchor question:
+- Retrieve top-K passages across the question + paraphrases.
+- Filter to public-URL passages (no Canvas / shortlinks / no-URL course material).
+- Pick the most question-relevant sentences within each passage (not the full chunk).
+- Emit markdown with frontmatter (question, category, sources) + body.
 
-The result is a /qa page that's both GEO-friendly (FAQPage JSON-LD with direct
-Lutz quotes) and useful (real source links to Forbes/LinkedIn).
+The Q&A page renders Sources for every entry; entries with no usable sources are skipped.
 """
 from __future__ import annotations
 
@@ -29,9 +30,33 @@ CHROMA_PATH = os.path.expanduser("~/Lutz_Media/rag-index/chroma")
 COLLECTION = "lutz_author"
 OUT_DIR = Path(__file__).parent.parent / "src" / "content" / "qa"
 
-# Each entry: (question, category, framing, [query_variations])
-# query_variations: optional list of alternative search phrases that produce
-# better retrieval than the question itself.
+# Hosts whose URLs are private / inaccessible / shortlinks — never expose as sources.
+URL_BLACKLIST = (
+    "canvas.cornell.edu",
+    "lnkd.in",
+    "lnk.bio",
+    "bit.ly",
+    "buff.ly",
+    "ow.ly",
+    "t.co",
+    "tinyurl.com",
+    "ecornell.cornell.edu/cms",
+)
+
+PREFERRED_SOURCES = {"Forbes", "LinkedIn", "linkedin", "forbes", "Intereconomics"}
+
+
+def usable_url(url: str) -> bool:
+    if not url:
+        return False
+    u = url.lower()
+    if not (u.startswith("http://") or u.startswith("https://")):
+        return False
+    if any(bad in u for bad in URL_BLACKLIST):
+        return False
+    return True
+
+
 QUESTIONS = [
     ("Who is Lutz Finger?", "About",
      "Background, current role, and what he focuses on professionally.",
@@ -45,19 +70,19 @@ QUESTIONS = [
     ("What is Generative Engine Optimization (GEO)?", "Search & GEO",
      "Why being discoverable to AI assistants is the new SEO.",
      ["LLM search optimization GEO discoverability ChatGPT",
-      "search beyond Google AI assistants"]),
+      "answer engine optimization AEO brands"]),
     ("Is Google search dying?", "Search & GEO",
      "What changes when LLMs become the search interface.",
-     ["Google search future LLM ChatGPT replacement"]),
-    ("What is 2025 for search?", "Search & GEO",
-     "Predictions about search changing in 2025.",
-     ["2025 year of search prediction"]),
+     ["Google search future LLM ChatGPT replacement",
+      "2025 year of search prediction"]),
     ("How is AI changing e-commerce?", "Search & GEO",
      "Fine-tuned models, attribution, category death.",
-     ["e-commerce AI mistakes brands fine-tuned"]),
+     ["e-commerce AI mistakes brands fine-tuned",
+      "online retailers GEO playbook"]),
     ("What replaces SEO in the LLM era?", "Search & GEO",
      "Strategies for being discoverable to AI assistants.",
-     ["SEO is dead LLM citation strategy"]),
+     ["SEO is dead LLM citation strategy",
+      "AEO answer engine optimization"]),
     ("What is the missing moat in AI?", "LLM Moats",
      "Eval data as the durable moat.",
      ["missing moat AI eval data", "OpenAI moat eval data race"]),
@@ -81,7 +106,8 @@ QUESTIONS = [
      ["value-based care VBC AI transformation"]),
     ("How do you measure quality in healthcare data?", "Healthcare",
      "Quality metrics for healthcare ML.",
-     ["healthcare data quality measurement"]),
+     ["healthcare data quality measurement",
+      "metrics quality of care treatment effectiveness patient satisfaction"]),
     ("What mistakes do brands make in AI-driven e-commerce?", "E-commerce",
      "Common pitfalls and how to avoid them.",
      ["three mistakes brands AI e-commerce"]),
@@ -128,9 +154,6 @@ QUESTIONS = [
     ("How will AI change jobs?", "Future of Work",
      "Disruption and adaptation patterns.",
      ["Meta laid off AI jobs different skills"]),
-    ("What skills will matter in the AI era?", "Future of Work",
-     "Where to invest your learning.",
-     ["skills AI era data scientist tasks"]),
     ("Is AGI near?", "AI Predictions",
      "Lutz's stance on the AGI timeline.",
      ["no AGI killer app 2025 prediction"]),
@@ -139,7 +162,7 @@ QUESTIONS = [
      ["killer app AI 2025 prediction"]),
     ("Why is energy the AI race?", "AI Predictions",
      "Energy and infrastructure as constraints.",
-     ["energy race wins AI race"]),
+     ["energy race wins AI race grid"]),
     ("What is the book Ask, Measure, Learn about?", "Book & Teaching",
      "Topics covered in the O'Reilly book.",
      ["Ask Measure Learn book O'Reilly Lutz"]),
@@ -158,28 +181,88 @@ class Excerpt:
     source: str
     score: float
 
-    def short(self, max_chars: int = 600) -> str:
-        t = re.sub(r"\s+", " ", self.text).strip()
-        # Trim leading title repetition and image markers
-        t = re.sub(r"^#+\s*[^.!?]*?[.!?]\s*", "", t)
-        t = re.sub(r"\*\[Image:[^\]]+\]\*", "", t)
-        t = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", t)
-        t = t.strip()
-        if len(t) <= max_chars:
-            return t
-        cut = t[:max_chars]
-        last_period = max(cut.rfind(". "), cut.rfind("? "), cut.rfind("! "))
-        if last_period > max_chars * 0.6:
-            return cut[: last_period + 1]
-        last_space = cut.rfind(" ")
-        return (cut[:last_space] if last_space > 0 else cut) + "…"
+
+# ── Helpers ─────────────────────────────────────────────────────────────────
+
+def clean_passage(t: str) -> str:
+    if not t:
+        return ""
+    t = t.replace("​", "")
+    # Strip leading "# Heading\n" markdown (real heading line — has a newline).
+    t = re.sub(r"^\s*#{1,6}\s+[^\n]+\n+", "", t)
+    # Strip *[Image: ...]* markers and their leftover ']*' fragments.
+    t = re.sub(r"\*\[Image:[^\]]*\]\*", "", t)
+    t = re.sub(r"!\[[^\]]*\]\([^)]+\)", "", t)
+    t = re.sub(r"^\s*\]\*\s*", "", t)
+    t = re.sub(r"\s*\]\*\s*", " ", t)
+    # Collapse whitespace
+    t = re.sub(r"\s+", " ", t).strip()
+    # After collapse: drop a leading "# Title-like-string" up to the next sentence
+    # boundary if it looks like a title (Title Case or all-caps run of ≤80 chars
+    # ending without a period). Only do this when the chunk clearly begins with
+    # a heading rather than a sentence.
+    m = re.match(r"^#{1,6}\s+([^.!?]{1,120})\s+(?=[A-Z])", t)
+    if m:
+        t = t[m.end():]
+    return t
 
 
-PREFERRED_SOURCES = {"Forbes", "LinkedIn", "linkedin", "forbes"}
+def split_sentences(t: str) -> list[str]:
+    # Reasonable English sentence splitter — keeps short ones intact.
+    parts = re.split(r"(?<=[.!?])\s+(?=[A-Z\"'(\[])", t)
+    return [p.strip() for p in parts if p.strip()]
 
 
-def query_rag(col, queries: list[str], k: int = 6) -> list[Excerpt]:
-    """Run multiple query texts, merge results, dedupe by URL, sort by score."""
+STOPWORDS = set("""
+a an and as at be by for from has have how in is it its of on or s t that
+the their them then there these this to was were what which who why will with
+""".split())
+
+
+def tokens(s: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z][a-z0-9]{2,}", s.lower()) if w not in STOPWORDS}
+
+
+def best_window(text: str, question: str, max_sentences: int = 3, max_chars: int = 480) -> str:
+    """Pick the most question-relevant sentences from text. Returns a short
+    quote (≤ max_chars) centered on the highest-overlap sentence."""
+    sents = split_sentences(text)
+    if not sents:
+        return text[:max_chars]
+    q_tok = tokens(question)
+    if not q_tok:
+        # No salient keywords — use first 2 sentences.
+        out = " ".join(sents[:2])
+        return out if len(out) <= max_chars else out[:max_chars].rsplit(" ", 1)[0] + "…"
+
+    # Score each sentence by Jaccard overlap with the question.
+    scores = []
+    for s in sents:
+        s_tok = tokens(s)
+        if not s_tok:
+            scores.append(0.0)
+            continue
+        overlap = len(q_tok & s_tok)
+        scores.append(overlap / (1 + len(q_tok - s_tok) * 0.1))
+
+    best_idx = max(range(len(sents)), key=lambda i: scores[i])
+    if scores[best_idx] == 0:
+        out = " ".join(sents[:2])
+        return out if len(out) <= max_chars else out[:max_chars].rsplit(" ", 1)[0] + "…"
+
+    # Expand a window around best_idx.
+    lo = max(0, best_idx - 1)
+    hi = min(len(sents), best_idx + max_sentences)
+    window = " ".join(sents[lo:hi])
+    if len(window) <= max_chars:
+        return window
+    # Trim from the end to fit.
+    return window[:max_chars].rsplit(" ", 1)[0] + "…"
+
+
+# ── RAG query + filtering ───────────────────────────────────────────────────
+
+def query_rag(col, queries: list[str], k: int = 8) -> list[Excerpt]:
     pool: dict[str, Excerpt] = {}
     for q in queries:
         res = col.query(query_texts=[q], n_results=k)
@@ -188,14 +271,14 @@ def query_rag(col, queries: list[str], k: int = 6) -> list[Excerpt]:
         dists = res.get("distances", [[]])[0]
         for doc, meta, dist in zip(docs, metas, dists):
             meta = meta or {}
-            url = meta.get("url") or ""
+            url = (meta.get("url") or "").strip()
             key = url or (meta.get("title") or "") + str(meta.get("chunk_index", ""))
             score = 1.0 - float(dist) if dist is not None else 0.0
             existing = pool.get(key)
             if existing and existing.score >= score:
                 continue
             pool[key] = Excerpt(
-                text=doc,
+                text=clean_passage(doc or ""),
                 title=meta.get("title") or "Untitled",
                 url=url,
                 date=meta.get("date") or "",
@@ -206,41 +289,28 @@ def query_rag(col, queries: list[str], k: int = 6) -> list[Excerpt]:
 
 
 def pick_excerpts(all_excerpts: list[Excerpt], n: int = 2) -> list[Excerpt]:
-    """Prefer Forbes/LinkedIn with URLs; fall back to any URL-bearing source;
-    last-resort to any. Dedupe by URL/title."""
-    seen: set[str] = set()
-    preferred: list[Excerpt] = []
-    with_url: list[Excerpt] = []
-    rest: list[Excerpt] = []
+    """Strict: keep only excerpts with usable URLs from preferred sources."""
+    seen_url: set[str] = set()
+    preferred = []
+    other_with_url = []
     for e in all_excerpts:
-        key = e.url or e.title
-        if key in seen:
+        if not usable_url(e.url):
             continue
-        seen.add(key)
-        if e.url and e.source in PREFERRED_SOURCES:
+        if e.url in seen_url:
+            continue
+        seen_url.add(e.url)
+        if e.source in PREFERRED_SOURCES:
             preferred.append(e)
-        elif e.url:
-            with_url.append(e)
         else:
-            rest.append(e)
+            other_with_url.append(e)
     out = preferred[:n]
     if len(out) < n:
-        out += with_url[: n - len(out)]
-    if len(out) < n:
-        out += rest[: n - len(out)]
+        out += other_with_url[: n - len(out)]
     return out
 
 
-def dedupe_by_url(excerpts: list[Excerpt]) -> list[Excerpt]:
-    seen: set[str] = set()
-    out: list[Excerpt] = []
-    for e in excerpts:
-        key = e.url or e.title
-        if key in seen:
-            continue
-        seen.add(key)
-        out.append(e)
-    return out
+def yaml_str(s: str) -> str:
+    return json.dumps(s, ensure_ascii=False)
 
 
 def slugify(s: str) -> str:
@@ -249,13 +319,10 @@ def slugify(s: str) -> str:
     return s[:80]
 
 
-def yaml_escape(s: str) -> str:
-    return json.dumps(s, ensure_ascii=False)
-
+# ── Main ────────────────────────────────────────────────────────────────────
 
 def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    # Clean previous output
     for f in OUT_DIR.glob("*.md"):
         f.unlink()
 
@@ -263,53 +330,48 @@ def main() -> None:
     col = client.get_collection(COLLECTION)
     today = date.today().isoformat()
 
+    written = 0
+    skipped: list[str] = []
     for i, item in enumerate(QUESTIONS, 1):
-        # Backwards-compatible: tuples may be 3 or 4 elements.
-        if len(item) == 4:
-            q, cat, framing, variations = item
-        else:
-            q, cat, framing = item
-            variations = []
-        queries = [q] + list(variations)
-        all_excerpts = query_rag(col, queries, k=6)
-        excerpts = pick_excerpts(all_excerpts, n=2)
+        q, cat, framing, variations = item if len(item) == 4 else (*item, [])
+        all_ex = query_rag(col, [q] + list(variations), k=8)
+        excerpts = pick_excerpts(all_ex, n=2)
         if not excerpts:
+            skipped.append(q)
             continue
 
-        # Frontmatter
-        sources = [
-            {"title": e.title, "url": e.url}
-            for e in excerpts if e.url
-        ]
+        sources = [{"title": e.title, "url": e.url} for e in excerpts]
         fm_lines = [
-            f"question: {yaml_escape(q)}",
-            f"category: {yaml_escape(cat)}",
+            f"question: {yaml_str(q)}",
+            f"category: {yaml_str(cat)}",
             f"updated: {today}",
+            "sources:",
         ]
-        if sources:
-            fm_lines.append("sources:")
-            for s in sources:
-                fm_lines.append(f"  - title: {yaml_escape(s['title'])}")
-                fm_lines.append(f"    url: {yaml_escape(s['url'])}")
+        for s in sources:
+            fm_lines.append(f"  - title: {yaml_str(s['title'])}")
+            fm_lines.append(f"    url: {yaml_str(s['url'])}")
 
-        # Body: short framing + excerpts with attribution
-        body_parts = [f"_{framing}_", ""]
+        body = [f"_{framing}_", ""]
         for e in excerpts:
-            quote = e.short(max_chars=550)
-            cite = f"— [{e.title}]({e.url})" if e.url else f"— {e.title}"
-            body_parts.append(f"> {quote}")
-            body_parts.append("")
-            body_parts.append(cite)
-            body_parts.append("")
+            quote = best_window(e.text, q, max_sentences=3, max_chars=440)
+            cite = f"— [{e.title}]({e.url})"
+            body.append(f"> {quote}")
+            body.append("")
+            body.append(cite)
+            body.append("")
 
         slug = f"{i:02d}-{slugify(q)}"
-        out_path = OUT_DIR / f"{slug}.md"
-        out_path.write_text(
-            "---\n" + "\n".join(fm_lines) + "\n---\n\n" + "\n".join(body_parts).rstrip() + "\n",
+        OUT_DIR.joinpath(f"{slug}.md").write_text(
+            "---\n" + "\n".join(fm_lines) + "\n---\n\n" + "\n".join(body).rstrip() + "\n",
             encoding="utf-8",
         )
+        written += 1
 
-    print(f"Wrote {len(QUESTIONS)} Q&A files to {OUT_DIR}")
+    print(f"Wrote {written} Q&A files to {OUT_DIR}")
+    if skipped:
+        print(f"Skipped {len(skipped)} (no usable Forbes/LinkedIn sources):")
+        for q in skipped:
+            print(f"  - {q}")
 
 
 if __name__ == "__main__":

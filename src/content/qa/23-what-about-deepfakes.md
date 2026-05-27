@@ -1,0 +1,20 @@
+---
+question: "What about deepfakes?"
+category: "Policy & Ethics"
+updated: 2026-05-26
+sources:
+  - title: "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S."
+    url: "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"
+  - title: "Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better"
+    url: "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
+---
+
+_How society will adapt to synthetic media._
+
+> As AI lowers the barriers to content creation, abuse is also becoming more feasible. Deepfakes — AI-generated images, videos and audio designed to mimic real people — pose serious risks. Already in 2022, I demonstrated how easily they can be created. This increases the risk of misinformation, identity theft and political manipulation.
+
+— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/)
+
+> Misuse of deepfakes without clear identification should be outlawed — regulators around the globe have started to take them seriously. Already in 2019 there were about a dozen federal- and state-level bills to regulate deepfakes, ranging from criminalizing the use of a woman's likeness in a pornographic film without her
+
+— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/)

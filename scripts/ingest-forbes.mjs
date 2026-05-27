@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 // Ingest Forbes markdown files into src/content/writing.
-// Source: ~/Lutz_Media/Lutz-author/Fobes-Lutz-Author/*.md
-// Behavior: copy body as-is, normalize frontmatter, drop excerpt, set bodyAvailable.
-// Note: we DO mirror the body locally (Lutz keeps the markdown for his own archive),
-//       but the page UI directs readers to the Forbes URL via the canonical link.
+// Per Lutz's spec: cards on the site link directly to the Forbes URL, so we
+// only ship metadata + excerpt — never the body.
 
-import { readdir, readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readdir, readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
@@ -15,11 +13,19 @@ import { wordCount, makeExcerpt, slugify } from './lib/word-count.mjs';
 const SRC_DIR = path.join(os.homedir(), 'Lutz_Media/Lutz-author/Fobes-Lutz-Author');
 const OUT_DIR = path.join(process.cwd(), 'src/content/writing/forbes');
 
+function yamlValue(v) {
+  if (Array.isArray(v)) return `[${v.map(t => JSON.stringify(t)).join(', ')}]`;
+  if (typeof v === 'string') return JSON.stringify(v);
+  return String(v);
+}
+
 async function main() {
   if (!existsSync(SRC_DIR)) {
     console.error(`Source not found: ${SRC_DIR}`);
     process.exit(1);
   }
+  // Wipe so removed source files actually disappear from the site.
+  await rm(OUT_DIR, { recursive: true, force: true });
   await mkdir(OUT_DIR, { recursive: true });
 
   const files = (await readdir(SRC_DIR)).filter(f => f.endsWith('.md'));
@@ -30,12 +36,16 @@ async function main() {
     const data = parsed.data;
     const body = parsed.content.trim();
 
+    const url = data.url;
+    if (!url) {
+      console.warn(`Skipping (no url): ${file}`);
+      continue;
+    }
     const title = data.title ?? file.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, '').replace(/-/g, ' ');
     const date = data.date ?? file.slice(0, 10);
-    const url = data.url;
     const tags = (data.tags ?? []).map(String);
     const wc = wordCount(body);
-    const excerpt = makeExcerpt(body);
+    const excerpt = makeExcerpt(body, 240);
     const slug = slugify(title) + '-' + String(date).slice(0, 10);
 
     const fm = {
@@ -44,24 +54,18 @@ async function main() {
       source: 'Forbes',
       sourceType: 'column',
       url,
-      canonical: url,
       excerpt,
       tags,
       wordCount: wc,
-      bodyAvailable: true,
     };
 
     const fmYaml = Object.entries(fm)
       .filter(([, v]) => v !== undefined && !(Array.isArray(v) && v.length === 0))
-      .map(([k, v]) => {
-        if (Array.isArray(v)) return `${k}: [${v.map(t => JSON.stringify(t)).join(', ')}]`;
-        if (typeof v === 'string') return `${k}: ${JSON.stringify(v)}`;
-        return `${k}: ${v}`;
-      })
+      .map(([k, v]) => `${k}: ${yamlValue(v)}`)
       .join('\n');
 
-    const out = `---\n${fmYaml}\n---\n\n${body}\n`;
-    await writeFile(path.join(OUT_DIR, slug + '.md'), out, 'utf8');
+    // No body — cards link directly to Forbes. Frontmatter only.
+    await writeFile(path.join(OUT_DIR, slug + '.md'), `---\n${fmYaml}\n---\n`, 'utf8');
     written++;
   }
   console.log(`Wrote ${written} Forbes entries to ${OUT_DIR}`);

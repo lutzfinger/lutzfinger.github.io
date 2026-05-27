@@ -3,11 +3,7 @@ title: "\"2025 will be the year of the #AI agent.\" Wait — didn’t we already
 date: "2025-01-05"
 source: "LinkedIn"
 sourceType: "post"
-excerpt: "\"2025 will be the year of the AI agent.\" Wait — didn’t we already say that in 2023? Back then, I talked about chaining AI models in my podcast with Jasper Masemann. Learn why 2025 is the year of enterprise AI agents…"
+url: "https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7281568011155628032"
+excerpt: "\"2025 will be the year of the AI agent.\" Wait — didn’t we already say that in 2023? Back then, I talked about chaining AI models in my podcast with Jasper Masemann."
 wordCount: 66
-bodyAvailable: true
 ---
-
-"2025 will be the year of the #AI agent." Wait — didn’t we already say that in 2023? Back then, I talked about chaining AI models in my podcast with Jasper Masemann. Learn why #2025 is the year of #enterprise AI agents transforming workflows across industries. Let's discuss why 2024 #failed... and what we can do better. "
-""
-"This is the third out of 10 predictions for 2025.

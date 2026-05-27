@@ -6,15 +6,14 @@ const writing = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
-    source: z.enum(['Forbes', 'LinkedIn', 'Personal']),
+    source: z.enum(['Forbes', 'LinkedIn', 'Intereconomics', 'NZZ', 'Personal']),
     sourceType: z.enum(['article', 'post', 'column']).default('article'),
-    url: z.string().url().optional(),
-    canonical: z.string().url().optional(),
+    // External URL — clicking a card on /writing opens this directly.
+    url: z.string().url(),
     excerpt: z.string().optional(),
     tags: z.array(z.string()).default([]),
     image: z.string().optional(),
     wordCount: z.number().optional(),
-    bodyAvailable: z.boolean().default(true),
   }),
 });
 

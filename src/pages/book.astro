@@ -6,37 +6,42 @@ const bookJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Book',
   name: 'Ask, Measure, Learn',
-  author: {
-    '@type': 'Person',
-    name: SITE.author,
-    url: SITE.url,
-  },
+  author: [
+    { '@type': 'Person', name: 'Lutz Finger', url: SITE.url },
+    { '@type': 'Person', name: 'Soumitra Dutta' },
+  ],
   bookFormat: 'https://schema.org/Paperback',
   inLanguage: 'en',
-  isbn: '978-1491904909',
+  isbn: '978-1449336752',
+  numberOfPages: 188,
+  datePublished: '2014-02-04',
   publisher: {
     '@type': 'Organization',
     name: "O'Reilly Media",
   },
-  about: ['Social Media Analytics', 'Data Science', 'Marketing Measurement', 'Artificial Intelligence'],
+  about: ['Social Media Analytics', 'Data Science', 'Marketing Measurement', 'Business Intelligence'],
   url: `${SITE.url}/book/`,
 };
 ---
 <Base
   title="Ask, Measure, Learn"
-  description="Lutz Finger's book on using social media data and analytics to drive better product and marketing decisions. Published by O'Reilly."
+  description="Ask, Measure, Learn — by Lutz Finger and Soumitra Dutta (O'Reilly, 2014). A practical guide to using social media data and analytics to ask the right questions, measure what matters, and actually learn from the answers."
   jsonLd={bookJsonLd}
 >
   <h1>Ask, Measure, Learn</h1>
   <p class="hero-sub">
-    My book on using data — social media, behavior, signals — to actually
-    learn something useful.
+    Using data — social media, behavior, signals — to actually learn something
+    useful. Co-authored with <strong>Soumitra Dutta</strong>; published by O'Reilly.
   </p>
 
   <p>
-    Published by O'Reilly Media. A practical guide for product teams, marketers,
-    and data folks who want to ask the right questions, measure the right
-    things, and learn fast enough to ship.
+    <strong>Authors:</strong> Lutz Finger and Soumitra Dutta (then Dean of
+    Cornell's SC Johnson College of Business; now Dean of the Saïd Business
+    School at the University of Oxford).<br>
+    <strong>Publisher:</strong> O'Reilly Media.<br>
+    <strong>Published:</strong> February 4, 2014.<br>
+    <strong>ISBN:</strong> 978-1449336752.<br>
+    <strong>Pages:</strong> 188.
   </p>
 
   <h2>What's in it</h2>
@@ -44,13 +49,23 @@ const bookJsonLd = {
     <li>How to frame a measurable question from a fuzzy business goal.</li>
     <li>Designing the right metrics — outcome vs. output.</li>
     <li>Reading social and behavioral data without fooling yourself.</li>
-    <li>The feedback loop: ask → measure → learn → ship.</li>
-    <li>Case studies from LinkedIn and beyond.</li>
+    <li>The feedback loop: <em>ask → measure → learn → ship</em>.</li>
+    <li>Case studies from LinkedIn, consumer brands, and beyond.</li>
   </ul>
 
   <h2>Get it</h2>
   <ul>
-    <li><a href="https://www.amazon.com/Ask-Measure-Learn-Lutz-Finger/dp/1491904909">Amazon</a></li>
-    <li><a href="https://www.oreilly.com/library/view/ask-measure-learn/9781491947067/">O'Reilly</a></li>
+    <li><a href="https://www.oreilly.com/library/view/ask-measure-learn/9781449373047/" rel="noopener">O'Reilly Media</a></li>
+    <li><a href="https://www.amazon.com/Ask-Measure-Learn-Analytics-Right/dp/1449336752" rel="noopener">Amazon</a></li>
+    <li><a href="https://www.google.com/books/edition/Ask_Measure_Learn/QbV1AwAAQBAJ" rel="noopener">Google Books preview</a></li>
   </ul>
+
+  <h2>About the co-author</h2>
+  <p>
+    <a href="https://www.sbs.ox.ac.uk/about-us/people/soumitra-dutta" rel="noopener">Soumitra Dutta</a>
+    is Dean of the Saïd Business School at the University of Oxford. Previously he was Anne and Elmer
+    Lindseth Dean of Cornell SC Johnson College of Business, and before that a long-tenured professor
+    at INSEAD. He has authored multiple books on innovation, technology, and business, including the
+    <em>Global Innovation Index</em>.
+  </p>
 </Base>

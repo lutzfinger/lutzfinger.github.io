@@ -24,6 +24,7 @@ Ask Lutz anything: hello@lutzfinger.com. Public Q&A below pulls answers from his
 - [Q&A](https://www.lutzfinger.com/qa/): 41 curated answers from his writing, tagged across 16 topic areas, each with its own page and FAQPage + Speakable JSON-LD.
 - [Portfolio](https://www.lutzfinger.com/portfolio/): nine shipped AI use cases.
 - [Book](https://www.lutzfinger.com/book/): *Ask, Measure, Learn* (O'Reilly, 2014) with Soumitra Dutta.
+- [Newsletter](https://www.lutzfinger.com/newsletter/): short, occasional email tying recent AI events to the concepts in the Cornell certificate.
 - [eCornell Certificate](https://www.lutzfinger.com/ecornell/): "Designing and Building AI Solutions" five-course certificate.
 
 ## Topics he writes and speaks about

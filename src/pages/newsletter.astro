@@ -1,0 +1,132 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+const FORM_ACTION = 'https://lutzfinger.us17.list-manage.com/subscribe/post?u=4fce8da99549b8e48626ab4b4&id=bf1af79057&f_id=000428e1f0';
+const HONEYPOT_NAME = 'b_4fce8da99549b8e48626ab4b4_bf1af79057';
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Newsletter', item: `${SITE.url}/newsletter/` },
+  ],
+};
+---
+<Base
+  title="Newsletter | Lutz Finger"
+  description="A short newsletter on AI: recent events tied to the concepts taught in the Cornell certificate. Subscribe with your email."
+  jsonLd={[breadcrumbJsonLd]}
+>
+  <h1>Newsletter</h1>
+  <p class="hero-sub">
+    AI is changing our world. Everyone needs to learn how to apply it, and
+    everyone should understand its risks. But not everyone has 100+ hours
+    for an online course.
+  </p>
+
+  <p>
+    I write a short newsletter that reviews recent events and ties them
+    back to the concepts I teach in the
+    <a href="/ecornell/">Cornell AI Strategy certificate</a>. One email,
+    occasional, no marketing.
+  </p>
+
+  <form
+    action={FORM_ACTION}
+    method="post"
+    id="mc-embedded-subscribe-form"
+    name="mc-embedded-subscribe-form"
+    target="_blank"
+    class="subscribe-form"
+  >
+    <label for="mce-EMAIL">Email address</label>
+    <div class="row">
+      <input
+        type="email"
+        name="EMAIL"
+        id="mce-EMAIL"
+        required
+        autocomplete="email"
+        placeholder="you@example.com"
+      />
+      <button type="submit" name="subscribe">Subscribe</button>
+    </div>
+    {/* honeypot: real subscribers leave this blank */}
+    <div aria-hidden="true" class="honeypot">
+      <input type="text" name={HONEYPOT_NAME} tabindex="-1" value="" autocomplete="off" />
+    </div>
+    <p class="fine-print">
+      Powered by Mailchimp. You can unsubscribe with one click from any email.
+    </p>
+  </form>
+
+  <h2>What past issues looked like</h2>
+  <p>
+    For the kind of material that shows up in the newsletter, see the
+    <a href="/writing/">writing index</a>. The newsletter pulls from the same
+    pool, with one or two original notes per send.
+  </p>
+</Base>
+
+<style>
+  .subscribe-form {
+    margin: 2rem 0;
+    padding: 1.5rem 1.75rem;
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    background: var(--c-bg-soft);
+  }
+  .subscribe-form label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    color: var(--c-text-soft);
+    margin-bottom: 0.5rem;
+  }
+  .subscribe-form .row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .subscribe-form input[type="email"] {
+    flex: 1 1 16rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    background: var(--c-bg);
+    color: var(--c-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+  }
+  .subscribe-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--c-accent);
+  }
+  .subscribe-form button {
+    padding: 0.6rem 1.4rem;
+    border: 1px solid var(--c-accent);
+    background: var(--c-accent);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .subscribe-form button:hover {
+    opacity: 0.9;
+  }
+  .subscribe-form .honeypot {
+    position: absolute;
+    left: -5000px;
+  }
+  .subscribe-form .fine-print {
+    margin-top: 0.9rem;
+    margin-bottom: 0;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--c-text-muted);
+  }
+</style>

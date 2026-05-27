@@ -1,7 +1,11 @@
 ---
 // Shared list renderer for /writing, /writing/forbes, /writing/linkedin.
 // Cards link directly to the external source URL.
+// Emits one BlogPosting JSON-LD per card with a per-page OG image so
+// search engines and LLMs see structured data even though the cards
+// link outbound and we have no per-article page.
 import type { CollectionEntry } from 'astro:content';
+import { SITE } from '~/consts';
 
 interface Props {
   posts: CollectionEntry<'writing'>[];
@@ -24,7 +28,31 @@ if (groupByYear) {
 }
 
 const isExternal = (url: string) => /^https?:\/\//i.test(url);
+
+// Emit one BlogPosting per entry. `image` is the shared writing-section OG
+// (the per-page OG generator can be extended later to make one PNG per post
+// if we ever decide each writing entry deserves a unique card).
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: posts.map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'BlogPosting',
+      headline: p.data.title,
+      datePublished: p.data.date.toISOString(),
+      author: { '@type': 'Person', name: SITE.author, url: SITE.url },
+      url: p.data.url,
+      image: `${SITE.url}/og/writing-${p.data.source.toLowerCase()}.png`,
+      publisher: { '@type': 'Organization', name: p.data.source },
+      description: p.data.excerpt ?? undefined,
+    },
+  })),
+};
 ---
+<script type="application/ld+json" set:html={JSON.stringify(itemListJsonLd)} />
+
 {groups.map(([year, items]) => (
   <section style="margin: 2.5rem 0">
     {year && (

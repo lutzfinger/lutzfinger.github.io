@@ -9,7 +9,12 @@ const writing = defineCollection({
     source: z.enum(['Forbes', 'LinkedIn', 'Intereconomics', 'NZZ', 'Personal']),
     sourceType: z.enum(['article', 'post', 'column']).default('article'),
     // External URL, clicking a card on /writing opens this directly.
-    url: z.string().url(),
+    // Either a full https URL (external source) or an absolute same-site
+    // path like /articles/lutz-finger-nzz.pdf.
+    url: z.string().refine(
+      (v) => /^https?:\/\//.test(v) || v.startsWith('/'),
+      { message: 'Must be an https URL or absolute path starting with /' },
+    ),
     excerpt: z.string().optional(),
     tags: z.array(z.string()).default([]),
     image: z.string().optional(),
@@ -41,7 +46,12 @@ const qa = defineCollection({
     tags: z.array(z.string()).default([]),
     sources: z.array(z.object({
       title: z.string(),
-      url: z.string().url(),
+      // Either a full https URL (external source) or an absolute same-site
+    // path like /articles/lutz-finger-nzz.pdf.
+    url: z.string().refine(
+      (v) => /^https?:\/\//.test(v) || v.startsWith('/'),
+      { message: 'Must be an https URL or absolute path starting with /' },
+    ),
     })).default([]),
     updated: z.coerce.date().optional(),
   }),

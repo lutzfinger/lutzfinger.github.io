@@ -59,16 +59,20 @@ const websiteJsonLd = {
       </p>
     </div>
     <figure class="hero-photo">
-      <img
-        src="/img/lutz-headshot-800.jpg"
-        srcset="/img/lutz-headshot-400.jpg 400w, /img/lutz-headshot-800.jpg 800w"
-        sizes="(max-width: 640px) 200px, 280px"
-        alt="Portrait of Lutz Finger"
-        width="280"
-        height="280"
-        loading="eager"
-        decoding="async"
-      />
+      <picture>
+        <source type="image/avif" srcset="/img/lutz-headshot-400.avif 400w, /img/lutz-headshot-800.avif 800w" sizes="(max-width: 640px) 200px, 280px" />
+        <source type="image/webp" srcset="/img/lutz-headshot-400.webp 400w, /img/lutz-headshot-800.webp 800w" sizes="(max-width: 640px) 200px, 280px" />
+        <img
+          src="/img/lutz-headshot-800.jpg"
+          srcset="/img/lutz-headshot-400.jpg 400w, /img/lutz-headshot-800.jpg 800w"
+          sizes="(max-width: 640px) 200px, 280px"
+          alt="Portrait of Lutz Finger"
+          width="280"
+          height="280"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
     </figure>
   </section>
 

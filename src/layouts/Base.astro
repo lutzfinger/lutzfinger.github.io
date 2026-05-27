@@ -32,7 +32,18 @@ const {
 } = Astro.props;
 
 const fullTitle = title ? `${title}, ${SITE.author}` : SITE.title;
-const ogImage = new URL(image, SITE.url).href;
+
+// Per-page OG image with default fallback. The build emits one PNG per page
+// under /og/<slug>.png; if it exists, use it; otherwise fall back to the
+// global headshot OG. Callers can still pass `image` to override.
+function ogSlugFor(pathname: string) {
+  const p = pathname.replace(/^\/+|\/+$/g, '');
+  return p === '' ? 'home' : p.replace(/\//g, '-');
+}
+const autoOgPath = `/og/${ogSlugFor(Astro.url.pathname)}.png`;
+const imageSrc = image === '/img/og-default.jpg' ? autoOgPath : image;
+const ogImage = new URL(imageSrc, SITE.url).href;
+const ogFallback = new URL('/img/og-default.jpg', SITE.url).href;
 ---
 <!doctype html>
 <html lang="en">
@@ -74,6 +85,12 @@ const ogImage = new URL(image, SITE.url).href;
     <meta name="author" content={SITE.author} />
     <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1c1b1a" media="(prefers-color-scheme: dark)" />
+
+    {SITE.verification.google   && <meta name="google-site-verification" content={SITE.verification.google} />}
+    {SITE.verification.bing     && <meta name="msvalidate.01"             content={SITE.verification.bing} />}
+    {SITE.verification.yandex   && <meta name="yandex-verification"       content={SITE.verification.yandex} />}
+    {SITE.verification.pinterest && <meta name="p:domain_verify"           content={SITE.verification.pinterest} />}
+    {SITE.verification.facebook && <meta name="facebook-domain-verification" content={SITE.verification.facebook} />}
 
     {jsonLd && <JsonLd data={jsonLd} />}
   </head>

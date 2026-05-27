@@ -5,22 +5,31 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "npm run gen:og && npm run gen:images && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "ingest:forbes": "node scripts/ingest-forbes.mjs",
     "ingest:linkedin": "node scripts/ingest-linkedin.mjs",
     "ingest:all": "npm run ingest:forbes && npm run ingest:linkedin",
     "sync:events": "node scripts/sync-events.mjs",
+    "gen:og": "node scripts/generate-og-images.mjs",
+    "gen:images": "node scripts/generate-image-variants.mjs",
+    "gen:faq": "python3 scripts/generate-faq.py",
+    "refresh": "npm run ingest:all && npm run sync:events && npm run gen:faq",
     "audit:links": "node scripts/audit-links.mjs"
   },
   "dependencies": {
-    "astro": "^5.0.0",
-    "@astrojs/sitemap": "^3.2.0",
-    "@astrojs/rss": "^4.0.0",
     "@astrojs/mdx": "^4.0.0",
+    "@astrojs/rss": "^4.0.0",
+    "@astrojs/sitemap": "^3.2.0",
+    "astro": "^5.0.0",
     "pagefind": "^1.1.0",
-    "gray-matter": "^4.0.3",
     "reading-time": "^1.5.0"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "gray-matter": "^4.0.3",
+    "satori": "^0.26.0",
+    "sharp": "^0.34.5"
   }
 }

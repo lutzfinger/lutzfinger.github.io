@@ -1,0 +1,9 @@
+When you submit www.lutzfinger.com to Google Search Console, choose the
+"HTML tag" verification method and paste the content= value into
+src/consts.ts → SITE.verification.google.
+
+If GSC offers you a verification HTML file instead, drop it here as
+public/google<hex>.html with the exact filename GSC gives you, then push.
+
+For Bing Webmaster Tools: same pattern, but the meta tag is named
+"msvalidate.01" and the field is SITE.verification.bing.

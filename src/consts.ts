@@ -12,6 +12,16 @@ export const SITE = {
     youtube: 'https://www.youtube.com/@buildingaisolutions',
     instagram: 'https://www.instagram.com/buildingaisolutions/',
   },
+  // Webmaster-tool ownership verification. Fill in the codes you get from
+  // Search Console / Bing Webmaster Tools / Yandex / etc. when you submit
+  // the production domain. Empty values are skipped.
+  verification: {
+    google: '',   // GSC meta tag content (the 43-char value after content=)
+    bing: '',     // Bing meta tag content (the 32-char value)
+    yandex: '',   // Yandex verification (rarely needed)
+    pinterest: '',
+    facebook: '', // Facebook domain verification
+  },
 };
 
 export const NAV = [

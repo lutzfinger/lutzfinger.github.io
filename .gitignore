@@ -32,3 +32,8 @@ npm-debug.log*
 # Private — kept locally only
 docs/WIKIPEDIA-DRAFT.md
 docs/PLAN-AUTO-DEPLOY-HOOK.md
+
+# Operational / private docs (kept locally, never public)
+MIGRATION_LOG.md
+UPDATE.md
+CUTOVER.md

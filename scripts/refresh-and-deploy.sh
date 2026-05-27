@@ -1,18 +1,11 @@
 #!/usr/bin/env bash
 # scripts/refresh-and-deploy.sh
 #
-# Pull fresh content from ~/Lutz_Media, regenerate every derived file,
-# commit, and push. GH Actions then redeploys in ~30 seconds.
+# Re-runs the content ingestion pipeline, regenerates derived files
+# (Q&A, events, search index), commits any changes, and pushes.
+# GH Actions then rebuilds + redeploys.
 #
-# Safe to run after any of these skills:
-#   - forbes-download         (new Forbes articles)
-#   - linkedin-data-sync      (new LinkedIn export)
-#   - granola-keynote-sync    (new keynote MDs; if you also added events to
-#                              data/events.csv it picks them up)
-#   - social-post-scraper     (new social-media posts)
-#   - rag-index-updater       (new RAG embeddings → /qa regenerates)
-#
-# Exits 0 with "No changes" if nothing changed.
+# Idempotent: exits 0 with "No changes" when nothing has moved.
 
 set -euo pipefail
 cd "$(dirname "$0")/.."

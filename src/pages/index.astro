@@ -3,14 +3,21 @@ import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
 import { getCollection } from 'astro:content';
 
+// Auto-pull the latest from /writing and /speaking so the homepage never goes stale.
 const writing = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 6);
+  .slice(0, 5);
 
+const now = Date.now();
 const upcoming = (await getCollection('events'))
-  .filter(e => e.data.status !== 'past' && e.data.date.getTime() >= Date.now())
+  .filter(e => e.data.status !== 'past' && e.data.date.getTime() >= now)
   .sort((a, b) => a.data.date.getTime() - b.data.date.getTime())
   .slice(0, 4);
+
+const recentPast = (await getCollection('events'))
+  .filter(e => e.data.status === 'past' || e.data.date.getTime() < now)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
 
 const personJsonLd = {
   '@context': 'https://schema.org',
@@ -18,52 +25,42 @@ const personJsonLd = {
   name: SITE.author,
   url: SITE.url,
   email: `mailto:${SITE.email}`,
-  jobTitle: 'AI Product Leader, Author, Educator',
-  description: 'Lutz Finger writes for Forbes on AI products, search, and data strategy; teaches the eCornell certificate "Designing and Building AI Solutions"; and speaks on generative engine optimization (GEO), LLM moats, and applied AI.',
-  knowsAbout: ['Artificial Intelligence', 'Large Language Models', 'Generative Engine Optimization', 'Search', 'Data Products', 'AI Product Management'],
-  sameAs: [
-    SITE.social.forbes,
-    SITE.social.linkedin,
-    SITE.social.x,
-    SITE.social.youtube,
-    SITE.social.instagram,
-  ],
-};
-
-const websiteJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: SITE.author,
-  url: SITE.url,
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/writing/?q={search_term_string}` },
-    'query-input': 'required name=search_term_string',
-  },
+  jobTitle: 'Head of AI · Cornell Data Scientist in Residence · Forbes contributor',
+  description: "Lutz Finger builds AI products and teaches leaders how to ship them. Head of AI at Zoovu, Data Scientist in Residence at Cornell, Forbes contributor, Venture Partner at Cherry Ventures. Two founder exits. Ex-Google, ex-LinkedIn, ex-Snap.",
+  knowsAbout: ['Artificial Intelligence', 'AI Workflows', 'Generative Engine Optimization',
+               'Large Language Models', 'AI in E-commerce', 'AI in Healthcare', 'AI in Education',
+               'Data Products', 'AI Product Management'],
+  sameAs: [SITE.social.forbes, SITE.social.linkedin, SITE.social.x,
+           SITE.social.youtube, SITE.social.instagram],
 };
 ---
-<Base jsonLd={[personJsonLd, websiteJsonLd]}>
+<Base jsonLd={personJsonLd}>
   <section class="hero">
-    <h1 class="hero-title">Building products with data &amp; AI.</h1>
+    <h1 class="hero-title">AI isn't the future. Shipping it is.</h1>
     <p class="hero-sub">
-      I write a column at <a href={SITE.social.forbes}>Forbes</a>, teach the
-      <a href="/ecornell/">eCornell certificate</a> on designing AI solutions,
-      and keynote on what actually works in applied AI.
+      I help people turn AI from a headline into a product. I write the
+      <a href={SITE.social.forbes} rel="noopener">Forbes column on AI</a>,
+      teach the <a href="/ecornell/">Cornell AI certificate</a> taken by
+      thousands of operators, and run
+      <a href="/keynote/">a live keynote series</a> with the people actually
+      shipping it — Aneesh Chopra, Richard Socher, Lila Tretikov, Martín Casado,
+      Lucilla Sioli, and more.
     </p>
     <p>
-      Two founder exits, ex-LinkedIn / ex-Snap. These days I focus on
-      Generative Engine Optimization, LLM moats, AI in e-commerce and
-      healthcare, and the data behind it all.
+      Two founder exits, ex-Google, ex-LinkedIn, ex-Snap. These days I focus on
+      <strong>AI workflows</strong>, <strong>Generative Engine Optimization</strong>,
+      and AI in e-commerce, healthcare, and education — plus the data moats
+      behind them.
     </p>
   </section>
 
   {writing.length > 0 && (
     <section class="section">
-      <div class="section-eyebrow">Recent writing</div>
+      <div class="section-eyebrow">Latest writing</div>
       <ul class="card-list">
         {writing.map(post => (
           <li>
-            <a class="card" href={`/writing/${post.id}/`}>
+            <a class="card" href={post.data.url} target="_blank" rel="noopener">
               <div class="card-meta">
                 <time datetime={post.data.date.toISOString()}>
                   {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
@@ -86,7 +83,7 @@ const websiteJsonLd = {
       <ul class="card-list">
         {upcoming.map(ev => (
           <li>
-            <a class="card" href={ev.data.url ?? '/speaking/'}>
+            <a class="card" href={ev.data.url ?? '/speaking/'} target={ev.data.url ? '_blank' : undefined} rel={ev.data.url ? 'noopener' : undefined}>
               <div class="card-meta">
                 <time datetime={ev.data.date.toISOString()}>
                   {ev.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
@@ -104,12 +101,14 @@ const websiteJsonLd = {
   )}
 
   <section class="section">
-    <div class="section-eyebrow">Also</div>
-    <ul style="list-style:none;padding:0">
-      <li style="margin-bottom:0.6rem">📘 <a href="/book/">Ask, Measure, Learn</a> — my book on data &amp; AI</li>
-      <li style="margin-bottom:0.6rem">🎓 <a href="/ecornell/">eCornell Certificate</a> — Designing &amp; Building AI Solutions</li>
-      <li style="margin-bottom:0.6rem">💬 <a href="/qa/">Q&amp;A</a> — answers from my writing, generated and curated</li>
-      <li style="margin-bottom:0.6rem">✉️ <a href={`mailto:${SITE.email}`}>Get in touch</a></li>
+    <div class="section-eyebrow">Work with me</div>
+    <ul style="list-style:none; padding:0">
+      <li style="margin-bottom:0.8rem">🎤 <a href="/keynote/"><strong>Be a guest on the Keynote.</strong></a> The live series on what's actually working in AI.</li>
+      <li style="margin-bottom:0.8rem">🛠 <a href="/workshop/"><strong>Three-hour AI Agent workshops.</strong></a> Personal-productivity or production-grade. Hosted by eCornell.</li>
+      <li style="margin-bottom:0.8rem">🎓 <a href="/ecornell/"><strong>The Cornell certificate.</strong></a> Five courses on designing and building AI solutions.</li>
+      <li style="margin-bottom:0.8rem">💬 <a href="/qa/"><strong>Q&A.</strong></a> Common questions, answered from my Forbes column and writing.</li>
+      <li style="margin-bottom:0.8rem">📘 <a href="/book/"><strong>Ask, Measure, Learn.</strong></a> The book on using data to learn.</li>
+      <li style="margin-bottom:0.8rem">✉️ <a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
     </ul>
   </section>
 </Base>

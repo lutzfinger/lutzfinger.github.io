@@ -38,6 +38,7 @@ const qa = defineCollection({
   schema: z.object({
     question: z.string(),
     category: z.string().optional(),
+    tags: z.array(z.string()).default([]),
     sources: z.array(z.object({
       title: z.string(),
       url: z.string().url(),

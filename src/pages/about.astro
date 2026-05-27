@@ -7,93 +7,60 @@ const personJsonLd = {
   '@type': 'Person',
   name: SITE.author,
   url: `${SITE.url}/about/`,
-  jobTitle: 'Head of AI, Zoovu · Visiting Senior Lecturer, Cornell · Forbes contributor',
+  jobTitle: 'Head of AI, Zoovu · Data Scientist in Residence, Cornell · Venture Partner, Cherry Ventures',
   worksFor: { '@type': 'Organization', name: 'Zoovu' },
   alumniOf: [
-    { '@type': 'CollegeOrUniversity', name: 'INSEAD', description: 'MBA' },
-    { '@type': 'CollegeOrUniversity', name: 'Technische Universität Berlin', description: 'MS in Quantum Physics' },
+    { '@type': 'CollegeOrUniversity', name: 'INSEAD' },
+    { '@type': 'CollegeOrUniversity', name: 'Technische Universität Berlin' },
   ],
-  knowsAbout: [
-    'Artificial Intelligence', 'Large Language Models', 'Generative Engine Optimization',
-    'Search', 'Recommendation Systems', 'Data Products', 'AI Product Management',
-    'AI in E-commerce', 'AI in Healthcare', 'AI Ethics',
+  sameAs: [
+    SITE.social.linkedin, SITE.social.forbes, SITE.social.x,
+    SITE.social.youtube, SITE.social.instagram,
+    'https://scholar.google.com/citations?user=tg0FO3wAAAAJ',
   ],
-  sameAs: Object.values(SITE.social),
 };
 ---
 <Base
   title="About"
-  description="Lutz Finger — Head of AI at Zoovu, Visiting Senior Lecturer at Cornell SC Johnson, Forbes contributor. Two AI exits (Fisheye Analytics 2013, R2Decide 2025). Ex-Google, ex-LinkedIn, ex-Snap. INSEAD MBA, MS quantum physics from TU Berlin."
+  description="Lutz Finger — Head of AI at Zoovu, Data Scientist in Residence at Cornell, Venture Partner at Cherry Ventures. Two founder exits (R2Decide 2025, Fisheye Analytics 2013). Ex-Google, ex-LinkedIn, ex-Snap."
   jsonLd={personJsonLd}
 >
   <h1>About</h1>
-  <p>
-    Lutz Finger is a technologist and entrepreneur with 20+ years building
-    AI products. He is currently <strong>Head of AI at <a href="https://zoovu.com" rel="noopener">Zoovu</a></strong>,
-    Visiting Senior Lecturer at Cornell's SC Johnson College of Business, and a
-    <a href="https://www.forbes.com/sites/lutzfinger/" rel="noopener">Forbes contributor</a>.
+
+  <p style="font-size:1.15rem; line-height:1.55">
+    I help people turn AI from a headline into a product.
   </p>
 
-  <h2>Now</h2>
+  <h2>Currently</h2>
   <ul>
-    <li><strong>Head of AI</strong> · <a href="https://zoovu.com" rel="noopener">Zoovu</a> — AI-driven product discovery and decision experiences for e-commerce.</li>
-    <li><strong>Visiting Senior Lecturer</strong> · Cornell SC Johnson College of Business — teaches the AI Solutions track.</li>
-    <li><strong>Instructor</strong> · <a href="/ecornell/">eCornell certificate</a> "Designing and Building AI Solutions" (5 courses) plus two new hands-on AI Agent workshops.</li>
-    <li><strong>Host</strong> · <a href="https://ecornell.cornell.edu/keynotes/" rel="noopener">The Keynote on AI</a> from eCornell — a recurring live series with guests like Aneesh Chopra, Martín Casado, Richard Socher, Lila Tretikov, and others.</li>
-    <li><strong>Forbes contributor</strong> — column on AI products, search, and applied AI strategy.</li>
-    <li><strong>Venture Partner</strong> · <a href="https://www.cherry.vc/" rel="noopener">Cherry Ventures</a> — premier European seed fund.</li>
-    <li><strong>Advisor</strong> · several data- and AI-centric companies in Europe and the US.</li>
+    <li><strong>Head of AI</strong> · <a href="https://zoovu.com" rel="noopener">Zoovu</a></li>
+    <li><strong>Data Scientist in Residence</strong> · Cornell SC Johnson College of Business</li>
+    <li><strong>Venture Partner</strong> · <a href="https://www.cherry.vc/" rel="noopener">Cherry Ventures</a></li>
   </ul>
 
   <h2>Founder exits</h2>
   <ul>
-    <li><strong><a href="/portfolio/#r2decide">R2Decide</a></strong> (founder, sold <strong>2025</strong>) — AI-driven decision tooling for e-commerce.</li>
-    <li><strong><a href="/portfolio/#fisheye">Fisheye Analytics</a></strong> (co-founder, sold <strong>2013</strong>) — pioneering social-media analytics and bot detection.</li>
+    <li><strong>R2Decide</strong> — AI-driven decision tooling for e-commerce. Sold <strong>2025</strong>.</li>
+    <li><strong>Fisheye Analytics</strong> — social-media analytics + bot detection. Sold <strong>2013</strong>.</li>
   </ul>
 
-  <h2>Previously</h2>
+  <h2>Formerly</h2>
+  <p>
+    <strong>Snap Inc.</strong> · <strong>Google</strong> · <strong>LinkedIn</strong> (Director, Data Science).
+  </p>
+
+  <h2>Author</h2>
   <ul>
-    <li><strong>Snap Inc.</strong> — AI/data leadership.</li>
-    <li><strong>Google</strong> — AI/data work.</li>
-    <li><strong>LinkedIn</strong> — Director of Data Science.</li>
+    <li><a href={SITE.social.forbes} rel="noopener">Forbes column on AI</a> — 50+ articles.</li>
+    <li><a href="/book/"><em>Ask, Measure, Learn</em></a> (O'Reilly, 2014) — with Soumitra Dutta.</li>
+    <li><a href="/ecornell/"><em>Designing and Building AI Solutions</em></a> — the Cornell certificate.</li>
+    <li><a href="https://scholar.google.com/citations?user=tg0FO3wAAAAJ" rel="noopener">Google Scholar</a> — academic publications.</li>
   </ul>
 
   <h2>Education</h2>
-  <ul>
-    <li><strong>MBA</strong> — INSEAD.</li>
-    <li><strong>MS in Quantum Physics</strong> — TU Berlin.</li>
-  </ul>
+  <p>MBA, INSEAD · MS Quantum Physics, TU Berlin.</p>
 
-  <h2>Topics I write and speak about</h2>
-  <ul>
-    <li><strong>Generative Engine Optimization (GEO)</strong> — making content discoverable to LLMs.</li>
-    <li><strong>LLM moats</strong> — eval data, distribution, and why model-only moats erode.</li>
-    <li><strong>AI in e-commerce</strong> — fine-tuned models, attribution, the death of category search.</li>
-    <li><strong>AI in healthcare</strong> — value-based care, the data quality problem.</li>
-    <li><strong>Product strategy for AI</strong> — "good enough" beats perfect, the value translation gap.</li>
-    <li><strong>Search</strong> — the post-Google search landscape, multimodal retrieval, AI overviews.</li>
-    <li><strong>AI policy</strong> — regulation, fairness, deepfakes, EU strategy.</li>
-  </ul>
-
-  <h2>Author</h2>
-  <p>
-    Co-author of <a href="/book/"><em>Ask, Measure, Learn</em></a> (O'Reilly,
-    2014) with Soumitra Dutta — a practical guide to using data to learn
-    rather than just to report.
+  <p style="margin-top:2.5rem; color:var(--c-text-muted)">
+    More on <a href={SITE.social.linkedin} rel="noopener">LinkedIn</a> · talk to me at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
-  <p>
-    Ongoing publications: <a href="/writing/forbes/">Forbes column</a> (53+ pieces),
-    a 2025 article in <a href="https://www.intereconomics.eu/" rel="noopener">Intereconomics</a> on Europe's AI moment,
-    and regular long-form on <a href="/writing/linkedin/">LinkedIn</a>.
-  </p>
-
-  <h2>Where to find me</h2>
-  <ul>
-    <li><a href={SITE.social.forbes} rel="noopener">Forbes column</a></li>
-    <li><a href={SITE.social.linkedin} rel="noopener">LinkedIn</a></li>
-    <li><a href={SITE.social.x} rel="noopener">X (Twitter)</a></li>
-    <li><a href={SITE.social.youtube} rel="noopener">YouTube</a></li>
-    <li><a href={SITE.social.instagram} rel="noopener">Instagram</a></li>
-    <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
-  </ul>
 </Base>

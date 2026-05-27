@@ -1,0 +1,94 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+const WORKSHOPS = [
+  {
+    title: 'Hands-On AI Agents — Vibe-Code AI Workflows for Personal Productivity',
+    url: 'https://ecornell.cornell.edu/courses/artificial-intelligence/hands-on-ai-agents-vibe-code-ai-workflows-and-agent-skills-for-personal-productivity/',
+    summary: "Vibe-code your own personal AI agent in three hours. What works, what doesn't, what's safe.",
+    audience: 'Operators, founders, and individual contributors who want to automate their own workflows — no coding required.',
+    you_leave_with: [
+      'A working agent skill running against your real workflow (e.g. email triage).',
+      'A clear mental model of what agents are and where they break.',
+      'A playbook for safely extending agents into more of your work.',
+    ],
+  },
+  {
+    title: 'Building Enterprise-Ready AI Agents — From Prototypes to Production',
+    url: 'https://ecornell.cornell.edu/courses/artificial-intelligence/building-enterprise-ready-ai-agents-from-prototypes-to-production/',
+    summary: 'Production-grade agent architecture with Claude Code, LangGraph, and the OWASP LLM Top 10. Three hours.',
+    audience: 'Engineering leaders, AI architects, and senior PMs taking agents past the demo stage.',
+    you_leave_with: [
+      'An architecture blueprint for a deployable agentic system.',
+      'A working understanding of the OWASP LLM Top 10 threat model and how to mitigate each.',
+      'Pattern templates for RAG, planning, and tool-use that survive enterprise security review.',
+    ],
+  },
+];
+
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'AI Agent Workshops by Lutz Finger',
+  itemListElement: WORKSHOPS.map((w, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'Course',
+      name: w.title,
+      description: w.summary,
+      url: w.url,
+      provider: { '@type': 'CollegeOrUniversity', name: 'Cornell University' },
+      instructor: { '@type': 'Person', name: SITE.author, url: SITE.url },
+    },
+  })),
+};
+---
+<Base
+  title="AI Agent Workshops"
+  description="Two 3-hour live workshops on building AI agents — personal-productivity and enterprise-production. Taught by Lutz Finger, hosted by eCornell."
+  jsonLd={itemListJsonLd}
+>
+  <h1>AI Workflow Workshops</h1>
+  <p class="hero-sub">
+    Two hands-on, 3-hour live workshops. One for the individual building
+    their own productivity agent. One for the engineering team taking agents
+    to production. Hosted by <a href="https://ecornell.cornell.edu" rel="noopener">eCornell</a>.
+  </p>
+
+  <h2>Why AI workflows, not just AI models</h2>
+  <p>
+    "The winners won't be the ones who use AI. They'll be the ones who
+    redesign work around it." Better workflows beat bigger models. Reliability
+    comes from systems: <em>atomize tasks → constrain outputs → verify → iterate</em>.
+    The biggest performance gains aren't model upgrades — they're better workflows.
+  </p>
+  <p>
+    These workshops are the practical version of that thesis. Bring a real
+    problem; leave with a working pattern.
+  </p>
+
+  {WORKSHOPS.map(w => (
+    <section style="margin: 3rem 0; padding: 1.5rem 1.75rem; border: 1px solid var(--c-border); border-radius: 8px">
+      <h2 style="margin-top:0">{w.title}</h2>
+      <p style="font-size:1.05rem; margin-bottom:1rem">{w.summary}</p>
+      <p style="font-family:var(--font-sans); font-size:0.92rem; color:var(--c-text-soft)"><strong>For:</strong> {w.audience}</p>
+      <p style="font-family:var(--font-sans); font-size:0.92rem; color:var(--c-text-soft); margin-bottom:0.4rem"><strong>You leave with:</strong></p>
+      <ul style="font-family:var(--font-sans); font-size:0.95rem">
+        {w.you_leave_with.map(item => <li>{item}</li>)}
+      </ul>
+      <p style="margin-top:1rem">
+        <a href={w.url} rel="noopener" target="_blank">
+          → Register at eCornell
+        </a>
+      </p>
+    </section>
+  ))}
+
+  <h2>Want it for your team?</h2>
+  <p>
+    Both workshops can be delivered as a private cohort for an organization
+    (corporate, university, or fund). <a href={`mailto:${SITE.email}?subject=Private%20workshop`}>{SITE.email}</a>.
+  </p>
+</Base>

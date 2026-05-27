@@ -2,7 +2,7 @@
 import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
 
-// Guest speakers across the certificate (per current lutzfinger.com/ecornell-certificate listing).
+// Guest panel members across the certificate (per the lutzfinger.com/ecornell-certificate listing).
 const SPEAKERS = [
   'Kenneth Cukier', 'Aneesh Chopra', 'Allen Blue', 'Colin Walsh', 'Adrian Monck',
   'Shashi Thakur', 'Elizabeth Burstein', 'Dr. Richard Socher', 'Dr. Igor Perisic',
@@ -34,21 +34,20 @@ const courseJsonLd = {
 };
 ---
 <Base
-  title="eCornell — Designing and Building AI Solutions"
-  description="Cornell's certificate I teach, 'Designing and Building AI Solutions.' Five courses, fully online, integrated with OpenAI. For product leaders and engineers building AI that ships. No coding required."
+  title="eCornell Certificate — Designing and Building AI Solutions"
+  description="Cornell's flagship AI certificate, taught by Lutz Finger. Five courses, fully online, integrated with OpenAI. For product leaders and engineers building AI that ships. No coding required."
   jsonLd={courseJsonLd}
 >
-  <h1>eCornell — Designing &amp; Building AI Solutions</h1>
+  <h1>The Cornell Certificate</h1>
   <p class="hero-sub">
-    "This eCornell Certificate Program trains you to design and develop AI
-    Solutions and Products. It is fully integrated with OpenAI." For product
-    leaders, engineers, and analysts who want to ship AI that actually works —
-    <em>no coding or technical experience is needed.</em>
+    <em>Designing and Building AI Solutions</em> — a five-course Cornell
+    certificate I teach. For product leaders, engineers, and analysts who
+    want to ship AI that actually works. No coding required.
   </p>
 
   <p>
     <a href="https://ecornell.cornell.edu/certificates/ai/designing-and-building-ai-solutions/" rel="noopener">
-      → View the certificate at eCornell
+      → Enroll at eCornell
     </a>
   </p>
 
@@ -64,41 +63,25 @@ const courseJsonLd = {
 
   <h2>Format</h2>
   <ul>
-    <li>Five courses, fully online.</li>
-    <li>Integrated <strong>AI Teaching Assistant</strong> built with OpenAI.</li>
-    <li>Industry case studies across sectors — media, healthcare, retail, finance.</li>
-    <li>Cornell faculty (me) plus a guest panel of practitioners (see below).</li>
+    <li>Five courses, fully online, self-paced.</li>
+    <li>Integrated <strong>AI Teaching Assistant</strong> built on OpenAI.</li>
+    <li>Industry case studies across media, healthcare, retail, finance.</li>
+    <li>Guest interview segments from 27 practitioners (see below).</li>
   </ul>
 
-  <h2>Guest panel and contributors</h2>
+  <h2>Guest panel</h2>
   <p>
-    The course features short interview segments with people building real AI:
+    The course features short interview segments with people actually building AI in production:
   </p>
-  <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2; column-gap: 1.5rem">
+  <ul style="columns: 2; column-gap: 1.5rem">
     {SPEAKERS.map(name => <li>{name}</li>)}
   </ul>
 
-  <h2>Workshops (new in 2026)</h2>
-  <p>Two hands-on live workshops, 3 hours each:</p>
+  <h2>Related programs I teach</h2>
   <ul>
-    <li>
-      <a href="https://ecornell.cornell.edu/courses/artificial-intelligence/hands-on-ai-agents-vibe-code-ai-workflows-and-agent-skills-for-personal-productivity/" rel="noopener">
-        Hands-On AI Agents — Vibe-Code AI Workflows for Personal Productivity
-      </a> — automate real workflows like email triage with Claude's consumer tools. No code required.
-    </li>
-    <li>
-      <a href="https://ecornell.cornell.edu/courses/artificial-intelligence/building-enterprise-ready-ai-agents-from-prototypes-to-production/" rel="noopener">
-        Building Enterprise-Ready AI Agents — From Prototypes to Production
-      </a> — production-grade agent architecture with Claude Code + LangGraph,
-      OWASP LLM Top 10, and a hands-on blueprint exercise.
-    </li>
+    <li><a href="/keynote/"><strong>The Keynote on AI</strong></a> — live series with practitioners.</li>
+    <li><a href="/workshop/"><strong>Hands-On AI Agent workshops</strong></a> — two 3-hour sessions.</li>
   </ul>
-
-  <h2>Live keynote series</h2>
-  <p>
-    I also host <a href="https://ecornell.cornell.edu/keynotes/" rel="noopener"><em>The Keynote on AI</em></a>
-    from eCornell — a recurring live series. See <a href="/speaking/">/speaking</a> for the schedule.
-  </p>
 
   <p style="margin-top:2.5rem; color:var(--c-text-muted); font-size:0.85rem; font-family:var(--font-sans)">
     Last updated: {UPDATED}.

@@ -35,10 +35,20 @@ const BASE = path.join(os.homedir(), 'Lutz_Media/Lutz-author/Linkedin-Lutz-Autho
 const ARTICLES = path.join(BASE, 'Articles');
 const POSTS = path.join(BASE, 'Posts');
 const OUT_DIR = path.join(process.cwd(), 'src/content/writing/linkedin');
+const PULSE_MAP_CSV = path.join(process.cwd(), 'data/linkedin-pulse-urls.csv');
 const MIN_WORDS = 50;
 
-// Fallback when an article has no clean original URL.
-const LINKEDIN_ARTICLES_INDEX = 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/';
+async function readPulseMap() {
+  const txt = await readFile(PULSE_MAP_CSV, 'utf8').catch(() => '');
+  const map = new Map();
+  for (const line of txt.split(/\r?\n/)) {
+    const s = line.trim();
+    if (!s || s.startsWith('#')) continue;
+    const [slug, url] = s.split(',').map(x => x?.trim());
+    if (slug && url) map.set(slug, url);
+  }
+  return map;
+}
 
 function yamlValue(v) {
   if (Array.isArray(v)) return `[${v.map(t => JSON.stringify(t)).join(', ')}]`;
@@ -46,7 +56,7 @@ function yamlValue(v) {
   return String(v);
 }
 
-async function processDir(dir, sourceType, kept) {
+async function processDir(dir, sourceType, kept, pulseMap) {
   if (!existsSync(dir)) {
     console.warn(`Skipping ${dir} (not found)`);
     return;
@@ -58,8 +68,10 @@ async function processDir(dir, sourceType, kept) {
     const data = parsed.data;
     let body = cleanLinkedInBody(parsed.content, data.title ?? '');
 
-    // Drop Forbes-republished and Forbes-linking pieces — they double up with the Forbes column.
-    if (isForbesRepublish(parsed.content) || linksToForbesLutz(body)) {
+    // Drop Forbes-republished pieces (full copies) — they duplicate the Forbes column.
+    // Legitimate LinkedIn articles may CITE forbes.com URLs, so we only filter on the
+    // "republished from Forbes" marker, not on the URL appearing in the body.
+    if (isForbesRepublish(parsed.content)) {
       kept.skippedForbesDup = (kept.skippedForbesDup ?? 0) + 1;
       continue;
     }
@@ -93,10 +105,22 @@ async function processDir(dir, sourceType, kept) {
       dateStr = typeof fm === 'string' ? fm : (fm ? new Date(fm).toISOString().slice(0, 10) : file.slice(0, 10));
     }
 
-    // URL: posts have a permalink; articles use the recent-activity index as fallback.
-    const url = data.permalink
-      || data.url
-      || (sourceType === 'article' ? LINKEDIN_ARTICLES_INDEX : LINKEDIN_ARTICLES_INDEX);
+    // URL resolution:
+    //   - Posts: use the `permalink:` field (always present in the export).
+    //   - Articles: require a real Pulse URL. Sources:
+    //       (1) `url:` field in the source markdown frontmatter, OR
+    //       (2) a mapping in data/linkedin-pulse-urls.csv keyed by stem.
+    //     Articles without a real URL are SKIPPED — the writing page never
+    //     shows the fallback recent-activity index again.
+    let url = data.permalink || data.url;
+    if (!url && sourceType === 'article') {
+      const stem = file.replace(/\.md$/, '');
+      url = pulseMap.get(stem);
+    }
+    if (!url) {
+      kept.skippedNoUrl = (kept.skippedNoUrl ?? 0) + 1;
+      continue;
+    }
 
     const excerpt = makeExcerpt(body, 240);
     const slug = slugify(title) + '-' + dateStr.slice(0, 10);
@@ -126,8 +150,16 @@ async function main() {
   await rm(OUT_DIR, { recursive: true, force: true });
   await mkdir(OUT_DIR, { recursive: true });
   const kept = {};
-  await processDir(ARTICLES, 'article', kept);
-  await processDir(POSTS, 'post', kept);
+  const pulseMap = await readPulseMap();
+  console.log(`Loaded ${pulseMap.size} Pulse URL mappings from ${PULSE_MAP_CSV}`);
+  // Only LinkedIn Pulse articles ship. The 950+ short status posts are not
+  // surfaced on the writing index — they're noise next to the Forbes column
+  // and the actual Pulse pieces. (Re-enable via INGEST_LINKEDIN_POSTS=1 if
+  // we ever want them.)
+  await processDir(ARTICLES, 'article', kept, pulseMap);
+  if (process.env.INGEST_LINKEDIN_POSTS === '1') {
+    await processDir(POSTS, 'post', kept, pulseMap);
+  }
   console.log(`LinkedIn ingestion: ${JSON.stringify(kept)}`);
   console.log(`Output: ${OUT_DIR}`);
 }

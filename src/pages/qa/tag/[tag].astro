@@ -1,0 +1,75 @@
+---
+import Base from '~/layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const TAG_LABELS: Record<string, string> = {
+  'search-geo': 'Search & GEO', 'llm-moats': 'LLM Moats', 'healthcare': 'Healthcare',
+  'ecommerce': 'E-commerce', 'ai-product': 'AI Product', 'ai-workflows': 'AI Workflows',
+  'policy-ethics': 'Policy & Ethics', 'measurement': 'Measurement', 'analytics': 'Analytics',
+  'bias': 'Bias', 'risks': 'Risks', 'education': 'Education', 'startup': 'Startups',
+  'investment': 'Investment', 'leadership': 'Leadership', 'future-of-work': 'Future of Work',
+};
+
+export async function getStaticPaths() {
+  const all = await getCollection('qa');
+  const tagSet = new Set<string>();
+  for (const e of all) for (const t of e.data.tags) tagSet.add(t);
+  return [...tagSet].map(tag => ({
+    params: { tag },
+    props: { tag, items: all.filter(e => e.data.tags.includes(tag)).sort((a, b) => a.data.question.localeCompare(b.data.question)) },
+  }));
+}
+
+const { tag, items } = Astro.props;
+const label = TAG_LABELS[tag] ?? tag;
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map(i => ({
+    '@type': 'Question',
+    name: i.data.question,
+    acceptedAnswer: { '@type': 'Answer', text: i.body ?? '' },
+  })),
+};
+---
+<Base
+  title={`Q&A — ${label}`}
+  description={`Lutz Finger's Q&A on ${label} — ${items.length} questions sourced from his writing.`}
+  jsonLd={faqJsonLd}
+  wide
+>
+  <p style="margin-bottom:1rem"><a href="/qa/">← All Q&amp;A</a></p>
+
+  <h1>Q&amp;A — {label}</h1>
+  <p class="hero-sub">{items.length} {items.length === 1 ? 'question' : 'questions'} tagged <strong>{label}</strong>.</p>
+
+  <ul class="card-list" style="margin-top:1.5rem">
+    {items.map(item => (
+      <li>
+        <a class="card" href={`/qa/${item.id}/`}>
+          <div class="card-meta">
+            {item.data.tags.slice(0, 3).map(t => (
+              <span class="tag-mini">{TAG_LABELS[t] ?? t}</span>
+            ))}
+          </div>
+          <h3 class="card-title">{item.data.question}</h3>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .tag-mini {
+    display: inline-block;
+    padding: 0.05em 0.5em;
+    background: var(--c-bg-soft);
+    border-radius: 3px;
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    color: var(--c-text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+</style>

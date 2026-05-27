@@ -1,0 +1,12 @@
+# Map LinkedIn Pulse article slug → real URL.
+# The ingest script reads this and ONLY keeps LinkedIn articles whose local
+# slug (without the trailing date) appears in this list, so the writing page
+# never shows fallback "recent activity" URLs.
+#
+# Format:  source_filename_without_md, real_pulse_url
+# Append rows as you publish/discover more.
+#
+2026-05-22-state-of-e-commerce-finetuned-ai-every-brand,https://www.linkedin.com/pulse/state-e-commerce-finetuned-ai-every-brand-lutz-finger-gs5bf/
+2026-04-25-why-linkedin-is-as-important-as-the-capital-market,https://www.linkedin.com/pulse/why-linkedin-important-capital-market-lutz-finger/
+2026-04-25-rule-the-world-with-small-data,https://www.linkedin.com/pulse/20140618141134-6074593-rule-the-world-with-small-data/
+2026-04-25-regulating-ai-its-not-a-question-of-if-but-how,https://www.linkedin.com/pulse/regulating-ai-its-question-how-lutz-finger-cjnif/

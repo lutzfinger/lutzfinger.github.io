@@ -15,7 +15,7 @@ export function wordCount(text) {
 }
 
 const FORBES_LUTZ_RE = /forbes\.com\/sites\/lutzfinger\b/i;
-const FORBES_REPUBLISH_RE = /republished\s+post\s+from\s+forbes|republished\s+from\s+forbes|originally\s+(?:published|appeared)\s+(?:on|in)\s+forbes/i;
+const FORBES_REPUBLISH_RE = /(?:^|\n|\(\s*)(?:republished\s+(?:post\s+)?from\s+forbes|republished\s+forbes|originally\s+(?:published|appeared)\s+(?:on|in)\s+forbes)/i;
 
 export function linksToForbesLutz(text) {
   return !!text && FORBES_LUTZ_RE.test(text);

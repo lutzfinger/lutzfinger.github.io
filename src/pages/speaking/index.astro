@@ -8,8 +8,11 @@ const all = await getCollection('events');
 const upcoming = all
   .filter(e => e.data.status !== 'past' && e.data.date.getTime() >= now)
   .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+const past = all
+  .filter(e => e.data.status === 'past' || e.data.date.getTime() < now)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const eventListJsonLd = upcoming.length === 0 ? undefined : upcoming.map(e => ({
+const upcomingJsonLd = upcoming.length === 0 ? undefined : upcoming.map(e => ({
   '@context': 'https://schema.org',
   '@type': 'Event',
   name: e.data.title,
@@ -30,36 +33,61 @@ const eventListJsonLd = upcoming.length === 0 ? undefined : upcoming.map(e => ({
 ---
 <Base
   title="Speaking"
-  description={`Upcoming keynotes, workshops, and conference sessions with Lutz Finger — ${upcoming.length} scheduled.`}
-  jsonLd={eventListJsonLd}
+  description={`Upcoming and past speaking — keynotes, workshops, conference sessions. ${upcoming.length} upcoming, ${past.length} past.`}
+  jsonLd={upcomingJsonLd}
+  wide
 >
   <h1>Speaking</h1>
   <p class="hero-sub">
-    Upcoming keynotes, workshops, conference sessions, and live streams.
-    For bookings: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    Keynotes, workshops, lectures, panels. For bookings:
+    <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
 
-  {upcoming.length === 0 ? (
-    <p><em>No public sessions on the calendar right now — check back soon, or <a href={`mailto:${SITE.email}`}>email me</a> for booking.</em></p>
+  {upcoming.length > 0 ? (
+    <section style="margin-top:2rem">
+      <h2>Upcoming</h2>
+      <ul class="card-list">
+        {upcoming.map(e => (
+          <li>
+            <a class="card" href={e.data.url ?? `/speaking/${e.id}/`} target={e.data.url ? '_blank' : undefined} rel={e.data.url ? 'noopener' : undefined}>
+              <div class="card-meta">
+                <time datetime={e.data.date.toISOString()}>
+                  {e.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                </time>
+                <span class={`tag tag-${e.data.tag}`}>{e.data.tag}</span>
+                {e.data.location && <span>· {e.data.location}</span>}
+              </div>
+              <h3 class="card-title">{e.data.title}</h3>
+              {e.data.description && <p class="card-excerpt">{e.data.description}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
   ) : (
-    <ul class="card-list">
-      {upcoming.map(e => (
-        <li>
-          <a class="card" href={e.data.url ?? `/speaking/${e.id}/`}>
-            <div class="card-meta">
-              <time datetime={e.data.date.toISOString()}>
-                {e.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
-              </time>
-              <span class={`tag tag-${e.data.tag}`}>{e.data.tag}</span>
-              {e.data.location && <span>· {e.data.location}</span>}
-            </div>
-            <h3 class="card-title">{e.data.title}</h3>
-            {e.data.description && <p class="card-excerpt">{e.data.description}</p>}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <p style="margin-top:2rem"><em>No public sessions on the calendar right now.</em></p>
   )}
 
-  <p style="margin-top:2.5rem"><a href="/speaking/past/">→ Past sessions archive</a></p>
+  {past.length > 0 && (
+    <section style="margin-top:3rem">
+      <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--c-text-muted)">Past sessions</h2>
+      <ul class="card-list" style="margin-top:1.25rem">
+        {past.map(e => (
+          <li>
+            <a class="card" href={e.data.url ?? `/speaking/${e.id}/`} target={e.data.url ? '_blank' : undefined} rel={e.data.url ? 'noopener' : undefined}>
+              <div class="card-meta">
+                <time datetime={e.data.date.toISOString()}>
+                  {e.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                </time>
+                <span class={`tag tag-${e.data.tag}`}>{e.data.tag}</span>
+                {e.data.location && <span>· {e.data.location}</span>}
+              </div>
+              <h3 class="card-title">{e.data.title}</h3>
+              {e.data.description && <p class="card-excerpt">{e.data.description}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 </Base>

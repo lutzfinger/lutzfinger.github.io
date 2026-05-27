@@ -1,0 +1,80 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+export async function getStaticPaths() {
+  const all = await getCollection('qa');
+  return all.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const TAG_LABELS: Record<string, string> = {
+  'search-geo': 'Search & GEO', 'llm-moats': 'LLM Moats', 'healthcare': 'Healthcare',
+  'ecommerce': 'E-commerce', 'ai-product': 'AI Product', 'ai-workflows': 'AI Workflows',
+  'policy-ethics': 'Policy & Ethics', 'measurement': 'Measurement', 'analytics': 'Analytics',
+  'bias': 'Bias', 'risks': 'Risks', 'education': 'Education', 'startup': 'Startups',
+  'investment': 'Investment', 'leadership': 'Leadership', 'future-of-work': 'Future of Work',
+};
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [{
+    '@type': 'Question',
+    name: entry.data.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: entry.body ?? '',
+      author: { '@type': 'Person', name: SITE.author, url: SITE.url },
+    },
+  }],
+};
+---
+<Base
+  title={entry.data.question}
+  description={`Lutz Finger's answer to "${entry.data.question}" — drawn from his Forbes column and writing.`}
+  jsonLd={faqJsonLd}
+>
+  <p style="margin-bottom:1rem"><a href="/qa/">← All Q&amp;A</a></p>
+
+  <h1>{entry.data.question}</h1>
+
+  <div class="filters" style="margin: 0.5rem 0 1.75rem">
+    {entry.data.tags.map(t => (
+      <a href={`/qa/tag/${t}/`} class="filter-chip" style="font-size:0.78rem; padding:0.2em 0.65em">{TAG_LABELS[t] ?? t}</a>
+    ))}
+  </div>
+
+  <article class="qa-body">
+    <Content />
+  </article>
+
+  <hr style="margin: 3rem 0 2rem" />
+  <p style="color:var(--c-text-muted)">
+    Have a follow-up? <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    Or pick another question: <a href="/qa/">all Q&amp;A →</a>
+  </p>
+</Base>
+
+<style>
+  .qa-body blockquote {
+    border-left: 3px solid var(--c-accent);
+    padding-left: 1em;
+    margin: 1.25em 0 0.6em;
+    font-style: italic;
+    color: var(--c-text);
+  }
+  .qa-body p + p {
+    color: var(--c-text-muted);
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    font-style: normal;
+    margin-bottom: 1.8em;
+  }
+</style>

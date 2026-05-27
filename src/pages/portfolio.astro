@@ -5,192 +5,194 @@ import { SITE } from '~/consts';
 interface Project {
   id: string;
   title: string;
+  tagline: string;
   role: string;
   period: string;
-  status: 'sold' | 'active' | 'past' | 'community';
-  category: 'company' | 'product' | 'open-source' | 'teaching' | 'media';
+  status: 'sold' | 'shipping' | 'shipped' | 'live' | 'experimental' | 'past';
+  category: 'exit' | 'product' | 'experiment' | 'company';
   summary: string;
-  details: string[];
   links?: { label: string; url: string }[];
 }
 
+// Real things I've built. Some sold, some shipping, some experimental.
 const PROJECTS: Project[] = [
-  // ── COMPANIES BUILT & SOLD ─────────────────────────────────────────────
+  // ── EXITS ─────────────────────────────────────────────────────────
   {
     id: 'r2decide',
     title: 'R2Decide',
+    tagline: 'AI-driven decision tooling for e-commerce.',
     role: 'Founder',
-    period: '2024 – 2025 (sold)',
+    period: '2024–2025',
     status: 'sold',
-    category: 'company',
-    summary: 'AI-driven decision tooling for e-commerce — turning product catalogs into conversational, intent-aware recommendation experiences.',
-    details: [
-      'Founded to fix a real gap I saw running e-commerce data science: brands could afford the model but couldn\'t afford to maintain a fine-tuned one per category.',
-      'Sold in 2025. The acquirer integrated R2Decide into a broader AI commerce stack.',
-      'Selling R2Decide was part of my deliberate shift toward "value where AI meets workflow" — see my Oct 2025 eCornell keynote with Kurt Wagner.',
-    ],
+    category: 'exit',
+    summary: 'Turned product catalogs into conversational, intent-aware recommendation experiences. Sold in 2025.',
     links: [
-      { label: 'Why I built (and sold) R2Decide — LinkedIn article', url: 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/' },
-      { label: 'After the Gold Rush — eCornell keynote', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
+      { label: 'After the Gold Rush — eCornell keynote (incl. why I sold)', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
     ],
   },
   {
     id: 'fisheye',
     title: 'Fisheye Analytics',
+    tagline: 'Social-media analytics + bot detection.',
     role: 'Co-founder & CEO',
-    period: '2008 – 2013 (sold)',
+    period: '2008–2013',
     status: 'sold',
-    category: 'company',
-    summary: 'Pioneering social-media analytics and bot detection. One of the earliest companies to apply NLP and graph analysis to social listening for governments, NGOs, and Fortune 500s.',
-    details: [
-      'Built out of the recognition that social media wasn\'t just a marketing channel — it was a primary signal for influence, propaganda, and emerging events.',
-      'Customers spanned UN agencies, intelligence/defense communities, and major consumer brands.',
-      'Sold in 2013. Founded the conceptual basis for what later became my Forbes coverage of bots, deepfakes, and information warfare.',
-    ],
+    category: 'exit',
+    summary: 'Pioneering analytics for the social era. Customers spanned UN agencies, intelligence/defense, and Fortune 500 brands. Sold in 2013.',
     links: [
-      { label: 'How to spot social media bots — Forbes / LinkedIn article', url: 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/' },
-      { label: 'Do Evil — the business of social media bots', url: 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/' },
+      { label: 'Do Evil — the business of social media bots (cited paper)', url: 'https://scholar.google.com/citations?user=tg0FO3wAAAAJ' },
     ],
   },
-  // ── CURRENT ────────────────────────────────────────────────────────────
+
+  // ── REAL THINGS I HAVE BUILT (products, prototypes, agents) ──────
   {
-    id: 'zoovu',
-    title: 'Head of AI at Zoovu',
-    role: 'Head of AI',
-    period: '2025 – present',
-    status: 'active',
-    category: 'company',
-    summary: 'Leading the AI function at Zoovu — AI-driven product discovery and decision experiences for e-commerce, on which my Forbes coverage of GEO and AI-driven commerce draws directly.',
-    details: [
-      'Where the eval-data-is-the-moat thesis meets daily production reality.',
-      'Drives several of my Forbes pieces on GEO, AI assistants, and the post-SEO playbook.',
-    ],
+    id: 'search-discovery',
+    title: 'Search & Discovery',
+    tagline: 'Intent-aware retrieval over catalogs and content.',
+    role: 'Designer / builder',
+    period: 'ongoing',
+    status: 'shipping',
+    category: 'product',
+    summary: 'Search and product-discovery systems that move past keyword matching to intent inference — what the user is actually trying to do, then pulling the right item, article, or answer from a corpus. The lineage runs from R2Decide into ongoing work at Zoovu and a few side experiments.',
     links: [
       { label: 'Zoovu', url: 'https://zoovu.com' },
       { label: 'GEO Playbook for Online Retailers — Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/' },
-      { label: 'Answer Engine Optimization — What Brands Need To Know', url: 'https://www.forbes.com/sites/lutzfinger/2025/06/19/answer-engine-optimization-aeo--what-brands-need-to-know/' },
     ],
   },
-  // ── TEACHING & THOUGHT LEADERSHIP ──────────────────────────────────────
   {
-    id: 'ecornell-cert',
-    title: 'eCornell Certificate — Designing & Building AI Solutions',
-    role: 'Instructor',
-    period: '2023 – present',
-    status: 'active',
-    category: 'teaching',
-    summary: "Cornell's flagship AI certificate. Five courses, fully online, integrated with OpenAI — for product leaders, engineers, and analysts who want to ship AI that actually works. No coding required.",
-    details: [
-      '27 guest experts contribute interview segments — including Aneesh Chopra, Richard Socher, Allen Blue, Igor Perisic, Adrian Monck, Filip Dames.',
-      'Notable for an integrated AI Teaching Assistant built on OpenAI.',
-    ],
+    id: 'cloning-influencers',
+    title: 'Cloning Influencers',
+    tagline: 'A voice/persona system trained on a public figure\'s own corpus.',
+    role: 'Builder',
+    period: 'ongoing',
+    status: 'experimental',
+    category: 'experiment',
+    summary: "Started as a 'can I make an AI that sounds like me?' experiment. Now a small system that ingests a person's published work (Forbes, LinkedIn, keynote transcripts, social), embeds and structures it, and answers in their voice with citations. Used to power my own /qa page on this site.",
     links: [
-      { label: 'Certificate page', url: 'https://ecornell.cornell.edu/certificates/ai/designing-and-building-ai-solutions/' },
-      { label: 'On this site', url: '/ecornell/' },
+      { label: 'Live demo (this site)', url: '/qa/' },
     ],
   },
   {
-    id: 'keynote-on-ai',
-    title: 'The Keynote on AI — eCornell',
-    role: 'Host & faculty lead',
-    period: '2024 – present',
-    status: 'active',
-    category: 'media',
-    summary: 'Recurring live keynote series I host for eCornell — guests include Aneesh Chopra (former US CTO), Martín Casado (a16z), Richard Socher, Lila Tretikov (NEA), Lucilla Sioli (EU Commission), and Benjamin Goertzel.',
-    details: [
-      '15+ live sessions to date, each ~60 minutes with audience Q&A.',
-      'Full upcoming schedule and back catalog at /speaking.',
-    ],
+    id: 'audiobook-summarizer',
+    title: 'Audiobook Summarizer',
+    tagline: 'Compresses non-fiction audiobooks into structured, listenable summaries.',
+    role: 'Builder',
+    period: 'ongoing',
+    status: 'experimental',
+    category: 'experiment',
+    summary: "Listens to an audiobook (or its transcript), extracts the spine of arguments and the supporting evidence, then re-narrates a structured summary you can listen to in a fraction of the time. The interesting bit isn't the LLM — it's getting the chapter-level pacing and 'what was the actual point' right.",
+  },
+  {
+    id: 'preventable-admissions',
+    title: 'Predicting Preventable Admissions',
+    tagline: 'Healthcare ML to surface patients heading toward a preventable hospital admission.',
+    role: 'Builder / advisor',
+    period: 'ongoing',
+    status: 'experimental',
+    category: 'experiment',
+    summary: "Models that consume claims, EHR, and behavioral signals to flag patients whose next admission is preventable — and to suggest the intervention. Sits at the intersection of value-based care and predictive analytics that I've covered in Forbes.",
     links: [
-      { label: 'All keynotes', url: 'https://ecornell.cornell.edu/keynotes/' },
-      { label: 'On this site', url: '/speaking/' },
+      { label: 'Healthcare AI Lesson — Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2024/05/02/healthcares-ai-lesson-autocomplete-isnt-understanding/' },
+      { label: 'Healthcare And Data — How To Measure Quality', url: 'https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/' },
     ],
   },
   {
-    id: 'workshops-2026',
-    title: 'Hands-On AI Agent Workshops',
-    role: 'Designer & instructor',
-    period: '2026 – present',
-    status: 'active',
-    category: 'teaching',
-    summary: 'Two new 3-hour live workshops — one personal-productivity ("vibe-code your own agent"), one enterprise-grade ("from prototype to production with Claude Code + LangGraph + OWASP LLM Top 10").',
-    links: [
-      { label: 'Personal productivity workshop', url: 'https://ecornell.cornell.edu/courses/artificial-intelligence/hands-on-ai-agents-vibe-code-ai-workflows-and-agent-skills-for-personal-productivity/' },
-      { label: 'Enterprise workshop', url: 'https://ecornell.cornell.edu/courses/artificial-intelligence/building-enterprise-ready-ai-agents-from-prototypes-to-production/' },
-    ],
+    id: 'sai',
+    title: 'SAI',
+    tagline: 'A thin personal client on top of Anthropic Claude.',
+    role: 'Builder',
+    period: 'ongoing',
+    status: 'shipping',
+    category: 'experiment',
+    summary: "My own daily-driver AI assistant — a thin client on top of Anthropic's Claude with workflow skills, scheduled tasks, and tight integrations into my email, calendar, and writing pipeline. Think 'Claude with my muscle memory.' It's what processes my SAI@ inbox and adds events to my calendar from one-liners.",
+  },
+
+  // ── CURRENT OPERATING ROLE & MEDIA ───────────────────────────────
+  {
+    id: 'zoovu',
+    title: 'Head of AI · Zoovu',
+    tagline: 'AI-driven product discovery + decision experiences for e-commerce.',
+    role: 'Head of AI',
+    period: '2025–present',
+    status: 'live',
+    category: 'company',
+    summary: 'Where the eval-data-is-the-moat thesis meets daily production reality. Drives much of my Forbes coverage of GEO and AI-driven commerce.',
+    links: [{ label: 'Zoovu', url: 'https://zoovu.com' }],
   },
   {
-    id: 'forbes-column',
+    id: 'forbes',
     title: 'Forbes column on AI',
+    tagline: '50+ articles on AI products, GEO, LLM moats, AI in e-commerce, healthcare, policy.',
     role: 'Senior Contributor',
-    period: '2020 – present',
-    status: 'active',
-    category: 'media',
-    summary: '50+ articles on AI products, GEO, LLM moats, AI in e-commerce and healthcare, AI policy. Often-cited pieces include "The Missing Moat in AI" (eval data) and "If Your Name Isn\'t Western, AI Could Cost You The Promotion."',
+    period: '2020–present',
+    status: 'live',
+    category: 'company',
+    summary: 'Often-cited pieces: "The Missing Moat In AI: Your Eval Data", "If Your Name Isn\'t Western, AI Could Cost You The Promotion", the GEO playbook series.',
     links: [
       { label: 'Forbes column', url: 'https://www.forbes.com/sites/lutzfinger/' },
       { label: 'On this site', url: '/writing/forbes/' },
     ],
   },
   {
-    id: 'book-aml',
-    title: 'Ask, Measure, Learn (book)',
-    role: 'Co-author with Soumitra Dutta',
-    period: '2014',
-    status: 'past',
-    category: 'media',
-    summary: "O'Reilly book on using social and behavioral data to learn fast enough to ship. Co-authored with then-Cornell Johnson Dean (now Saïd Oxford Dean) Soumitra Dutta.",
+    id: 'cornell-cert',
+    title: 'Cornell Certificate — Designing & Building AI Solutions',
+    tagline: 'Five online courses + AI Teaching Assistant. Thousands of operators.',
+    role: 'Instructor',
+    period: '2023–present',
+    status: 'live',
+    category: 'company',
+    summary: '27 guest experts (Aneesh Chopra, Richard Socher, Allen Blue, Igor Perisic, Adrian Monck, Filip Dames, more) record interview segments. Integrated OpenAI-powered TA.',
     links: [
-      { label: 'On this site', url: '/book/' },
-      { label: "O'Reilly", url: 'https://www.oreilly.com/library/view/ask-measure-learn/9781449373047/' },
+      { label: 'Certificate page', url: 'https://ecornell.cornell.edu/certificates/ai/designing-and-building-ai-solutions/' },
+      { label: 'On this site', url: '/ecornell/' },
     ],
   },
-  // ── ADVISORY & VENTURE ─────────────────────────────────────────────────
+  {
+    id: 'keynote-series',
+    title: 'The Keynote on AI',
+    tagline: 'Live series with the people actually shipping AI.',
+    role: 'Host & faculty lead',
+    period: '2024–present',
+    status: 'live',
+    category: 'company',
+    summary: '15+ live sessions to date — Aneesh Chopra (former US CTO), Martín Casado (a16z), Richard Socher, Lila Tretikov (NEA), Lucilla Sioli (EU Commission), Benjamin Goertzel.',
+    links: [{ label: 'On this site', url: '/keynote/' }],
+  },
   {
     id: 'cherry',
-    title: 'Cherry Ventures',
+    title: 'Cherry Ventures — Venture Partner',
+    tagline: "Europe's premier seed fund. AI-native company evaluation.",
     role: 'Venture Partner',
-    period: '2024 – present',
-    status: 'active',
+    period: '2024–present',
+    status: 'live',
     category: 'company',
-    summary: "Venture Partner at Cherry Ventures — Europe's premier seed fund. Focused on AI-native companies; helps the team evaluate technical depth and product strategy.",
+    summary: 'Helps the team evaluate technical depth and product strategy.',
     links: [{ label: 'Cherry Ventures', url: 'https://www.cherry.vc/' }],
   },
-  // ── BROADER FOOTPRINT ──────────────────────────────────────────────────
   {
-    id: 'linkedin-dir',
-    title: 'LinkedIn — Director of Data Science',
-    role: 'Director, Data Science',
-    period: 'past',
-    status: 'past',
+    id: 'book',
+    title: 'Ask, Measure, Learn (book)',
+    tagline: "O'Reilly, 2014. With Soumitra Dutta.",
+    role: 'Co-author',
+    period: '2014',
+    status: 'shipped',
     category: 'company',
-    summary: 'Data Science leadership at LinkedIn — work spanning the social graph, recommendations, and the data pipelines behind the platform\'s core surfaces.',
+    summary: 'Practical guide to using social and behavioral data to learn fast enough to ship.',
+    links: [{ label: 'On this site', url: '/book/' }],
   },
-  {
-    id: 'snap',
-    title: 'Snap Inc.',
-    role: 'AI / Data leadership',
-    period: 'past',
-    status: 'past',
-    category: 'company',
-    summary: 'AI and data leadership at Snap — applied ML in a real consumer-product environment.',
-  },
-  {
-    id: 'google',
-    title: 'Google',
-    role: 'AI / Data',
-    period: 'past',
-    status: 'past',
-    category: 'company',
-    summary: 'AI and data work inside Google.',
-  },
+
+  // ── PAST EMPLOYERS ───────────────────────────────────────────────
+  { id: 'linkedin-dir', title: 'LinkedIn — Director, Data Science', tagline: 'Data Science leadership across the platform.', role: 'Director', period: 'past', status: 'past', category: 'company', summary: '' },
+  { id: 'snap', title: 'Snap Inc. — AI / Data', tagline: 'Applied ML in a real consumer-product environment.', role: 'AI / Data', period: 'past', status: 'past', category: 'company', summary: '' },
+  { id: 'google', title: 'Google — AI / Data', tagline: '', role: 'AI / Data', period: 'past', status: 'past', category: 'company', summary: '' },
 ];
 
-const groups: Record<string, Project[]> = {
-  'Companies (founder)': PROJECTS.filter(p => p.category === 'company' && (p.status === 'sold' || p.id === 'cherry')),
-  'Current operating role': PROJECTS.filter(p => p.id === 'zoovu'),
-  'Teaching & live content': PROJECTS.filter(p => p.category === 'teaching' || p.category === 'media'),
-  'Past employers': PROJECTS.filter(p => p.status === 'past' && p.category === 'company'),
+const groups = {
+  'Exits': PROJECTS.filter(p => p.category === 'exit'),
+  'Things I have built or am building': PROJECTS.filter(p => p.category === 'product' || p.category === 'experiment'),
+  'Current operating roles': PROJECTS.filter(p => p.category === 'company' && p.status === 'live'),
+  'Past employers': PROJECTS.filter(p => p.category === 'company' && p.status === 'past'),
+  'Book': PROJECTS.filter(p => p.id === 'book'),
 };
 
 const itemListJsonLd = {
@@ -201,45 +203,50 @@ const itemListJsonLd = {
     '@type': 'ListItem',
     position: i + 1,
     name: p.title,
-    description: p.summary,
+    description: p.summary || p.tagline,
   })),
+};
+
+const statusLabel: Record<string, string> = {
+  sold: 'sold',
+  shipping: 'shipping',
+  shipped: 'shipped',
+  live: 'live',
+  experimental: 'experimental',
+  past: 'past',
 };
 ---
 <Base
   title="Portfolio"
-  description="What Lutz Finger has built — two AI exits (R2Decide 2025, Fisheye Analytics 2013), current Head of AI at Zoovu, Cornell teaching, Forbes column, the eCornell certificate, and the live keynote series."
+  description="Things I've built. Two AI exits. A handful of shipping products and experiments — search & discovery, an influencer-cloning system, an audiobook summarizer, a preventable-admissions model, and SAI (a thin personal client on Claude). Plus current roles at Zoovu, Cornell, Cherry, Forbes."
   jsonLd={itemListJsonLd}
   wide
 >
   <h1>Portfolio</h1>
   <p class="hero-sub">
-    What I've built. Two AI exits. A current operating role. Teaching at Cornell.
-    A Forbes column. And a live keynote series with guests who actually ship AI.
+    The things I've actually built. Some sold. Some shipping. Some still
+    experimental but real enough to talk about.
   </p>
 
   {Object.entries(groups).map(([label, items]) => items.length > 0 && (
     <section style="margin: 3rem 0">
-      <h2 style="border-bottom: 1px solid var(--c-border); padding-bottom: 0.4rem; margin-bottom: 1.25rem; font-family: var(--font-sans); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-text-muted)">{label}</h2>
-      <ul class="card-list">
+      <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">{label}</h2>
+      <ul class="card-list" style="margin-top:1.25rem">
         {items.map(p => (
           <li id={p.id}>
-            <article class="card" style="padding: 1.4rem 1.5rem">
+            <article class="card" style="padding:1.3rem 1.5rem">
               <div class="card-meta">
-                <span><strong>{p.role}</strong></span>
-                <span>·</span>
-                <span>{p.period}</span>
-                {p.status === 'sold' && <><span>·</span><span class="tag tag-forbes">sold</span></>}
-                {p.status === 'active' && <><span>·</span><span class="tag tag-workshop">active</span></>}
+                {p.status !== 'past' && (
+                  <span class={`tag tag-${p.status === 'sold' ? 'forbes' : p.status === 'experimental' ? 'podcast' : 'workshop'}`}>{statusLabel[p.status]}</span>
+                )}
+                <span>· {p.role}</span>
+                <span>· {p.period}</span>
               </div>
-              <h3 class="card-title" style="margin-top: 0.4rem">{p.title}</h3>
-              <p style="margin: 0.6rem 0 0.4rem">{p.summary}</p>
-              {p.details && (
-                <ul style="margin-top: 0.6rem">
-                  {p.details.map(d => <li>{d}</li>)}
-                </ul>
-              )}
+              <h3 class="card-title" style="margin-top:0.4rem">{p.title}</h3>
+              {p.tagline && <p style="font-style:italic; color:var(--c-text-soft); margin:0.3rem 0 0.5rem">{p.tagline}</p>}
+              {p.summary && <p style="margin:0.5rem 0 0">{p.summary}</p>}
               {p.links && p.links.length > 0 && (
-                <p style="margin-top: 0.6rem; font-size: 0.92rem; font-family: var(--font-sans)">
+                <p style="margin-top:0.7rem; font-family:var(--font-sans); font-size:0.92rem">
                   {p.links.map((l, i) => (
                     <>
                       {i > 0 && ' · '}
@@ -255,7 +262,7 @@ const itemListJsonLd = {
     </section>
   ))}
 
-  <p style="margin-top: 3rem; color: var(--c-text-muted); font-size: 0.9rem">
-    Working on something AI-shaped where any of the above might be useful? <a href={`mailto:${SITE.email}`}>Get in touch</a>.
+  <p style="margin-top:3rem; color:var(--c-text-muted)">
+    Working on something AI-shaped? <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
   </p>
 </Base>

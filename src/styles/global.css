@@ -411,6 +411,15 @@ img {
   text-decoration: none;
 }
 
+/* Lead paragraph (intro on /writing/* index pages) */
+.page-lead {
+  font-size: 1.02rem;
+  color: var(--c-text-soft);
+  line-height: 1.6;
+  margin: 0.4rem 0 1.5rem;
+  max-width: 56rem;
+}
+
 /* Article (post page) */
 .article-meta {
   font-family: var(--font-sans);

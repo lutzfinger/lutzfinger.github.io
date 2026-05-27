@@ -10,11 +10,17 @@ const all = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <Base
-  title="Writing, LinkedIn"
+  title="LinkedIn Articles by Lutz Finger — AI, Data, Product Strategy"
   description={`Lutz Finger's LinkedIn articles, ${all.length} pieces. Each card opens the original on LinkedIn.`}
   wide
 >
   <h1>LinkedIn</h1>
+
+  <p class="page-lead">
+    Long-form articles Lutz Finger has published on LinkedIn Pulse since
+    2014: data products, social-media analytics, AI strategy, founder
+    stories. Each card opens the original article on LinkedIn.
+  </p>
 
   <WritingSearch source="LinkedIn" placeholder="Search LinkedIn articles…" />
 

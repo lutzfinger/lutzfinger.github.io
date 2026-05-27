@@ -41,3 +41,11 @@ git commit -m "auto: refresh site content $(date +%Y-%m-%d)" \
   || { echo "→ Nothing committable. Bailing."; exit 0; }
 git push
 echo "→ Pushed. GH Actions will rebuild + deploy in ~30 sec."
+
+# IndexNow: notify Bing + Yandex of the URL set. Best-effort; the build artifact
+# from the LAST local build is fine (CI's build will match in moments). Skipped
+# silently if the local dist isn't present.
+if [[ -f dist/sitemap-0.xml ]]; then
+  echo "→ Notifying IndexNow…"
+  node scripts/ping-indexnow.mjs || true
+fi

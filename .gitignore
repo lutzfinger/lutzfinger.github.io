@@ -25,3 +25,6 @@ Thumbs.db
 npm-debug.log*
 *.log
 .secrets.local.md
+# Note: data/.indexnow-key IS committed deliberately — the IndexNow key is
+# already public (it's hosted at /<key>.txt). The protocol is a shared
+# publish, not a secret.

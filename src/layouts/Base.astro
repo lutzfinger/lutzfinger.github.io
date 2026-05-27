@@ -31,7 +31,12 @@ const {
   jsonLd,
 } = Astro.props;
 
-const fullTitle = title ? `${title}, ${SITE.author}` : SITE.title;
+// Compose <title>. If the per-page title already contains "Lutz Finger" we
+// trust it as-is (caller wrote a fully-qualified, SEO-tuned title). Otherwise
+// we append a short brand suffix so SERPs always carry the author name.
+const fullTitle = title
+  ? (title.includes(SITE.author) ? title : `${title} — ${SITE.author}`)
+  : SITE.title;
 
 // Per-page OG image with default fallback. The build emits one PNG per page
 // under /og/<slug>.png; if it exists, use it; otherwise fall back to the

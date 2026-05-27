@@ -10,11 +10,18 @@ const all = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <Base
-  title="Writing, Neue Zürcher Zeitung"
+  title="NZZ Guest Opinion by Lutz Finger — Europe in the AI Race"
   description="Lutz Finger's guest contributions to the Neue Zürcher Zeitung (NZZ)."
   wide
 >
   <h1>Neue Zürcher Zeitung</h1>
+
+  <p class="page-lead">
+    Guest opinion pieces by Lutz Finger in the
+    <a href="https://www.nzz.ch/" rel="noopener">Neue Zürcher Zeitung</a>
+    (NZZ), Switzerland's paper of record. On Europe's AI strategy and the
+    geopolitical implications of falling behind the U.S. and China.
+  </p>
 
   <WritingSearch source="NZZ" placeholder="Search NZZ pieces…" />
 

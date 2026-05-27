@@ -7,16 +7,27 @@ export async function getStaticPaths() {
   const all = await getCollection('events');
   return all.map(entry => ({
     params: { slug: entry.id },
-    props: { entry },
+    props: { entry, all },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry, all } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
 const isoStart = d.date.toISOString();
 const isoEnd = d.endDate?.toISOString();
 const dateLabel = d.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+// Pull guest name out of the title if present ("Title, with Guest Name").
+const guestMatch = d.title.match(/,\s*with\s+(.+)$/i);
+const guest = guestMatch ? guestMatch[1].trim() : null;
+const cleanTitle = d.title.replace(/,\s*with\s+.+$/i, '');
+
+// Other sessions: same tag, sorted by date, exclude self.
+const others = all
+  .filter(e => e.id !== entry.id && e.data.tag === d.tag)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 4);
 
 const eventJsonLd: Record<string, unknown> = {
   '@context': 'https://schema.org',
@@ -38,15 +49,36 @@ if (d.location) eventJsonLd.location = { '@type': 'Place', name: d.location };
 if (d.organizer) eventJsonLd.organizer = { '@type': 'Organization', name: d.organizer };
 if (d.url) eventJsonLd.url = d.url;
 if (d.description) eventJsonLd.description = d.description;
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Speaking', item: `${SITE.url}/speaking/` },
+    { '@type': 'ListItem', position: 3, name: cleanTitle },
+  ],
+};
+
+const titleForHead = `${cleanTitle}${guest ? ', with ' + guest : ''} — Lutz Finger`;
+const descForHead = d.description
+  ?? `${cleanTitle}${guest ? ' with ' + guest : ''}, ${dateLabel}. ${d.tag.replace(/-/g,' ')} hosted by Lutz Finger${d.organizer ? ' at ' + d.organizer : ''}.`;
 ---
 <Base
-  title={d.title}
-  description={d.description}
+  title={titleForHead}
+  description={descForHead}
   type="article"
-  jsonLd={eventJsonLd}
+  jsonLd={[eventJsonLd, breadcrumbJsonLd]}
 >
+  <p style="margin-bottom:1rem"><a href="/speaking/">← All speaking</a></p>
+
   <article>
-    <h1>{d.title}</h1>
+    <h1>{cleanTitle}</h1>
+    {guest && (
+      <p style="font-size:1.15rem; color:var(--c-text-soft); margin:0.4rem 0 1rem">
+        with <strong>{guest}</strong>
+      </p>
+    )}
     <div class="article-meta">
       <time datetime={isoStart}>{dateLabel}</time>
       <span>·</span>
@@ -54,14 +86,49 @@ if (d.description) eventJsonLd.description = d.description;
       {d.location && <><span>·</span><span>{d.location}</span></>}
       {d.organizer && <><span>·</span><span>{d.organizer}</span></>}
     </div>
+
     <div class="article-body">
       <Content />
     </div>
+
     {d.url && (
       <aside class="article-source">
-        <strong>Event link:</strong> <a href={d.url}>{d.url}</a>
+        <strong>Event link:</strong> <a href={d.url} rel="noopener" target={d.url.startsWith('http') ? '_blank' : undefined}>{d.url}</a>
       </aside>
     )}
-    <p style="margin-top:2.5rem"><a href="/speaking/">← All speaking</a></p>
+
+    <section style="margin-top:2.5rem; padding:1.25rem 1.5rem; border:1px solid var(--c-border); border-radius:6px; background:var(--c-bg-soft)">
+      <p style="margin:0; font-size:0.95rem">
+        <strong>About the speaker.</strong>
+        Lutz Finger is Head of AI at <a href="https://zoovu.com" rel="noopener">Zoovu</a>,
+        Data Scientist in Residence at Cornell SC Johnson,
+        and a <a href={SITE.social.forbes} rel="noopener">Forbes contributor</a>.
+        Two AI exits. Ex-Google, ex-LinkedIn, ex-Snap.
+        For booking inquiries: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      </p>
+    </section>
+
+    {others.length > 0 && (
+      <section style="margin-top:3rem">
+        <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">Other {d.tag.replace(/-/g, ' ')} sessions</h2>
+        <ul class="card-list" style="margin-top:1.25rem">
+          {others.map(o => {
+            const oClean = o.data.title.replace(/,\s*with\s+.+$/i, '');
+            const oGuest = o.data.title.match(/,\s*with\s+(.+)$/i)?.[1]?.trim();
+            return (
+              <li>
+                <a class="card" href={`/speaking/${o.id}/`} style="padding:0.85rem 1.15rem">
+                  <div class="card-meta" style="margin-bottom:0.2rem">
+                    <time datetime={o.data.date.toISOString()}>{o.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+                    {oGuest && <><span>·</span><span>with {oGuest}</span></>}
+                  </div>
+                  <h3 class="card-title" style="font-size:1.02rem; margin:0">{oClean}</h3>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
   </article>
 </Base>

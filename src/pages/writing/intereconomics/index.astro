@@ -10,11 +10,19 @@ const all = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 <Base
-  title="Writing, Intereconomics"
+  title="Intereconomics Articles by Lutz Finger on Europe, AI, Data Power"
   description="Lutz Finger's writing for the Intereconomics journal. Cards open the original article."
   wide
 >
   <h1>Intereconomics</h1>
+
+  <p class="page-lead">
+    Peer-reviewed articles by Lutz Finger in the
+    <a href="https://www.intereconomics.eu/" rel="noopener">Intereconomics</a>
+    journal: on data as the new geopolitical power (2019) and on Europe's
+    position in the AI race vs the U.S. and China (2025). Each card opens
+    the article on intereconomics.eu.
+  </p>
 
   <WritingSearch source="Intereconomics" placeholder="Search Intereconomics pieces…" />
 

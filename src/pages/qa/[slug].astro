@@ -7,11 +7,11 @@ export async function getStaticPaths() {
   const all = await getCollection('qa');
   return all.map(entry => ({
     params: { slug: entry.id },
-    props: { entry },
+    props: { entry, all },
   }));
 }
 
-const { entry } = Astro.props;
+const { entry, all } = Astro.props;
 const { Content } = await render(entry);
 
 const TAG_LABELS: Record<string, string> = {
@@ -21,6 +21,19 @@ const TAG_LABELS: Record<string, string> = {
   'bias': 'Bias', 'risks': 'Risks', 'education': 'Education', 'startup': 'Startups',
   'investment': 'Investment', 'leadership': 'Leadership', 'future-of-work': 'Future of Work',
 };
+
+// Related Q&As: other entries with overlapping tags, scored by overlap count.
+const myTags = new Set(entry.data.tags);
+const related = all
+  .filter(q => q.id !== entry.id)
+  .map(q => {
+    const overlap = q.data.tags.filter(t => myTags.has(t)).length;
+    return { q, overlap };
+  })
+  .filter(({ overlap }) => overlap > 0)
+  .sort((a, b) => b.overlap - a.overlap || a.q.data.question.localeCompare(b.q.data.question))
+  .slice(0, 5)
+  .map(({ q }) => q);
 
 const faqJsonLd = {
   '@context': 'https://schema.org',
@@ -34,8 +47,6 @@ const faqJsonLd = {
       author: { '@type': 'Person', name: SITE.author, url: SITE.url },
     },
   }],
-  // Speakable so voice assistants (Google Assistant, Alexa, etc.) can read the
-  // headline question + answer body aloud.
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article.qa-body'],
@@ -52,23 +63,53 @@ const breadcrumbJsonLd = {
 };
 ---
 <Base
-  title={entry.data.question}
-  description={`Lutz Finger's answer to "${entry.data.question}", drawn from his Forbes column and writing.`}
+  title={`${entry.data.question} — Lutz Finger answers`}
+  description={`Lutz Finger's answer to "${entry.data.question}", drawn from his Forbes column and writing. Sources cited inline.`}
   jsonLd={[faqJsonLd, breadcrumbJsonLd]}
 >
   <p style="margin-bottom:1rem"><a href="/qa/">← All Q&amp;A</a></p>
 
   <h1>{entry.data.question}</h1>
 
-  <div class="filters" style="margin: 0.5rem 0 1.75rem">
+  <div class="filters" style="margin: 0.5rem 0 1.25rem">
     {entry.data.tags.map(t => (
       <a href={`/qa/tag/${t}/`} class="filter-chip" style="font-size:0.78rem; padding:0.2em 0.65em">{TAG_LABELS[t] ?? t}</a>
     ))}
   </div>
 
+  <p class="qa-lead">
+    Drawn from <a href={SITE.social.forbes} rel="noopener">Lutz Finger's Forbes column</a>,
+    <a href={SITE.social.linkedin} rel="noopener">LinkedIn writing</a>, and
+    <a href="/ecornell/">Cornell teaching</a>. Sources are cited inline so you
+    can read the originals.
+  </p>
+
   <article class="qa-body">
     <Content />
   </article>
+
+  {related.length > 0 && (
+    <section class="qa-related">
+      <h2>Related answers</h2>
+      <p style="color:var(--c-text-soft); font-size:0.95rem; margin-bottom:1rem">
+        Other Q&amp;As that share at least one tag with this one.
+      </p>
+      <ul class="card-list">
+        {related.map(r => (
+          <li>
+            <a class="card" href={`/qa/${r.id}/`} style="padding:0.85rem 1.15rem">
+              <div class="card-meta" style="margin-bottom:0.2rem">
+                {r.data.tags.slice(0, 3).map(t => (
+                  <span class="tag" style="font-size:0.72rem">{TAG_LABELS[t] ?? t}</span>
+                ))}
+              </div>
+              <h3 class="card-title" style="font-size:1.02rem; margin:0">{r.data.question}</h3>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <hr style="margin: 3rem 0 2rem" />
   <p style="color:var(--c-text-muted)">
@@ -78,6 +119,14 @@ const breadcrumbJsonLd = {
 </Base>
 
 <style>
+  .qa-lead {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--c-text-soft);
+    border-left: 2px solid var(--c-border);
+    padding-left: 0.85rem;
+    margin: 0 0 1.5rem;
+  }
   .qa-body blockquote {
     border-left: 3px solid var(--c-accent);
     padding-left: 1em;
@@ -91,5 +140,15 @@ const breadcrumbJsonLd = {
     font-size: 0.92rem;
     font-style: normal;
     margin-bottom: 1.8em;
+  }
+  .qa-related { margin-top: 3rem; }
+  .qa-related h2 {
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: 0.4rem;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--c-text-muted);
   }
 </style>

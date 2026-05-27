@@ -338,6 +338,17 @@ img {
   color: #0a66c2;
 }
 
+.tag.tag-intereconomics {
+  background: #f0eee7;
+  color: #5b3e8a;
+}
+
+.tag.tag-nzz {
+  background: #ebe6dc;
+  color: #1d1d1f;
+  border: 1px solid #1d1d1f33;
+}
+
 .tag.tag-workshop {
   background: #eef5e9;
   color: #3d7a1b;
@@ -499,6 +510,8 @@ img {
   }
   .tag.tag-forbes { background: #3a2620; color: #e07b5c; }
   .tag.tag-linkedin { background: #1a2a3a; color: #6ba7d9; }
+  .tag.tag-intereconomics { background: #2a223a; color: #a48bd6; }
+  .tag.tag-nzz { background: #2a2724; color: #d6cfc1; border-color: #ffffff22; }
   .tag.tag-workshop { background: #1f2f1a; color: #7fb360; }
   .tag.tag-conference { background: #2a1f3a; color: #ab8ac9; }
   .tag.tag-live-stream { background: #3a2620; color: #e07b5c; }

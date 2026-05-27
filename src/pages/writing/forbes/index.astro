@@ -1,6 +1,7 @@
 ---
 import Base from '~/layouts/Base.astro';
 import WritingList from '~/components/WritingList.astro';
+import WritingFilters from '~/components/WritingFilters.astro';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('writing'))
@@ -13,16 +14,8 @@ const all = (await getCollection('writing'))
   wide
 >
   <h1>Forbes column</h1>
-  <p class="hero-sub">
-    {all.length} pieces on AI, search, and product strategy. Hosted by Forbes;
-    cards open the originals.
-  </p>
 
-  <div class="filters">
-    <a href="/writing/" class="filter-chip">← All writing</a>
-    <span class="filter-chip active tag-forbes">Forbes ({all.length})</span>
-    <a href="/writing/linkedin/" class="filter-chip tag-linkedin">LinkedIn</a>
-  </div>
+  <WritingFilters active="forbes" />
 
   <WritingList posts={all} />
 </Base>

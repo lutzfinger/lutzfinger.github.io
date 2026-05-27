@@ -1,0 +1,38 @@
+---
+// Shared filter-chip row for every /writing/* page. Pass the active source
+// (or 'all') and we render the full set with proper counts pulled from the
+// content collection.
+import { getCollection } from 'astro:content';
+
+interface Props {
+  active: 'all' | 'forbes' | 'linkedin' | 'intereconomics' | 'nzz';
+}
+const { active } = Astro.props;
+
+const all = await getCollection('writing');
+const counts = {
+  all: all.length,
+  Forbes: all.filter(p => p.data.source === 'Forbes').length,
+  LinkedIn: all.filter(p => p.data.source === 'LinkedIn').length,
+  Intereconomics: all.filter(p => p.data.source === 'Intereconomics').length,
+  NZZ: all.filter(p => p.data.source === 'NZZ').length,
+};
+
+interface Chip { id: string; href: string; label: string; tagClass?: string; count: number; }
+const chips: Chip[] = [
+  { id: 'all', href: '/writing/', label: 'All', count: counts.all },
+  { id: 'forbes', href: '/writing/forbes/', label: 'Forbes', tagClass: 'tag-forbes', count: counts.Forbes },
+  { id: 'linkedin', href: '/writing/linkedin/', label: 'LinkedIn', tagClass: 'tag-linkedin', count: counts.LinkedIn },
+  { id: 'intereconomics', href: '/writing/intereconomics/', label: 'Intereconomics', tagClass: 'tag-intereconomics', count: counts.Intereconomics },
+  { id: 'nzz', href: '/writing/nzz/', label: 'NZZ', tagClass: 'tag-nzz', count: counts.NZZ },
+];
+---
+<div class="filters">
+  {chips.filter(c => c.count > 0 || c.id === 'all').map(c => (
+    c.id === active ? (
+      <span class={`filter-chip active ${c.tagClass ?? ''}`}>{c.label} ({c.count})</span>
+    ) : (
+      <a href={c.href} class={`filter-chip ${c.tagClass ?? ''}`}>{c.label} ({c.count})</a>
+    )
+  ))}
+</div>

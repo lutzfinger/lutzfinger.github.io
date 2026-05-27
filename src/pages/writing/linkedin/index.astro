@@ -1,55 +1,21 @@
 ---
 import Base from '~/layouts/Base.astro';
 import WritingList from '~/components/WritingList.astro';
+import WritingFilters from '~/components/WritingFilters.astro';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('writing'))
   .filter(p => p.data.source === 'LinkedIn')
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-
-const articles = all.filter(p => p.data.sourceType === 'article');
-const posts = all.filter(p => p.data.sourceType === 'post');
-
-const LINKEDIN_ARTICLES_INDEX = 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/';
 ---
 <Base
   title="Writing — LinkedIn"
-  description={`Lutz Finger's LinkedIn Pulse articles featured here plus a link to the complete LinkedIn article archive.`}
+  description={`Lutz Finger's LinkedIn articles — ${all.length} pieces. Each card opens the original on LinkedIn.`}
   wide
 >
   <h1>LinkedIn</h1>
-  <p class="hero-sub">
-    Featured LinkedIn Pulse articles below. For the complete archive — every
-    article Lutz has ever published on LinkedIn — go to
-    <a href={LINKEDIN_ARTICLES_INDEX} rel="noopener" target="_blank">linkedin.com/in/lutzfinger/recent-activity/articles</a>.
-  </p>
 
-  <div class="filters">
-    <a href="/writing/" class="filter-chip">← All writing</a>
-    <a href="/writing/forbes/" class="filter-chip tag-forbes">Forbes</a>
-    <span class="filter-chip active tag-linkedin">LinkedIn ({all.length})</span>
-  </div>
+  <WritingFilters active="linkedin" />
 
-  <p style="margin: 1.5rem 0 0.5rem">
-    <a class="card" href={LINKEDIN_ARTICLES_INDEX} rel="noopener" target="_blank" style="display:block; padding:1.1rem 1.4rem; border-color:var(--c-accent)">
-      <strong>→ View every LinkedIn article on LinkedIn</strong>
-      <br>
-      <span style="color:var(--c-text-muted); font-size:0.95rem; font-family:var(--font-sans)">
-        Opens linkedin.com/in/lutzfinger/recent-activity/articles
-      </span>
-    </a>
-  </p>
-
-  {articles.length > 0 && (
-    <>
-      <h2 style="margin-top:2.5rem; font-size:1.3rem">Featured articles</h2>
-      <WritingList posts={articles} />
-    </>
-  )}
-  {posts.length > 0 && (
-    <>
-      <h2 style="margin-top:3rem; font-size:1.3rem">Posts</h2>
-      <WritingList posts={posts} />
-    </>
-  )}
+  <WritingList posts={all} />
 </Base>

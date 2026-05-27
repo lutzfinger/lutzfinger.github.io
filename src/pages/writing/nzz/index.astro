@@ -1,6 +1,7 @@
 ---
 import Base from '~/layouts/Base.astro';
 import WritingList from '~/components/WritingList.astro';
+import WritingFilters from '~/components/WritingFilters.astro';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('writing'))
@@ -9,21 +10,12 @@ const all = (await getCollection('writing'))
 ---
 <Base
   title="Writing — Neue Zürcher Zeitung"
-  description="Lutz Finger's writing in the Neue Zürcher Zeitung (NZZ)."
+  description="Lutz Finger's guest contributions to the Neue Zürcher Zeitung (NZZ)."
   wide
 >
   <h1>Neue Zürcher Zeitung</h1>
-  <p class="hero-sub">
-    {all.length === 1 ? '1 piece' : `${all.length} pieces`} in <a href="https://www.nzz.ch/" rel="noopener">NZZ</a>.
-  </p>
 
-  <div class="filters">
-    <a href="/writing/" class="filter-chip">← All writing</a>
-    <a href="/writing/forbes/" class="filter-chip tag-forbes">Forbes</a>
-    <a href="/writing/linkedin/" class="filter-chip tag-linkedin">LinkedIn</a>
-    <a href="/writing/intereconomics/" class="filter-chip tag-intereconomics">Intereconomics</a>
-    <span class="filter-chip active tag-nzz">NZZ ({all.length})</span>
-  </div>
+  <WritingFilters active="nzz" />
 
   <WritingList posts={all} groupByYear={false} />
 </Base>

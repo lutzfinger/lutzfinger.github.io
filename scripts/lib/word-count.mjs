@@ -70,8 +70,13 @@ export function extractLinkedInPublishedDate(text) {
 export function cleanLinkedInBody(text, title = '') {
   if (!text) return '';
   let body = text;
-  // Drop "Created on ..." / "Published on ..." lines
-  body = body.replace(/^\s*(Created|Published)\s+on\s+\d{4}-\d{2}-\d{2}[^\n]*\n?/gim, '');
+  // Drop "Created on ..." / "Published on ..." lines — both forms:
+  //   "Published on 2017-09-25 15:38"   (real date)
+  //   "Published on ---"                (LinkedIn export with stripped date)
+  //   "Published on"                    (bare)
+  body = body.replace(/^\s*(Created|Published)\s+on[^\n]*\n?/gim, '');
+  // Drop standalone "---" lines (markdown HR / leftover separators from the export)
+  body = body.replace(/^\s*-{3,}\s*$\n?/gim, '');
   // Drop the leading "This is a republished post from FORBES:" line if present
   body = body.replace(/^\s*This\s+is\s+a\s+republished\s+post\s+from\s+FORBES\s*:?\s*\n?/im, '');
   // Drop repeated title lines at the top (the export tends to repeat the title 2-3x)

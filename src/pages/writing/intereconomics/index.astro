@@ -1,6 +1,7 @@
 ---
 import Base from '~/layouts/Base.astro';
 import WritingList from '~/components/WritingList.astro';
+import WritingFilters from '~/components/WritingFilters.astro';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('writing'))
@@ -13,17 +14,8 @@ const all = (await getCollection('writing'))
   wide
 >
   <h1>Intereconomics</h1>
-  <p class="hero-sub">
-    {all.length === 1 ? '1 piece' : `${all.length} pieces`} for the
-    <a href="https://www.intereconomics.eu/" rel="noopener">Intereconomics</a> journal.
-  </p>
 
-  <div class="filters">
-    <a href="/writing/" class="filter-chip">← All writing</a>
-    <a href="/writing/forbes/" class="filter-chip tag-forbes">Forbes</a>
-    <a href="/writing/linkedin/" class="filter-chip tag-linkedin">LinkedIn</a>
-    <span class="filter-chip active">Intereconomics ({all.length})</span>
-  </div>
+  <WritingFilters active="intereconomics" />
 
   <WritingList posts={all} groupByYear={false} />
 </Base>

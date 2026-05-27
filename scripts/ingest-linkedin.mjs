@@ -68,13 +68,8 @@ async function processDir(dir, sourceType, kept, pulseMap) {
     const data = parsed.data;
     let body = cleanLinkedInBody(parsed.content, data.title ?? '');
 
-    // Drop Forbes-republished pieces (full copies) — they duplicate the Forbes column.
-    // Legitimate LinkedIn articles may CITE forbes.com URLs, so we only filter on the
-    // "republished from Forbes" marker, not on the URL appearing in the body.
-    if (isForbesRepublish(parsed.content)) {
-      kept.skippedForbesDup = (kept.skippedForbesDup ?? 0) + 1;
-      continue;
-    }
+    // Forbes-republishes are kept too — Lutz wants every article that appears
+    // on his LinkedIn recent-activity articles page, repost or not.
 
     const wc = wordCount(body);
     if (wc <= MIN_WORDS) {
@@ -106,20 +101,19 @@ async function processDir(dir, sourceType, kept, pulseMap) {
     }
 
     // URL resolution:
-    //   - Posts: use the `permalink:` field (always present in the export).
-    //   - Articles: require a real Pulse URL. Sources:
-    //       (1) `url:` field in the source markdown frontmatter, OR
-    //       (2) a mapping in data/linkedin-pulse-urls.csv keyed by stem.
-    //     Articles without a real URL are SKIPPED — the writing page never
-    //     shows the fallback recent-activity index again.
+    //   1. `permalink:` or `url:` in the source frontmatter (set for Posts).
+    //   2. Mapping in data/linkedin-pulse-urls.csv keyed by file stem.
+    //   3. Fallback to Lutz's LinkedIn recent-activity articles index so the
+    //      card still goes somewhere on linkedin.com.
+    const LINKEDIN_ARTICLES_INDEX = 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/';
     let url = data.permalink || data.url;
     if (!url && sourceType === 'article') {
       const stem = file.replace(/\.md$/, '');
       url = pulseMap.get(stem);
     }
     if (!url) {
-      kept.skippedNoUrl = (kept.skippedNoUrl ?? 0) + 1;
-      continue;
+      url = LINKEDIN_ARTICLES_INDEX;
+      kept.fallbackUrl = (kept.fallbackUrl ?? 0) + 1;
     }
 
     const excerpt = makeExcerpt(body, 240);

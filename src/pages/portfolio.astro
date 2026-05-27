@@ -128,19 +128,6 @@ const CASES: UseCase[] = [
   },
 ];
 
-interface Role { id: string; title: string; period: string; summary?: string; links?: { label: string; url: string }[]; }
-const ROLES_NOW: Role[] = [
-  { id: 'zoovu', title: 'Head of AI · Zoovu', period: '2025–present', summary: 'AI-driven product discovery and decision experiences for e-commerce.', links: [{ label: 'Zoovu', url: 'https://zoovu.com' }] },
-  { id: 'cornell', title: 'Data Scientist in Residence · Cornell SC Johnson', period: '2023–present', summary: 'Teaches AI strategy + designs the AI Solutions track.', links: [{ label: 'Cornell faculty page', url: 'https://business.cornell.edu/faculty-research/faculty/ltf24/' }, { label: 'Certificate', url: '/ecornell/' }] },
-  { id: 'cherry', title: 'Venture Partner · Cherry Ventures', period: '2024–present', summary: "Europe's premier seed fund.", links: [{ label: 'Cherry Ventures', url: 'https://www.cherry.vc/team/lutz-finger' }] },
-  { id: 'forbes', title: 'Senior Contributor · Forbes', period: '2020–present', summary: '50+ articles on AI products, GEO, healthcare, policy.', links: [{ label: 'Column', url: '/writing/forbes/' }] },
-];
-const ROLES_PAST: Role[] = [
-  { id: 'snap', title: 'Snap Inc.', period: 'past', summary: 'AI / Data leadership.' },
-  { id: 'google', title: 'Google', period: 'past', summary: 'AI / Data.' },
-  { id: 'linkedin', title: 'LinkedIn — Director, Data Science', period: 'past', summary: 'Data Science leadership; the "Future Me" model above came from here.' },
-];
-
 const itemListJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
@@ -203,41 +190,6 @@ const breadcrumbJsonLd = {
       </li>
     ))}
   </ul>
-
-  <section style="margin-top: 3.5rem">
-    <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">Where this work happens — now</h2>
-    <ul class="card-list" style="margin-top:1.25rem">
-      {ROLES_NOW.map(r => (
-        <li><article class="card" style="padding:1rem 1.25rem">
-          <div class="card-meta"><span>{r.period}</span></div>
-          <h3 class="card-title">{r.title}</h3>
-          {r.summary && <p style="margin:0.4rem 0 0">{r.summary}</p>}
-          {r.links && (
-            <p style="margin-top:0.5rem; font-family:var(--font-sans); font-size:0.9rem">
-              {r.links.map((l, i) => (
-                <>
-                  {i > 0 && ' · '}
-                  <a href={l.url} rel="noopener" target={l.url.startsWith('http') ? '_blank' : undefined}>{l.label}</a>
-                </>
-              ))}
-            </p>
-          )}
-        </article></li>
-      ))}
-    </ul>
-  </section>
-
-  <section style="margin-top: 2.5rem">
-    <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">Previously</h2>
-    <ul class="card-list" style="margin-top:1.25rem">
-      {ROLES_PAST.map(r => (
-        <li><article class="card" style="padding:0.9rem 1.25rem">
-          <h3 class="card-title" style="font-size:1.05rem">{r.title}</h3>
-          {r.summary && <p style="margin:0.3rem 0 0; color:var(--c-text-soft); font-size:0.95rem">{r.summary}</p>}
-        </article></li>
-      ))}
-    </ul>
-  </section>
 
   <p style="margin-top:3rem; color:var(--c-text-muted)">
     Working on something AI-shaped where one of these would help?

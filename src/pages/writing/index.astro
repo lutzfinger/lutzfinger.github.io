@@ -3,16 +3,27 @@ import Base from '~/layouts/Base.astro';
 import WritingList from '~/components/WritingList.astro';
 import WritingFilters from '~/components/WritingFilters.astro';
 import WritingSearch from '~/components/WritingSearch.astro';
+import { SITE } from '~/consts';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('writing'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const description = `Every article by Lutz Finger — ${all.length} pieces across the Forbes column, LinkedIn, Intereconomics, NZZ, and elsewhere. Each card opens the original source.`;
+const description = `Every article by Lutz Finger, ${all.length} pieces across the Forbes column, LinkedIn, Intereconomics, NZZ, and elsewhere. Each card opens the original source.`;
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Writing', item: `${SITE.url}/writing/` },
+  ],
+};
 ---
 <Base
   title="Writing"
   description={description}
+  jsonLd={breadcrumbJsonLd}
   wide
 >
   <h1>Writing</h1>

@@ -31,7 +31,7 @@ const {
   jsonLd,
 } = Astro.props;
 
-const fullTitle = title ? `${title} — ${SITE.author}` : SITE.title;
+const fullTitle = title ? `${title}, ${SITE.author}` : SITE.title;
 const ogImage = new URL(image, SITE.url).href;
 ---
 <!doctype html>
@@ -47,8 +47,8 @@ const ogImage = new URL(image, SITE.url).href;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/img/lutz-headshot-400.jpg" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="alternate" type="application/rss+xml" title="Lutz Finger — Writing" href="/writing/rss.xml" />
-    <link rel="alternate" type="application/rss+xml" title="Lutz Finger — Speaking" href="/speaking/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Lutz Finger, Writing" href="/writing/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Lutz Finger, Speaking" href="/speaking/rss.xml" />
 
     <meta property="og:type" content={type} />
     <meta property="og:title" content={fullTitle} />

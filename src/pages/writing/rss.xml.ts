@@ -8,8 +8,8 @@ export async function GET(context: { site?: URL }) {
     .slice(0, 100);
 
   return rss({
-    title: `${SITE.author} — Writing`,
-    description: 'Articles by Lutz Finger — Forbes column, LinkedIn pieces, and elsewhere.',
+    title: `${SITE.author}, Writing`,
+    description: 'Articles by Lutz Finger, Forbes column, LinkedIn pieces, and elsewhere.',
     site: context.site ?? SITE.url,
     items: posts.map(p => ({
       title: `[${p.data.source}] ${p.data.title}`,

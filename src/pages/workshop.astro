@@ -4,10 +4,10 @@ import { SITE } from '~/consts';
 
 const WORKSHOPS = [
   {
-    title: 'Hands-On AI Agents — Vibe-Code AI Workflows for Personal Productivity',
+    title: 'Hands-On AI Agents, Vibe-Code AI Workflows for Personal Productivity',
     url: 'https://ecornell.cornell.edu/courses/artificial-intelligence/hands-on-ai-agents-vibe-code-ai-workflows-and-agent-skills-for-personal-productivity/',
     summary: "Vibe-code your own personal AI agent in three hours. What works, what doesn't, what's safe.",
-    audience: 'Operators, founders, and individual contributors who want to automate their own workflows — no coding required.',
+    audience: 'Operators, founders, and individual contributors who want to automate their own workflows, no coding required.',
     you_leave_with: [
       'A working agent skill running against your real workflow (e.g. email triage).',
       'A clear mental model of what agents are and where they break.',
@@ -15,7 +15,7 @@ const WORKSHOPS = [
     ],
   },
   {
-    title: 'Building Enterprise-Ready AI Agents — From Prototypes to Production',
+    title: 'Building Enterprise-Ready AI Agents, From Prototypes to Production',
     url: 'https://ecornell.cornell.edu/courses/artificial-intelligence/building-enterprise-ready-ai-agents-from-prototypes-to-production/',
     summary: 'Production-grade agent architecture with Claude Code, LangGraph, and the OWASP LLM Top 10. Three hours.',
     audience: 'Engineering leaders, AI architects, and senior PMs taking agents past the demo stage.',
@@ -44,11 +44,19 @@ const itemListJsonLd = {
     },
   })),
 };
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Workshops', item: `${SITE.url}/workshop/` },
+  ],
+};
 ---
 <Base
   title="AI Agent Workshops"
-  description="Two 3-hour live workshops on building AI agents — personal-productivity and enterprise-production. Taught by Lutz Finger, hosted by eCornell."
-  jsonLd={itemListJsonLd}
+  description="Two 3-hour live workshops on building AI agents, personal-productivity and enterprise-production. Taught by Lutz Finger, hosted by eCornell."
+  jsonLd={[itemListJsonLd, breadcrumbJsonLd]}
 >
   <h1>AI Workflow Workshops</h1>
   <p class="hero-sub">
@@ -62,7 +70,7 @@ const itemListJsonLd = {
     "The winners won't be the ones who use AI. They'll be the ones who
     redesign work around it." Better workflows beat bigger models. Reliability
     comes from systems: <em>atomize tasks → constrain outputs → verify → iterate</em>.
-    The biggest performance gains aren't model upgrades — they're better workflows.
+    The biggest performance gains aren't model upgrades, they're better workflows.
   </p>
   <p>
     These workshops are the practical version of that thesis. Bring a real

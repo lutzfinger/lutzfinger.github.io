@@ -1,5 +1,5 @@
 ---
-title: "The Future of AI — with Richard Socher"
+title: "The Future of AI, with Richard Socher"
 date: "2026-02-05"
 tag: "live-stream"
 location: "Online"

@@ -1,6 +1,6 @@
 export const SITE = {
   url: 'https://www.lutzfinger.com',
-  title: 'Lutz Finger — Building Products with Data & AI',
+  title: 'Lutz Finger, Building Products with Data & AI',
   description:
     'Lutz Finger writes for Forbes, teaches the eCornell AI certificate, and speaks on building AI products, generative search (GEO), and data strategy. Find his Forbes column, talks, book, and Q&A.',
   author: 'Lutz Finger',

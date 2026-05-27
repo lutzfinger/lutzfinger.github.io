@@ -22,43 +22,43 @@ const CASES: UseCase[] = [
     oneliner: "Turn a product catalog into a conversation that ends in 'this is the one'.",
     what: 'R2Decide replaced keyword-and-facet search with intent-aware, conversational discovery. The shopper says what they want in natural language; the system surfaces the right product, configured, with reasons.',
     how: 'Fine-tuned models per category, vector retrieval over enriched catalog embeddings, intent classification, attribute extraction, and re-ranking with a learned reward model trained on real conversions.',
-    outcome: 'R2Decide acquired in 2026. The thesis — eval data is the moat, not the model — became the through-line of my Forbes column and informs the AI work I lead at Zoovu.',
+    outcome: 'R2Decide acquired in 2026. The thesis, eval data is the moat, not the model, became the through-line of my Forbes column and informs the AI work I lead at Zoovu.',
     context: 'R2Decide (founder, sold 2026) → ongoing work as Head of AI at Zoovu.',
     links: [
       { label: 'Acquisition: XGen AI acquires R2Decide', url: 'https://finance.yahoo.com/news/xgen-ai-acquires-r2decide-accelerate-140000212.html' },
       { label: 'Zoovu', url: 'https://zoovu.com' },
-      { label: 'After the Gold Rush — eCornell keynote', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
-      { label: 'GEO Playbook for Online Retailers — Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/' },
+      { label: 'After the Gold Rush, eCornell keynote', url: 'https://ecornell.cornell.edu/keynotes/overview/K102125/' },
+      { label: 'GEO Playbook for Online Retailers, Forbes', url: 'https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/' },
     ],
   },
   {
     id: 'preventable-admissions',
     title: 'Predicting preventable hospital admissions',
     oneliner: "Flag patients heading toward a preventable admission before it happens.",
-    what: 'Models that consume claims, EHR, and behavioral signals to identify patients likely to be admitted to a hospital for something a preceding intervention could have prevented — and surface the intervention.',
+    what: 'Models that consume claims, EHR, and behavioral signals to identify patients likely to be admitted to a hospital for something a preceding intervention could have prevented, and surface the intervention.',
     how: 'Time-series features over claims and labs, structured-text features over notes, and a calibrated risk score. Cohort framing is value-based care: rather than predict any admission, predict the avoidable ones, where the model output ties to a concrete action.',
-    outcome: 'Sits at the intersection of value-based care and the predictive-analytics thesis I have argued in Forbes — that healthcare AI lives or dies on data-quality discipline, not model size.',
+    outcome: 'Sits at the intersection of value-based care and the predictive-analytics thesis I have argued in Forbes, that healthcare AI lives or dies on data-quality discipline, not model size.',
     links: [
-      { label: 'Forbes: Three Trends — AI + Value-Based Care (VBC)', url: 'https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/' },
+      { label: 'Forbes: Three Trends, AI + Value-Based Care (VBC)', url: 'https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/' },
     ],
   },
   {
     id: 'cloning-influencers',
-    title: 'Cloning influencers — answering in someone\'s voice',
+    title: 'Cloning influencers, answering in someone\'s voice',
     oneliner: "Train a system on a person's published corpus; answer in their voice with citations.",
-    what: 'A system that ingests everything a public figure has written and said — articles, transcripts, talks, social posts — then answers new questions in their voice, with the original source attached.',
+    what: 'A system that ingests everything a public figure has written and said, articles, transcripts, talks, social posts, then answers new questions in their voice, with the original source attached.',
     how: 'Embed and structure the corpus. For each question, retrieve relevant passages, score by lexical overlap with the question, and select the sentences a human would actually quote. Always cite the source URL inline.',
-    outcome: 'Powers the live Q&A on this site. Built as an advisor-style tool — see the demo I shared on LinkedIn.',
+    outcome: 'Powers the live Q&A on this site. Built as an advisor-style tool, see the demo I shared on LinkedIn.',
     links: [
       { label: 'Clone-Advisor demo on LinkedIn', url: 'https://www.linkedin.com/posts/lutzfinger_clone-advisor-form-share-7178902812364292096-GSIv/' },
     ],
   },
   {
     id: 'decent-espresso-derek',
-    title: 'Decent Espresso "Derek" — community Q&A and customer-care bot',
+    title: 'Decent Espresso "Derek", community Q&A and customer-care bot',
     oneliner: "A 24/7 community concierge for one of the most technical hardware communities online.",
-    what: "Derek is a Q&A and customer-care bot for the Decent Espresso community. He answers user questions about machines, shot profiles, firmware, and troubleshooting — drawing from the community's accumulated knowledge so John Buckman and the power users don't have to repeat themselves.",
-    how: "Ingest the community's corpus — Facebook group posts, the wiki, profile docs, video transcripts, manuals. Embed and structure. For each question, retrieve the highest-utility prior answers and stitch them into a single response with citations back to the source posts.",
+    what: "Derek is a Q&A and customer-care bot for the Decent Espresso community. He answers user questions about machines, shot profiles, firmware, and troubleshooting, drawing from the community's accumulated knowledge so John Buckman and the power users don't have to repeat themselves.",
+    how: "Ingest the community's corpus, Facebook group posts, the wiki, profile docs, video transcripts, manuals. Embed and structure. For each question, retrieve the highest-utility prior answers and stitch them into a single response with citations back to the source posts.",
     outcome: "Demonstrates the community-as-corpus pattern: a niche hardware community generates more accurate Q&A from its own archive than any general-purpose model can offer. Same retrieval architecture as the influencer-cloning case, applied to a community instead of a person.",
     links: [
       { label: 'Decent Espresso community thread', url: 'https://www.facebook.com/groups/decentespresso/posts/2591986014318607/' },
@@ -66,10 +66,10 @@ const CASES: UseCase[] = [
   },
   {
     id: 'virtual-teacher',
-    title: 'Virtual Teacher — flip the classroom',
+    title: 'Virtual Teacher, flip the classroom',
     oneliner: "Make the teacher 24/7 part of every student's conversation, not a one-way lecture.",
-    what: "Replaces the broadcast-style lecture with an always-on tutor that joins each student's flow. The teacher's voice, knowledge, and pedagogy — available on demand, inside the student's own work.",
-    how: "Train on the teacher's actual material: course videos, transcripts, slides, prior Q&A. For each student question, retrieve the relevant teaching moment and reformulate it the way the teacher would — Socratic prompts, scaffolded hints, deliberate gaps — not just the direct answer.",
+    what: "Replaces the broadcast-style lecture with an always-on tutor that joins each student's flow. The teacher's voice, knowledge, and pedagogy, available on demand, inside the student's own work.",
+    how: "Train on the teacher's actual material: course videos, transcripts, slides, prior Q&A. For each student question, retrieve the relevant teaching moment and reformulate it the way the teacher would, Socratic prompts, scaffolded hints, deliberate gaps, not just the direct answer.",
     outcome: "A flipped classroom that actually works. The lecture moves to the AI; class time goes to application and discussion. Built and demoed inside the Cornell eCornell certificate as the AI Teaching Assistant pattern.",
     links: [
       { label: 'Demo video (YouTube)', url: 'https://www.youtube.com/watch?v=DBOYn778l4I' },
@@ -78,21 +78,21 @@ const CASES: UseCase[] = [
   },
   {
     id: 'sai',
-    title: 'SAI — a thin personal AI client',
+    title: 'SAI, a thin personal AI client',
     oneliner: "A daily-driver AI assistant built on top of Anthropic's Claude.",
     what: "My own personal assistant. A thin client on Anthropic's Claude with workflow skills, scheduled tasks, and tight integrations into my email, calendar, and writing pipeline. Think 'Claude with my muscle memory'.",
     how: "Skill-based architecture: each capability is a small, composable skill (process an incoming email, add a calendar event from a one-liner, sync content into the RAG, draft a Forbes piece) that the model invokes when relevant. Local-first, structured logs.",
-    outcome: 'Drives the SAI@ inbox — emails sent there get classified, calendared, and acknowledged automatically. Also runs the content pipelines that keep this site current. The base architecture is open-sourced.',
+    outcome: 'Drives the SAI@ inbox, emails sent there get classified, calendared, and acknowledged automatically. Also runs the content pipelines that keep this site current. The base architecture is open-sourced.',
     links: [
-      { label: 'Repo — SAI base version (GitHub)', url: 'https://github.com/lutzfinger/SAI-baseversion' },
-      { label: 'Forbes: The Missing Moat in AI — Your Eval Data', url: 'https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/' },
+      { label: 'Repo, SAI base version (GitHub)', url: 'https://github.com/lutzfinger/SAI-baseversion' },
+      { label: 'Forbes: The Missing Moat in AI, Your Eval Data', url: 'https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/' },
     ],
   },
   {
     id: 'audiobook-summarizer',
     title: 'Audiobook summarizer',
     oneliner: "Compress a non-fiction audiobook into a structured, listenable summary.",
-    what: "Turns a 10-hour non-fiction audiobook into a 30-minute structured summary you can actually listen to — keeping the spine of the argument and the strongest evidence, dropping the padding.",
+    what: "Turns a 10-hour non-fiction audiobook into a 30-minute structured summary you can actually listen to, keeping the spine of the argument and the strongest evidence, dropping the padding.",
     how: "Transcribe → segment by argumentative beat (not by chapter) → extract claim + supporting evidence per beat → re-narrate with consistent pacing and a learned voice. The hard part isn't the LLM, it's the structural pacing.",
     outcome: 'Working prototype. The lesson: most non-fiction is ~30% argument and ~70% support; the craft is compressing argument while keeping the strongest support.',
     links: [
@@ -103,26 +103,26 @@ const CASES: UseCase[] = [
     id: 'future-me',
     title: 'Predicting "Future Me"',
     oneliner: "Use the LinkedIn graph to predict what someone will be doing in five years.",
-    what: "A model that, given a person's LinkedIn profile, predicts their likely next role and trajectory — by matching their pattern to thousands of others who started in the same place.",
-    how: "Career-graph traversal across hundreds of millions of LinkedIn profiles. For a given profile, find structurally similar earlier-stage members, then look at where THEY ended up — that is the prediction. The trick is good similarity scoring at scale.",
+    what: "A model that, given a person's LinkedIn profile, predicts their likely next role and trajectory, by matching their pattern to thousands of others who started in the same place.",
+    how: "Career-graph traversal across hundreds of millions of LinkedIn profiles. For a given profile, find structurally similar earlier-stage members, then look at where THEY ended up, that is the prediction. The trick is good similarity scoring at scale.",
     outcome: "Featured in Mashable's <em>How LinkedIn Found My Future Self</em> (2014). Demonstrated the principle that for career questions, retrieval-over-people beats forecasting-over-features.",
     context: 'Built during my time at LinkedIn (Director, Data Science).',
     links: [
-      { label: "Mashable — How LinkedIn Found My 'Future' Self", url: 'https://mashable.com/archive/linkedin-future-self' },
+      { label: "Mashable, How LinkedIn Found My 'Future' Self", url: 'https://mashable.com/archive/linkedin-future-self' },
     ],
   },
   {
     id: 'social-media-analytics',
     title: 'Social-media analytics at scale',
-    oneliner: 'Reading the social graph for signal — influence, propaganda, and emerging events.',
+    oneliner: 'Reading the social graph for signal, influence, propaganda, and emerging events.',
     what: 'Fisheye Analytics applied NLP and graph analysis to social-media streams for governments, NGOs, defense agencies, and Fortune 500 brands.',
     how: 'Entity extraction, topic modeling, bot detection, and influence-graph analysis across X/Twitter, Facebook, news, and forums. Pipeline built in the pre-LLM era when this was hard.',
-    outcome: 'Sold to Kantar (WPP) in 2013. The data and methods became the spine of my Forbes coverage of bots, deepfakes, and information warfare — and they shaped the framework in <em>Ask, Measure, Learn</em>.',
+    outcome: 'Sold to Kantar (WPP) in 2013. The data and methods became the spine of my Forbes coverage of bots, deepfakes, and information warfare, and they shaped the framework in <em>Ask, Measure, Learn</em>.',
     context: 'Fisheye Analytics, 2008–2013. Co-founded.',
     links: [
       { label: 'Acquisition: Kantar to acquire Fisheye Analytics', url: 'https://www.wpp.com/en/news/2013/12/kantar-to-acquire-fisheye-analytics' },
-      { label: 'Book — Ask, Measure, Learn', url: '/book/' },
-      { label: "Forbes: Do Evil — the business of social media bots", url: 'https://www.forbes.com/sites/lutzfinger/2015/02/17/do-evil-the-business-of-social-media-bots/' },
+      { label: 'Book, Ask, Measure, Learn', url: '/book/' },
+      { label: "Forbes: Do Evil, the business of social media bots", url: 'https://www.forbes.com/sites/lutzfinger/2015/02/17/do-evil-the-business-of-social-media-bots/' },
     ],
   },
 ];
@@ -130,7 +130,7 @@ const CASES: UseCase[] = [
 const itemListJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: "Lutz Finger — AI portfolio in use cases",
+  name: "Lutz Finger, AI portfolio in use cases",
   itemListElement: CASES.map((c, i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -154,7 +154,7 @@ const breadcrumbJsonLd = {
 ---
 <Base
   title="Portfolio"
-  description="Lutz Finger's AI portfolio in use cases — search & discovery for e-commerce, preventable-admissions prediction, cloning influencers, Decent Espresso 'Derek' community bot, the Virtual Teacher pattern, the SAI personal client, audiobook summarization, the LinkedIn 'Future Me' model, and social-media analytics at scale."
+  description="Lutz Finger's AI portfolio in use cases, search & discovery for e-commerce, preventable-admissions prediction, cloning influencers, Decent Espresso 'Derek' community bot, the Virtual Teacher pattern, the SAI personal client, audiobook summarization, the LinkedIn 'Future Me' model, and social-media analytics at scale."
   jsonLd={[itemListJsonLd, breadcrumbJsonLd]}
   wide
 >

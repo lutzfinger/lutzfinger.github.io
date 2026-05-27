@@ -9,7 +9,7 @@ export async function GET(context: { site?: URL }) {
     .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
 
   return rss({
-    title: `${SITE.author} — Speaking`,
+    title: `${SITE.author}, Speaking`,
     description: 'Upcoming keynotes, workshops, and conference sessions with Lutz Finger.',
     site: context.site ?? SITE.url,
     items: events.map(e => ({

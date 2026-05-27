@@ -40,11 +40,19 @@ const faqJsonLd = items.length === 0 ? undefined : {
     acceptedAnswer: { '@type': 'Answer', text: i.body ?? '' },
   })),
 };
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.lutzfinger.com' },
+    { '@type': 'ListItem', position: 2, name: 'Q&A', item: 'https://www.lutzfinger.com/qa/' },
+  ],
+};
 ---
 <Base
   title="Q&A"
-  description={`Answers to ${items.length} questions about AI, search, GEO, LLM moats, healthcare, e-commerce, policy, and more — sourced from Lutz Finger's writing and teaching.`}
-  jsonLd={faqJsonLd}
+  description={`Answers to ${items.length} questions about AI, search, GEO, LLM moats, healthcare, e-commerce, policy, and more, sourced from Lutz Finger's writing and teaching.`}
+  jsonLd={faqJsonLd ? [faqJsonLd, breadcrumbJsonLd] : breadcrumbJsonLd}
   wide
 >
   <h1>Q&amp;A</h1>

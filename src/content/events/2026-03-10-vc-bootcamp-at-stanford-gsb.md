@@ -6,8 +6,8 @@ location: "Stanford GSB, 655 Knight Way"
 eventAttendanceMode: "offline"
 organizer: "VC-BootCamp"
 url: "https://vc-bootcamp.com/"
-description: "Multi-panel day at Stanford GSB: \"From Gut Feel to Infrastructure — How AI Is Rewriting Venture Decision-Making\" and \"AI Tools in VC Operations — the Good, the Bad, the Ugly\"."
+description: "Multi-panel day at Stanford GSB: \"From Gut Feel to Infrastructure: How AI Is Rewriting Venture Decision-Making\" and \"AI Tools in VC Operations: the Good, the Bad, the Ugly\"."
 status: "past"
 ---
 
-Multi-panel day at Stanford GSB: "From Gut Feel to Infrastructure — How AI Is Rewriting Venture Decision-Making" and "AI Tools in VC Operations — the Good, the Bad, the Ugly".
+Multi-panel day at Stanford GSB: "From Gut Feel to Infrastructure: How AI Is Rewriting Venture Decision-Making" and "AI Tools in VC Operations: the Good, the Bad, the Ugly".

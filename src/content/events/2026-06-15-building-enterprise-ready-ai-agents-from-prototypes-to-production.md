@@ -1,5 +1,5 @@
 ---
-title: "Building Enterprise-Ready AI Agents — From Prototypes to Production"
+title: "Building Enterprise-Ready AI Agents, From Prototypes to Production"
 date: "2026-06-15"
 tag: "workshop"
 location: "Online"

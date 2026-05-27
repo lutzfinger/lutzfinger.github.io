@@ -8,7 +8,7 @@ const writing = defineCollection({
     date: z.coerce.date(),
     source: z.enum(['Forbes', 'LinkedIn', 'Intereconomics', 'NZZ', 'Personal']),
     sourceType: z.enum(['article', 'post', 'column']).default('article'),
-    // External URL — clicking a card on /writing opens this directly.
+    // External URL, clicking a card on /writing opens this directly.
     url: z.string().url(),
     excerpt: z.string().optional(),
     tags: z.array(z.string()).default([]),

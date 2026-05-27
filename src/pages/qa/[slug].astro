@@ -34,12 +34,27 @@ const faqJsonLd = {
       author: { '@type': 'Person', name: SITE.author, url: SITE.url },
     },
   }],
+  // Speakable so voice assistants (Google Assistant, Alexa, etc.) can read the
+  // headline question + answer body aloud.
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article.qa-body'],
+  },
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Q&A', item: `${SITE.url}/qa/` },
+    { '@type': 'ListItem', position: 3, name: entry.data.question },
+  ],
 };
 ---
 <Base
   title={entry.data.question}
-  description={`Lutz Finger's answer to "${entry.data.question}" — drawn from his Forbes column and writing.`}
-  jsonLd={faqJsonLd}
+  description={`Lutz Finger's answer to "${entry.data.question}", drawn from his Forbes column and writing.`}
+  jsonLd={[faqJsonLd, breadcrumbJsonLd]}
 >
   <p style="margin-bottom:1rem"><a href="/qa/">← All Q&amp;A</a></p>
 

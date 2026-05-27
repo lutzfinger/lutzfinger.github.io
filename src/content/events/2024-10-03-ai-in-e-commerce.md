@@ -6,8 +6,8 @@ location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
 url: "https://ecornell.cornell.edu/keynotes/overview/K100324/"
-description: "How to prioritize AI for the enterprise layer — Lutz's framework for personalization in eCommerce with case studies from media, healthcare, and retail."
+description: "How to prioritize AI for the enterprise layer. Lutz's framework for personalization in eCommerce with case studies from media, healthcare, and retail."
 status: "past"
 ---
 
-How to prioritize AI for the enterprise layer — Lutz's framework for personalization in eCommerce with case studies from media, healthcare, and retail.
+How to prioritize AI for the enterprise layer. Lutz's framework for personalization in eCommerce with case studies from media, healthcare, and retail.

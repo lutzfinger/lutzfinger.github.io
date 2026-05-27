@@ -1,5 +1,5 @@
 ---
-title: "AI as an Operating Model — Cornell EMBA evening with Vishal Gaur"
+title: "AI as an Operating Model, Cornell EMBA evening with Vishal Gaur"
 date: "2026-02-23"
 tag: "lecture"
 location: "San Francisco"

@@ -12,9 +12,9 @@ const now = Date.now();
 const upcoming = events.filter(e => e.data.date.getTime() >= now && e.data.status !== 'past');
 const past = events.filter(e => e.data.date.getTime() < now || e.data.status === 'past');
 
-// Extract guest names from titles ("Title — with Guest Name")
+// Extract guest names from titles ("Title, with Guest Name")
 function guestFromTitle(t: string): string | null {
-  const m = t.match(/— with (.+)$/);
+  const m = t.match(/,\s*with\s+(.+)$/i);
   return m ? m[1].trim() : null;
 }
 
@@ -22,16 +22,24 @@ const seriesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'EventSeries',
   name: 'The Keynote on AI from eCornell',
-  description: 'A live keynote series hosted by Lutz Finger at eCornell. Conversations with leaders actually shipping AI — from former US CTO Aneesh Chopra to former Salesforce Chief Scientist Richard Socher.',
+  description: 'A live keynote series hosted by Lutz Finger at eCornell. Conversations with leaders actually shipping AI, from former US CTO Aneesh Chopra to former Salesforce Chief Scientist Richard Socher.',
   organizer: { '@type': 'Organization', name: 'eCornell', url: 'https://ecornell.cornell.edu' },
   host: { '@type': 'Person', name: SITE.author, url: SITE.url },
   url: `${SITE.url}/keynote/`,
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Keynote', item: `${SITE.url}/keynote/` },
+  ],
 };
 ---
 <Base
   title="The Keynote on AI"
   description="Live keynote series with the people that impact how AI gets implemented: former US CTO Aneesh Chopra, Richard Socher, Lila Tretikov, Martín Casado, Lucilla Sioli, Benjamin Goertzel, and more. Hosted by Lutz Finger at eCornell."
-  jsonLd={seriesJsonLd}
+  jsonLd={[seriesJsonLd, breadcrumbJsonLd]}
   wide
 >
   <h1>The Keynote on AI</h1>
@@ -62,7 +70,7 @@ const seriesJsonLd = {
                 </time>
                 {guestFromTitle(ev.data.title) && <span>· with {guestFromTitle(ev.data.title)}</span>}
               </div>
-              <h3 class="card-title">{ev.data.title.replace(/ — with .+$/, '')}</h3>
+              <h3 class="card-title">{ev.data.title.replace(/,\s*with\s+.+$/i, '')}</h3>
               {ev.data.description && <p class="card-excerpt">{ev.data.description}</p>}
             </a>
           </li>
@@ -77,7 +85,7 @@ const seriesJsonLd = {
       <ul class="card-list">
         {past.map(ev => {
           const guest = guestFromTitle(ev.data.title);
-          const cleanTitle = ev.data.title.replace(/ — with .+$/, '');
+          const cleanTitle = ev.data.title.replace(/,\s*with\s+.+$/i, '');
           return (
             <li>
               <a class="card" href={ev.data.url ?? `/speaking/${ev.id}/`} target={ev.data.url ? '_blank' : undefined} rel={ev.data.url ? 'noopener' : undefined}>

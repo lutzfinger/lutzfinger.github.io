@@ -1,0 +1,55 @@
+---
+// Renders both a visible breadcrumb trail and the matching JSON-LD.
+import { SITE } from '~/consts';
+
+interface Crumb { name: string; href?: string; }
+interface Props {
+  /** Ordered list of crumbs. The first should be the page itself. Home is auto-prepended. */
+  crumbs: Crumb[];
+}
+const { crumbs } = Astro.props;
+
+const trail: Crumb[] = [{ name: 'Home', href: '/' }, ...crumbs];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: trail.map((c, i) => {
+    const item: Record<string, unknown> = {
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+    };
+    if (c.href) item.item = new URL(c.href, SITE.url).href;
+    return item;
+  }),
+};
+---
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol>
+    {trail.map((c, i) => (
+      <li>
+        {c.href && i < trail.length - 1
+          ? <a href={c.href}>{c.name}</a>
+          : <span aria-current={i === trail.length - 1 ? 'page' : undefined}>{c.name}</span>}
+        {i < trail.length - 1 && <span class="sep" aria-hidden="true">/</span>}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<style>
+  .breadcrumbs {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: var(--c-text-muted);
+    margin: 0 0 1rem;
+  }
+  .breadcrumbs ol { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .breadcrumbs li { display: flex; gap: 0.35rem; }
+  .breadcrumbs a { color: var(--c-text-soft); text-decoration: none; }
+  .breadcrumbs a:hover { color: var(--c-accent); }
+  .breadcrumbs .sep { color: var(--c-text-muted); }
+</style>

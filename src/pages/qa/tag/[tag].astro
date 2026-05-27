@@ -34,14 +34,14 @@ const faqJsonLd = {
 };
 ---
 <Base
-  title={`Q&A — ${label}`}
-  description={`Lutz Finger's Q&A on ${label} — ${items.length} questions sourced from his writing.`}
+  title={`Q&A, ${label}`}
+  description={`Lutz Finger's Q&A on ${label}, ${items.length} questions sourced from his writing.`}
   jsonLd={faqJsonLd}
   wide
 >
   <p style="margin-bottom:1rem"><a href="/qa/">← All Q&amp;A</a></p>
 
-  <h1>Q&amp;A — {label}</h1>
+  <h1>Q&amp;A, {label}</h1>
   <p class="hero-sub">{items.length} {items.length === 1 ? 'question' : 'questions'} tagged <strong>{label}</strong>.</p>
 
   <ul class="card-list" style="margin-top:1.5rem">

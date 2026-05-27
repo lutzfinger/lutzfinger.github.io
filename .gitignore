@@ -28,3 +28,6 @@ npm-debug.log*
 # Note: data/.indexnow-key IS committed deliberately — the IndexNow key is
 # already public (it's hosted at /<key>.txt). The protocol is a shared
 # publish, not a secret.
+
+# Private — kept locally only
+docs/WIKIPEDIA-DRAFT.md

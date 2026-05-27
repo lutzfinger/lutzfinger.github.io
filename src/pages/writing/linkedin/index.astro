@@ -9,16 +9,19 @@ const all = (await getCollection('writing'))
 
 const articles = all.filter(p => p.data.sourceType === 'article');
 const posts = all.filter(p => p.data.sourceType === 'post');
+
+const LINKEDIN_ARTICLES_INDEX = 'https://www.linkedin.com/in/lutzfinger/recent-activity/articles/';
 ---
 <Base
   title="Writing — LinkedIn"
-  description={`Lutz Finger's LinkedIn writing — ${articles.length} long-form articles and ${posts.length} substantive posts (>50 words, no Forbes duplicates). Cards open the original on LinkedIn.`}
+  description={`Lutz Finger's LinkedIn Pulse articles featured here plus a link to the complete LinkedIn article archive.`}
   wide
 >
   <h1>LinkedIn</h1>
   <p class="hero-sub">
-    {articles.length} articles and {posts.length} substantive posts (≥50 words,
-    no Forbes duplicates). Cards open the originals on LinkedIn.
+    Featured LinkedIn Pulse articles below. For the complete archive — every
+    article Lutz has ever published on LinkedIn — go to
+    <a href={LINKEDIN_ARTICLES_INDEX} rel="noopener" target="_blank">linkedin.com/in/lutzfinger/recent-activity/articles</a>.
   </p>
 
   <div class="filters">
@@ -27,9 +30,19 @@ const posts = all.filter(p => p.data.sourceType === 'post');
     <span class="filter-chip active tag-linkedin">LinkedIn ({all.length})</span>
   </div>
 
+  <p style="margin: 1.5rem 0 0.5rem">
+    <a class="card" href={LINKEDIN_ARTICLES_INDEX} rel="noopener" target="_blank" style="display:block; padding:1.1rem 1.4rem; border-color:var(--c-accent)">
+      <strong>→ View every LinkedIn article on LinkedIn</strong>
+      <br>
+      <span style="color:var(--c-text-muted); font-size:0.95rem; font-family:var(--font-sans)">
+        Opens linkedin.com/in/lutzfinger/recent-activity/articles
+      </span>
+    </a>
+  </p>
+
   {articles.length > 0 && (
     <>
-      <h2 style="margin-top:2rem; font-size:1.3rem">Articles</h2>
+      <h2 style="margin-top:2.5rem; font-size:1.3rem">Featured articles</h2>
       <WritingList posts={articles} />
     </>
   )}

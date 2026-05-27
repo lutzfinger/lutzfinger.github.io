@@ -1,0 +1,29 @@
+---
+import Base from '~/layouts/Base.astro';
+import WritingList from '~/components/WritingList.astro';
+import { getCollection } from 'astro:content';
+
+const all = (await getCollection('writing'))
+  .filter(p => p.data.source === 'Intereconomics')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+<Base
+  title="Writing — Intereconomics"
+  description="Lutz Finger's writing for the Intereconomics journal. Cards open the original article."
+  wide
+>
+  <h1>Intereconomics</h1>
+  <p class="hero-sub">
+    {all.length === 1 ? '1 piece' : `${all.length} pieces`} for the
+    <a href="https://www.intereconomics.eu/" rel="noopener">Intereconomics</a> journal.
+  </p>
+
+  <div class="filters">
+    <a href="/writing/" class="filter-chip">← All writing</a>
+    <a href="/writing/forbes/" class="filter-chip tag-forbes">Forbes</a>
+    <a href="/writing/linkedin/" class="filter-chip tag-linkedin">LinkedIn</a>
+    <span class="filter-chip active">Intereconomics ({all.length})</span>
+  </div>
+
+  <WritingList posts={all} groupByYear={false} />
+</Base>

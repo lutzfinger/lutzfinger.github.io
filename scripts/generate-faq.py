@@ -58,15 +58,8 @@ def usable_url(url: str) -> bool:
 
 
 QUESTIONS = [
-    ("Who is Lutz Finger?", "About",
-     "Background, current role, and what he focuses on professionally.",
-     ["Lutz Finger background data science", "AI product LinkedIn Cornell teaching"]),
-    ("What does Lutz Finger do?", "About",
-     "Writing, teaching, speaking, advising.",
-     ["Lutz Finger Forbes column Cornell teaching speaking"]),
-    ("What does Lutz teach at Cornell?", "About",
-     "eCornell certificate Designing and Building AI Solutions.",
-     ["Cornell teaching AI course MBA students"]),
+    # About-themed bio questions are answered on /about/ — the RAG doesn't
+    # have a self-bio so retrieval here produces weak answers. Skip them.
     ("What is Generative Engine Optimization (GEO)?", "Search & GEO",
      "Why being discoverable to AI assistants is the new SEO.",
      ["LLM search optimization GEO discoverability ChatGPT",

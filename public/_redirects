@@ -1,4 +1,4 @@
-# Cloudflare Pages redirects — map old Google Sites paths to new equivalents.
+# Cloudflare Pages redirects: map old Google Sites paths to new equivalents.
 # Format: <source> <target> <status>
 
 /home              /                   301

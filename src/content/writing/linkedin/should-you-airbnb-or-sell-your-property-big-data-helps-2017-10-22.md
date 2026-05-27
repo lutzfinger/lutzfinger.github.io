@@ -1,5 +1,5 @@
 ---
-title: "Should You Airbnb Or Sell Your Property — Big Data Helps"
+title: "Should You Airbnb Or Sell Your Property ,  Big Data Helps"
 date: "2017-10-22"
 source: "LinkedIn"
 sourceType: "article"

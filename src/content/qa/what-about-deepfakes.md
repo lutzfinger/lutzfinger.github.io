@@ -12,10 +12,10 @@ sources:
 
 _How society will adapt to synthetic media._
 
-> As AI lowers the barriers to content creation, abuse is also becoming more feasible. Deepfakes — AI-generated images, videos and audio designed to mimic real people — pose serious risks. Already in 2022, I demonstrated how easily they can be created. This increases the risk of misinformation, identity theft and political manipulation.
+> As AI lowers the barriers to content creation, abuse is also becoming more feasible. Deepfakes, AI-generated images, videos and audio designed to mimic real people, pose serious risks. Already in 2022, I demonstrated how easily they can be created. This increases the risk of misinformation, identity theft and political manipulation.
 
-— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_
+,  [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_
 
-> Misuse of deepfakes without clear identification should be outlawed — regulators around the globe have started to take them seriously. Already in 2019 there were about a dozen federal- and state-level bills to regulate deepfakes, ranging from criminalizing the use of a woman's likeness in a pornographic film without her
+> Misuse of deepfakes without clear identification should be outlawed, regulators around the globe have started to take them seriously. Already in 2019 there were about a dozen federal- and state-level bills to regulate deepfakes, ranging from criminalizing the use of a woman's likeness in a pornographic film without her
 
-— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_
+,  [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_

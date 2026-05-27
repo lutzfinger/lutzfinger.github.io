@@ -12,4 +12,4 @@ _Topics covered in the O'Reilly book._
 
 > **Publisher:** O'Reilly Media **Published:** Feb 1, 2014
 
-— [Ask Measure Learn](https://www.lutzfinger.com/book/) · _Book — Ask, Measure, Learn_
+,  [Ask Measure Learn](https://www.lutzfinger.com/book/) · _Book, Ask, Measure, Learn_

@@ -47,6 +47,9 @@ export function makeExcerpt(text, max = 220) {
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/<[^>]+>/g, ' ')
     .replace(/[#*_>~]/g, '')
+    // Em-dash → comma (sitewide rule: no em-dashes anywhere user-facing).
+    .replace(/ — /g, ', ')
+    .replace(/—/g, ', ')
     .replace(/\s+/g, ' ')
     .trim();
   if (stripped.length <= max) return stripped;

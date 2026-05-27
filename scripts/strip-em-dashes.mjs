@@ -27,7 +27,8 @@ const INCLUDE = [
   'src/consts.ts',
   'src/content.config.ts',
   'src/content/events',
-  'src/content/writing/other',
+  'src/content/writing',  // forbes + linkedin + other
+  'src/content/qa',
   'data/events.csv',
   'public/llms.txt',
 ];

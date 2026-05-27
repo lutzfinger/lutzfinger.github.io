@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Crawlers welcome — content is meant to be read and quoted.
+# AI agents: a structured index for LLMs is at /llms.txt
+# Authoritative sitemap:
+Sitemap: https://www.lutzfinger.com/sitemap-index.xml

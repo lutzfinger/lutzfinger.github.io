@@ -1,0 +1,60 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+const courseJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: 'Designing and Building AI Solutions',
+  description: 'Five-course professional certificate from eCornell, taught by Lutz Finger, covering AI strategy, data products, model selection, evaluation, and deployment.',
+  provider: {
+    '@type': 'CollegeOrUniversity',
+    name: 'Cornell University',
+    url: 'https://www.cornell.edu',
+  },
+  instructor: {
+    '@type': 'Person',
+    name: SITE.author,
+    url: SITE.url,
+  },
+  url: 'https://ecornell.cornell.edu/certificates/technology/designing-and-building-ai-solutions/',
+  hasCourseInstance: {
+    '@type': 'CourseInstance',
+    courseMode: 'online',
+    courseWorkload: 'PT8H',
+  },
+};
+---
+<Base
+  title="eCornell — Designing and Building AI Solutions"
+  description="The eCornell certificate I teach: a five-course professional program on designing and building AI solutions, from problem framing to evaluation to deployment."
+  jsonLd={courseJsonLd}
+>
+  <h1>eCornell — Designing &amp; Building AI Solutions</h1>
+  <p class="hero-sub">
+    A five-course professional certificate I teach at eCornell. For product
+    leaders, engineers, and analysts who want to ship AI that actually works.
+  </p>
+
+  <h2>What you'll learn</h2>
+  <ul>
+    <li>How to frame an AI problem so it's solvable, not just trendy.</li>
+    <li>Choosing between classical ML, LLMs, and hybrid approaches.</li>
+    <li>Designing for evaluation from day one — the moat is in the eval data.</li>
+    <li>Handling data quality, drift, and the things that go wrong in production.</li>
+    <li>How to think about cost, latency, and tradeoffs at the system level.</li>
+  </ul>
+
+  <h2>Format</h2>
+  <ul>
+    <li>Five courses, fully online, self-paced with cohort live sessions.</li>
+    <li>Real case studies and a capstone project.</li>
+    <li>Cornell faculty (me) plus guest experts.</li>
+  </ul>
+
+  <p style="margin-top:2rem">
+    <a href="https://ecornell.cornell.edu/certificates/technology/designing-and-building-ai-solutions/">
+      → View the certificate at eCornell
+    </a>
+  </p>
+</Base>

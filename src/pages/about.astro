@@ -1,0 +1,68 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE.author,
+  url: `${SITE.url}/about/`,
+  jobTitle: 'AI Product Leader, Author, Educator',
+  alumniOf: 'Cornell University',
+  knowsAbout: [
+    'Artificial Intelligence', 'Large Language Models', 'Generative Engine Optimization',
+    'Search', 'Recommendation Systems', 'Data Products', 'AI Ethics',
+    'AI Product Management', 'AI in Healthcare', 'AI in E-commerce'
+  ],
+  sameAs: Object.values(SITE.social),
+};
+---
+<Base
+  title="About"
+  description="Lutz Finger is an AI product leader, Forbes contributor, and Cornell faculty. Two founder exits, ex-LinkedIn (Data Science Director), ex-Snap. Teaches the eCornell certificate on AI Solutions."
+  jsonLd={personJsonLd}
+>
+  <h1>About</h1>
+  <p>
+    I build products with data and AI. I'm currently focused on Generative
+    Engine Optimization, the data moats around LLMs, and how AI reshapes
+    e-commerce and healthcare.
+  </p>
+
+  <h2>What I do</h2>
+  <ul>
+    <li><strong>Write</strong>: a column at <a href={SITE.social.forbes}>Forbes</a> on AI products and search.</li>
+    <li><strong>Teach</strong>: the <a href="/ecornell/">eCornell certificate</a> "Designing and Building AI Solutions" (five courses).</li>
+    <li><strong>Keynote</strong>: industry events, conferences, and corporate workshops on applied AI — see <a href="/speaking/">/speaking</a>.</li>
+    <li><strong>Advise</strong>: startups and enterprises on data products and AI strategy.</li>
+  </ul>
+
+  <h2>Background</h2>
+  <ul>
+    <li>Two-time founder with successful exits.</li>
+    <li>Ex-LinkedIn, Data Science Director.</li>
+    <li>Ex-Snap.</li>
+    <li>Faculty at Cornell University, teaching AI and data product strategy.</li>
+    <li>Author of <a href="/book/">Ask, Measure, Learn</a>.</li>
+  </ul>
+
+  <h2>Topics I write and speak about</h2>
+  <ul>
+    <li>Generative Engine Optimization (GEO) — making content discoverable to LLMs.</li>
+    <li>LLM moats — eval data, distribution, and why model-only moats don't last.</li>
+    <li>AI in e-commerce — fine-tuned models, attribution, the death of category search.</li>
+    <li>AI in healthcare — value-based care, the data quality problem.</li>
+    <li>Product strategy for AI — "good enough" beats perfect, the value translation gap.</li>
+    <li>Search — the post-Google search landscape, multimodal retrieval.</li>
+  </ul>
+
+  <h2>Where to find me</h2>
+  <ul>
+    <li><a href={SITE.social.forbes}>Forbes column</a></li>
+    <li><a href={SITE.social.linkedin}>LinkedIn</a></li>
+    <li><a href={SITE.social.x}>X (Twitter)</a></li>
+    <li><a href={SITE.social.youtube}>YouTube</a></li>
+    <li><a href={SITE.social.instagram}>Instagram</a></li>
+    <li><a href={`mailto:${SITE.email}`}>{SITE.email}</a></li>
+  </ul>
+</Base>

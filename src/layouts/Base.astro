@@ -1,0 +1,80 @@
+---
+import { SITE } from '~/consts';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
+import JsonLd from '~/components/JsonLd.astro';
+import '~/styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  noindex?: boolean;
+  wide?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const {
+  title,
+  description = SITE.description,
+  image = '/og-default.png',
+  canonical = new URL(Astro.url.pathname, SITE.url).href,
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  noindex = false,
+  wide = false,
+  jsonLd,
+} = Astro.props;
+
+const fullTitle = title ? `${title} — ${SITE.author}` : SITE.title;
+const ogImage = new URL(image, SITE.url).href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="Lutz Finger — Writing" href="/writing/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Lutz Finger — Speaking" href="/speaking/rss.xml" />
+
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={SITE.author} />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@LutzFinger" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <meta name="author" content={SITE.author} />
+    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1c1b1a" media="(prefers-color-scheme: dark)" />
+
+    {jsonLd && <JsonLd data={jsonLd} />}
+  </head>
+  <body>
+    <a href="#content" style="position:absolute;left:-9999px;top:-9999px" onfocus="this.style.cssText='position:fixed;top:0;left:0;background:#fff;padding:0.5em 1em;z-index:1000'" onblur="this.style.cssText='position:absolute;left:-9999px;top:-9999px'">Skip to content</a>
+    <Header />
+    <main id="content" class={wide ? 'wide' : ''}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

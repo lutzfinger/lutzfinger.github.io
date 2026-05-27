@@ -1,0 +1,67 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+export async function getStaticPaths() {
+  const all = await getCollection('events');
+  return all.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const isoStart = d.date.toISOString();
+const isoEnd = d.endDate?.toISOString();
+const dateLabel = d.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const eventJsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: d.title,
+  startDate: isoStart,
+  eventAttendanceMode: ({
+    offline: 'https://schema.org/OfflineEventAttendanceMode',
+    online: 'https://schema.org/OnlineEventAttendanceMode',
+    mixed: 'https://schema.org/MixedEventAttendanceMode',
+  })[d.eventAttendanceMode],
+  eventStatus: d.status === 'cancelled'
+    ? 'https://schema.org/EventCancelled'
+    : 'https://schema.org/EventScheduled',
+  performer: { '@type': 'Person', name: SITE.author, url: SITE.url },
+};
+if (isoEnd) eventJsonLd.endDate = isoEnd;
+if (d.location) eventJsonLd.location = { '@type': 'Place', name: d.location };
+if (d.organizer) eventJsonLd.organizer = { '@type': 'Organization', name: d.organizer };
+if (d.url) eventJsonLd.url = d.url;
+if (d.description) eventJsonLd.description = d.description;
+---
+<Base
+  title={d.title}
+  description={d.description}
+  type="article"
+  jsonLd={eventJsonLd}
+>
+  <article>
+    <h1>{d.title}</h1>
+    <div class="article-meta">
+      <time datetime={isoStart}>{dateLabel}</time>
+      <span>·</span>
+      <span class={`tag tag-${d.tag}`}>{d.tag}</span>
+      {d.location && <><span>·</span><span>{d.location}</span></>}
+      {d.organizer && <><span>·</span><span>{d.organizer}</span></>}
+    </div>
+    <div class="article-body">
+      <Content />
+    </div>
+    {d.url && (
+      <aside class="article-source">
+        <strong>Event link:</strong> <a href={d.url}>{d.url}</a>
+      </aside>
+    )}
+    <p style="margin-top:2.5rem"><a href="/speaking/">← All speaking</a></p>
+  </article>
+</Base>

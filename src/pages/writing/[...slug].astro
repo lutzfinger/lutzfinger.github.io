@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from 'astro:content';
+import Post from '~/layouts/Post.astro';
+
+export async function getStaticPaths() {
+  const all = await getCollection('writing');
+  return all.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+<Post
+  title={d.title}
+  description={d.excerpt}
+  date={d.date}
+  source={d.source}
+  url={d.url}
+  canonical={d.canonical ?? d.url}
+  tags={d.tags}
+  wordCount={d.wordCount}
+  image={d.image}
+>
+  {d.bodyAvailable ? (
+    <Content />
+  ) : (
+    <p>
+      <em>This piece is hosted at the original source. Read it at
+      {' '}<a href={d.url}>{d.url}</a>.</em>
+    </p>
+  )}
+</Post>

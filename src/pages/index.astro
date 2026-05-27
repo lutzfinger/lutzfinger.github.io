@@ -1,0 +1,115 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+import { getCollection } from 'astro:content';
+
+const writing = (await getCollection('writing'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 6);
+
+const upcoming = (await getCollection('events'))
+  .filter(e => e.data.status !== 'past' && e.data.date.getTime() >= Date.now())
+  .sort((a, b) => a.data.date.getTime() - b.data.date.getTime())
+  .slice(0, 4);
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE.author,
+  url: SITE.url,
+  email: `mailto:${SITE.email}`,
+  jobTitle: 'AI Product Leader, Author, Educator',
+  description: 'Lutz Finger writes for Forbes on AI products, search, and data strategy; teaches the eCornell certificate "Designing and Building AI Solutions"; and speaks on generative engine optimization (GEO), LLM moats, and applied AI.',
+  knowsAbout: ['Artificial Intelligence', 'Large Language Models', 'Generative Engine Optimization', 'Search', 'Data Products', 'AI Product Management'],
+  sameAs: [
+    SITE.social.forbes,
+    SITE.social.linkedin,
+    SITE.social.x,
+    SITE.social.youtube,
+    SITE.social.instagram,
+  ],
+};
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.author,
+  url: SITE.url,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/writing/?q={search_term_string}` },
+    'query-input': 'required name=search_term_string',
+  },
+};
+---
+<Base jsonLd={[personJsonLd, websiteJsonLd]}>
+  <section class="hero">
+    <h1 class="hero-title">Building products with data &amp; AI.</h1>
+    <p class="hero-sub">
+      I write a column at <a href={SITE.social.forbes}>Forbes</a>, teach the
+      <a href="/ecornell/">eCornell certificate</a> on designing AI solutions,
+      and keynote on what actually works in applied AI.
+    </p>
+    <p>
+      Two founder exits, ex-LinkedIn / ex-Snap. These days I focus on
+      Generative Engine Optimization, LLM moats, AI in e-commerce and
+      healthcare, and the data behind it all.
+    </p>
+  </section>
+
+  {writing.length > 0 && (
+    <section class="section">
+      <div class="section-eyebrow">Recent writing</div>
+      <ul class="card-list">
+        {writing.map(post => (
+          <li>
+            <a class="card" href={`/writing/${post.id}/`}>
+              <div class="card-meta">
+                <time datetime={post.data.date.toISOString()}>
+                  {post.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                </time>
+                <span class={`tag tag-${post.data.source.toLowerCase()}`}>{post.data.source}</span>
+              </div>
+              <h3 class="card-title">{post.data.title}</h3>
+              {post.data.excerpt && <p class="card-excerpt">{post.data.excerpt}</p>}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p style="margin-top:1.5rem"><a href="/writing/">All writing →</a></p>
+    </section>
+  )}
+
+  {upcoming.length > 0 && (
+    <section class="section">
+      <div class="section-eyebrow">Upcoming</div>
+      <ul class="card-list">
+        {upcoming.map(ev => (
+          <li>
+            <a class="card" href={ev.data.url ?? '/speaking/'}>
+              <div class="card-meta">
+                <time datetime={ev.data.date.toISOString()}>
+                  {ev.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                </time>
+                <span class={`tag tag-${ev.data.tag}`}>{ev.data.tag}</span>
+                {ev.data.location && <span>· {ev.data.location}</span>}
+              </div>
+              <h3 class="card-title">{ev.data.title}</h3>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p style="margin-top:1.5rem"><a href="/speaking/">Full calendar →</a></p>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="section-eyebrow">Also</div>
+    <ul style="list-style:none;padding:0">
+      <li style="margin-bottom:0.6rem">📘 <a href="/book/">Ask, Measure, Learn</a> — my book on data &amp; AI</li>
+      <li style="margin-bottom:0.6rem">🎓 <a href="/ecornell/">eCornell Certificate</a> — Designing &amp; Building AI Solutions</li>
+      <li style="margin-bottom:0.6rem">💬 <a href="/qa/">Q&amp;A</a> — answers from my writing, generated and curated</li>
+      <li style="margin-bottom:0.6rem">✉️ <a href={`mailto:${SITE.email}`}>Get in touch</a></li>
+    </ul>
+  </section>
+</Base>

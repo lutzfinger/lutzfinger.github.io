@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects — map old Google Sites paths to new equivalents.
+# Format: <source> <target> <status>
+
+/home              /                   301
+/ai-lutz           /qa/                301
+/podcast           /writing/           301
+/newsletter        /writing/           301
+/forbes-social     /writing/           301
+/ecornell-certificate /ecornell/       301
+
+# Any unknown subpath: let Astro's built-in 404 handle it.

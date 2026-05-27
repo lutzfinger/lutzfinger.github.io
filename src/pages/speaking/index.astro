@@ -1,0 +1,65 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+import { getCollection } from 'astro:content';
+
+const now = Date.now();
+const all = await getCollection('events');
+const upcoming = all
+  .filter(e => e.data.status !== 'past' && e.data.date.getTime() >= now)
+  .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+
+const eventListJsonLd = upcoming.length === 0 ? undefined : upcoming.map(e => ({
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: e.data.title,
+  startDate: e.data.date.toISOString(),
+  ...(e.data.endDate && { endDate: e.data.endDate.toISOString() }),
+  eventAttendanceMode: ({
+    offline: 'https://schema.org/OfflineEventAttendanceMode',
+    online: 'https://schema.org/OnlineEventAttendanceMode',
+    mixed: 'https://schema.org/MixedEventAttendanceMode',
+  })[e.data.eventAttendanceMode],
+  eventStatus: 'https://schema.org/EventScheduled',
+  location: e.data.location ? { '@type': 'Place', name: e.data.location } : undefined,
+  organizer: e.data.organizer ? { '@type': 'Organization', name: e.data.organizer } : undefined,
+  performer: { '@type': 'Person', name: SITE.author, url: SITE.url },
+  url: e.data.url,
+  description: e.data.description,
+}));
+---
+<Base
+  title="Speaking"
+  description={`Upcoming keynotes, workshops, and conference sessions with Lutz Finger — ${upcoming.length} scheduled.`}
+  jsonLd={eventListJsonLd}
+>
+  <h1>Speaking</h1>
+  <p class="hero-sub">
+    Upcoming keynotes, workshops, conference sessions, and live streams.
+    For bookings: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+  </p>
+
+  {upcoming.length === 0 ? (
+    <p><em>No public sessions on the calendar right now — check back soon, or <a href={`mailto:${SITE.email}`}>email me</a> for booking.</em></p>
+  ) : (
+    <ul class="card-list">
+      {upcoming.map(e => (
+        <li>
+          <a class="card" href={e.data.url ?? `/speaking/${e.id}/`}>
+            <div class="card-meta">
+              <time datetime={e.data.date.toISOString()}>
+                {e.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+              </time>
+              <span class={`tag tag-${e.data.tag}`}>{e.data.tag}</span>
+              {e.data.location && <span>· {e.data.location}</span>}
+            </div>
+            <h3 class="card-title">{e.data.title}</h3>
+            {e.data.description && <p class="card-excerpt">{e.data.description}</p>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <p style="margin-top:2.5rem"><a href="/speaking/past/">→ Past sessions archive</a></p>
+</Base>

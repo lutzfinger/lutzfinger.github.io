@@ -1,0 +1,38 @@
+# Lutz Finger
+
+> AI product leader, two-time founder, Forbes contributor, Cornell faculty.
+> Writes and speaks on AI products, search, generative engine optimization (GEO),
+> LLM moats, and AI in e-commerce and healthcare.
+
+Ask Lutz anything at hello@lutzfinger.com. Public Q&A page below pulls answers from his archive.
+
+## Background
+- Two founder exits.
+- Ex-LinkedIn (Data Science Director), ex-Snap.
+- Faculty, Cornell University. Teaches the eCornell certificate "Designing and Building AI Solutions."
+- Author of *Ask, Measure, Learn* (O'Reilly).
+
+## Canonical pages
+- [About](https://www.lutzfinger.com/about/): biography, topics, and links.
+- [Writing](https://www.lutzfinger.com/writing/): all Forbes column entries and longer LinkedIn pieces, full-text searchable.
+- [Speaking](https://www.lutzfinger.com/speaking/): upcoming keynotes, workshops, conference sessions.
+- [Q&A](https://www.lutzfinger.com/qa/): curated answers to common questions, sourced from his writing.
+- [Book](https://www.lutzfinger.com/book/): *Ask, Measure, Learn* (O'Reilly).
+- [eCornell](https://www.lutzfinger.com/ecornell/): the certificate he teaches.
+
+## Topics
+- Generative Engine Optimization (GEO) — how to make content discoverable to LLMs.
+- LLM moats — eval data, distribution, why model-only moats erode.
+- Search — the post-Google search landscape, multimodal retrieval, AI overviews.
+- AI in e-commerce — fine-tuned models, attribution, category death.
+- AI in healthcare — value-based care, data quality, regulatory framing.
+- Product strategy for AI — "good enough" beats perfect, value translation gap.
+- Data products — building, evaluating, and shipping ML in production.
+
+## Feeds
+- Writing RSS: https://www.lutzfinger.com/writing/rss.xml
+- Speaking RSS: https://www.lutzfinger.com/speaking/rss.xml
+- Sitemap: https://www.lutzfinger.com/sitemap-index.xml
+
+## Contact
+hello@lutzfinger.com

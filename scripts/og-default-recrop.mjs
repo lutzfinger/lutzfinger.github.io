@@ -3,9 +3,9 @@
 //
 // Problem: the source is a 2001x3000 portrait. A naive "cover" crop into
 // 1200x630 (landscape) chops the head off. We instead:
-//   1. crop the top 60% of the source (head + chest, no waist/below)
-//   2. resize that to fit inside 1200x630 using `contain` so the head stays
-//      whole; the empty space gets a cream background that matches the site
+//   1. take the FULL portrait (no crop) so head + shoulders are fully visible
+//   2. fit it inside 1200x630 using `contain` (lots of cream on the sides,
+//      which matches the site bg and reads as deliberate framing)
 //   3. write JPEG + WebP + AVIF variants
 
 import sharp from 'sharp';
@@ -20,10 +20,8 @@ const SITE_BG = { r: 251, g: 250, b: 247, alpha: 1 }; // matches CSS --c-bg
 const meta = await sharp(SRC).metadata();
 console.log(`source: ${meta.width}x${meta.height}`);
 
-// Crop top 60% — keeps the head + collarbone, drops anything below.
-const headRegion = await sharp(SRC)
-  .extract({ left: 0, top: 0, width: meta.width, height: Math.round(meta.height * 0.6) })
-  .toBuffer();
+// No pre-crop — keep the full portrait so the head has breathing room.
+const headRegion = await sharp(SRC).toBuffer();
 
 // Fit the cropped head into the 1200x630 OG canvas with cream side padding.
 const variants = [

@@ -20,6 +20,8 @@ const profileJsonLd = {
       SITE.social.linkedin, SITE.social.forbes, SITE.social.x,
       SITE.social.youtube, SITE.social.instagram,
       'https://scholar.google.com/citations?user=tg0FO3wAAAAJ',
+      'https://business.cornell.edu/faculty-research/faculty/ltf24/',
+      'https://www.cherry.vc/team/lutz-finger',
     ],
   },
 };
@@ -34,63 +36,65 @@ const breadcrumbJsonLd = {
 ---
 <Base
   title="About"
-  description="Lutz Finger — Head of AI at Zoovu, Data Scientist in Residence at Cornell, Venture Partner at Cherry Ventures. Two founder exits (R2Decide 2025, Fisheye Analytics 2013). Ex-Google, ex-LinkedIn, ex-Snap."
+  description="Lutz Finger — Head of AI at Zoovu, Data Scientist in Residence at Cornell, Venture Partner at Cherry Ventures. Two founder exits (R2Decide 2026, Fisheye Analytics 2013). Ex-Google, ex-LinkedIn, ex-Snap."
   image="/img/og-default.jpg"
   jsonLd={[profileJsonLd, breadcrumbJsonLd]}
 >
-  <div class="about-hero">
-    <figure class="about-photo">
-      <img
-        src="/img/lutz-headshot-800.jpg"
-        srcset="/img/lutz-headshot-400.jpg 400w, /img/lutz-headshot-800.jpg 800w"
-        sizes="(max-width: 640px) 160px, 220px"
-        alt="Portrait of Lutz Finger"
-        width="220"
-        height="220"
-        loading="eager"
-        decoding="async"
-      />
-    </figure>
-    <div>
-      <h1>About</h1>
-      <p style="font-size:1.15rem; line-height:1.55; margin-top:0.6rem">
-        I help people turn AI from a headline into a product.
-      </p>
+  <div class="about-page">
+    <div class="about-hero">
+      <figure class="about-photo">
+        <img
+          src="/img/lutz-headshot-800.jpg"
+          srcset="/img/lutz-headshot-400.jpg 400w, /img/lutz-headshot-800.jpg 800w"
+          sizes="(max-width: 640px) 160px, 220px"
+          alt="Portrait of Lutz Finger"
+          width="220"
+          height="220"
+          loading="eager"
+          decoding="async"
+        />
+      </figure>
+      <div>
+        <h1>About</h1>
+        <p style="font-size:1.15rem; line-height:1.55; margin-top:0.6rem">
+          I help people turn AI from a headline into a product.
+        </p>
+      </div>
     </div>
+
+    <h2>Currently</h2>
+    <ul>
+      <li><strong>Head of AI</strong> · <a href="https://zoovu.com" rel="noopener">Zoovu</a></li>
+      <li><strong>Data Scientist in Residence</strong> · <a href="https://business.cornell.edu/faculty-research/faculty/ltf24/" rel="noopener">Cornell SC Johnson College of Business</a></li>
+      <li><strong>Venture Partner</strong> · <a href="https://www.cherry.vc/team/lutz-finger" rel="noopener">Cherry Ventures</a></li>
+    </ul>
+
+    <h2>Founder exits</h2>
+    <ul>
+      <li><strong>R2Decide</strong> — AI-driven decision tooling for e-commerce. Sold <strong>2026</strong> to <a href="https://finance.yahoo.com/news/xgen-ai-acquires-r2decide-accelerate-140000212.html" rel="noopener">XGen AI</a>.</li>
+      <li><strong>Fisheye Analytics</strong> — social-media analytics + bot detection. Sold <strong>2013</strong> to <a href="https://www.wpp.com/en/news/2013/12/kantar-to-acquire-fisheye-analytics" rel="noopener">Kantar (WPP)</a>.</li>
+    </ul>
+
+    <h2>Formerly</h2>
+    <p>
+      <strong>Snap Inc.</strong> · <strong>Google</strong> · <strong>LinkedIn</strong> (Director, Data Science).
+    </p>
+
+    <h2>Author</h2>
+    <ul>
+      <li><a href={SITE.social.forbes} rel="noopener">Forbes column on AI</a> — 50+ articles.</li>
+      <li><a href="/book/">Ask, Measure, Learn</a> (O'Reilly, 2014) — with Soumitra Dutta.</li>
+      <li><a href="/ecornell/">Designing and Building AI Solutions</a> — the Cornell certificate.</li>
+      <li><a href="https://scholar.google.com/citations?user=tg0FO3wAAAAJ" rel="noopener">Google Scholar</a> — academic publications.</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p>MBA, INSEAD · MS Quantum Physics, TU Berlin.</p>
+
+    <p style="margin-top:2.5rem; color:var(--c-text-muted)">
+      More on <a href={SITE.social.linkedin} rel="noopener">LinkedIn</a> · talk to me at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    </p>
   </div>
-
-  <h2>Currently</h2>
-  <ul>
-    <li><strong>Head of AI</strong> · <a href="https://zoovu.com" rel="noopener">Zoovu</a></li>
-    <li><strong>Data Scientist in Residence</strong> · Cornell SC Johnson College of Business</li>
-    <li><strong>Venture Partner</strong> · <a href="https://www.cherry.vc/" rel="noopener">Cherry Ventures</a></li>
-  </ul>
-
-  <h2>Founder exits</h2>
-  <ul>
-    <li><strong>R2Decide</strong> — AI-driven decision tooling for e-commerce. Sold <strong>2025</strong>.</li>
-    <li><strong>Fisheye Analytics</strong> — social-media analytics + bot detection. Sold <strong>2013</strong>.</li>
-  </ul>
-
-  <h2>Formerly</h2>
-  <p>
-    <strong>Snap Inc.</strong> · <strong>Google</strong> · <strong>LinkedIn</strong> (Director, Data Science).
-  </p>
-
-  <h2>Author</h2>
-  <ul>
-    <li><a href={SITE.social.forbes} rel="noopener">Forbes column on AI</a> — 50+ articles.</li>
-    <li><a href="/book/"><em>Ask, Measure, Learn</em></a> (O'Reilly, 2014) — with Soumitra Dutta.</li>
-    <li><a href="/ecornell/"><em>Designing and Building AI Solutions</em></a> — the Cornell certificate.</li>
-    <li><a href="https://scholar.google.com/citations?user=tg0FO3wAAAAJ" rel="noopener">Google Scholar</a> — academic publications.</li>
-  </ul>
-
-  <h2>Education</h2>
-  <p>MBA, INSEAD · MS Quantum Physics, TU Berlin.</p>
-
-  <p style="margin-top:2.5rem; color:var(--c-text-muted)">
-    More on <a href={SITE.social.linkedin} rel="noopener">LinkedIn</a> · talk to me at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
-  </p>
 </Base>
 
 <style>
@@ -109,6 +113,11 @@ const breadcrumbJsonLd = {
     border: 1px solid var(--c-border);
     display: block;
   }
+  /* Only links are italic; everything else stays upright. */
+  .about-page a { font-style: italic; }
+  .about-page em,
+  .about-page i,
+  .about-page blockquote { font-style: normal; }
   @media (max-width: 640px) {
     .about-hero { grid-template-columns: 1fr; gap: 1rem; text-align: center; }
     .about-photo img { width: 160px; height: 160px; margin: 0 auto; }

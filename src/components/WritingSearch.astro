@@ -1,0 +1,146 @@
+---
+// Client-side search over /writing-search.json.
+// Optional `source` prop scopes results to one section (Forbes/LinkedIn/etc.).
+// When the input is non-empty, the script hides the sibling element with id
+// 'writing-full-list' and renders matches into '#writing-search-results'.
+
+interface Props {
+  /** Restrict matches to this source. Leave undefined for site-wide search. */
+  source?: 'Forbes' | 'LinkedIn' | 'Intereconomics' | 'NZZ';
+  /** Hidden element ID that is hidden while a search is active. */
+  hideTargetId?: string;
+  /** Placeholder text override. */
+  placeholder?: string;
+}
+const { source, hideTargetId = 'writing-full-list', placeholder } = Astro.props;
+
+const scopeLabel = source ?? 'all writing';
+const ph = placeholder ?? `Search ${scopeLabel}…`;
+---
+<div id="writing-search" data-source={source ?? ''} data-hide-target={hideTargetId}>
+  <input id="writing-search-input" type="search" placeholder={ph} autocomplete="off" />
+  <p id="writing-search-status" style="font-family:var(--font-sans); font-size:0.85rem; color:var(--c-text-muted); margin:0.4rem 0 0; display:none"></p>
+  <ul id="writing-search-results" class="card-list" style="margin-top:1rem; display:none"></ul>
+</div>
+
+<script is:inline>
+  (() => {
+    const root = document.getElementById('writing-search');
+    if (!root) return;
+    const input = document.getElementById('writing-search-input');
+    const resultsEl = document.getElementById('writing-search-results');
+    const statusEl = document.getElementById('writing-search-status');
+    const hideTarget = document.getElementById(root.dataset.hideTarget || 'writing-full-list');
+    const scopeSource = (root.dataset.source || '').toLowerCase();
+
+    let entries = [];
+    let loaded = false;
+
+    function highlight(text, terms) {
+      if (!text || !terms.length) return text || '';
+      const escapedTerms = terms.map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+      const re = new RegExp('(' + escapedTerms.join('|') + ')', 'gi');
+      return String(text).replace(re, '<mark>$1</mark>');
+    }
+
+    function fmtDate(iso) {
+      try {
+        return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+      } catch { return iso; }
+    }
+
+    function renderResults(items, terms) {
+      if (items.length === 0) {
+        resultsEl.style.display = 'none';
+        statusEl.textContent = 'No matches.';
+        statusEl.style.display = '';
+        return;
+      }
+      resultsEl.style.display = '';
+      statusEl.style.display = '';
+      statusEl.textContent = `${items.length} match${items.length === 1 ? '' : 'es'}.`;
+      resultsEl.innerHTML = items.map(e => {
+        const src = (e.source || '').toLowerCase();
+        return `<li><a class="card" href="${e.url}" target="_blank" rel="noopener">
+          <div class="card-meta">
+            <time datetime="${e.date}">${fmtDate(e.date)}</time>
+            <span class="tag tag-${src}">${e.source}</span>
+          </div>
+          <h3 class="card-title">${highlight(e.title, terms)}</h3>
+          ${e.excerpt ? `<p class="card-excerpt">${highlight(e.excerpt, terms)}</p>` : ''}
+        </a></li>`;
+      }).join('');
+    }
+
+    function search(q) {
+      const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+      if (terms.length === 0) {
+        resultsEl.style.display = 'none';
+        statusEl.style.display = 'none';
+        if (hideTarget) hideTarget.style.display = '';
+        return;
+      }
+      if (hideTarget) hideTarget.style.display = 'none';
+      let pool = entries;
+      if (scopeSource) {
+        pool = pool.filter(e => (e.source || '').toLowerCase() === scopeSource);
+      }
+      const matches = pool.filter(e => {
+        const hay = (e.title + ' ' + e.excerpt + ' ' + e.source + ' ' + (e.tags || []).join(' ')).toLowerCase();
+        return terms.every(t => hay.includes(t));
+      });
+      matches.sort((a, b) => {
+        const aT = terms.every(t => a.title.toLowerCase().includes(t)) ? 1 : 0;
+        const bT = terms.every(t => b.title.toLowerCase().includes(t)) ? 1 : 0;
+        if (aT !== bT) return bT - aT;
+        return b.date.localeCompare(a.date);
+      });
+      renderResults(matches.slice(0, 50), terms);
+    }
+
+    async function ensureLoaded() {
+      if (loaded) return;
+      try {
+        const res = await fetch('/writing-search.json');
+        entries = await res.json();
+        loaded = true;
+      } catch (e) {
+        statusEl.textContent = 'Search index failed to load. Reload and try again.';
+        statusEl.style.display = '';
+      }
+    }
+
+    let timer;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = setTimeout(async () => {
+        await ensureLoaded();
+        search(input.value.trim());
+      }, 100);
+    });
+
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) { input.value = q; input.dispatchEvent(new Event('input')); }
+  })();
+</script>
+
+<style>
+  #writing-search input {
+    font-family: var(--font-sans);
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    background: var(--c-bg);
+    color: var(--c-text);
+  }
+  #writing-search input:focus {
+    outline: none;
+    border-color: var(--c-accent);
+  }
+  mark { background: #fcecbb; color: inherit; padding: 0 1px; }
+  @media (prefers-color-scheme: dark) {
+    mark { background: #5a4a18; color: #f9efc9; }
+  }
+</style>

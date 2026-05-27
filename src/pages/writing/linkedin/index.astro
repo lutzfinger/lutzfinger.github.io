@@ -2,6 +2,7 @@
 import Base from '~/layouts/Base.astro';
 import WritingList from '~/components/WritingList.astro';
 import WritingFilters from '~/components/WritingFilters.astro';
+import WritingSearch from '~/components/WritingSearch.astro';
 import { getCollection } from 'astro:content';
 
 const all = (await getCollection('writing'))
@@ -15,7 +16,11 @@ const all = (await getCollection('writing'))
 >
   <h1>LinkedIn</h1>
 
+  <WritingSearch source="LinkedIn" placeholder="Search LinkedIn articles…" />
+
   <WritingFilters active="linkedin" />
 
-  <WritingList posts={all} />
+  <div id="writing-full-list">
+    <WritingList posts={all} />
+  </div>
 </Base>

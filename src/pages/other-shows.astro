@@ -1,0 +1,91 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+
+// Hand-curated list of third-party shows where Lutz was a guest.
+// (His own keynote series lives on /keynote/; his own podcast on /podcast.)
+const shows = [
+  {
+    title: 'Three Key Insights with Sanjiv Yajnik',
+    meta: '2026 · Capital One',
+    episode: 'From SEO to GEO: How AI Is Changing How Car Buyers Find You',
+    blurb: "Host Sanjiv Yajnik and Lutz on the shift from search engine optimization to generative engine optimization — and what it means for how dealerships get found.",
+    url: 'https://podcasts.apple.com/us/podcast/three-key-insights-with-sanjiv-yajnik/id1889961646',
+  },
+  {
+    title: 'Build AI',
+    meta: '2026 · gAI Ventures',
+    episode: 'From Google to Cornell: Rethinking AI Workflows',
+    blurb: 'What most founders and enterprises get wrong about the AI era, and why durable value lives in workflows rather than the model layer.',
+    url: 'https://podcasts.apple.com/us/podcast/build-ai/id1801007697',
+  },
+  {
+    title: 'Silicon Zombies',
+    meta: 'Live show · Bay Area, streamed to 80+ countries',
+    episode: 'SZ 139: AI in the EU',
+    blurb: 'Panel on AI regulation in the European Union, with a later segment on DeepSeek and the new generation of reasoning models.',
+    url: 'https://creators.spotify.com/pod/profile/silicomzombies/episodes/SZ-139-AI-in-the-EU-Ft--Yaad--Gerard--Florence--Julie---Lutz-e2s31t3',
+  },
+  {
+    title: 'The Pulse of AI',
+    meta: 'Host: Jason Stoughton',
+    episode: 'Deep Dive into the Current State of AI with Lutz Finger',
+    blurb: 'A wide-ranging conversation on where AI actually is today, drawing on 20+ years building AI products at Google, LinkedIn, and Snap.',
+    url: 'https://www.thepulseofai.com/post/deep-dive-into-the-current-state-of-ai-with-lutz-finger',
+  },
+  {
+    title: 'Social Media Marketing Podcast',
+    meta: '2014 · Social Media Examiner · host Michael Stelzner',
+    episode: 'Measuring Social Media: What Marketers Need to Know',
+    blurb: 'From the Ask, Measure, Learn era: start with the question or goal, then figure out how to capture the data — not the other way around.',
+    url: 'https://www.socialmediaexaminer.com/measuring-social-media-with-lutz-finger/',
+  },
+];
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Other Shows', item: `${SITE.url}/other-shows/` },
+  ],
+};
+const itemListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Guest appearances by Lutz Finger',
+  itemListElement: shows.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: `${s.title} — ${s.episode}`,
+    url: s.url,
+  })),
+};
+---
+<Base
+  title="Other Shows | Guest appearances by Lutz Finger"
+  description="Podcasts, live shows, and interviews where Lutz Finger was a guest — from Capital One's Three Key Insights and Silicon Zombies to The Pulse of AI and Social Media Examiner."
+  jsonLd={[breadcrumbJsonLd, itemListJsonLd]}
+  wide
+>
+  <h1>Other Shows</h1>
+  <p class="hero-sub">
+    Podcasts, live shows, and interviews where I was a guest — not my own
+    <a href="/keynote/">keynote series</a>, but conversations other hosts
+    invited me into.
+  </p>
+
+  <section style="margin-top: 3rem">
+    <ul class="card-list">
+      {shows.map(s => (
+        <li>
+          <a class="card" href={s.url} target="_blank" rel="noopener">
+            <div class="card-meta"><span>{s.meta}</span></div>
+            <h3 class="card-title">{s.title}</h3>
+            <p class="card-excerpt"><strong>{s.episode}</strong> — {s.blurb}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>

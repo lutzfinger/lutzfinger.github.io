@@ -84,7 +84,7 @@ const breadcrumbJsonLd = {
       <h2>Past guests</h2>
       <ul class="card-list">
         {past.map(ev => {
-          const guest = guestFromTitle(ev.data.title);
+          const guest = guestFromTitle(ev.data.title) ?? 'Lutz Finger';
           const cleanTitle = ev.data.title.replace(/,\s*with\s+.+$/i, '');
           return (
             <li>

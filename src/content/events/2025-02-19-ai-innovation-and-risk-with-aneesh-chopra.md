@@ -1,5 +1,5 @@
 ---
-title: "AI, Innovation, and Risk"
+title: "AI, Innovation, and Risk, with Aneesh Chopra"
 date: "2025-02-19"
 tag: "live-stream"
 location: "Online"

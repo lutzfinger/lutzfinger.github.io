@@ -5,7 +5,7 @@ tag: "live-stream"
 location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
-url: "https://ecornell.cornell.edu/keynotes/overview/K032025/"
+url: "https://ecornell.cornell.edu/keynotes/view/K032025/"
 description: "Lutz Finger with Martín Casado (a16z) on what actually works in AI vs the hype: agents vs copilots, model constraints, and the open-source competitive landscape."
 status: "past"
 ---

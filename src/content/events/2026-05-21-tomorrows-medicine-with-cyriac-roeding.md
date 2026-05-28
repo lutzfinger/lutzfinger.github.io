@@ -5,7 +5,7 @@ tag: "live-stream"
 location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
-url: "https://ecornell.cornell.edu/keynotes/overview/K052126/"
+url: "https://ecornell.cornell.edu/keynotes/view/K052126/"
 description: "Lutz Finger and Cyriac Roeding on BioAI: physical breakthroughs (cancer and autoimmune treatments) emerging from AI applied to biology and the path from research to funded companies."
 status: "past"
 ---

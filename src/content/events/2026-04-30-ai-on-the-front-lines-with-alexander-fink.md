@@ -5,7 +5,7 @@ tag: "live-stream"
 location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
-url: "https://ecornell.cornell.edu/keynotes/overview/K043026/"
+url: "https://ecornell.cornell.edu/keynotes/view/K043026/"
 description: "Lutz Finger with Alexander Fink on the new AI operating model for warfare: speed, accountability, and human judgment when autonomous systems shape battlefield decisions."
 status: "past"
 ---

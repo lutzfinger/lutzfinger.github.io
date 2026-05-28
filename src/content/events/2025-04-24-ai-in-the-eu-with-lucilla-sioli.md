@@ -5,7 +5,7 @@ tag: "live-stream"
 location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
-url: "https://ecornell.cornell.edu/keynotes/overview/K042425/"
+url: "https://ecornell.cornell.edu/keynotes/view/K042425/"
 description: "Lucilla Sioli (European Commission) with Lutz Finger on Europe's AI Continent Action Plan: AI factories, data spaces, talent, and the EU's strategy to become the AI Continent."
 status: "past"
 ---

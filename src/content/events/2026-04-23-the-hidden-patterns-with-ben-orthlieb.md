@@ -5,7 +5,7 @@ tag: "live-stream"
 location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
-url: "https://ecornell.cornell.edu/keynotes/overview/K042326/"
+url: "https://ecornell.cornell.edu/keynotes/view/K042326/"
 description: "Ben Orthlieb (Blue Moon) with Lutz Finger on patterns from 6000 startup pitches: radically lean teams, SMB software opportunities, and overlooked compliance plays in AI-driven startups."
 status: "past"
 ---

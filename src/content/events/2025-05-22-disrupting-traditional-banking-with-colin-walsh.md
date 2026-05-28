@@ -5,7 +5,7 @@ tag: "live-stream"
 location: "Online"
 eventAttendanceMode: "online"
 organizer: "eCornell"
-url: "https://ecornell.cornell.edu/keynotes/overview/K052225/"
+url: "https://ecornell.cornell.edu/keynotes/view/K052225/"
 description: "Lutz Finger with Colin Walsh (Varo Bank) on how AI is rewiring banking. Modernizing financial services and why successful implementation matters more than the tech itself."
 status: "past"
 ---

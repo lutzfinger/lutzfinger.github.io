@@ -7,7 +7,7 @@ eventAttendanceMode: "online"
 organizer: "eCornell"
 url: "https://ecornell.cornell.edu/keynotes/overview/K052826/"
 description: "Lutz Finger and Benjamin Goertzel on AGI claims vs the science: world models, symbolic reasoning, and evolutionary learning vs the scaling-only thesis."
-status: "upcoming"
+status: "past"
 ---
 
 Lutz Finger and Benjamin Goertzel on AGI claims vs the science: world models, symbolic reasoning, and evolutionary learning vs the scaling-only thesis.

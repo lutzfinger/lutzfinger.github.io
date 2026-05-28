@@ -2,7 +2,7 @@
 question: "What patterns appear across thousands of AI startup pitches?"
 category: "Startups"
 tags: ["startup", "investment"]
-updated: 2026-05-27
+updated: 2026-05-28
 sources:
   - title: "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership"
     url: "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"

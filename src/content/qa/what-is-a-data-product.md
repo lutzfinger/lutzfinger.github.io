@@ -2,7 +2,7 @@
 question: "What is a data product?"
 category: "Data & Measurement"
 tags: ["analytics", "ai-product"]
-updated: 2026-05-27
+updated: 2026-05-28
 sources:
   - title: "Stargate: The $500 Billion Message To China — The Future Of AI Regulation"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/22/stargate-the-500b-message-to-china---the-future-of-ai-regulation/"

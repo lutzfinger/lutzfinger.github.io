@@ -2,7 +2,7 @@
 question: "How will AI change jobs?"
 category: "Future of Work"
 tags: ["future-of-work", "leadership"]
-updated: 2026-05-27
+updated: 2026-05-28
 sources:
   - title: "Good News For Consultants. Google CEO: No Company Is Immune To AI"
     url: "https://www.forbes.com/sites/lutzfinger/2025/11/18/good-news-for-consultants-google-ceo-no-company-is-immune-to-ai/"

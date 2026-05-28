@@ -2,7 +2,7 @@
 question: "Why are radically lean teams the future?"
 category: "Startups"
 tags: ["startup", "ai-workflows"]
-updated: 2026-05-27
+updated: 2026-05-28
 sources:
   - title: "AI Agents: The Future of Work?"
     url: "https://content.rss.com/episodes/204999/1798482/lutzandjasper/2024_12_12_13_17_56_3a2b23d3-5df8-4522-bae2-c510e90c159a.mp3"

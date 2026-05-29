@@ -1,0 +1,520 @@
+{
+  "version": "1",
+  "entries": [
+    {
+      "question": "What is Generative Engine Optimization (GEO)?",
+      "category": "Search & GEO",
+      "framing": "Why being discoverable to AI assistants is the new SEO.",
+      "variations": [
+        "LLM search optimization GEO discoverability ChatGPT",
+        "answer engine optimization AEO brands"
+      ],
+      "tags": [
+        "search-geo",
+        "ecommerce"
+      ]
+    },
+    {
+      "question": "Is Google search dying?",
+      "category": "Search & GEO",
+      "framing": "What changes when LLMs become the search interface.",
+      "variations": [
+        "Google search future LLM ChatGPT replacement",
+        "2025 year of search prediction"
+      ],
+      "tags": [
+        "search-geo"
+      ]
+    },
+    {
+      "question": "What is 2025 for search?",
+      "category": "Search & GEO",
+      "framing": "Predictions about search changing in 2025.",
+      "variations": [
+        "2025 year of search prediction"
+      ],
+      "tags": [
+        "search-geo"
+      ]
+    },
+    {
+      "question": "How is AI changing e-commerce?",
+      "category": "E-commerce",
+      "framing": "Fine-tuned models, attribution, category death.",
+      "variations": [
+        "e-commerce AI mistakes brands fine-tuned",
+        "online retailers GEO playbook"
+      ],
+      "tags": [
+        "ecommerce",
+        "search-geo"
+      ]
+    },
+    {
+      "question": "What replaces SEO in the LLM era?",
+      "category": "Search & GEO",
+      "framing": "Strategies for being discoverable to AI assistants.",
+      "variations": [
+        "SEO is dead LLM citation strategy",
+        "AEO answer engine optimization"
+      ],
+      "tags": [
+        "search-geo",
+        "ecommerce"
+      ]
+    },
+    {
+      "question": "Why do LLMs convert better than search?",
+      "category": "Search & GEO",
+      "framing": "Trust, personalization, and conversion lift from AI traffic.",
+      "variations": [
+        "LLM conversion 9x AEO traffic better",
+        "personalized recommendation AI trusted"
+      ],
+      "tags": [
+        "search-geo",
+        "ecommerce",
+        "measurement"
+      ]
+    },
+    {
+      "question": "What is the missing moat in AI?",
+      "category": "LLM Moats",
+      "framing": "Eval data as the durable moat.",
+      "variations": [
+        "missing moat AI eval data",
+        "OpenAI moat eval data race"
+      ],
+      "tags": [
+        "llm-moats",
+        "ai-product"
+      ]
+    },
+    {
+      "question": "Is OpenAI going bankrupt?",
+      "category": "LLM Moats",
+      "framing": "Lutz's take on OpenAI economics and moats.",
+      "variations": [
+        "OpenAI bankrupt model moat economics"
+      ],
+      "tags": [
+        "llm-moats",
+        "risks"
+      ]
+    },
+    {
+      "question": "Why don't AI models create moats?",
+      "category": "LLM Moats",
+      "framing": "The structural reasons foundation models commoditize.",
+      "variations": [
+        "LLM model not a moat commoditization transformer math"
+      ],
+      "tags": [
+        "llm-moats"
+      ]
+    },
+    {
+      "question": "Why is eval data a moat?",
+      "category": "LLM Moats",
+      "framing": "Evaluation data as the strategic differentiator.",
+      "variations": [
+        "eval data moat AI race",
+        "evaluation data competitive advantage AI"
+      ],
+      "tags": [
+        "llm-moats",
+        "measurement",
+        "analytics"
+      ]
+    },
+    {
+      "question": "What is the competitive advantage of LLMs for business?",
+      "category": "LLM Moats",
+      "framing": "How enterprises can build durable AI advantage.",
+      "variations": [
+        "competitive advantage LLM ChatGPT business strategy"
+      ],
+      "tags": [
+        "llm-moats",
+        "leadership"
+      ]
+    },
+    {
+      "question": "Should you trust OpenAI blindly?",
+      "category": "LLM Moats",
+      "framing": "Vendor risk and architectural diversification.",
+      "variations": [
+        "should not trust OpenAI vendor risk"
+      ],
+      "tags": [
+        "risks",
+        "ai-product"
+      ]
+    },
+    {
+      "question": "How does AI change healthcare?",
+      "category": "Healthcare",
+      "framing": "AI applications, value-based care, regulation.",
+      "variations": [
+        "AI in healthcare large language models",
+        "healthcare AI value-based care"
+      ],
+      "tags": [
+        "healthcare",
+        "ai-product"
+      ]
+    },
+    {
+      "question": "What is value-based care and how does AI enable it?",
+      "category": "Healthcare",
+      "framing": "VBC framing and AI's role.",
+      "variations": [
+        "value-based care VBC AI transformation"
+      ],
+      "tags": [
+        "healthcare",
+        "measurement"
+      ]
+    },
+    {
+      "question": "How do you measure quality in healthcare data?",
+      "category": "Healthcare",
+      "framing": "Quality metrics for healthcare ML.",
+      "variations": [
+        "healthcare data quality measurement",
+        "metrics quality of care treatment effectiveness patient satisfaction"
+      ],
+      "tags": [
+        "healthcare",
+        "measurement",
+        "analytics"
+      ]
+    },
+    {
+      "question": "Why isn't autocomplete understanding in healthcare AI?",
+      "category": "Healthcare",
+      "framing": "LLM limitations in clinical settings.",
+      "variations": [
+        "healthcare autocomplete understanding LLM clinical"
+      ],
+      "tags": [
+        "healthcare",
+        "risks"
+      ]
+    },
+    {
+      "question": "What mistakes do brands make in AI-driven e-commerce?",
+      "category": "E-commerce",
+      "framing": "Common pitfalls and how to avoid them.",
+      "variations": [
+        "three mistakes brands AI e-commerce"
+      ],
+      "tags": [
+        "ecommerce",
+        "leadership"
+      ]
+    },
+    {
+      "question": "Why does e-commerce need fine-tuned AI?",
+      "category": "E-commerce",
+      "framing": "Why general-purpose LLMs aren't enough.",
+      "variations": [
+        "fine-tuned AI e-commerce brand state"
+      ],
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ]
+    },
+    {
+      "question": "How is the Amazon homepage dying?",
+      "category": "E-commerce",
+      "framing": "Retail unbundling, AI assistants as the new aisle.",
+      "variations": [
+        "Amazon homepage dying AI retail unbundling Walmart Best Buy"
+      ],
+      "tags": [
+        "ecommerce",
+        "search-geo"
+      ]
+    },
+    {
+      "question": "Why does 'good enough' beat perfect for AI products?",
+      "category": "AI Product",
+      "framing": "Shipping iteratively vs chasing perfection.",
+      "variations": [
+        "good enough beats perfect AI product minimum quality"
+      ],
+      "tags": [
+        "ai-product",
+        "leadership"
+      ]
+    },
+    {
+      "question": "Why are AI workflows the real moat?",
+      "category": "AI Workflows",
+      "framing": "How redesigning work around AI beats model upgrades.",
+      "variations": [
+        "AI workflows redesign operating model agents permissions evals"
+      ],
+      "tags": [
+        "ai-workflows",
+        "ai-product",
+        "leadership"
+      ]
+    },
+    {
+      "question": "Why are people frustrated with AI agents?",
+      "category": "AI Workflows",
+      "framing": "What actually breaks in production agents.",
+      "variations": [
+        "frustrated AI agents production failure"
+      ],
+      "tags": [
+        "ai-workflows",
+        "risks"
+      ]
+    },
+    {
+      "question": "Should AI be regulated?",
+      "category": "Policy & Ethics",
+      "framing": "Lutz's view on AI regulation.",
+      "variations": [
+        "AI regulation Biden central control",
+        "Macron AI over-regulation"
+      ],
+      "tags": [
+        "policy-ethics",
+        "leadership"
+      ]
+    },
+    {
+      "question": "What about deepfakes?",
+      "category": "Policy & Ethics",
+      "framing": "How society will adapt to synthetic media.",
+      "variations": [
+        "deepfakes danger AI manage"
+      ],
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ]
+    },
+    {
+      "question": "Why does AI fairness matter and where does it fail?",
+      "category": "Policy & Ethics",
+      "framing": "Bias examples and demographic effects.",
+      "variations": [
+        "algorithmic transparency Biden bias",
+        "AI fairness predictive power data validation"
+      ],
+      "tags": [
+        "bias",
+        "policy-ethics"
+      ]
+    },
+    {
+      "question": "Is AI hurting people with non-Western names?",
+      "category": "Policy & Ethics",
+      "framing": "Concrete bias outcomes in hiring and promotion.",
+      "variations": [
+        "non-Western names AI promotion bias"
+      ],
+      "tags": [
+        "bias",
+        "policy-ethics"
+      ]
+    },
+    {
+      "question": "What is the 'Ask, Measure, Learn' framework?",
+      "category": "Data & Measurement",
+      "framing": "The framework from Lutz's book.",
+      "variations": [
+        "Ask Measure Learn framework book",
+        "ask measure learn system data"
+      ],
+      "tags": [
+        "measurement",
+        "analytics"
+      ]
+    },
+    {
+      "question": "What is a data product?",
+      "category": "Data & Measurement",
+      "framing": "Definition and how to build one.",
+      "variations": [
+        "data products you need to know"
+      ],
+      "tags": [
+        "analytics",
+        "ai-product"
+      ]
+    },
+    {
+      "question": "How do you spot social media bots?",
+      "category": "Data & Measurement",
+      "framing": "Detection heuristics.",
+      "variations": [
+        "spot social media bots lonely"
+      ],
+      "tags": [
+        "analytics",
+        "risks"
+      ]
+    },
+    {
+      "question": "How is AI changing education?",
+      "category": "Education",
+      "framing": "What AI does for and to students, teachers, and curricula.",
+      "variations": [
+        "AI education students teaching MBA classroom Cornell"
+      ],
+      "tags": [
+        "education",
+        "leadership"
+      ]
+    },
+    {
+      "question": "Why does Cornell use an AI Teaching Assistant?",
+      "category": "Education",
+      "framing": "What an AI TA actually does in a Cornell course.",
+      "variations": [
+        "Cornell AI teaching assistant integrated OpenAI eCornell"
+      ],
+      "tags": [
+        "education"
+      ]
+    },
+    {
+      "question": "What patterns appear across thousands of AI startup pitches?",
+      "category": "Startups",
+      "framing": "Radical lean teams, SMB software, overlooked compliance plays.",
+      "variations": [
+        "6000 startup pitches lean teams SMB compliance Blue Moon"
+      ],
+      "tags": [
+        "startup",
+        "investment"
+      ]
+    },
+    {
+      "question": "How do venture firms use AI in their own operations?",
+      "category": "Investment",
+      "framing": "AI in sourcing, diligence, portfolio construction, and founder support.",
+      "variations": [
+        "venture firms AI operations NEA Lila Tretikov sourcing diligence portfolio"
+      ],
+      "tags": [
+        "investment",
+        "ai-workflows"
+      ]
+    },
+    {
+      "question": "Why are radically lean teams the future?",
+      "category": "Startups",
+      "framing": "How AI compresses the team size needed to ship.",
+      "variations": [
+        "radically lean teams AI agents fewer people scale"
+      ],
+      "tags": [
+        "startup",
+        "ai-workflows"
+      ]
+    },
+    {
+      "question": "How will AI change jobs?",
+      "category": "Future of Work",
+      "framing": "Disruption, enablement, and the skills that matter.",
+      "variations": [
+        "Meta laid off AI jobs different skills"
+      ],
+      "tags": [
+        "future-of-work",
+        "leadership"
+      ]
+    },
+    {
+      "question": "What does 'AI as an operating model' mean?",
+      "category": "Future of Work",
+      "framing": "Why the winners redesign work around AI rather than just adopting tools.",
+      "variations": [
+        "AI operating model layoffs enablement workflow design"
+      ],
+      "tags": [
+        "future-of-work",
+        "ai-workflows",
+        "leadership"
+      ]
+    },
+    {
+      "question": "Is AGI near?",
+      "category": "AI Predictions",
+      "framing": "Lutz's stance on the AGI timeline.",
+      "variations": [
+        "no AGI killer app 2025 prediction"
+      ],
+      "tags": [
+        "risks"
+      ]
+    },
+    {
+      "question": "What is the killer app of AI?",
+      "category": "AI Predictions",
+      "framing": "Where the durable AI value will accumulate.",
+      "variations": [
+        "killer app AI 2025 prediction"
+      ],
+      "tags": [
+        "ai-product"
+      ]
+    },
+    {
+      "question": "Why is energy the AI race?",
+      "category": "AI Predictions",
+      "framing": "Energy and infrastructure as constraints.",
+      "variations": [
+        "energy race wins AI race grid"
+      ],
+      "tags": [
+        "risks",
+        "policy-ethics"
+      ]
+    },
+    {
+      "question": "What is BioAI?",
+      "category": "AI Predictions",
+      "framing": "AI applied to biology — new molecules, new medicines.",
+      "variations": [
+        "BioAI biology cancer Earli synthetic biopsy"
+      ],
+      "tags": [
+        "healthcare",
+        "investment"
+      ]
+    },
+    {
+      "question": "What is the book Ask, Measure, Learn about?",
+      "category": "Book & Teaching",
+      "framing": "Topics covered in the O'Reilly book.",
+      "variations": [
+        "Ask Measure Learn book O'Reilly Lutz"
+      ],
+      "tags": [
+        "measurement",
+        "analytics",
+        "education"
+      ]
+    },
+    {
+      "question": "What does the eCornell AI certificate cover?",
+      "category": "Book & Teaching",
+      "framing": "The five-course program structure.",
+      "variations": [
+        "eCornell Designing Building AI Solutions certificate Cornell"
+      ],
+      "tags": [
+        "education"
+      ]
+    }
+  ]
+}

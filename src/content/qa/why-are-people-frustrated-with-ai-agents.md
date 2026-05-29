@@ -2,7 +2,7 @@
 question: "Why are people frustrated with AI agents?"
 category: "AI Workflows"
 tags: ["ai-workflows", "risks"]
-updated: 2026-05-28
+updated: 2026-05-29
 sources:
   - title: "AI on the Front Lines, with Alexander Fink"
     url: "https://ecornell.cornell.edu/keynotes/view/K043026/"

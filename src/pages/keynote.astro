@@ -12,6 +12,13 @@ const now = Date.now();
 const upcoming = events.filter(e => e.data.date.getTime() >= now && e.data.status !== 'past');
 const past = events.filter(e => e.data.date.getTime() < now || e.data.status === 'past');
 
+// Published transcripts, keyed by ISO date so each past keynote can link its own.
+const transcriptByDate = new Map(
+  (await getCollection('transcripts'))
+    .filter(t => t.data.kind === 'keynote')
+    .map(t => [t.data.date.toISOString().slice(0, 10), t]),
+);
+
 // Extract guest names from titles ("Title, with Guest Name")
 function guestFromTitle(t: string): string | null {
   const m = t.match(/,\s*with\s+(.+)$/i);
@@ -86,6 +93,7 @@ const breadcrumbJsonLd = {
         {past.map(ev => {
           const guest = guestFromTitle(ev.data.title) ?? 'Lutz Finger';
           const cleanTitle = ev.data.title.replace(/,\s*with\s+.+$/i, '');
+          const transcript = transcriptByDate.get(ev.data.date.toISOString().slice(0, 10));
           return (
             <li>
               <a class="card" href={ev.data.url ?? `/speaking/${ev.id}/`} target={ev.data.url ? '_blank' : undefined} rel={ev.data.url ? 'noopener' : undefined}>
@@ -98,6 +106,9 @@ const breadcrumbJsonLd = {
                 <h3 class="card-title">{cleanTitle}</h3>
                 {ev.data.description && <p class="card-excerpt">{ev.data.description}</p>}
               </a>
+              {transcript && (
+                <a class="transcript-link" href={`/transcript/${transcript.id}/`}>Read transcript →</a>
+              )}
             </li>
           );
         })}

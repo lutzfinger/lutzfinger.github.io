@@ -174,7 +174,7 @@ async function collectMarkdown(dir, slugPrefix, eyebrow) {
       slug,
       eyebrow,
       title: truncate(fm.question || fm.title || stem, 110),
-      subtitle: truncate(fm.excerpt || fm.description || '', 130),
+      subtitle: truncate(fm.excerpt || fm.description || fm.show || '', 130),
     });
   }
   return out;
@@ -182,8 +182,9 @@ async function collectMarkdown(dir, slugPrefix, eyebrow) {
 
 const qaPages = await collectMarkdown('src/content/qa', 'qa', 'Q&A');
 const eventPages = await collectMarkdown('src/content/events', 'speaking', 'Speaking');
+const transcriptPages = await collectMarkdown('src/content/transcripts', 'transcript', 'Transcript');
 
-const ALL = [...STATIC_PAGES, ...qaPages, ...eventPages];
+const ALL = [...STATIC_PAGES, ...qaPages, ...eventPages, ...transcriptPages];
 console.log(`Generating ${ALL.length} OG images…`);
 for (const p of ALL) await render(p);
 console.log(`\nDone. Output: ${OUT_DIR}`);

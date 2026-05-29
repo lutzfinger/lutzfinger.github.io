@@ -328,6 +328,22 @@ img {
   color: var(--c-text-soft);
 }
 
+/* "Read transcript →" link shown below a card (sibling of the card anchor). */
+.transcript-link {
+  display: inline-block;
+  margin: 0.45rem 0 0 0.1rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--c-accent);
+  text-decoration: none;
+}
+.transcript-link + .transcript-link {
+  margin-left: 1rem;
+}
+.transcript-link:hover {
+  text-decoration: underline;
+}
+
 .tag.tag-forbes {
   background: #fff2eb;
   color: #c14a1c;

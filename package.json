@@ -10,12 +10,13 @@
     "astro": "astro",
     "ingest:forbes": "node scripts/ingest-forbes.mjs",
     "ingest:linkedin": "node scripts/ingest-linkedin.mjs",
+    "ingest:transcripts": "node scripts/ingest-transcripts.mjs",
     "ingest:all": "npm run ingest:forbes && npm run ingest:linkedin",
     "sync:events": "node scripts/sync-events.mjs",
     "gen:og": "node scripts/generate-og-images.mjs",
     "gen:images": "node scripts/generate-image-variants.mjs",
     "gen:faq": "python3 scripts/generate-faq.py",
-    "refresh": "npm run ingest:all && npm run sync:events && npm run gen:faq",
+    "refresh": "npm run ingest:all && npm run ingest:transcripts && npm run sync:events && npm run gen:faq",
     "audit:links": "node scripts/audit-links.mjs"
   },
   "dependencies": {

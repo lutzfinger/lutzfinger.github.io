@@ -1,9 +1,12 @@
 ---
 import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
+import { getCollection } from 'astro:content';
 
 // Hand-curated list of third-party shows where Lutz was a guest.
 // (His own keynote series lives on /keynote/; his own podcast on /podcast.)
+// `showId` matches the transcripts collection so each card can link its
+// published transcript(s).
 const shows = [
   {
     title: 'Three Key Insights with Sanjiv Yajnik',
@@ -11,6 +14,7 @@ const shows = [
     episode: 'From SEO to GEO: How AI Is Changing How Car Buyers Find You',
     blurb: "Host Sanjiv Yajnik and Lutz on the shift from search engine optimization to generative engine optimization — and what it means for how dealerships get found.",
     url: 'https://podcasts.apple.com/us/podcast/three-key-insights-with-sanjiv-yajnik/id1889961646',
+    showId: 'three-key-insights',
   },
   {
     title: 'Build AI',
@@ -18,6 +22,7 @@ const shows = [
     episode: 'From Google to Cornell: Rethinking AI Workflows',
     blurb: 'What most founders and enterprises get wrong about the AI era, and why durable value lives in workflows rather than the model layer.',
     url: 'https://podcasts.apple.com/us/podcast/build-ai/id1801007697',
+    showId: 'build-ai',
   },
   {
     title: 'Silicon Zombies',
@@ -25,6 +30,7 @@ const shows = [
     episode: 'SZ 139: AI in the EU',
     blurb: 'Panel on AI regulation in the European Union, with a later segment on DeepSeek and the new generation of reasoning models.',
     url: 'https://creators.spotify.com/pod/profile/silicomzombies/episodes/SZ-139-AI-in-the-EU-Ft--Yaad--Gerard--Florence--Julie---Lutz-e2s31t3',
+    showId: 'silicon-zombies',
   },
   {
     title: 'The Pulse of AI',
@@ -32,6 +38,7 @@ const shows = [
     episode: 'Deep Dive into the Current State of AI with Lutz Finger',
     blurb: 'A wide-ranging conversation on where AI actually is today, drawing on 20+ years building AI products at Google, LinkedIn, and Snap.',
     url: 'https://www.thepulseofai.com/post/deep-dive-into-the-current-state-of-ai-with-lutz-finger',
+    showId: 'pulse-of-ai',
   },
   {
     title: 'Social Media Marketing Podcast',
@@ -39,8 +46,25 @@ const shows = [
     episode: 'Measuring Social Media: What Marketers Need to Know',
     blurb: 'From the Ask, Measure, Learn era: start with the question or goal, then figure out how to capture the data — not the other way around.',
     url: 'https://www.socialmediaexaminer.com/measuring-social-media-with-lutz-finger/',
+    showId: 'social-media-examiner',
   },
 ];
+
+// Group published podcast transcripts by showId (a show can have more than one,
+// e.g. Silicon Zombies SZ 139 + SZ 159). Sorted newest first.
+const transcriptsByShow = new Map<string, { id: string; label: string }[]>();
+for (const t of (await getCollection('transcripts')).filter(t => t.data.kind === 'podcast')) {
+  if (!t.data.showId) continue;
+  const list = transcriptsByShow.get(t.data.showId) ?? [];
+  // Short label (e.g. "SZ 139") when a show has multiple episodes; else generic.
+  const label = t.data.title.split(/[:|]/)[0].trim();
+  list.push({ id: t.id, label });
+  transcriptsByShow.set(t.data.showId, list);
+}
+function transcriptLinks(showId: string) {
+  const list = (transcriptsByShow.get(showId) ?? []).slice().sort((a, b) => (a.id < b.id ? 1 : -1));
+  return list.map(t => ({ href: `/transcript/${t.id}/`, text: list.length > 1 ? `Transcript: ${t.label} →` : 'Transcript →' }));
+}
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -84,6 +108,9 @@ const itemListJsonLd = {
             <h3 class="card-title">{s.title}</h3>
             <p class="card-excerpt"><strong>{s.episode}</strong> — {s.blurb}</p>
           </a>
+          {transcriptLinks(s.showId).map(t => (
+            <a class="transcript-link" href={t.href}>{t.text}</a>
+          ))}
         </li>
       ))}
     </ul>

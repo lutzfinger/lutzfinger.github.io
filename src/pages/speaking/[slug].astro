@@ -29,6 +29,14 @@ const others = all
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 4);
 
+// Published transcript for this keynote, if one exists (matched by date).
+const transcript = d.tag === 'live-stream'
+  ? (await getCollection('transcripts')).find(
+      t => t.data.kind === 'keynote'
+        && t.data.date.toISOString().slice(0, 10) === d.date.toISOString().slice(0, 10),
+    )
+  : undefined;
+
 const eventJsonLd: Record<string, unknown> = {
   '@context': 'https://schema.org',
   '@type': 'Event',
@@ -94,6 +102,12 @@ const descForHead = d.description
     {d.url && (
       <aside class="article-source">
         <strong>Event link:</strong> <a href={d.url} rel="noopener" target={d.url.startsWith('http') ? '_blank' : undefined}>{d.url}</a>
+      </aside>
+    )}
+
+    {transcript && (
+      <aside class="article-source">
+        <strong>Transcript:</strong> <a href={`/transcript/${transcript.id}/`}>Read the full transcript →</a>
       </aside>
     )}
 

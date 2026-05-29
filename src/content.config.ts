@@ -57,4 +57,18 @@ const qa = defineCollection({
   }),
 });
 
-export const collections = { writing, events, qa };
+const transcripts = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/transcripts' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    kind: z.enum(['keynote', 'podcast']),
+    show: z.string(),
+    showId: z.string().optional(),
+    guest: z.string().optional(),
+    host: z.string().optional(),
+    sourceUrl: z.string().url().optional(),
+  }),
+});
+
+export const collections = { writing, events, qa, transcripts };

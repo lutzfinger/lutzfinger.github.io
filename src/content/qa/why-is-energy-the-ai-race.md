@@ -6,8 +6,8 @@ updated: 2026-05-28
 sources:
   - title: "The Missing Moat In AI: Your Eval Data"
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"
-  - title: "DNA Is Becoming Programmable. Curing Cancer With AI."
-    url: "https://www.forbes.com/sites/lutzfinger/2026/05/25/dna-is-becoming-programmable-curing-cancer-with-ai/"
+  - title: "AI Needs Power, the Grid Needs AI, with Josh Wong"
+    url: "https://ecornell.cornell.edu/keynotes/view/K040226/"
 ---
 
 _Energy and infrastructure as constraints._
@@ -16,6 +16,6 @@ _Energy and infrastructure as constraints._
 
 — [The Missing Moat In AI: Your Eval Data](https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/) · _Forbes_
 
-> Everyone is talking about "physical AI," the idea that models will finally step out of the chatbot and into the real world of robots, factories, and labs. I ecently hosted Cyriac Roeding, founder of Earli, a company curing cancer with AI, for a Cornell keynote on exactly this topic.
+> Yeah. In recent articles, whoever wins the energy race, wins the AI race. And I think that is really, really real today. Is the, is the, the grid in the US is a little bit outdated to say the least.
 
-— [DNA Is Becoming Programmable. Curing Cancer With AI.](https://www.forbes.com/sites/lutzfinger/2026/05/25/dna-is-becoming-programmable-curing-cancer-with-ai/) · _Forbes_
+— [AI Needs Power, the Grid Needs AI, with Josh Wong](https://ecornell.cornell.edu/keynotes/view/K040226/) · _Keynote - eCornell AI Keynote_

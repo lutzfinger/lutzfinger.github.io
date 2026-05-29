@@ -4,18 +4,18 @@ category: "Startups"
 tags: ["startup", "investment"]
 updated: 2026-05-28
 sources:
-  - title: "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership"
-    url: "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
-  - title: "Unit 5 Full Transcript"
-    url: "https://www.lutzfinger.com/ecornell/"
+  - title: "The Hidden Patterns, with Ben Orthlieb"
+    url: "https://ecornell.cornell.edu/keynotes/view/K042326/"
+  - title: "After the Gold Rush, with Kurt Wagner"
+    url: "https://ecornell.cornell.edu/keynotes/view/K102125/"
 ---
 
 _Radical lean teams, SMB software, overlooked compliance plays._
 
-> The core problem is that AI, by design, is average. It's spectacular at pattern recognition and synthesis, but it produces the most statistically likely output — not the most surprising, not the most brave, not the most emotionally resonant. ### What Made Steve Jobs Leadership Special Let's look at Apple in the iPod era.
+> Ben Orthlieb (Blue Moon) with Lutz Finger on patterns from 6000 startup pitches: radically lean teams, SMB software opportunities, and overlooked compliance plays in AI-driven startups. - Cornell keynote page: https://ecornell.cornell.edu/keynotes/view/K042326/ - LinkedIn Live: https://www.linkedin.com/posts/the-hidden-patterns-how-ai-is-reshaping-ugcPost-7450969675032608768 - Recorded views: 1,089
 
-— [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/) · _Forbes_
+— [The Hidden Patterns, with Ben Orthlieb](https://ecornell.cornell.edu/keynotes/view/K042326/) · _Keynote - eCornell AI Keynote_
 
-> awesome. Now, we tried to actually welcome you by using ElevenLabs with an Irish accent and saying, "Hello, Savita our distinguished speaker." Now, when you look at the text-to-speech industry, like you were at a startup, you got acquired by Cisco, and now generative AI comes in. ElevenLabs is funded throughout the roof. And why is that?
+> Kurt Wagner (Bloomberg, "Battle for the Bird") and Lutz Finger on where AI is creating real value. Where workflows, AI, and human expertise intersect, and why Lutz sold his own AI startup as part of that shift. - Cornell keynote page: https://ecornell.cornell.edu/keynotes/view/K102125/ - LinkedIn Live: https://www.linkedin.com/events/afterthegoldrush-navigatingthea7384974196725948416/
 
-— [Unit 5 Full Transcript](https://www.lutzfinger.com/ecornell/) · _eCornell course_
+— [After the Gold Rush, with Kurt Wagner](https://ecornell.cornell.edu/keynotes/view/K102125/) · _Keynote - eCornell AI Keynote_

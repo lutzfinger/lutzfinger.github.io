@@ -6,8 +6,8 @@ updated: 2026-05-28
 sources:
   - title: "Stargate: The $500 Billion Message To China — The Future Of AI Regulation"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/22/stargate-the-500b-message-to-china---the-future-of-ai-regulation/"
-  - title: "The Missing Moat In AI: Your Eval Data"
-    url: "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"
+  - title: "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills"
+    url: "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
 ---
 
 _Why the winners redesign work around AI rather than just adopting tools._
@@ -16,6 +16,6 @@ _Why the winners redesign work around AI rather than just adopting tools._
 
 — [Stargate: The $500 Billion Message To China — The Future Of AI Regulation](https://www.forbes.com/sites/lutzfinger/2025/01/22/stargate-the-500b-message-to-china---the-future-of-ai-regulation/) · _Forbes_
 
-> But workflows are brittle. One new prompt, one model update, and the whole chain quietly breaks. I watch this every time I get students [coding agents in my Cornell workshops](https://ecornell.cornell.edu/courses/artificial-intelligence/building-enterprise-ready-ai-agents-from-prototypes-to-production/). It is easy to start and just as easy to break.
+> Meta's departing employees are not being replaced by robots. They are being replaced by engineers who can define termination conditions for autonomous agents, and PMs who know how to build evaluation datasets before a model goes live.
 
-— [The Missing Moat In AI: Your Eval Data](https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/) · _Forbes_
+— [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/) · _Forbes_

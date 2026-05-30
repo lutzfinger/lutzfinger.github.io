@@ -515,6 +515,124 @@
       "tags": [
         "education"
       ]
+    },
+    {
+      "question": "What could be the deciding factor in the AI race?",
+      "category": "",
+      "tags": [
+        "AI race",
+        "eval data"
+      ],
+      "updated": "2026-05-29",
+      "body": "> But the real value may sit in the one thing OpenAI, Anthropic, and Gemini have not yet made central: your own eval data.\n\nSource: [The Missing Moat In AI: Your Eval Data](https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/)",
+      "sources": [
+        {
+          "title": "The Missing Moat In AI: Your Eval Data",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"
+        }
+      ]
+    },
+    {
+      "question": "How is the e-commerce industry changing due to AI?",
+      "category": "",
+      "tags": [
+        "e-commerce",
+        "AI",
+        "change"
+      ],
+      "updated": "2026-05-29",
+      "body": "> Every layer is collapsing into the one thing brands actually own, their shopper-behavior data and the fine-tuned AI it makes possible.\n\nSource: [The State Of E-Commerce: Every Layer Of Discovery Changed At Once](https://www.linkedin.com/pulse/state-e-commerce-finetuned-ai-every-brand-lutz-finger-gs5bf/)",
+      "sources": [
+        {
+          "title": "The State Of E-Commerce: Every Layer Of Discovery Changed At Once",
+          "url": "https://www.linkedin.com/pulse/state-e-commerce-finetuned-ai-every-brand-lutz-finger-gs5bf/"
+        }
+      ]
+    },
+    {
+      "question": "How are jobs changing due to AI?",
+      "category": "",
+      "tags": [
+        "jobs",
+        "AI",
+        "re-skilling"
+      ],
+      "updated": "2026-05-29",
+      "body": "> The word 'engineer' still appears in job postings. So does 'product manager.' But the people being hired for those roles bear little resemblance to the people being let go.\n\nSource: [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/)",
+      "sources": [
+        {
+          "title": "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
+        }
+      ]
+    },
+    {
+      "question": "Is SaaS dead due to AI?",
+      "category": "",
+      "tags": [
+        "SaaS",
+        "AI",
+        "future"
+      ],
+      "updated": "2026-05-29",
+      "body": "> The interface is. SaaS is not dead. The interface is.\n\nSource: [SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS](https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/)",
+      "sources": [
+        {
+          "title": "SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
+        }
+      ]
+    },
+    {
+      "question": "How might AI impact creative teams?",
+      "category": "",
+      "tags": [
+        "AI",
+        "creativity",
+        "teams"
+      ],
+      "updated": "2026-05-29",
+      "body": "> AI Is Average And That's A Problem The core problem is that AI, by design, is average. It's spectacular at pattern recognition and synthesis\n\nSource: [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/)",
+      "sources": [
+        {
+          "title": "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
+        }
+      ]
+    },
+    {
+      "question": "Why will people still use AI even if they fear it?",
+      "category": "",
+      "tags": [
+        "AI",
+        "fear",
+        "adoption"
+      ],
+      "updated": "2026-05-29",
+      "body": "> Convenience beats fear.\n\nSource: [Chris Hemsworth Super Bowl Ad Shows Why We'll Use AI Even If We Fear It](https://www.forbes.com/sites/lutzfinger/2026/02/10/even-if-ai-could-kill-chris-hemsworth-convenience-beats-fear/)",
+      "sources": [
+        {
+          "title": "Chris Hemsworth Super Bowl Ad Shows Why We'll Use AI Even If We Fear It",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/10/even-if-ai-could-kill-chris-hemsworth-convenience-beats-fear/"
+        }
+      ]
+    },
+    {
+      "question": "How is the internet changing due to AI?",
+      "category": "",
+      "tags": [
+        "internet",
+        "AI",
+        "transformation"
+      ],
+      "updated": "2026-05-29",
+      "body": "> The future belongs to AI assistants like ChatGPT, Claude and Perplexity.\n\nSource: [AI Is Changing The Rules Of Web Traffic — A GEO Playbook For Online Retailers](https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/)",
+      "sources": [
+        {
+          "title": "AI Is Changing The Rules Of Web Traffic — A GEO Playbook For Online Retailers",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/"
+        }
+      ]
     }
   ]
 }

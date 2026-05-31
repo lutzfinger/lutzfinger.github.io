@@ -2,7 +2,7 @@
 question: "Why does e-commerce need fine-tuned AI?"
 category: "E-commerce"
 tags: ["ecommerce", "ai-product"]
-updated: 2026-05-29
+updated: 2026-05-30
 sources:
   - title: "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max"
     url: "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"

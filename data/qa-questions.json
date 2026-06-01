@@ -633,6 +633,176 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/08/20/generative-engine-optimization-geo-a-playbook-for-online-retailers/"
         }
       ]
+    },
+    {
+      "question": "How is DNA being treated as a programmable language?",
+      "category": "AI & Biology",
+      "tags": [
+        "DNA",
+        "AI",
+        "AlphaFold",
+        "genome",
+        "transformers"
+      ],
+      "updated": "2026-06-01",
+      "body": "_DNA as text that can be read and written using AI models._\n\n> For fifty years, biology was something we could only read. We are now starting to write it. DNA is next. Models like Evo 2 treat the genome as what it actually is, a language with a four-letter alphabet.\n\nSource: [DNA Is Becoming Programmable. Curing Cancer With AI.](https://www.forbes.com/sites/lutzfinger/2026/05/25/dna-is-becoming-programmable-curing-cancer-with-ai/)",
+      "sources": [
+        {
+          "title": "DNA Is Becoming Programmable. Curing Cancer With AI.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/dna-is-becoming-programmable-curing-cancer-with-ai/"
+        }
+      ]
+    },
+    {
+      "question": "Can AI transcription tools introduce bias based on employee names?",
+      "category": "AI & Workplace",
+      "tags": [
+        "bias",
+        "HR",
+        "AI transparency",
+        "contribution tracking",
+        "names"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Meeting transcription and AI-driven contribution tracking may disadvantage non-Western names._\n\n> Tools like Granola, Read.ai, Fireflies, and Avoma now routinely track talk time and participation, and firms like Amazon and Meta are folding AI-surfaced contribution into how they review people.\n\nSource: [If Your Name Isn't Western, AI Could Cost You The Promotion.](https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/)",
+      "sources": [
+        {
+          "title": "If Your Name Isn't Western, AI Could Cost You The Promotion.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
+        }
+      ]
+    },
+    {
+      "question": "Who will win in the AI era—those using AI or those redesigning work around it?",
+      "category": "AI Strategy",
+      "tags": [
+        "workflow",
+        "AI adoption",
+        "business strategy",
+        "competitive advantage"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The real competitive advantage comes from workflow redesign, not just tool adoption._\n\n> The winners will be those who either build the platforms or rearrange the workflows in order to be effective. Yes, there will be people who then use ChatGPT to write an email, but the winners will be those who redesign work around it.\n\nSource: [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://anchor.fm/s/1022f751c/podcast/play/118546569/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-16%2F422191867-44100-2-27dce6f874755.mp3)",
+      "sources": [
+        {
+          "title": "From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17",
+          "url": "https://anchor.fm/s/1022f751c/podcast/play/118546569/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-16%2F422191867-44100-2-27dce6f874755.mp3"
+        }
+      ]
+    },
+    {
+      "question": "Why is AI autocomplete not the same as understanding in healthcare?",
+      "category": "Healthcare & AI",
+      "tags": [
+        "healthcare",
+        "LLMs",
+        "understanding",
+        "human judgment",
+        "accountability"
+      ],
+      "updated": "2026-06-01",
+      "body": "_LLMs excel at sequence modeling but cannot replace human judgment in medicine._\n\n> AI makes clinicians and scientists much more effective: better priors, better search, better filters, faster loops. Humans stay in the driver's seat because biology is noisy, evidence is incomplete, incentives are asymmetric, and accountability is real.\n\nSource: [Healthcare's AI Lesson: Autocomplete Isn't Understanding](https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/)",
+      "sources": [
+        {
+          "title": "Healthcare's AI Lesson: Autocomplete Isn't Understanding",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
+        }
+      ]
+    },
+    {
+      "question": "How are AI agents rewriting the internet and changing shopping?",
+      "category": "AI & Internet",
+      "tags": [
+        "AI agents",
+        "OpenAI",
+        "shopping",
+        "interface",
+        "LLMs"
+      ],
+      "updated": "2026-06-01",
+      "body": "_OpenAI and other LLM providers are becoming the dominant interface for online discovery._\n\n> OpenAI's ambition to become the universal interface to what we knew as the Internet isn't surprising. If anything, they might be late. Remember Perplexity's 'Shop Like a Pro'? Their goal was to handle all of shopping — from research to payment.\n\nSource: [AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?](https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/)",
+      "sources": [
+        {
+          "title": "AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
+        }
+      ]
+    },
+    {
+      "question": "Why does traffic from ChatGPT convert 9x better than traditional search?",
+      "category": "Search & Conversion",
+      "tags": [
+        "AEO",
+        "conversion",
+        "LLMs",
+        "search",
+        "Answer Engine Optimization"
+      ],
+      "updated": "2026-06-01",
+      "body": "_LLMs behave like trusted advisors, not search engines, changing how brands must optimize._\n\n> Traffic from ChatGPT-style experiences converts up to nine times better than traditional search. Why? Because large language models behave more like trusted advisors than search engines.\n\nSource: [Answer Engine Optimization — What Brands Need To Know](https://www.forbes.com/sites/lutzfinger/2025/06/19/answer-engine-optimization-aeo--what-brands-need-to-know/)",
+      "sources": [
+        {
+          "title": "Answer Engine Optimization — What Brands Need To Know",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/19/answer-engine-optimization-aeo--what-brands-need-to-know/"
+        }
+      ]
+    },
+    {
+      "question": "How can educators use AI clones to scale their teaching?",
+      "category": "AI & Education",
+      "tags": [
+        "AI clones",
+        "education",
+        "teaching",
+        "scale",
+        "virtual twin"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Creating an AI version of yourself to teach online courses at scale._\n\n> I created the Lutz-Clone, an AI version of myself designed to teach my online certificate about AI with eCornell. This clone looks like me, but more importantly, it contains my knowledge and teaching style.\n\nSource: [AI In Education — Up-level Your Teaching With AI By Cloning Yourself](https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/)",
+      "sources": [
+        {
+          "title": "AI In Education — Up-level Your Teaching With AI By Cloning Yourself",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
+        }
+      ]
+    },
+    {
+      "question": "How many e-commerce vendors are actually using generative AI effectively?",
+      "category": "AI Adoption",
+      "tags": [
+        "generative AI",
+        "e-commerce",
+        "adoption",
+        "ShopTalk",
+        "vendors"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Despite hype, adoption of generative AI in business remains minimal._\n\n> I analyzed 700 vendors at ShopTalk — the biggest e-commerce conference of the year — in regards to generative AI. The results are surprising. Just 1% of vendors use generative AI to the max.\n\nSource: [ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max](https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/)",
+      "sources": [
+        {
+          "title": "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"
+        }
+      ]
+    },
+    {
+      "question": "Why does DeepSeek's low training cost signal a shift toward AI commoditization?",
+      "category": "AI Economics",
+      "tags": [
+        "DeepSeek",
+        "training costs",
+        "commoditization",
+        "AI economics",
+        "models"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Cheaper AI training costs mean models become commodities, not defensible assets._\n\n> DeepSeek-V3's last training run cost just $5.576 million. Compare this to the $100 million that GPT-4 supposedly cost. That is 18 times smaller. AI technology is rapidly becoming more accessible everywhere at lower costs.\n\nSource: [DeepSeek - New Economic Rules And Regulatory Challenge](https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/)",
+      "sources": [
+        {
+          "title": "DeepSeek - New Economic Rules And Regulatory Challenge",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
+        }
+      ]
     }
   ]
 }

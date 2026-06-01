@@ -2,7 +2,7 @@
 question: "What patterns appear across thousands of AI startup pitches?"
 category: "Startups"
 tags: ["startup", "investment"]
-updated: 2026-05-31
+updated: 2026-06-01
 sources:
   - title: "The Hidden Patterns, with Ben Orthlieb"
     url: "https://ecornell.cornell.edu/keynotes/view/K042326/"

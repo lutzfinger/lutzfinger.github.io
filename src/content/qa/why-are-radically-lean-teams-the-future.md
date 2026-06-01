@@ -2,7 +2,7 @@
 question: "Why are radically lean teams the future?"
 category: "Startups"
 tags: ["startup", "ai-workflows"]
-updated: 2026-05-31
+updated: 2026-06-01
 sources:
   - title: "The Hidden Patterns, with Ben Orthlieb"
     url: "https://ecornell.cornell.edu/keynotes/view/K042326/"

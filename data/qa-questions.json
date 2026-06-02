@@ -803,6 +803,366 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
         }
       ]
+    },
+    {
+      "question": "What is the difference between AGI, the singularity, and superintelligence?",
+      "category": "AGI",
+      "tags": [
+        "AGI",
+        "singularity",
+        "superintelligence",
+        "definitions"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Three different ideas that boardrooms constantly conflate, with the founder who coined \"AGI\" drawing the lines._\n\n> A truly general intelligence should be able to figure out how to achieve any goal in any environment. To be an AGI you should be able to pivot beyond whatever you were programmed for: given an unfamiliar environment and an unfamiliar goal, figure out on the fly, with creative imagination and trial and error, how to achieve it. The singularity is a point at which the rate of progress in AI, biotech, nanotech and space becomes so fast it would feel infinite to a legacy human being like us.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "Why is doing 95% of human jobs not the same as AGI?",
+      "category": "AGI",
+      "tags": [
+        "AGI",
+        "automation",
+        "jobs",
+        "generalization"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Automating most work would be hugely valuable, but value is not the same as general intelligence._\n\n> When Sam Altman says his definition of AGI is an AI that can do 95% of human jobs, that's really not it. If you could make a system to do 95% of human jobs but it does it just by copying a huge amount of training data that contains a million examples of each job, that may be incredibly valuable and have immense humanitarian value, but it's not making big leaps of generalization beyond its training data, so it's not an AGI.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "Are large language models the path to AGI, or an off-ramp?",
+      "category": "AGI",
+      "tags": [
+        "AGI",
+        "LLMs",
+        "scaling",
+        "Yann LeCun"
+      ],
+      "updated": "2026-06-01",
+      "body": "_LLMs are powerful and useful, but scaling them may be a detour rather than the road to general intelligence._\n\n> I don't think LLMs are AGI, nor that fully scaling up LLMs is going to get you to AGI. I sort of agree with Yann LeCun that on the path to AGI, LLMs are an off-ramp. I still think we can get there by 2029 or even sooner, because the pace of progress is just insane and there are a lot of other techniques now being tried at smaller scale.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "What are the core limitations of transformers and backpropagation for building AGI?",
+      "category": "AI Research",
+      "tags": [
+        "transformers",
+        "backpropagation",
+        "catastrophic forgetting",
+        "continual learning"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The train-then-freeze design of today's models is the wrong shape for a mind that keeps learning._\n\n> Because of the underlying backpropagation algorithm, learning and inference are separate phases. You train a model, you freeze it, and then you use it. If you try to fill the network up with knowledge and keep going, at some point you get catastrophic forgetting: adding a little new knowledge causes it to forget a lot of old knowledge. These systems know a lot, but they don't reorganize themselves in real time the way parts of the human brain do.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "What is predictive coding and why does it matter for AGI?",
+      "category": "AI Research",
+      "tags": [
+        "predictive coding",
+        "continual learning",
+        "neural networks",
+        "AGI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Changing the learning rule, not just the architecture, may be what unlocks continual learning._\n\n> There's something called predictive coding which more closely resembles how the brain works. On smaller neural nets, predictive coding networks are better at continual learning: they don't have as much catastrophic forgetting, each neuron can learn asynchronously and independently, and you can do inference and learning in the same phase. The need for hyperscaler server farms is less, because the learning is asynchronous.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "What is the neuro-symbolic approach to AGI behind OpenCog Hyperon?",
+      "category": "AI Research",
+      "tags": [
+        "neuro-symbolic",
+        "OpenCog Hyperon",
+        "knowledge graph",
+        "AGI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Goertzel's own bet replaces the neural net as the core data structure with a self-modifying knowledge graph that fuses neural, logical, and evolutionary learning._\n\n> The basic data structure isn't a neural net, it's a huge dynamic self-modifying knowledge graph living in RAM across multiple machines. You can put neural nets in there, you can put logical propositions in there and do theorem proving, and you can put program code in there and evolve it with genetic programming that simulates evolution by natural selection. Then you wrap a goal-driven cognitive architecture around it.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "Why would superintelligence follow quickly after human-level AGI?",
+      "category": "AGI",
+      "tags": [
+        "recursive self-improvement",
+        "superintelligence",
+        "AGI",
+        "timeline"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Once a machine can rewrite its own code, the leap from human-level to superhuman may be far shorter than the leap to human-level._\n\n> If you have a human-level AGI in 2029, it is going to be able to optimize its own code and analyze its own foundations and exceed the human level in much less than the sixteen-year gap Kurzweil drew between AGI and superintelligence. This is recursive self-improvement: the AI makes a smarter AI, makes a smarter AI. We're actually designing Hyperon precisely for recursive self-improvement, which the human brain never evolved to do.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "Where do neuro-symbolic AI systems beat large language models today?",
+      "category": "AI Product",
+      "tags": [
+        "neuro-symbolic",
+        "healthcare data",
+        "finance",
+        "structured data"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The clearest near-term edge for non-LLM AI is messy data that is part numbers, part narrative._\n\n> When you have data that is a mix of quantitative and qualitative in a confusing, tangled-up way, LLMs are not great at sifting through the structured part at scale. Medical data is like this: a lot of qualitative information plus hard clinical numbers. Many areas of finance are like this. I've worked on catastrophic risk estimation, like how to price the risk of a revolution in a developing country. That's where symbolic reasoning plus creative leaps, with an LLM there to crunch the text, has a big advantage.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "How should businesses prepare for AGI, and what comes after chatbots and agents?",
+      "category": "AI Product",
+      "tags": [
+        "AI agents",
+        "persistent memory",
+        "world models",
+        "strategy"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The practical move is to avoid overcommitting and to build toward agents with persistent memory rather than one-shot chatbots._\n\n> The right answer is not to overcommit to any particular technology at a particular moment, because if the singularity idea is at all real, we're all going to have to pivot and re-pivot. What's coming is agents with persistent memory that reason on that memory and build their own world model as they go. An agent that remembers everything it ever did feels less like a query loop and more like a personal assistant you actually have a relationship with.\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "What is the economic risk during the transition to AGI?",
+      "category": "Future of Work",
+      "tags": [
+        "AGI",
+        "economy",
+        "automation",
+        "universal basic income"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The dangerous window may not be an evil superintelligence, but the gap between AGI that can automate jobs and superintelligence that can deliver abundance._\n\n> What worries me is the period after you have the first human-level AGI but before you have a superintelligence that can bring massive abundance. You've got an AGI that can in principle automate almost any job and is crunching through one industry after another, but you don't yet have the superintelligence that can airdrop a molecular nano-assembler in everyone's backyard. What happens to the world economy in that interval? Who gives universal basic income in the Central African Republic?\n\nSource: [Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052826/)",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052826/"
+        }
+      ]
+    },
+    {
+      "question": "Why is detecting cancer early the biggest lever in treatment?",
+      "category": "Healthcare",
+      "tags": [
+        "cancer",
+        "early detection",
+        "lung cancer",
+        "BioAI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The survival math changes completely with the stage at which cancer is found._\n\n> The biggest lever is to treat cancer early. Lung cancer is the number one killer of all cancers, it kills twice as many people as the second biggest. If you detect it at stage one, you have over a 60% survival rate after five years. If you detect it at stage four, you have an 8% chance of living five years from now, 92% will die. You can only treat it early if you diagnose it early.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "What is the core problem with today's cancer drugs?",
+      "category": "Healthcare",
+      "tags": [
+        "cancer",
+        "drug toxicity",
+        "oncology",
+        "BioAI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Even the best cancer drugs are imprecise, and the imprecision forces a dose that limits how well they work._\n\n> The number one problem with cancer drugs is systemic toxicity. When you dose someone, the drug doesn't only work on the tumor, it also works on healthy cells. That's why your hair falls out in chemotherapy. The top 10 cancer drugs produce 87 billion dollars a year, and on average they give you 12 months more to live and 15 percentage points more survival, which gets you to 49% in total, meaning every second person still dies.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "How can a cancer cell be made to produce its own drug?",
+      "category": "BioAI",
+      "tags": [
+        "cancer",
+        "DNA switches",
+        "immunotherapy",
+        "BioAI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The aim is a therapy produced by the tumor, against the tumor, in the tumor, so potent drugs stay local._\n\n> We created the first genetic switches made out of DNA that only turn on in cancer cells. You inject them and they go everywhere, but they only flip on inside a cancer cell, like a light switch. We only get into about 1% of the cancer cells, so the cell produces a message, a smoke signal, that brings the immune system to attack the rest, like a domino chain reaction. The hard part is keeping all of it inside the tumor so you avoid off-target effects.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "What is the 'billion dollar barrier' in delivering gene therapies?",
+      "category": "BioAI",
+      "tags": [
+        "lipid nanoparticles",
+        "drug delivery",
+        "cancer",
+        "BioAI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Getting genetic cargo to a tumor, and not to the liver, has blocked the field for 15 years._\n\n> Somehow you have to get this DNA to the tumor, and that's where lipid nanoparticles come in. You've probably already had them in a COVID vaccine. The problem is that within 10 minutes they're in your liver and out of your body, because the liver flushes out everything that doesn't belong. So to treat any cancer other than liver cancer you need a completely different lipid nanoparticle. For 15 years that has been called the billion dollar barrier.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "Why did the first AI approach to designing cancer switches fail, and how was it fixed?",
+      "category": "BioAI",
+      "tags": [
+        "machine learning",
+        "cancer",
+        "hallmarks of cancer",
+        "R&D"
+      ],
+      "updated": "2026-06-01",
+      "body": "_What works on lab cell lines can collapse on real patient samples, and the fix was to change the question._\n\n> The original concept used a switch that nature provides, an endogenous promoter. It looked really good in cell lines that never change in the lab, but the moment we tried it on individual real cancer patient samples from the operating room, the whole thing failed completely. So instead of interrogating every single mutation, we asked the opposite question and looked at the downstream commonalities, the hallmarks of cancer, and identified master transcription factor binding sites that are dysregulated.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "How can a large language model design DNA for new cancer drugs?",
+      "category": "BioAI",
+      "tags": [
+        "LLM",
+        "DNA",
+        "Evo 2",
+        "learning loop"
+      ],
+      "updated": "2026-06-01",
+      "body": "_DNA is a four-letter text, which makes sequence design a next-token problem, but only with the right data and a tight feedback loop._\n\n> What is DNA? It's text. The alphabet of DNA has four letters and they keep permutating, so it's a perfect problem for an LLM, if it's trained on the right data. The general models are only okay-ish for DNA. There's one trained specifically on DNA, Evo 2 by the Arc Institute, the best out there, but still 99% of what comes out is useless. So we built a proprietary Oracle to predict what is not useless, feed it to the wet lab, and the outliers go back into the model. Every spin of the wheel, it gets smarter.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "Why are fine-tuned models on proprietary data the real moat, not another foundation model?",
+      "category": "AI Strategy",
+      "tags": [
+        "fine-tuning",
+        "data moat",
+        "competitive advantage",
+        "LLMs"
+      ],
+      "updated": "2026-06-01",
+      "body": "_The same transformer everyone has becomes a defensible asset only when trained on data nobody else holds._\n\n> Cyriac uses the same transformer that is the basis for AI generally, but he trains it on data from his own wet lab that nobody else has, to get a fine-tuned model that can answer questions nobody else can. The future right now is really fine-tuned models trained on specific data nobody else has. There is a race on data and a race on fine-tuned models, and the same underlying idea is happening in every industry across the globe.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "Why does physical AI need real physical-world data?",
+      "category": "AI Strategy",
+      "tags": [
+        "physical AI",
+        "world models",
+        "data quality",
+        "BioAI"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Models that act on the physical world are only as good as the real-world data they are trained on._\n\n> Physical AI is only interesting when you train it on physical-world data. All models need real data, and the physical world models need real-world data. So in biology, you need a wet lab with pipettes and a vivarium with mice, and you have to generate high-quality data, because otherwise it's garbage in, garbage out.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "How should executives decide where to apply AI?",
+      "category": "AI Strategy",
+      "tags": [
+        "AI adoption",
+        "strategy",
+        "executives",
+        "problem-first"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Start with the problem, not the tool, and the right use of AI emerges on its own._\n\n> You don't start with the tool, you start with the problem, and then it naturally emerges which tools are best to use. If you want a house, you start with wanting the house, then find the materials and skilled people. You don't start with a screwdriver and ask what you could build with it. AI is like suddenly having a bazooka in your toolbox: it's incredibly powerful, but you still need to aim it and know exactly what to do with it.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "What did Jim Allison's checkpoint inhibitors miss, and how does early aim to complete the picture?",
+      "category": "Healthcare",
+      "tags": [
+        "checkpoint inhibitors",
+        "immunotherapy",
+        "Jim Allison",
+        "cancer"
+      ],
+      "updated": "2026-06-01",
+      "body": "_Releasing the immune system's brake was a Nobel-winning breakthrough, but a brake release alone does not move the car._\n\n> Checkpoint inhibitors are the biggest cancer innovation in the last 20 years, and Jim Allison won the Nobel Prize in 2018 for the insight that you first have to take the foot off the brake of the immune system. But even the best of them have on average a 35% response rate. The problem is, if you take your foot off the brake but never push the gas, the car doesn't move. You also have to stimulate the immune system, and we do that locally at the tumor. That is the second missing piece of the puzzle.\n\nSource: [Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)](https://ecornell.cornell.edu/keynotes/view/K052126/)",
+      "sources": [
+        {
+          "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
+          "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
     }
   ]
 }

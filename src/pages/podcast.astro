@@ -1,6 +1,7 @@
 ---
 import Base from '~/layouts/Base.astro';
 import { SITE } from '~/consts';
+import { getCollection } from 'astro:content';
 import data from '~/data/the-edge-episodes.json';
 
 interface Episode {
@@ -30,10 +31,18 @@ function fmtDuration(sec: number | null): string | null {
   return `${Math.round(sec / 60)} min`;
 }
 
+// Each episode's published transcript, keyed by ISO date (one per episode).
+const transcriptByDate = new Map(
+  (await getCollection('transcripts'))
+    .filter(t => t.data.kind === 'podcast' && t.data.showId === 'the-edge')
+    .map(t => [t.data.date.toISOString().slice(0, 10), t.id]),
+);
+
 const items = episodes.map(ep => ({
   ...ep,
   dateDisplay: fmtDate(ep.date),
   durationDisplay: fmtDuration(ep.durationSec),
+  transcriptId: transcriptByDate.get(ep.date) ?? null,
 }));
 
 const seriesJsonLd = {
@@ -101,6 +110,9 @@ const breadcrumbJsonLd = {
             <h3 class="card-title">{ep.title}</h3>
             <p class="card-excerpt">{ep.blurb}</p>
           </a>
+          {ep.transcriptId && (
+            <a class="transcript-link" href={`/transcript/${ep.transcriptId}/`}>Read transcript →</a>
+          )}
         </li>
       ))}
     </ul>

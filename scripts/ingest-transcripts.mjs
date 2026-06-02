@@ -5,11 +5,11 @@
 //   ~/Lutz_Media/Lutz-author/Keynote/*.md                     (kind: keynote)
 //   ~/Lutz_Media/Lutz-author/Podcast/<show>/*.md              (kind: podcast)
 //
-// Only the explicitly-listed podcast shows are ingested — `the-edge` (Lutz's
-// own 23-episode podcast) is intentionally NOT in the allowlist, so it never
-// ships here. The raw files are mlx-whisper output; cleanTranscriptBody()
-// strips Whisper loops and paragraphs the wall of text. See code-plan
-// 2026-05-28-lutzfinger-transcripts.md.
+// Only the explicitly-listed podcast shows are ingested. `the-edge` (Lutz's
+// own 23-episode podcast) is now included, mapped to the /podcast page
+// (operator decision 2026-06-02, reversing the 2026-05-28 hold). The raw
+// files are mlx-whisper output; cleanTranscriptBody() strips Whisper loops
+// and paragraphs the wall of text. See code-plan 2026-05-28-lutzfinger-transcripts.md.
 
 import { readdir, readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -24,13 +24,14 @@ const PODCAST_DIR = path.join(MEDIA, 'Podcast');
 const OUT_DIR = path.join(process.cwd(), 'src/content/transcripts');
 const MIN_WORDS = 200;
 
-// Allowlist of podcast shows that map to /other-shows cards. `the-edge` is
-// deliberately excluded (out of scope per operator decision 2026-05-28).
+// Allowlist of podcast shows. Guest shows map to /other-shows cards; `the-edge`
+// is Lutz's own podcast and maps to the /podcast page (included 2026-06-02).
 const PODCAST_SHOWS = {
   'build-ai': 'Build AI',
   'pulse-of-ai': 'The Pulse of AI',
   'silicon-zombies': 'Silicon Zombies',
   'social-media-examiner': 'Social Media Examiner',
+  'the-edge': 'The Edge',
   'three-key-insights': 'Three Key Insights',
 };
 

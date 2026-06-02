@@ -2,7 +2,7 @@
 question: "Why isn't autocomplete understanding in healthcare AI?"
 category: "Healthcare"
 tags: ["healthcare", "risks"]
-updated: 2026-06-01
+updated: 2026-06-02
 sources:
   - title: "Healthcare's AI Lesson: Autocomplete Isn't Understanding"
     url: "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"

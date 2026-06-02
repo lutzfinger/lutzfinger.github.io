@@ -2,7 +2,7 @@
 question: "What is the killer app of AI?"
 category: "AI Predictions"
 tags: ["ai-product"]
-updated: 2026-06-01
+updated: 2026-06-02
 sources:
   - title: "No AGI But A 'Killer App' — 2025 AI Prediction"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"

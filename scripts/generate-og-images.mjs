@@ -147,6 +147,7 @@ const STATIC_PAGES = [
   { slug: 'book',                   eyebrow: 'Book',        title: 'Ask, Measure, Learn',                                        subtitle: 'with Soumitra Dutta. O’Reilly Media, 2014.' },
   { slug: 'ecornell',               eyebrow: 'Certificate', title: 'Designing & Building AI Solutions',                          subtitle: 'The Cornell five-course AI certificate. No coding required.' },
   { slug: 'keynote',                eyebrow: 'Live series', title: 'The Keynote on AI',                                          subtitle: 'eCornell. Guests who impact how AI gets implemented.' },
+  { slug: 'podcast',                eyebrow: 'Podcast',     title: 'The Edge',                                                   subtitle: 'AI with Jasper Masemann (Cherry Ventures). Co-hosted by Lutz Finger.' },
   { slug: 'workshop',               eyebrow: 'Workshops',   title: 'AI Workflow Workshops',                                      subtitle: 'Personal-productivity and enterprise-production agents. Hosted by eCornell.' },
   { slug: 'qa',                     eyebrow: 'Q&A',         title: '41 questions, answered',                                     subtitle: 'From the Forbes column, LinkedIn, Intereconomics, NZZ, and teaching.' },
   { slug: 'portfolio',              eyebrow: 'Portfolio',   title: 'AI use cases I have built',                                  subtitle: 'Search & discovery. Healthcare. Cloning influencers. SAI. Future Me. And more.' },

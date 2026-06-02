@@ -1,0 +1,202 @@
+{
+  "show": {
+    "title": "The Edge",
+    "publisher": "Cherry Ventures",
+    "tagline": "Breaking down the latest in AI with two practitioners: Jasper Masemann, investment partner at Cherry Ventures, and Lutz Finger.",
+    "spotify": "https://open.spotify.com/show/6AygQJpBq42XJcvVItlZYb",
+    "apple": "https://podcasts.apple.com/us/podcast/the-edge/id1756953064",
+    "rss": "https://media.rss.com/lutzandjasper/feed.xml"
+  },
+  "episodes": [
+    {
+      "guid": "76616b1a-449f-4d10-93e6-135c416f637e",
+      "title": "AI Agents: The Future of Work?",
+      "date": "2024-12-12",
+      "durationSec": 2325,
+      "url": "https://rss.com/podcasts/lutzandjasper/1798482",
+      "blurb": "What AI agents actually are, past the sci-fi imagery: code that takes a defined task, breaks it into steps, and changes how we work with computers. Lutz and Jasper trace the line from robotic process automation to today's agents."
+    },
+    {
+      "guid": "69e73fa3-25a7-408c-9b8b-e02c6161ad94",
+      "title": "The Value Translation Gap: AI's Deployment Problem",
+      "date": "2024-11-28",
+      "durationSec": 2427,
+      "url": "https://rss.com/podcasts/lutzandjasper/1773967",
+      "blurb": "Machine-learning veteran Eric Siegel on the value translation gap that keeps enterprise AI stuck in the lab, and why only 15 to 20 percent of predictive models ever reach production.",
+      "guest": "Eric Siegel"
+    },
+    {
+      "guid": "2c3690c5-de11-4b32-9b34-4d87c353db61",
+      "title": "AI Products: Why ‘Good Enough’ Beats Perfect",
+      "date": "2024-11-14",
+      "durationSec": 2333,
+      "url": "https://rss.com/podcasts/lutzandjasper/1751129",
+      "blurb": "Lasqo AI's Ferdinand Terme on why vertical AI startups beat the tech giants, building B2B products rather than features, and keeping a human in the loop as you scale.",
+      "guest": "Ferdinand Terme"
+    },
+    {
+      "guid": "0bf16247-7e72-4633-b05c-3ab17fb15ec4",
+      "title": "The future of AI bots: winning with personalization, conviction, and cross-platform integration",
+      "date": "2024-08-22",
+      "durationSec": 1549,
+      "url": "https://rss.com/podcasts/lutzandjasper/1621692",
+      "blurb": "From Meta's celebrity avatars to Character AI, the race to build bots has been frantic. Why most of them miss, and what actually makes a bot worth talking to."
+    },
+    {
+      "guid": "76d84b5f-e7b4-40c3-a20d-c18844ed79b7",
+      "title": "AI Gold Rush: Is the Market Overheating?",
+      "date": "2024-08-08",
+      "durationSec": 1466,
+      "url": "https://rss.com/podcasts/lutzandjasper/1602273",
+      "blurb": "The AI market is shifting from a race to build infrastructure toward practical applications that deliver real business value. Is the gold rush cooling, or just maturing?"
+    },
+    {
+      "guid": "6599a679-6baf-4cd5-9352-9e9c7755b3c5",
+      "title": "Building AI products: 5 lessons from our founders' workshop",
+      "date": "2024-08-01",
+      "durationSec": 1207,
+      "url": "https://rss.com/podcasts/lutzandjasper/1593168",
+      "blurb": "Live from London, a recap of the Station F founders workshop: five lessons on why building AI products needs a different playbook than traditional software."
+    },
+    {
+      "guid": "aced5d19-a421-407e-aed7-92e5034499d1",
+      "title": "Founder Coaching: Tips for your AI Journey",
+      "date": "2024-07-26",
+      "durationSec": 2261,
+      "url": "https://rss.com/podcasts/lutzandjasper/1583593",
+      "blurb": "A live founder-coaching session at Cornell Tech with three pre-seed startups using AI to rethink neurological care. Real questions, real feedback."
+    },
+    {
+      "guid": "aaf19c8e-29ae-4ad1-9085-5381312deeb2",
+      "title": "Cherry's Investment Thesis on AI",
+      "date": "2024-07-19",
+      "durationSec": 2409,
+      "url": "https://rss.com/podcasts/lutzandjasper/1573163",
+      "blurb": "Lutz and Jasper lay out how they break AI down and where Cherry Ventures places its bets, in a live and uncut conversation that opens season two."
+    },
+    {
+      "guid": "306155cd-e49c-4338-9d02-bdbf3042c4df",
+      "title": "A reality check on AI",
+      "date": "2024-07-10",
+      "durationSec": 1921,
+      "url": "https://rss.com/podcasts/lutzandjasper/1561607",
+      "blurb": "AI has been a buzzword for decades, so what makes this wave different? A look at the technical evolution and the jump in accessibility driving the shift."
+    },
+    {
+      "guid": "c46da564-58ba-45a2-a448-5924a035f5e2",
+      "title": "Did our predictions hold true?",
+      "date": "2024-03-27",
+      "durationSec": 2179,
+      "url": "https://rss.com/podcasts/lutzandjasper/1410324",
+      "blurb": "Lutz and Jasper revisit their 2023 predictions: what happened, what did not, and what it means for MLOps and the hardware race heading into 2024."
+    },
+    {
+      "guid": "06ea419f-6fff-46d8-8ada-23c228bc42dd",
+      "title": "The synergy between LLMs and knowledge graphs",
+      "date": "2023-08-24",
+      "durationSec": 2054,
+      "url": "https://rss.com/podcasts/lutzandjasper/1088492",
+      "blurb": "Sounding intelligent is not the same as being right. Knowledge-graph expert Mike Dillinger on pairing LLMs with structured knowledge so generative AI gets the facts straight.",
+      "guest": "Mike Dillinger"
+    },
+    {
+      "guid": "b19c6a8c-64eb-4f2b-9eda-0002f2edb485",
+      "title": "Large Language Models: one interface to rule them all?",
+      "date": "2023-08-15",
+      "durationSec": 2512,
+      "url": "https://rss.com/podcasts/lutzandjasper/1076201",
+      "blurb": "Qatalog founder Tariq Rauf on using an LLM as a single interface across enterprise tools, and the product and technical hurdles that come with it.",
+      "guest": "Tariq Rauf"
+    },
+    {
+      "guid": "3a3d6790-979c-4e08-ae5b-682d317a204b",
+      "title": "You asked, we answered",
+      "date": "2023-07-28",
+      "durationSec": 2050,
+      "url": "https://rss.com/podcasts/lutzandjasper/1055357",
+      "blurb": "Listener questions on air: how AI use cases differ for frontline versus knowledge workers, and what the wave of VC money flowing into AI really signals."
+    },
+    {
+      "guid": "39866522-efb7-4c58-921b-6c260306a190",
+      "title": "Are we one step closer to using LLMs in practice?",
+      "date": "2023-07-21",
+      "durationSec": 1681,
+      "url": "https://rss.com/podcasts/lutzandjasper/1047097",
+      "blurb": "LLMs plus vector search equals retrieval-augmented generation. An introduction to RAG and why it may be what finally makes enterprise search useful."
+    },
+    {
+      "guid": "64120bf7-1fec-478e-9117-a64621cab7db",
+      "title": "AI and the human factor",
+      "date": "2023-07-07",
+      "durationSec": 2044,
+      "url": "https://rss.com/podcasts/lutzandjasper/1027656",
+      "blurb": "AI is never fully free of human work. Lutz and Jasper break down the human factor, with a primer on supervised and unsupervised learning."
+    },
+    {
+      "guid": "7a46338e-e2ea-4ff5-a5cf-75640f3767b6",
+      "title": "What the latest in AI funding tells us",
+      "date": "2023-06-30",
+      "durationSec": 2606,
+      "url": "https://rss.com/podcasts/lutzandjasper/1019404",
+      "blurb": "Three headline funding rounds, read not for the dollars but for the use cases behind them and what they reveal about where AI is heading."
+    },
+    {
+      "guid": "0a1daada-d973-4304-907d-da54fbd37745",
+      "title": "Will LLMs scale and revolutionize the legal space?",
+      "date": "2023-06-15",
+      "durationSec": 2780,
+      "url": "https://rss.com/podcasts/lutzandjasper/999485",
+      "blurb": "Recorded in front of Lutz's Cornell class, with LegalOS head of engineering Torben Gerkensmeyer on the power and the limits of LLMs in legal work.",
+      "guest": "Torben Gerkensmeyer"
+    },
+    {
+      "guid": "50b035fb-a672-4346-9eca-b4afaf953753",
+      "title": "Bias in, bias out: Addressing the impact of bias in AI",
+      "date": "2023-06-07",
+      "durationSec": 1964,
+      "url": "https://rss.com/podcasts/lutzandjasper/983798",
+      "blurb": "Where bias enters an AI system, why it compounds, and what it means for the startups building on top of these models."
+    },
+    {
+      "guid": "f0147782-dd57-4f08-93e8-8a5726abf5e3",
+      "title": "The future is indie: AI’s impact on the music industry",
+      "date": "2023-05-26",
+      "durationSec": 2536,
+      "url": "https://rss.com/podcasts/lutzandjasper/968341",
+      "blurb": "How AI reshapes music from ideation to production, what happens to the human touch, and the open questions around copyright and royalties."
+    },
+    {
+      "guid": "f5c84e38-026b-45d3-b10a-ac96249ebb15",
+      "title": "How Ultimate evolved from hundreds of supervised models to UltimateGPT",
+      "date": "2023-05-12",
+      "durationSec": 3116,
+      "url": "https://rss.com/podcasts/lutzandjasper/948491",
+      "blurb": "Ultimate cofounder and CEO Reetu Kainulainen on six years of conversational AI in customer service, and bringing ChatGPT into the support center with UltimateGPT.",
+      "guest": "Reetu Kainulainen"
+    },
+    {
+      "guid": "d83f095a-0fe7-451d-8049-e6e4b9dce019",
+      "title": "Connecting LLMs to the world: The possibilities of the feedback loop",
+      "date": "2023-05-02",
+      "durationSec": 1854,
+      "url": "https://rss.com/podcasts/lutzandjasper/933535",
+      "blurb": "Autonomous agents, the feedback loops that power them, and where these AI task-runners deliver versus where they fall short."
+    },
+    {
+      "guid": "bb60d653-28f8-4fb1-a7dd-8e9190cc7b93",
+      "title": "Will open or closed AI models win?",
+      "date": "2023-04-25",
+      "durationSec": 2049,
+      "url": "https://rss.com/podcasts/lutzandjasper/923736",
+      "blurb": "Lutz and Jasper on what is new in AI and the year ahead, anchored on one big question: will open or closed models win?"
+    },
+    {
+      "guid": "30f2aeee-b62b-463e-bad8-1a7f3f88efae",
+      "title": "AI as an interface",
+      "date": "2023-04-24",
+      "durationSec": 1886,
+      "url": "https://rss.com/podcasts/lutzandjasper/919969",
+      "blurb": "The very first episode. Lutz and Jasper make the case for thinking about AI as an interface, not just a model."
+    }
+  ]
+}

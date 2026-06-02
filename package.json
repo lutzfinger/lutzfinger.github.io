@@ -13,6 +13,7 @@
     "ingest:transcripts": "node scripts/ingest-transcripts.mjs",
     "ingest:all": "npm run ingest:forbes && npm run ingest:linkedin",
     "sync:events": "node scripts/sync-events.mjs",
+    "sync:podcast": "node scripts/sync-podcast.mjs",
     "gen:og": "node scripts/generate-og-images.mjs",
     "gen:images": "node scripts/generate-image-variants.mjs",
     "gen:faq": "python3 scripts/generate-faq.py",

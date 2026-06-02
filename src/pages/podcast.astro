@@ -1,0 +1,131 @@
+---
+import Base from '~/layouts/Base.astro';
+import { SITE } from '~/consts';
+import data from '~/data/the-edge-episodes.json';
+
+interface Episode {
+  guid: string;
+  title: string;
+  date: string; // YYYY-MM-DD (UTC)
+  durationSec: number | null;
+  url: string;
+  blurb: string;
+  guest?: string;
+}
+
+const show = data.show;
+const episodes: Episode[] = (data.episodes as Episode[])
+  .slice()
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
+
+// Render the calendar date in UTC so a local (PDT) build does not shift it a
+// day earlier; GH Actions builds in UTC and would already be correct.
+function fmtDate(iso: string): string {
+  return new Date(iso + 'T00:00:00Z').toLocaleDateString('en-US', {
+    year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC',
+  });
+}
+function fmtDuration(sec: number | null): string | null {
+  if (!sec) return null;
+  return `${Math.round(sec / 60)} min`;
+}
+
+const items = episodes.map(ep => ({
+  ...ep,
+  dateDisplay: fmtDate(ep.date),
+  durationDisplay: fmtDuration(ep.durationSec),
+}));
+
+const seriesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'PodcastSeries',
+  name: `${show.title} by ${show.publisher}`,
+  description: show.tagline,
+  url: `${SITE.url}/podcast/`,
+  webFeed: show.rss,
+  author: [
+    { '@type': 'Person', name: SITE.author, url: SITE.url },
+    { '@type': 'Person', name: 'Jasper Masemann' },
+  ],
+  publisher: { '@type': 'Organization', name: show.publisher, url: 'https://www.cherry.vc' },
+  sameAs: [show.spotify, show.apple],
+};
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Podcast', item: `${SITE.url}/podcast/` },
+  ],
+};
+---
+<Base
+  title="The Edge | AI podcast with Lutz Finger & Jasper Masemann (Cherry Ventures)"
+  description="The Edge, a Cherry Ventures podcast where Lutz Finger and Jasper Masemann break down what is actually happening in AI, from agents and RAG to the funding behind it. With guests including Eric Siegel and Reetu Kainulainen."
+  jsonLd={[seriesJsonLd, breadcrumbJsonLd]}
+  wide
+>
+  <h1>The Edge</h1>
+  <p class="hero-sub">
+    My podcast with Jasper Masemann at Cherry Ventures, where we break down what
+    is actually happening in AI.
+  </p>
+
+  <section style="margin: 2rem 0">
+    <p style="font-size:1.08rem">
+      Each episode, Jasper Masemann, investment partner at Cherry Ventures, and I
+      take one question in AI and work it through: what is real, what is hype, and
+      what it means for the people building and funding it. Founders and operators
+      join us along the way. For shows where I was a guest rather than a host, see
+      <a href="/other-shows/">Other Shows</a>.
+    </p>
+    <p class="listen">
+      <span class="listen-label">Listen on</span>
+      <a href={show.spotify} target="_blank" rel="noopener">Spotify</a>
+      <a href={show.apple} target="_blank" rel="noopener">Apple Podcasts</a>
+      <a href={show.rss} target="_blank" rel="noopener">RSS</a>
+    </p>
+  </section>
+
+  <section style="margin-top: 3rem">
+    <h2>Episodes</h2>
+    <ul class="card-list">
+      {items.map(ep => (
+        <li>
+          <a class="card" href={ep.url} target="_blank" rel="noopener">
+            <div class="card-meta">
+              <time datetime={ep.date}>{ep.dateDisplay}</time>
+              {ep.durationDisplay && <span>· {ep.durationDisplay}</span>}
+              {ep.guest && <span>· with <strong>{ep.guest}</strong></span>}
+            </div>
+            <h3 class="card-title">{ep.title}</h3>
+            <p class="card-excerpt">{ep.blurb}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .listen {
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    margin-top: 1.1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .listen-label {
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+  }
+  .listen a {
+    color: var(--c-accent);
+    text-decoration: none;
+  }
+  .listen a:hover { text-decoration: underline; }
+</style>

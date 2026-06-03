@@ -216,8 +216,11 @@ def query_rag(col, queries: list[str], k: int = 8) -> list[Hit]:
 
 
 def pick_excerpts(all_hits: list[Hit], n: int = 2) -> list[Hit]:
-    """Strict: only hits whose display_url() resolves to a real URL.
-    Prefer external Forbes/LinkedIn URLs, then book, then course."""
+    """Strict: only POLISHED, citable sources belong in a Q&A answer — Forbes /
+    LinkedIn / Intereconomics articles, or the book / course landing pages.
+    Podcasts, social posts, and raw episode transcripts are excluded so the RAG
+    (which now also holds spoken-word transcripts) can never surface an mp3 link
+    or unedited transcript text as a citation. Prefer articles, then book/course."""
     PREFERRED_EXTERNAL = {"Forbes", "LinkedIn", "linkedin", "Intereconomics"}
     seen_url: set[str] = set()
     primary = []
@@ -226,8 +229,12 @@ def pick_excerpts(all_hits: list[Hit], n: int = 2) -> list[Hit]:
         url = h.display_url()
         if not url or url in seen_url:
             continue
+        is_article = h.source in PREFERRED_EXTERNAL and usable_external_url(h.url)
+        is_book_or_course = url in (BOOK_INTERNAL_URL, COURSE_INTERNAL_URL)
+        if not (is_article or is_book_or_course):
+            continue
         seen_url.add(url)
-        if h.source in PREFERRED_EXTERNAL and usable_external_url(h.url):
+        if is_article:
             primary.append(h)
         else:
             secondary.append(h)
@@ -288,7 +295,11 @@ def render_legacy_md(col, entry: dict, today: str) -> tuple[str, str] | None:
     tags = entry.get("tags", [])
 
     all_hits = query_rag(col, [q] + variations, k=8)
-    excerpts = pick_excerpts(all_hits, n=2)
+    # One best on-topic excerpt per legacy answer. Forcing a second excerpt from
+    # a different article was the cause of stitched, off-topic answers (e.g. a
+    # non-Western-names bias question pulling in an unrelated deepfakes quote).
+    # The single top-ranked polished excerpt stays on topic.
+    excerpts = pick_excerpts(all_hits, n=1)
     if not excerpts:
         return None
 

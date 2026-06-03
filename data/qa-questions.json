@@ -682,11 +682,11 @@
         "competitive advantage"
       ],
       "updated": "2026-06-01",
-      "body": "_The real competitive advantage comes from workflow redesign, not just tool adoption._\n\n> The winners will be those who either build the platforms or rearrange the workflows in order to be effective. Yes, there will be people who then use ChatGPT to write an email, but the winners will be those who redesign work around it.\n\nSource: [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://anchor.fm/s/1022f751c/podcast/play/118546569/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-16%2F422191867-44100-2-27dce6f874755.mp3)",
+      "body": "_The real competitive advantage comes from workflow redesign, not just tool adoption._\n\n> The winners will be those who either build the platforms or rearrange the workflows in order to be effective. Yes, there will be people who then use ChatGPT to write an email, but the winners will be those who redesign work around it.\n\nSource: [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/)",
       "sources": [
         {
           "title": "From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17",
-          "url": "https://anchor.fm/s/1022f751c/podcast/play/118546569/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-16%2F422191867-44100-2-27dce6f874755.mp3"
+          "url": "https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/"
         }
       ]
     },
@@ -1161,6 +1161,86 @@
         {
           "title": "Tomorrow's Medicine, with Cyriac Roeding (eCornell Keynote)",
           "url": "https://ecornell.cornell.edu/keynotes/view/K052126/"
+        }
+      ]
+    },
+    {
+      "question": "What is an AI agent, really?",
+      "category": "AI Agents",
+      "tags": [
+        "ai-product",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Not a sci-fi character, a workflow that chains steps._\n\nAn agent is not a sci-fi character and it is not one giant model. It is a piece of code that takes a defined task, breaks it into steps, and lets you act on software through language. The core idea is chaining: instead of asking a model to \"improve revenue,\" you break the goal into step one, step two, step three, exactly the way a manager hands work to a junior employee. Tools like LangChain popularized this. So an agent is less a breakthrough model than a workflow that combines models, tools, and sometimes plain deterministic code, each doing one step.\n\n— [The Edge: “AI Agents: The Future of Work?”](https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/) · _Podcast_",
+      "sources": [
+        {
+          "title": "The Edge: “AI Agents: The Future of Work?”",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/"
+        }
+      ]
+    },
+    {
+      "question": "How are AI agents different from RPA (robotic process automation)?",
+      "category": "AI Agents",
+      "tags": [
+        "ai-workflows",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Agents add reasoning where RPA's rule engine stops._\n\nRPA is a rule engine. It automates structured, low-skilled tasks where every decision is essentially zero or one, which is why UiPath and Automation Anywhere built real businesses but hit a ceiling: a script either breaks or runs, and it cannot handle uncertainty or unstructured data. Agents add a language model on top, so they can read an email's style, cope with ambiguity, and self-correct. Cherry's portfolio company Octomind does this for front-end testing with a self-healing loop that notices when a test goes wrong and tries another path, something a rule engine cannot do. The catch: you still have to give an agent clear boundaries, or it goes rogue.\n\n— [The Edge: “AI Agents: The Future of Work?”](https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/) · _Podcast_",
+      "sources": [
+        {
+          "title": "The Edge: “AI Agents: The Future of Work?”",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/"
+        }
+      ]
+    },
+    {
+      "question": "What patterns make a workflow 'agentic' rather than just a wrapper around an LLM?",
+      "category": "AI Agents",
+      "tags": [
+        "ai-workflows",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Reflection, self-correction, knowledge expansion, coordination._\n\nA few recurring patterns. Reflection: the system plans, asks \"is this approach good, does this make sense, can you double-check,\" and only then executes, the way a reasoning model breaks a request into several approaches, picks one, and verifies the answer. Self-correction: it looks at the result, notices it went wrong, and tries a different route. Knowledge expansion: when the answer is not in its memory, it searches the web for current information. Coordination: it splits a job into sub-tasks and routes each to the right tool, for example handing a math question to a calculator instead of guessing. Wrapping a chat box around an LLM is none of these.\n\n— [The Edge: “AI Agents: The Future of Work?”](https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/) · _Podcast_",
+      "sources": [
+        {
+          "title": "The Edge: “AI Agents: The Future of Work?”",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/"
+        }
+      ]
+    },
+    {
+      "question": "If agents are the future, why won't one giant model just do everything?",
+      "category": "AI Strategy",
+      "tags": [
+        "llm-moats",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_The moat is the workflow, not a bigger model._\n\nBecause the durable approach is the opposite: smaller, faster, specialized models orchestrated together, not one ever-bigger general model. Even OpenAI orchestrates the long tail of consumer search with smaller models, because a big model would be far too slow. For founders this is the key warning: if your agent's next step is something generic, like deciding whether a calculator is needed, that is the long tail, and the big models will absorb it, just as Google eventually swallowed the specialized search engines. The defensible business is one where the founder knows the specific stepwise workflow of a domain and chains the right models and rules to serve it.\n\n— [The Edge: “AI Agents: The Future of Work?”](https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/) · _Podcast_",
+      "sources": [
+        {
+          "title": "The Edge: “AI Agents: The Future of Work?”",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/"
+        }
+      ]
+    },
+    {
+      "question": "Why can't I just tell an agent to plan my honeymoon or buy things for me?",
+      "category": "AI Agents",
+      "tags": [
+        "ai-product",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Match the agent to the stakes._\n\nTechnically you can wire it up, but it will not be trusted yet, and for good reason. The blocker is not hallucination, which is largely a solved technical problem, it is stakes and trust: people do not want an agent that might book the wrong flight or charge the wrong thing to their card. The honest pattern is to match the agent to the stakes. Lutz started by imagining a health \"nurse in your pocket,\" found the stakes too high to be reliable, and moved to lower-stakes commerce like helping someone find the right ring or coffee machine, where an agentic workflow that cleans the data and searches step by step adds value without the risk. High precision with an agent is possible; you scope it to where a mistake is survivable.\n\n— [The Edge: “AI Agents: The Future of Work?”](https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/) · _Podcast_",
+      "sources": [
+        {
+          "title": "The Edge: “AI Agents: The Future of Work?”",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-12-ai-agents-the-future-of-work/"
         }
       ]
     }

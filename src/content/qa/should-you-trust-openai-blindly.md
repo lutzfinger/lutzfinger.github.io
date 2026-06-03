@@ -2,7 +2,7 @@
 question: "Should you trust OpenAI blindly?"
 category: "LLM Moats"
 tags: ["risks", "ai-product"]
-updated: 2026-06-02
+updated: 2026-06-03
 sources:
   - title: "Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/"

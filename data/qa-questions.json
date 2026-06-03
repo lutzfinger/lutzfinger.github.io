@@ -1275,6 +1275,69 @@
           "url": "https://www.lutzfinger.com/transcript/2014-08-22-measuring-social-media-what-marketers-need-to-know/"
         }
       ]
+    },
+    {
+      "question": "How does AI change the way we interact with computers compared to previous interfaces?",
+      "category": "Evolution of Human Computer Interaction",
+      "tags": [
+        "ai-product",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From punch cards to conversation: AI as natural interface_\n\nAI enables me to communicate with machines using natural language instead of learning complex commands or navigating graphical interfaces. Previously, we evolved from punch cards to MS-DOS commands to graphical interfaces with mice and clicking. Each step made things more intuitive, but I still had to search and learn the system's rules. Now with large language models, I can simply describe what I want in my own words. The AI understands my intent and produces output, even if I have no idea how it works technically. This is revolutionary because humans naturally communicate through language.\n\n— [AI as an interface](https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/) · _The Edge_",
+      "sources": [
+        {
+          "title": "AI as an interface",
+          "url": "https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/"
+        }
+      ]
+    },
+    {
+      "question": "Why do AI image generators require increasingly complex prompts to get the results I want?",
+      "category": "AI Image Generation Challenges",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Image generation gets complex fast, but workarounds exist_\n\nWhen you create images with AI, you write something and get somewhat okay results, but then you iterate and the prompts become more and more complex. I've seen prompts that include things like hyper realistic, specific photographer names, lighting details, and many other technical terms all strung together. The interface is better than drawing with a mouse, especially if you can't draw, but it's not ideal yet. However, you can actually turn this around. Using tools like CLIP Interrogator on Hugging Face, you can upload a photo and retrieve the language needed to generate such an image.\n\n— [AI as an interface](https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/) · _The Edge_",
+      "sources": [
+        {
+          "title": "AI as an interface",
+          "url": "https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/"
+        }
+      ]
+    },
+    {
+      "question": "How can startups use large language models to improve their products?",
+      "category": "Startup Strategy with LLMs",
+      "tags": [
+        "startup",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Simplify interfaces and gain user insights through language_\n\nAs a startup founder, think about which interface will be changed by language input. Whenever users needed to use their mouse or learn complex clicking and dragging, you suddenly have the ability to let them do it via language. This simplifies the interface dramatically. Additionally, language prompting gives you more feedback. Before, you'd create an interface and see how users clicked buttons and moved around without really knowing their intentions. Now with language interfaces, you actually see what they're searching for and asking for. This gives you valuable input for building your product.\n\n— [AI as an interface](https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/) · _The Edge_",
+      "sources": [
+        {
+          "title": "AI as an interface",
+          "url": "https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/"
+        }
+      ]
+    },
+    {
+      "question": "What is the hallucination problem with large language models and why does it matter for businesses?",
+      "category": "LLM Reliability Risks",
+      "tags": [
+        "risks",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs invent answers when they don't know, risking business credibility_\n\nLarge language models will make things up when they don't know the answer. I demonstrated this by asking ChatGPT to summarize a completely fake Cornell website that doesn't exist. It generated a summary saying my course was the most amazing and made very good logical arguments, but it was completely fake. For businesses, this is a huge problem. If a customer asks a shop for something it doesn't have, the model might just make it up and promise red shoes with blinking laces. That's why proprietary data matters. You need to ground the model on your local data.\n\n— [AI as an interface](https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/) · _The Edge_",
+      "sources": [
+        {
+          "title": "AI as an interface",
+          "url": "https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/"
+        }
+      ]
     }
   ]
 }

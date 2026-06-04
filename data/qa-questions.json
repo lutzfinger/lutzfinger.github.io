@@ -1338,6 +1338,39 @@
           "url": "https://www.lutzfinger.com/transcript/2023-04-24-ai-as-an-interface/"
         }
       ]
+    },
+    {
+      "question": "How do biases in narrow AI systems create real-world harm?",
+      "category": "Real World Consequences of Biased AI",
+      "tags": [
+        "bias",
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI systems enforce human prejudices at massive scale._\n\nNarrow AI amplifies existing biases at scale. In parole decisions, computers were meant to remove human bias, but when fed biased data, they kept more minorities in jail. Loan application systems with few women in training data couldn't correctly handle female applicants. The stop and frisk program in New York used a computer to select precincts, but it was racially unjust. When you remove skin color from the data, the system became even more skewed. There's a logical data science explanation for this.\n\n— [Bias in, bias out: Addressing the impact of bias in AI](https://www.lutzfinger.com/transcript/2023-06-07-bias-in-bias-out-addressing-the-impact-of-bias-in-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Bias in, bias out: Addressing the impact of bias in AI",
+          "url": "https://www.lutzfinger.com/transcript/2023-06-07-bias-in-bias-out-addressing-the-impact-of-bias-in-ai/"
+        }
+      ]
+    },
+    {
+      "question": "What are the four approaches to addressing bias in AI models?",
+      "category": "Mitigating Bias in AI Systems",
+      "tags": [
+        "bias",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Four practical methods to reduce AI bias in production systems._\n\nFirst, identify the bias by testing features that shouldn't have impact, like running loan applications 100 times to see gender differences. Second, help users understand potential bias through UX, like asking specifications when someone requests an image of a nurse. Third, correct the data through prompting, prompt tuning, or fine-tuning with better examples. Fourth, create guardrails or constitutions that let AI critique itself based on rules. Each approach has limitations, and changing underlying biased datasets in large models remains hard.\n\n— [Bias in, bias out: Addressing the impact of bias in AI](https://www.lutzfinger.com/transcript/2023-06-07-bias-in-bias-out-addressing-the-impact-of-bias-in-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Bias in, bias out: Addressing the impact of bias in AI",
+          "url": "https://www.lutzfinger.com/transcript/2023-06-07-bias-in-bias-out-addressing-the-impact-of-bias-in-ai/"
+        }
+      ]
     }
   ]
 }

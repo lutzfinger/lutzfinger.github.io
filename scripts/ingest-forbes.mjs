@@ -76,7 +76,6 @@ async function main() {
     }
     const title = data.title ?? file.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, '').replace(/-/g, ' ');
     const date = data.date ?? file.slice(0, 10);
-    const tags = (data.tags ?? []).map(String);
     const wc = wordCount(body);
 
     // Excerpt = the Forbes page's <meta name="description"> (cached), else a
@@ -107,7 +106,8 @@ async function main() {
       sourceType: 'column',
       url,
       excerpt,
-      tags,
+      // No tags: the slug-derived word-tags (e.g. "missing", "becoming") were
+      // junk facets. Source is the only categorization on /writing/.
       wordCount: wc,
     };
 

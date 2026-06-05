@@ -5,6 +5,5 @@ source: "Forbes"
 sourceType: "column"
 url: "https://www.forbes.com/sites/lutzfinger/2026/02/10/even-if-ai-could-kill-chris-hemsworth-convenience-beats-fear/"
 excerpt: "What to Do About the Absurd AI Trade-Off like Death vs. Massage? We need to understand: incentives, audit trails, user controls, and evals."
-tags: ["could", "chris", "hemsworth", "convenience", "beats"]
 wordCount: 370
 ---

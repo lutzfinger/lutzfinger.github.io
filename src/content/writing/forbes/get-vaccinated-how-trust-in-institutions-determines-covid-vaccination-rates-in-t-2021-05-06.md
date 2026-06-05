@@ -5,6 +5,5 @@ source: "Forbes"
 sourceType: "column"
 url: "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
 excerpt: "Why do Republicans have lower vaccination rates? Trust! Trust in our institutions is essential for fighting COVID-19. How EU vaccination rates uncover this hidden truth."
-tags: ["vaccinated", "trust", "institutions", "determines", "vaccination"]
 wordCount: 475
 ---

@@ -5,6 +5,5 @@ source: "Forbes"
 sourceType: "column"
 url: "https://www.forbes.com/sites/lutzfinger/2024/10/22/emmanuel-macron-is-right-about-ai-over-regulatingi-have-no-doubt/"
 excerpt: "President Macron warns, 'We are over-regulating.' AI regulation needs balance. Here are the three key levers: transparency, use-case focus, and leveraging existing laws."
-tags: ["emmanuel", "macron", "right", "about", "regulatingi"]
 wordCount: 480
 ---

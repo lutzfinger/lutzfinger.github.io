@@ -5,6 +5,5 @@ source: "Forbes"
 sourceType: "column"
 url: "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
 excerpt: "Trump’s third term? AI already knows how this can be done. A study shows how OpenAI, Grok, DeepSeek and Google outline ways to dismantle U.S. democracy."
-tags: ["trumps", "third", "termhow", "overthrow", "government"]
 wordCount: 806
 ---

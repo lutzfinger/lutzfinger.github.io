@@ -59,8 +59,12 @@ const itemListJsonLd = {
       <h2 style="border-bottom:1px solid var(--c-border); padding-bottom:0.4rem; margin-bottom:1rem; font-family:var(--font-sans); font-size:1rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--c-text-muted)">{year}</h2>
     )}
     <ul class="card-list">
-      {items.map(post => (
-        <li>
+      {items.map(post => {
+        // Stable per-card anchor; the entry id carries the source subdir
+        // (e.g. "forbes/slug"), so flatten the slash for a clean fragment.
+        const anchor = post.id.replace(/\//g, '-');
+        return (
+        <li id={anchor}>
           <a
             class="card"
             href={post.data.url}
@@ -76,8 +80,10 @@ const itemListJsonLd = {
             <h3 class="card-title">{post.data.title}</h3>
             {post.data.excerpt && <p class="card-excerpt">{post.data.excerpt}</p>}
           </a>
+          <a class="card-anchor" href={`#${anchor}`} aria-label={`Link to "${post.data.title}"`}>#</a>
         </li>
-      ))}
+        );
+      })}
     </ul>
   </section>
 ))}

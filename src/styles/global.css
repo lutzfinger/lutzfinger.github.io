@@ -318,6 +318,40 @@ img {
   margin-top: 0.4rem;
 }
 
+/* Card permalinks: every card-list item is an anchor target (e.g.
+   /writing/#forbes-slug, /keynote/#2025-03-20-...). An anchor jump lands the
+   tile just below the sticky header; a "#" handle appears on hover/focus so
+   the link to a specific card is discoverable (the card itself is one big
+   outbound <a>, so the handle is a sibling, not the title). */
+.card-list > li {
+  position: relative;
+  scroll-margin-top: 5rem;
+}
+.card-anchor {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.2rem 0.4rem;
+  color: var(--c-text-muted);
+  background: var(--c-bg);
+  border-radius: 4px;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.15s, color 0.15s;
+}
+.card-list > li:hover > .card-anchor,
+.card-list > li:focus-within > .card-anchor,
+.card-anchor:focus-visible {
+  opacity: 1;
+}
+.card-anchor:hover {
+  color: var(--c-accent);
+}
+
 .tag {
   display: inline-block;
   padding: 0.1em 0.55em;

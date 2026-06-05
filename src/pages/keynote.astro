@@ -68,8 +68,10 @@ const breadcrumbJsonLd = {
     <section style="margin-top: 3rem">
       <h2>Coming up</h2>
       <ul class="card-list">
-        {upcoming.map(ev => (
-          <li>
+        {upcoming.map(ev => {
+          const cleanTitle = ev.data.title.replace(/,\s*with\s+.+$/i, '');
+          return (
+          <li id={ev.id}>
             <a class="card" href={ev.data.url ?? `/speaking/${ev.id}/`} target={ev.data.url ? '_blank' : undefined} rel={ev.data.url ? 'noopener' : undefined}>
               <div class="card-meta">
                 <time datetime={ev.data.date.toISOString()}>
@@ -77,11 +79,13 @@ const breadcrumbJsonLd = {
                 </time>
                 {guestFromTitle(ev.data.title) && <span>· with {guestFromTitle(ev.data.title)}</span>}
               </div>
-              <h3 class="card-title">{ev.data.title.replace(/,\s*with\s+.+$/i, '')}</h3>
+              <h3 class="card-title">{cleanTitle}</h3>
               {ev.data.description && <p class="card-excerpt">{ev.data.description}</p>}
             </a>
+            <a class="card-anchor" href={`#${ev.id}`} aria-label={`Link to "${cleanTitle}"`}>#</a>
           </li>
-        ))}
+          );
+        })}
       </ul>
     </section>
   )}
@@ -95,7 +99,7 @@ const breadcrumbJsonLd = {
           const cleanTitle = ev.data.title.replace(/,\s*with\s+.+$/i, '');
           const transcript = transcriptByDate.get(ev.data.date.toISOString().slice(0, 10));
           return (
-            <li>
+            <li id={ev.id}>
               <a class="card" href={ev.data.url ?? `/speaking/${ev.id}/`} target={ev.data.url ? '_blank' : undefined} rel={ev.data.url ? 'noopener' : undefined}>
                 <div class="card-meta">
                   <time datetime={ev.data.date.toISOString()}>
@@ -106,6 +110,7 @@ const breadcrumbJsonLd = {
                 <h3 class="card-title">{cleanTitle}</h3>
                 {ev.data.description && <p class="card-excerpt">{ev.data.description}</p>}
               </a>
+              <a class="card-anchor" href={`#${ev.id}`} aria-label={`Link to "${cleanTitle}"`}>#</a>
               {transcript && (
                 <a class="transcript-link" href={`/transcript/${transcript.id}/`}>Read transcript →</a>
               )}

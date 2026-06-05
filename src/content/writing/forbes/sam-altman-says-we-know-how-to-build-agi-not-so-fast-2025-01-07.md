@@ -4,7 +4,7 @@ date: "2025-01-07"
 source: "Forbes"
 sourceType: "column"
 url: "https://www.forbes.com/sites/lutzfinger/2025/01/07/sam-altman---agi--ai-workforce-in-2025-the-battle-of-tech-giants/"
-excerpt: "Sam Altman Says, 'We Know How To Build AGI', Not So Fast [Image: OpenAI CEO Sam Altman at OpenAI DevDay 2023, Getty Images] OpenAI has always been great at grabbing attention in the news. Its announcements often come with big, bold claims."
+excerpt: "Sam Altman's AGI predictions may be an overreach, but they highlight the Big Tech race for better data and user access to shape the future of the workforce."
 tags: ["altman", "workforce", "battle", "giants"]
 wordCount: 418
 ---

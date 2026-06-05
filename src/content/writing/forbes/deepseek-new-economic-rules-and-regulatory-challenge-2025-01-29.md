@@ -4,7 +4,7 @@ date: "2025-01-29"
 source: "Forbes"
 sourceType: "column"
 url: "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
-excerpt: "DeepSeek - New Economic Rules And Regulatory Challenge [Image: New Economic Reality, Lutz Finger] DeepSeek's recent announcement sent NVIDIA's stock tumbling, shedding $600 billion in market cap."
+excerpt: "China's DeepSeek became OpenAI's competitor - faster, cheaper, better. It's a start of a new reality for business leaders and government officials."
 tags: ["deepseeknew", "economic", "rules", "regulatory", "challenge"]
 wordCount: 616
 ---

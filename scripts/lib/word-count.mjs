@@ -44,6 +44,10 @@ export function makeExcerpt(text, max = 220) {
     .replace(/^\s*(Created|Published)\s+on\s+\d{4}-\d{2}-\d{2}[^\n]*/gim, '')
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/!\[[^\]]*\]\([^)]+\)/g, '')
+    // Strip leaked "[Image: alt text]" blocks (with optional surrounding
+    // markdown asterisks). These are NOT markdown images — Forbes bodies carry
+    // them as italic text — so the image regex above misses them.
+    .replace(/\*?\s*\[Image:[^\]]*\]\s*\*?/gi, ' ')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/<[^>]+>/g, ' ')
     .replace(/[#*_>~]/g, '')

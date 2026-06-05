@@ -14,24 +14,19 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-# Run every JavaScript action (checkout, setup-node, upload-pages-artifact,
-# deploy-pages) on Node 24. GitHub is retiring the Node 20 runtime that some of
-# these actions still declare; opting in early silences the deprecation warning
-# and locks the runtime in ahead of the June 16 2026 forced cutover. Set at
-# workflow level so it applies to every step in every job (a step-level env only
-# covers that one action).
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
+# All actions below are pinned to their latest Node 24-native majors, so the
+# workflow no longer needs the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24 override that
+# worked around GitHub retiring the Node 20 runtime (forced June 16 2026,
+# removed Sept 16 2026). Keep these majors current to stay off Node 20.
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
@@ -46,7 +41,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
@@ -59,4 +54,4 @@ jobs:
     steps:
       - name: Deploy
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

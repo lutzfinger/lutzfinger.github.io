@@ -2,7 +2,7 @@
 question: "Why does Cornell use an AI Teaching Assistant?"
 category: "Education"
 tags: ["education"]
-updated: 2026-06-05
+updated: 2026-06-06
 sources:
   - title: "AI In Education — Up-level Your Teaching With AI By Cloning Yourself"
     url: "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"

@@ -2,7 +2,7 @@
 question: "Why are radically lean teams the future?"
 category: "Startups"
 tags: ["startup", "ai-workflows"]
-updated: 2026-06-05
+updated: 2026-06-06
 sources:
   - title: "Unit 5 Full Transcript"
     url: "https://www.lutzfinger.com/ecornell/"

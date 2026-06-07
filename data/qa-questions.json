@@ -1371,6 +1371,38 @@
           "url": "https://www.lutzfinger.com/transcript/2023-06-07-bias-in-bias-out-addressing-the-impact-of-bias-in-ai/"
         }
       ]
+    },
+    {
+      "question": "How does LegalOS use LLMs to make legal knowledge more accessible?",
+      "category": "LLMs as Legal Interfaces",
+      "tags": [
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs translate legal knowledge into something everyone can use._\n\nLegalOS originally built a no-code visual diagramming tool that lets legal experts encode their knowledge in a structured, machine-readable way. It's like a programming language for law. In recent months, we've pivoted to use LLMs much more heavily to make that legal knowledge accessible. LLMs provide a higher level of abstraction for automations. They let us map open-ended legal requests to structured tasks without requiring someone to manually encode every single rule. The LLM acts as an interface or translator, so humans don't have to understand legalese directly but can still interact with legal text.\n\n— [Will LLMs scale and revolutionize the legal space?](https://www.lutzfinger.com/transcript/2023-06-15-will-llms-scale-and-revolutionize-the-legal-space/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Will LLMs scale and revolutionize the legal space?",
+          "url": "https://www.lutzfinger.com/transcript/2023-06-15-will-llms-scale-and-revolutionize-the-legal-space/"
+        }
+      ]
+    },
+    {
+      "question": "How has natural language processing changed since 2015, and why does that matter for legal tech?",
+      "category": "Evolution of NLP Technology",
+      "tags": [
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From counting words to real understanding in less than a decade._\n\nI quit my PhD in 2015 and co-founded a natural language processing company. Back then, the state of the art was basically counting words in a glorified way. You had an idea of what the user might be talking about, but you couldn't map it to something with certainty. You had to collect your own data and train specialized models to do one narrow task. LLMs changed that. You can use foundational models out of the box without fine-tuning. They solve many tasks already. Understanding text and mapping open-world requests to closed sets of tasks became way more accessible.\n\n— [Will LLMs scale and revolutionize the legal space?](https://www.lutzfinger.com/transcript/2023-06-15-will-llms-scale-and-revolutionize-the-legal-space/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Will LLMs scale and revolutionize the legal space?",
+          "url": "https://www.lutzfinger.com/transcript/2023-06-15-will-llms-scale-and-revolutionize-the-legal-space/"
+        }
+      ]
     }
   ]
 }

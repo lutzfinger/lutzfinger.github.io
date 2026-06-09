@@ -2,7 +2,7 @@
 question: "How does AI change healthcare?"
 category: "Healthcare"
 tags: ["healthcare", "ai-product"]
-updated: 2026-06-08
+updated: 2026-06-09
 sources:
   - title: "Healthcare's AI Lesson: Autocomplete Isn't Understanding"
     url: "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"

@@ -2,7 +2,7 @@
 question: "Why is eval data a moat?"
 category: "LLM Moats"
 tags: ["llm-moats", "measurement", "analytics"]
-updated: 2026-06-10
+updated: 2026-06-11
 sources:
   - title: "The Missing Moat In AI: Your Eval Data"
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"

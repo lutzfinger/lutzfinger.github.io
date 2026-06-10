@@ -2,7 +2,7 @@
 question: "How will AI change jobs?"
 category: "Future of Work"
 tags: ["future-of-work", "leadership"]
-updated: 2026-06-09
+updated: 2026-06-10
 sources:
   - title: "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills"
     url: "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"

@@ -1469,6 +1469,54 @@
           "url": "https://www.lutzfinger.com/transcript/2023-05-12-how-ultimate-evolved-from-hundreds-of-supervised-models-to-ultimategpt/"
         }
       ]
+    },
+    {
+      "question": "What makes autonomous AI agents different from traditional automation tools like RPA?",
+      "category": "AI Agents vs Traditional Automation",
+      "tags": [
+        "ai-workflows",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_How AI agents differ from traditional automation like RPA_\n\nTraditional RPA is basically scripting with rules the machine follows, without much deviation except for human input. It's a structural, human-made approach. Autonomous agents are different because they use large language models as an interface that understands human language instead of requiring rigid API calls or workflows. This means I don't need to design specific engineering interfaces. The language model can interact with tools like calculators, internet searches, or order engines using natural language, breaking down tasks iteratively rather than following predetermined scripts.\n\n— [Connecting LLMs to the world: The possibilities of the feedback loop](https://www.lutzfinger.com/transcript/2023-05-02-connecting-llms-to-the-world-the-possibilities-of-the-feedback-loop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Connecting LLMs to the world: The possibilities of the feedback loop",
+          "url": "https://www.lutzfinger.com/transcript/2023-05-02-connecting-llms-to-the-world-the-possibilities-of-the-feedback-loop/"
+        }
+      ]
+    },
+    {
+      "question": "Why are coding applications seeing the biggest success with AI agents right now?",
+      "category": "AI Coding Success Factors",
+      "tags": [
+        "ai-workflows",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Coding succeeds because compilers provide clear feedback loops_\n\nWe see the biggest success in coding because there's a clear feedback loop. When I ask an AI to write code, it can check if the code compiles. If it doesn't work, ChatGPT critiques that and the next step is to rewrite the code including the critique. This iterative loop continues till it actually works. The combination of knowing what was put in previously through memory, plus the ability to talk to a compiler, plus the iteration workflow creates a loop to generate good code. It's more difficult when the task isn't very clear or doesn't have such obvious success criteria.\n\n— [Connecting LLMs to the world: The possibilities of the feedback loop](https://www.lutzfinger.com/transcript/2023-05-02-connecting-llms-to-the-world-the-possibilities-of-the-feedback-loop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Connecting LLMs to the world: The possibilities of the feedback loop",
+          "url": "https://www.lutzfinger.com/transcript/2023-05-02-connecting-llms-to-the-world-the-possibilities-of-the-feedback-loop/"
+        }
+      ]
+    },
+    {
+      "question": "What practical business use cases exist for language model chaining beyond autonomous agents?",
+      "category": "Practical LLM Business Cases",
+      "tags": [
+        "ai-product",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Real business applications from databases to booking to summarization_\n\nThere are many business cases beyond the autonomous agent hype. Question answering over a database is one: use a language interface to access the database, figure out the information, distill it, and report back. Chatbots interacting with booking systems need to understand how to access the system and remember personal preferences. Document summarization is another: if I take all seven Harry Potter books, I can't paste them into OpenAI because it's a finite machine. Instead, summarize page by page, store that in memory, then do iterative summarization to get the final result. These applications are very practical.\n\n— [Connecting LLMs to the world: The possibilities of the feedback loop](https://www.lutzfinger.com/transcript/2023-05-02-connecting-llms-to-the-world-the-possibilities-of-the-feedback-loop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Connecting LLMs to the world: The possibilities of the feedback loop",
+          "url": "https://www.lutzfinger.com/transcript/2023-05-02-connecting-llms-to-the-world-the-possibilities-of-the-feedback-loop/"
+        }
+      ]
     }
   ]
 }

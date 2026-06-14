@@ -1551,6 +1551,72 @@
           "url": "https://www.lutzfinger.com/transcript/2023-07-21-are-we-one-step-closer-to-using-llms-in-practice/"
         }
       ]
+    },
+    {
+      "question": "How does Catalog use large language models to simplify enterprise software access?",
+      "category": "Unified Enterprise Interface",
+      "tags": [
+        "ai-product",
+        "ai-workflows",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_One interface to access all your enterprise tools at once._\n\nCatalog uses LLMs to create a unified interface for all enterprise software. Instead of navigating multiple systems, employees enter a single prompt. The LLM understands the query, identifies which data repository holds the answer (like Workday for payslips), converts the request into an API call, performs deterministic retrieval, and returns the result. We don't use LLMs for data retrieval itself, only for reasoning and synthesis. This compresses workflows from multiple surfaces and ten to fifteen clicks down to one query and two or three clicks.\n\n— [Large Language Models: one interface to rule them all?](https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Large Language Models: one interface to rule them all?",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/"
+        }
+      ]
+    },
+    {
+      "question": "Why does Catalog change the user interface depending on the type of request?",
+      "category": "Dynamic User Interface Design",
+      "tags": [
+        "ai-product",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Dynamic interfaces that adapt to what you actually need to see._\n\nWe maintain about twenty to twenty-five abstract views, not thousands of deterministic flows like traditional enterprise tools. If it's a search, we render search results. If you ask for a summary, we render a summary view. If you ask for revenue from Q2 2023, we render a graph. The LLM dynamically adapts the interface to the use case. This is one level of abstraction higher than traditional UIs, which build very bespoke workflow-level interfaces. Ninety percent of use cases fall within the first five views.\n\n— [Large Language Models: one interface to rule them all?](https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Large Language Models: one interface to rule them all?",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/"
+        }
+      ]
+    },
+    {
+      "question": "How does Catalog prevent large language models from hallucinating when retrieving enterprise information?",
+      "category": "Preventing LLM Hallucination",
+      "tags": [
+        "llm-moats",
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Stopping hallucinations by feeding LLMs the right information first._\n\nThe way to avoid hallucination is to stop the model from reaching into the model layers for information. If you give it structured or unstructured information in raw format and then ask it to summarize or list, it gives you exactly what you provided. Without that context, it makes things up because it's doing probabilistic retrieval from its training. This is retrieval augmented generation. You get the information first, augment the prompt with it, then generate the response based on that specific context.\n\n— [Large Language Models: one interface to rule them all?](https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Large Language Models: one interface to rule them all?",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/"
+        }
+      ]
+    },
+    {
+      "question": "How does Catalog ensure certain workflows always follow the same steps when using LLMs?",
+      "category": "Workflow Determinism",
+      "tags": [
+        "ai-workflows",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A rules engine ensures critical workflows always execute consistently._\n\nWe built a workflow engine underneath our LLMs. The LLM generates a workflow on the fly every time, but users can design deterministic journeys inside our system using workflows (like Zapier but internal). If a request matches a workflow definition, it triggers that workflow every time instead of a dynamically generated journey. It's no code, so users can do it themselves. First, the LLM does a workflow lookup to see if there's something you always want to do, then for the rest it goes into free flow logic.\n\n— [Large Language Models: one interface to rule them all?](https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Large Language Models: one interface to rule them all?",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-15-large-language-models-one-interface-to-rule-them-all/"
+        }
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
 question: "Why do LLMs convert better than search?"
 category: "Search & GEO"
 tags: ["search-geo", "ecommerce", "measurement"]
-updated: 2026-06-12
+updated: 2026-06-13
 sources:
   - title: "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming"
     url: "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"

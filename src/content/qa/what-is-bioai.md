@@ -2,7 +2,7 @@
 question: "What is BioAI?"
 category: "AI Predictions"
 tags: ["healthcare", "investment"]
-updated: 2026-06-14
+updated: 2026-06-15
 sources:
   - title: "DNA Is Becoming Programmable. Curing Cancer With AI."
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/25/dna-is-becoming-programmable-curing-cancer-with-ai/"

@@ -2,7 +2,7 @@
 question: "Why does 'good enough' beat perfect for AI products?"
 category: "AI Product"
 tags: ["ai-product", "leadership"]
-updated: 2026-06-14
+updated: 2026-06-15
 sources:
   - title: "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership"
     url: "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"

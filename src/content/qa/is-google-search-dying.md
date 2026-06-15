@@ -2,7 +2,7 @@
 question: "Is Google search dying?"
 category: "Search & GEO"
 tags: ["search-geo"]
-updated: 2026-06-14
+updated: 2026-06-15
 sources:
   - title: "2025: The Year Of Search But Not The End Of Google"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"

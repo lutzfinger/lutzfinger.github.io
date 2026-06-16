@@ -1634,6 +1634,72 @@
           "url": "https://www.lutzfinger.com/transcript/2023-07-28-you-asked-we-answered/"
         }
       ]
+    },
+    {
+      "question": "What are the main limitations of large language models that knowledge graphs help address?",
+      "category": "LLM Limitations and Solutions",
+      "tags": [
+        "llm-moats",
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs are powerful but flawed. Knowledge graphs provide the missing structure._\n\nLarge language models have several undesired behaviors. They hallucinate, generating false information. They need guardrails to prevent answering certain prompts inappropriately. They have gaps in their encoded knowledge and sometimes fail to retrieve information even when it exists, often due to how prompts are formulated. The prompt itself can cause the model to deprioritize relevant information. Knowledge graphs help with all these issues by adding structure and control. They make models more reliable and accurate at every step, from training to retrieval.\n\n— [The synergy between LLMs and knowledge graphs](https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The synergy between LLMs and knowledge graphs",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/"
+        }
+      ]
+    },
+    {
+      "question": "How did LinkedIn use knowledge graphs to solve the job title problem?",
+      "category": "Knowledge Graph Applications",
+      "tags": [
+        "ai-workflows",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Structuring 150 million job titles required more than simple categorization._\n\nLinkedIn had over 150 million unique job title strings, which was impossible to model effectively. We decomposed titles into four facets: seniority, employment status, role, and specialty. For example, Senior Software Engineer contains seniority information, a role, and a specialty. We then built knowledge graphs for each dimension to show how values interrelated. This helped us understand completeness and vagueness of titles. A VP at a bank means something completely different than a VP at a tech company. Taxonomies alone were not expressive enough to capture these nuances.\n\n— [The synergy between LLMs and knowledge graphs](https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The synergy between LLMs and knowledge graphs",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/"
+        }
+      ]
+    },
+    {
+      "question": "What is a knowledge graph and how does it differ from a taxonomy?",
+      "category": "Knowledge Graph Fundamentals",
+      "tags": [
+        "ai-product",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Knowledge graphs connect concepts across dimensions, unlike simple taxonomies._\n\nA knowledge graph is a collection of facts interconnected in a network, storing information as concepts rather than just labels or numbers. It works like a smarter database that imitates human memory. A taxonomy is much simpler, focusing on one characteristic like what kind of thing something is. Elephants are mammals in a taxonomy. But you cannot relate entities of different types. A knowledge graph lets you express that leopards eat gazelles or elephants eat bamboo, connecting different taxonomies together. It is essentially a multi-dimensional, supercharged taxonomy approach.\n\n— [The synergy between LLMs and knowledge graphs](https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The synergy between LLMs and knowledge graphs",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/"
+        }
+      ]
+    },
+    {
+      "question": "Why are startups not yet widely adopting knowledge graphs with their LLM applications?",
+      "category": "Startup AI Strategy",
+      "tags": [
+        "startup",
+        "ai-product",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Prompt engineering dominates now, but knowledge graphs will become essential at scale._\n\nI am not seeing significant use of knowledge graphs at startups yet. There is heavy reliance on out of the box language models and significant investment in prompt engineering, both at startups and larger companies. The zeitgeist is to mine these wonderful resources rather than going upstream to drive the language models themselves. Knowledge graphs are not simple and are difficult to build, while prompt engineering and rule-based approaches are easier. Results from research literature take time to get absorbed by practitioners. Once startups scale or work on applications where accuracy is crucial, they will have to adopt knowledge graphs.\n\n— [The synergy between LLMs and knowledge graphs](https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The synergy between LLMs and knowledge graphs",
+          "url": "https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/"
+        }
+      ]
     }
   ]
 }

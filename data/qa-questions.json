@@ -1700,6 +1700,71 @@
           "url": "https://www.lutzfinger.com/transcript/2023-08-24-the-synergy-between-llms-and-knowledge-graphs/"
         }
       ]
+    },
+    {
+      "question": "What is the minimum viable quality concept when building AI products?",
+      "category": "Minimum Viable Quality",
+      "tags": [
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Building with AI means accepting imperfection strategically, not chasing perfection everywhere._\n\nWe always ask ourselves how to build a product where AI imperfection is not a problem for the use case you're solving. This is the concept of minimum viable quality, not product, but quality, because AI is not always perfect. Many startups put AI in the product but not actually in the solution. The value creation comes down to whether you have a decision that's different because you use AI. For example, a scale reminding you about your diet is just an interface advantage, not real AI value creation.\n\n— [Building AI products: 5 lessons from our founders' workshop](https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Building AI products: 5 lessons from our founders' workshop",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/"
+        }
+      ]
+    },
+    {
+      "question": "How do you decide if AI is the right fit for your product problem?",
+      "category": "AI Fit Analysis",
+      "tags": [
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Not every problem needs AI; start with whether complexity demands it._\n\nWe created an AI fit analysis with portfolio companies. It starts with questions around precision and output quality, focusing on data quality. Then ask: Do you benefit from modeling complex decisions versus just a few? If it's a linear problem, a rule engine works. But if you have a complex decision space or nonlinear problems like search engines or recommendation engines, then it's time to deploy AI to find tiny clues. This doesn't always mean large language models. Sometimes simple regression analysis is good enough and more precise.\n\n— [Building AI products: 5 lessons from our founders' workshop](https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Building AI products: 5 lessons from our founders' workshop",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/"
+        }
+      ]
+    },
+    {
+      "question": "How should product builders think about data bias in AI systems?",
+      "category": "Data Quality and Bias",
+      "tags": [
+        "ai-product",
+        "bias",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Bias in data is inevitable; product decisions determine how much to accept._\n\nThere is never a way to have non-biased data, because data is biased. As a product person, you need to decide by how much you want to de-bias the data. Sometimes bias is actually good because you don't want averages, you want the best outcome. For example, if identifying certain patients or optimal machinery output, you don't want what the machine did in the past all the time, but just the best parts of it. You're injecting very good data versus just average data.\n\n— [Building AI products: 5 lessons from our founders' workshop](https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Building AI products: 5 lessons from our founders' workshop",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/"
+        }
+      ]
+    },
+    {
+      "question": "What framework helps assess whether imperfect AI decisions are acceptable?",
+      "category": "Quality Tolerance Framework",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Match your AI quality threshold to the stakes of the decision._\n\nThe framework asks: How good is your decision quality, and how important is the decision? How bad is a false decision? We discussed two opposite examples at Station F. One company did predictive maintenance for infrastructure where errors are costly, requiring high quality predictions. Another did social media outreach for hiring where low quality matters less since you already have low close rates. You can mitigate both. For low-stakes, automate with feedback loops. For high-stakes infrastructure, use augmentation first, guiding engineers and creating Jira tickets.\n\n— [Building AI products: 5 lessons from our founders' workshop](https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Building AI products: 5 lessons from our founders' workshop",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-01-building-ai-products-5-lessons-from-our-founders-workshop/"
+        }
+      ]
     }
   ]
 }

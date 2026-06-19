@@ -2,7 +2,7 @@
 question: "What is Generative Engine Optimization (GEO)?"
 category: "Search & GEO"
 tags: ["search-geo", "ecommerce"]
-updated: 2026-06-18
+updated: 2026-06-19
 sources:
   - title: "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming"
     url: "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"

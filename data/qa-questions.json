@@ -1781,6 +1781,56 @@
           "url": "https://www.lutzfinger.com/transcript/2024-03-27-did-our-predictions-hold-true/"
         }
       ]
+    },
+    {
+      "question": "What makes the current AI hype different from previous waves of AI development?",
+      "category": "AI Accessibility and Adoption",
+      "tags": [
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_It's not the technology. It's that everyone can finally use it._\n\nTechnically, not much has changed since the 1950s. The key technical innovation is the attention model, which allows for longer context windows in sequence prediction. But the real difference is usability. Before, you'd need to ask a computer science expert to set up a model, train it, and wait a long time for results. Now anyone can type something into ChatGPT and get an immediate answer. We've crossed a quality threshold, what I call a minimum quality product rather than minimum viable product. It's usable for everyone now, and that's why everybody is talking about it.\n\n— [A reality check on AI](https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "A reality check on AI",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/"
+        }
+      ]
+    },
+    {
+      "question": "What are the fundamental limits of large language models that people should understand?",
+      "category": "Technical Limitations of LLMs",
+      "tags": [
+        "llm-moats",
+        "risks",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Language models face limits in reasoning, planning, and true understanding._\n\nFirst, language is only part of human knowledge. We know more than we can describe. A four year old has had way more sensory impressions than any large language model, despite not being able to read. Second, LLMs can't truly reason or explain their decisions because they're built on neural networks, which work like gut feel rather than rule based systems. They predict the next word based on probability distributions, not logical reasoning. Third, there's the data quality problem. And finally, LLMs are fundamentally probabilistic, so they can't reliably predict specific individual choices or plan multi step processes independently.\n\n— [A reality check on AI](https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "A reality check on AI",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/"
+        }
+      ]
+    },
+    {
+      "question": "What is your perspective on AGI and when it might happen?",
+      "category": "AGI Skepticism",
+      "tags": [
+        "agi",
+        "risks",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AGI remains limited by data and lacks human agency for decisions._\n\nAGI means artificial general intelligence, models that learn and develop capabilities by themselves, becoming vastly more intelligent than humans. But I disagree with this focus. AGI still has the data problem and only one type of prediction modeling, while humans have emotional prediction and other ways of understanding. Crucially, we humans have agency. We decide what data to clean, what to feed models, when to correct them. Models can't make those decisions themselves. I'm not against smarter models, but why not focus them on expert tasks like predicting climate change? I'm focused on using data and machine learning to improve things, not worried about some ominous AGI taking over.\n\n— [A reality check on AI](https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "A reality check on AI",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/"
+        }
+      ]
     }
   ]
 }

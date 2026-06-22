@@ -1880,6 +1880,39 @@
           "url": "https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/"
         }
       ]
+    },
+    {
+      "question": "Why is now a good time for founders despite potential market corrections?",
+      "category": "Founder Opportunities",
+      "tags": [
+        "startup",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Excess infrastructure investment creates opportunities for practical applications._\n\nAs we come into those crunch times, you as a founder can get access to all this hardware and compute power for a much better future. We have too much supply of compute, and some people say there's 600 billion or 300 billion in excess hardware. People have invested and have to get their money back, so you can get better access to talent and resources. Even though I believe a correction will happen, the actual value we will see is way bigger. Plus, compute costs should drop massively in the future.\n\n— [AI Gold Rush: Is the Market Overheating?](https://www.lutzfinger.com/transcript/2024-08-08-ai-gold-rush-is-the-market-overheating/) · _The Edge_",
+      "sources": [
+        {
+          "title": "AI Gold Rush: Is the Market Overheating?",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-08-ai-gold-rush-is-the-market-overheating/"
+        }
+      ]
+    },
+    {
+      "question": "Should founders focus on building new AI models or developing applications with existing technology?",
+      "category": "Application vs Research",
+      "tags": [
+        "startup",
+        "investment",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Applications beat innovation as VCs shift from research to practical tools._\n\nTake the existing capabilities and apply them. Do we really need more innovation, or is it fine to say large language models are very good, you can chain them, combine them with traditional machine learning techniques, and build an application around it? I want more practicality, more tooling around it. The VC world actually sees that the appetite to go on risky, more researchy projects has gone down. VCs want more applications. Founders should focus on taking existing capabilities and applying them rather than pursuing foundational model innovation.\n\n— [AI Gold Rush: Is the Market Overheating?](https://www.lutzfinger.com/transcript/2024-08-08-ai-gold-rush-is-the-market-overheating/) · _The Edge_",
+      "sources": [
+        {
+          "title": "AI Gold Rush: Is the Market Overheating?",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-08-ai-gold-rush-is-the-market-overheating/"
+        }
+      ]
     }
   ]
 }

@@ -1831,6 +1831,55 @@
           "url": "https://www.lutzfinger.com/transcript/2024-07-10-a-reality-check-on-ai/"
         }
       ]
+    },
+    {
+      "question": "What is the augmentation thesis for AI in workflows?",
+      "category": "AI Workflow Augmentation",
+      "tags": [
+        "ai-workflows",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI can transform repetitive workflows into seamless, conversational interactions._\n\nAugmentation is about making everyday workflows better through AI. Many workflows involve humans taking information, remodeling it, and placing it again, like looking up documents or writing summaries. AI can make these interfaces easier. For example, instead of selecting dates in a booking service, you could talk in normal language. Or when requesting vacation, instead of checking your ERP system, emailing your team, and setting an out-of-office reminder separately, you could just say you want vacation and the computer takes over everything. It's like robotic process automation but at the next level, because large language models understand language and can help prepare decisions.\n\n— [Cherry's Investment Thesis on AI](https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Cherry's Investment Thesis on AI",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/"
+        }
+      ]
+    },
+    {
+      "question": "How does AI enable better information retrieval than traditional search?",
+      "category": "Information Retrieval and Search",
+      "tags": [
+        "search-geo",
+        "ai-product",
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs transform how we access and summarize information across all domains._\n\nLarge language models can read language, extract and summarize knowledge, and create new data based on what you're asking for. The internet democratized data, but data still needs processing and summarizing into chunks we can act on. LLMs make this chunking more effective. It's like how you can watch a two-hour movie and then concisely tell a friend the content. An LLM can do this for you, providing compact, concise information retrieval. This isn't just one size fits all. In education, for example, you might have many explanations for a math problem, and the question is which explanation works best for a specific student.\n\n— [Cherry's Investment Thesis on AI](https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Cherry's Investment Thesis on AI",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/"
+        }
+      ]
+    },
+    {
+      "question": "Why do we need new AI tooling platforms for quality control and orchestration?",
+      "category": "AI Infrastructure and Tooling",
+      "tags": [
+        "ai-product",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Managing AI requires new platforms for quality control, security, and orchestration._\n\nWhenever you get something new in the toolbox, you need to figure out how to maintain, manage, and set it up. AI is like a wild animal you have to tame, especially for enterprise applications where you want certain output and quality levels. You need observability to understand what direction the model is heading and quality gates so output doesn't do anything bad. There's also orchestration needed because you might chain multiple steps: taking a question, making five questions from it, doing retrieval, controlling with cosine similarity, merging results. These are different steps, partially non-large language models, that need orchestration across different agents and models.\n\n— [Cherry's Investment Thesis on AI](https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Cherry's Investment Thesis on AI",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-19-cherrys-investment-thesis-on-ai/"
+        }
+      ]
     }
   ]
 }

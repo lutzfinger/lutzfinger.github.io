@@ -1913,6 +1913,56 @@
           "url": "https://www.lutzfinger.com/transcript/2024-08-08-ai-gold-rush-is-the-market-overheating/"
         }
       ]
+    },
+    {
+      "question": "What is Runway at Cornell Tech and how does it support PhD entrepreneurs?",
+      "category": "Cornell Tech Runway Fellowship",
+      "tags": [
+        "startup",
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A two-year paid fellowship helping PhDs turn research into companies._\n\nRunway is an entrepreneurship fellowship at Cornell Tech designed to help PhDs commercialize their research. The program accepts five fellows per year and provides a two-year paid fellowship specifically to commercialize technology that you ideally developed during graduate school. It's a structured way to transition academic research into viable commercial products, giving you financial support and time to build your startup while maintaining ties to Cornell Tech's ecosystem and resources.\n\n— [Founder Coaching: Tips for your AI Journey](https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Founder Coaching: Tips for your AI Journey",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/"
+        }
+      ]
+    },
+    {
+      "question": "How does Neuralens measure brain health non-invasively compared to current methods?",
+      "category": "Non-Invasive Brain Monitoring",
+      "tags": [
+        "healthcare",
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Replacing skull drilling with light-based sensors for brain monitoring._\n\nCurrently, doctors literally drill a burr hole through your skull with a household drill and insert sensors through brain tissue to measure oxygen saturation, blood flow, and intracranial pressure. This invasive surgery is only done on 200,000 to 300,000 patients yearly, though over 10 million neurocritical care patients could benefit. Neuralens uses advanced methods of measuring how light interferes with brain tissue to quantify blood flow, blood volume, and intracranial pressure non-invasively. We can stick sensors on the head or shine a laser from 30 centimeters away to make these measurements.\n\n— [Founder Coaching: Tips for your AI Journey](https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Founder Coaching: Tips for your AI Journey",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/"
+        }
+      ]
+    },
+    {
+      "question": "How does Zenith OS reduce costs in neuropsychiatry treatment?",
+      "category": "AI in Mental Health Treatment",
+      "tags": [
+        "healthcare",
+        "ai-workflows",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI cuts neuropsychiatry costs by reducing required therapist headcount per session._\n\nNeuropsychiatry treatments like ketamine and psilocybin for PTSD, depression, and anxiety are 30 to 40 percent more effective than SSRIs but remain inaccessible due to high human capital costs. Currently, two therapists must be present during treatment because patients are in a vulnerable state and there are sexual harassment concerns. Each therapist charges $100 to $150 per hour. Zenith OS uses AI to augment administrative tasks and help with patient recommendations, allowing clinics to operate with one therapist instead of two, significantly reducing costs and expanding access to these groundbreaking treatments.\n\n— [Founder Coaching: Tips for your AI Journey](https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/) · _The Edge_",
+      "sources": [
+        {
+          "title": "Founder Coaching: Tips for your AI Journey",
+          "url": "https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/"
+        }
+      ]
     }
   ]
 }

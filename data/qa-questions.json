@@ -1963,6 +1963,71 @@
           "url": "https://www.lutzfinger.com/transcript/2024-07-26-founder-coaching-tips-for-your-ai-journey/"
         }
       ]
+    },
+    {
+      "question": "Why did celebrity bots like Meta's Snoop Dogg bot fail to gain traction?",
+      "category": "Celebrity Bot Failure",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Why copying celebrities creates an uncomfortable user experience_\n\nThe celebrity bots fell into the uncanny valley problem. People got annoyed that the bot was a bit like Snoop Dogg but not really Snoop Dogg. When you go to someone like Snoop for authenticity, a bot cannot deliver that authentic experience. Fans know they never spoke privately to Snoop Dogg, they only know his public persona. The bot might be fun at first, but it becomes creepy when something tries to be too human without actually being human. Zuckerberg eventually shut down the celebrity bots because they didn't get enough traction.\n\n— [The future of AI bots: winning with personalization, conviction, and cross-platform integration](https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The future of AI bots: winning with personalization, conviction, and cross-platform integration",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/"
+        }
+      ]
+    },
+    {
+      "question": "What were Character AI users actually using the platform for?",
+      "category": "Bot User Behavior",
+      "tags": [
+        "ai-product",
+        "healthcare"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Lonely users seeking connection, not just entertainment or utility_\n\nCharacter AI users were mostly people who wanted to flirt, kill time, or lonely people who just wanted someone to talk to. A fascinating study showed that the percentage of clinically depressed users of Character AI was more than tenfold higher than the average percentage of clinically depressed people in the US. People used Character AI because they wanted to have a relationship, and they used that relationship with a computer. From a clinical perspective, Character AI and similar chatbots actually helped people to not commit suicide.\n\n— [The future of AI bots: winning with personalization, conviction, and cross-platform integration](https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The future of AI bots: winning with personalization, conviction, and cross-platform integration",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/"
+        }
+      ]
+    },
+    {
+      "question": "Why can't current AI bots provide authentic responses from real people like politicians or celebrities?",
+      "category": "Authenticity Limitations",
+      "tags": [
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Databases and models cannot replicate real human conviction and context_\n\nAI bots work from a database and trained model, not from the person's actual thinking. For example, a Biden bot has to choose between opinions Senator Biden had 20 years ago versus President Biden's current views on China. Biden himself would answer based on his own weights and biases, but the bot cannot create the same authentic response. The model knows what happened in the past and has historic conversations, but deciding which answer is more authentic in the current context is hard. It doesn't know what's happening in the person's brain.\n\n— [The future of AI bots: winning with personalization, conviction, and cross-platform integration](https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The future of AI bots: winning with personalization, conviction, and cross-platform integration",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/"
+        }
+      ]
+    },
+    {
+      "question": "What advantage do existing platforms like Google, Meta, and TikTok have in the bot space?",
+      "category": "Platform Advantages",
+      "tags": [
+        "ai-product",
+        "startup",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Existing user access matters, but cross platform integration creates opportunity_\n\nCompanies with existing access to users and data will likely have the majority chunk of the market. While we are still figuring out style, entertainment value, and answer quality, TikTok, Google, Meta, X, and Snap are all putting out bots to monetize their existing access. They already have the right information and the right tools. However, there is an opportunity for cross platform bots that operate across different systems, like accessing both SAP and HubSpot, or working across Snap and LinkedIn, following users regardless of platform.\n\n— [The future of AI bots: winning with personalization, conviction, and cross-platform integration](https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The future of AI bots: winning with personalization, conviction, and cross-platform integration",
+          "url": "https://www.lutzfinger.com/transcript/2024-08-22-the-future-of-ai-bots-winning-with-personalization-conviction-and-cross-platform/"
+        }
+      ]
     }
   ]
 }

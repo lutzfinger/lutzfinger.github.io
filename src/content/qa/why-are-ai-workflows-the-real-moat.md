@@ -2,7 +2,7 @@
 question: "Why are AI workflows the real moat?"
 category: "AI Workflows"
 tags: ["ai-workflows", "ai-product", "leadership"]
-updated: 2026-06-24
+updated: 2026-06-25
 sources:
   - title: "The Missing Moat In AI: Your Eval Data"
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"

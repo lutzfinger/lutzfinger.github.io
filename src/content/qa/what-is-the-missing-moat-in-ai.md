@@ -2,7 +2,7 @@
 question: "What is the missing moat in AI?"
 category: "LLM Moats"
 tags: ["llm-moats", "ai-product"]
-updated: 2026-06-24
+updated: 2026-06-25
 sources:
   - title: "The Missing Moat In AI: Your Eval Data"
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"

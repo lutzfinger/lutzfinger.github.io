@@ -2,7 +2,7 @@
 question: "How do venture firms use AI in their own operations?"
 category: "Investment"
 tags: ["investment", "ai-workflows"]
-updated: 2026-06-25
+updated: 2026-06-26
 sources:
   - title: "Stargate: The $500 Billion Message To China — The Future Of AI Regulation"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/22/stargate-the-500b-message-to-china---the-future-of-ai-regulation/"

@@ -2177,6 +2177,53 @@
           "url": "https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/"
         }
       ]
+    },
+    {
+      "question": "Why does the EU believe governments, not just tech companies, should regulate AI?",
+      "category": "Who Should Govern AI",
+      "tags": [
+        "policy-ethics",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Society, not billionaires, should decide how AI shapes our lives._\n\nAs Gerard de Graaf puts it, who elected Elon Musk, Sundar Pichai, and Sam Altman to make decisions on our behalf? These technologies have real implications on people's lives, and these are decisions that collectively as a society we should take. The industry has its own incentives. There's a race to the market, and you need to be first. In the internet, if you come in number two or three, you're a loser. So there's tremendous incentive for industry to roll out the latest generation. If you don't regulate, the decisions will be taken by industry. Done correctly, regulation brings legitimacy to how these technologies work.\n\n— [SZ 139: AI in the EU Ft. Yaad, Gerard, Florence, Julie, & Lutz](https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/) · _Silicon Zombies_",
+      "sources": [
+        {
+          "title": "SZ 139: AI in the EU Ft. Yaad, Gerard, Florence, Julie, & Lutz",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/"
+        }
+      ]
+    },
+    {
+      "question": "How does the EU AI Act build in flexibility to adapt as technology changes?",
+      "category": "Regulatory Flexibility",
+      "tags": [
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Delegated powers and co-regulation let the AI Act evolve over time._\n\nThe EU AI Act is not rigid and set in stone forever. We have more empowerment through what we call Delegated and Implementing Acts. The executive, the European Commission, is empowered to take certain measures if necessary. For example, we have a threshold of 10 to the 25 flops for models. If the Commission feels overwhelmed or there are too few models in scope, we can change the threshold up or down. We can provide guidance and change it. A large part is co-regulation, working with standardization organizations and stakeholders to flesh this out in a way that makes sense.\n\n— [SZ 139: AI in the EU Ft. Yaad, Gerard, Florence, Julie, & Lutz](https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/) · _Silicon Zombies_",
+      "sources": [
+        {
+          "title": "SZ 139: AI in the EU Ft. Yaad, Gerard, Florence, Julie, & Lutz",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/"
+        }
+      ]
+    },
+    {
+      "question": "What lessons from social media regulation are shaping today's AI discussions?",
+      "category": "Learning from Past Technologies",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Social media's harms taught us to regulate AI before it's too late._\n\nJulie Owono notes that the conversation we're having today about AI is probably the lessons we've learned from social media. When Facebook launched, there was this famous phrase, move fast and break things. At the time, we didn't think about the negative externalities. Innovation was central. Now we are all in this room to discuss regulation, which is historically a quite interesting and big step in the right direction. We may not all agree on the details, whether lawmakers understand technology or technologists understand the importance of protecting democracy, but there is agreement virtually around the world.\n\n— [SZ 139: AI in the EU Ft. Yaad, Gerard, Florence, Julie, & Lutz](https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/) · _Silicon Zombies_",
+      "sources": [
+        {
+          "title": "SZ 139: AI in the EU Ft. Yaad, Gerard, Florence, Julie, & Lutz",
+          "url": "https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/"
+        }
+      ]
     }
   ]
 }

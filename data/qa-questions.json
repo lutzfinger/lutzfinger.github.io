@@ -2109,6 +2109,74 @@
           "url": "https://www.lutzfinger.com/transcript/2024-11-14-ai-products-why-good-enough-beats-perfect/"
         }
       ]
+    },
+    {
+      "question": "What is the BizML framework and why is it needed for AI projects?",
+      "category": "AI Project Management Framework",
+      "tags": [
+        "ai-workflows",
+        "leadership",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_*A business framework for predictive AI, not just technical tools*_\n\nBizML is a six-step framework I created that ushers predictive AI projects successfully from inception to deployment. It's not like MLOps or any technical solution. It's an organizational procedure, a management protocol that bridges the tech-biz divide. It brings together business-side stakeholders with data scientists through semi-technical collaboration. The framework addresses what's predicted, how well, and what's done about it. Without this kind of practice or framework, most business people don't realize you need a very specialized approach to get these projects successfully through to deployment.\n\n— [The Value Translation Gap: AI's Deployment Problem](https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The Value Translation Gap: AI's Deployment Problem",
+          "url": "https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/"
+        }
+      ]
+    },
+    {
+      "question": "How does your company Gooder AI address the gap between technical metrics and business value?",
+      "category": "AI Business Metrics",
+      "tags": [
+        "measurement",
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_*Translating predictive model performance into profit and savings estimates*_\n\nGooder addresses one particular place where there's a need for a new category of software: the metrics. It's a business user console for understanding potential value and making decisions about deployment. Typically, data scientists present technical metrics like area under the curve, precision, or recall, but very rarely go to stakeholders and say if you deploy this model, it has potential value of this much profit or savings. We provide visualization where both dimensions are business relevant, like the decision threshold and business metrics like savings or profit, so stakeholders can see exactly what their options are.\n\n— [The Value Translation Gap: AI's Deployment Problem](https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The Value Translation Gap: AI's Deployment Problem",
+          "url": "https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/"
+        }
+      ]
+    },
+    {
+      "question": "Should enterprises invest equally in predictive and generative AI, or focus on one?",
+      "category": "AI Investment Strategy",
+      "tags": [
+        "leadership",
+        "investment",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_*Predictive and generative AI should not compete for the same budget*_\n\nEnterprises should really be investing at least as much into the potential value from predictive use cases as generative. Right now it's becoming kind of a zero-sum game, with a lot of budgets moving away from predictive. But predictive is the technology you turn to for improving your existing large-scale operations. These are very different kinds of value propositions. They should compete no more than water parks and ski resorts, but they totally are competing. We need to be doing both. Most of predictive's potential is still on tap.\n\n— [The Value Translation Gap: AI's Deployment Problem](https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The Value Translation Gap: AI's Deployment Problem",
+          "url": "https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/"
+        }
+      ]
+    },
+    {
+      "question": "What is your view on AGI and the current hype around achieving it soon?",
+      "category": "AGI Skepticism",
+      "tags": [
+        "agi",
+        "future-of-work",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_*AGI is a ghost story, not a roadmap for near-term investment*_\n\nI assert that AGI is essentially a myth. I'm not saying it's theoretically impossible, but nothing in all the advancements of technology represent a concrete, clear step toward AGI. The distance between what is capable and what humans are is going to become increasingly clear. AGI is just another way of saying artificial human. It's a ghost story, the novel Mary Shelley would have written if she knew about algorithms. The false narrative that we're headed towards AGI, possibly within a few years or couple of decades, is part of the problem.\n\n— [The Value Translation Gap: AI's Deployment Problem](https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/) · _The Edge_",
+      "sources": [
+        {
+          "title": "The Value Translation Gap: AI's Deployment Problem",
+          "url": "https://www.lutzfinger.com/transcript/2024-11-28-the-value-translation-gap-ais-deployment-problem/"
+        }
+      ]
     }
   ]
 }

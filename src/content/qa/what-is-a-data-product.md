@@ -2,7 +2,7 @@
 question: "What is a data product?"
 category: "Data & Measurement"
 tags: ["analytics", "ai-product"]
-updated: 2026-06-29
+updated: 2026-06-30
 sources:
   - title: "Unit 3 Full Transcript"
     url: "https://www.lutzfinger.com/ecornell/"

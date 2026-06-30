@@ -2224,6 +2224,57 @@
           "url": "https://www.lutzfinger.com/transcript/2024-12-09-sz-139-ai-in-the-eu-ft-yaad-gerard-florence-julie-lutz/"
         }
       ]
+    },
+    {
+      "question": "Why have AI-native startups historically struggled to succeed, and what changed with generative AI?",
+      "category": "AI Business Economics and Market Dynamics",
+      "tags": [
+        "startup",
+        "ai-product",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Why AI startups failed until generative AI changed the economics completely_\n\nFor 30 years, AI has been great technology but terrible business. The economics were never there. AI could improve existing businesses by 20 percent, which is amazing for Google or LinkedIn, but a 20 percent improvement doesn't make a startup. The big change with generative AI is it brings the marginal cost of creation and language reasoning to zero. For example, getting a Pixar-style avatar used to cost 200 dollars from a designer. Today, a model generates it for one one-thousandth of a penny. That's a five order magnitude cost difference, an economic dislocation that super cycles are made from.\n\n— [The Future of AI, with Martin Casado](https://www.lutzfinger.com/transcript/2025-03-20-the-future-of-ai-with-martin-casado/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Future of AI, with Martin Casado",
+          "url": "https://www.lutzfinger.com/transcript/2025-03-20-the-future-of-ai-with-martin-casado/"
+        }
+      ]
+    },
+    {
+      "question": "What does it mean for a company to be AI-native versus just using AI?",
+      "category": "Defining AI-Native Business Models",
+      "tags": [
+        "ai-product",
+        "startup",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI-native means AI is the core product, not just an enhancement_\n\nAn AI-native company means the primary product offering or value is driven by AI, not just enhanced by it. Netflix is a channel for videos that uses AI to suggest movies, but you didn't need AI for Netflix. LinkedIn is a social network that uses AI to connect people, but you didn't need AI for LinkedIn. These are not AI-native. Companies like 11 Labs, Midjourney, or Cursor are AI-native because AI is at the heart of what's being built, what's being sold, and the people you hire early on.\n\n— [The Future of AI, with Martin Casado](https://www.lutzfinger.com/transcript/2025-03-20-the-future-of-ai-with-martin-casado/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Future of AI, with Martin Casado",
+          "url": "https://www.lutzfinger.com/transcript/2025-03-20-the-future-of-ai-with-martin-casado/"
+        }
+      ]
+    },
+    {
+      "question": "What does the term agents actually mean in AI, and is the technology working?",
+      "category": "Understanding AI Agents",
+      "tags": [
+        "agents",
+        "ai-product",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Agents has three definitions but the technology isn't quite there yet_\n\nAgents is one of the most diluted terms, almost useless. There are three working definitions. First, a virtual agent representation that helps with support tickets. Second, the technical definition where you close the control loop with AI so output becomes input, doing multiple iterations without humans to solve higher level tasks, like booking a ticket. Those aren't really working yet. The tech isn't quite there, and these elements are very unpredictable for complex tasks. Third, any time an LLM calls out to a tool, like sending email. The term itself is almost useless, but the things it's talking about are very real trends.\n\n— [The Future of AI, with Martin Casado](https://www.lutzfinger.com/transcript/2025-03-20-the-future-of-ai-with-martin-casado/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Future of AI, with Martin Casado",
+          "url": "https://www.lutzfinger.com/transcript/2025-03-20-the-future-of-ai-with-martin-casado/"
+        }
+      ]
     }
   ]
 }

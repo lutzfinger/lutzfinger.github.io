@@ -2291,6 +2291,54 @@
           "url": "https://www.lutzfinger.com/transcript/2025-02-19-ai-innovation-and-risk-with-aneesh-chopra/"
         }
       ]
+    },
+    {
+      "question": "How did you replace yourself with a bot in your AI and product course?",
+      "category": "AI in Education",
+      "tags": [
+        "education",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A virtual instructor keeps course content fresh and current._\n\nI launched a public certificate program on product and AI at Cornell's Johnson School. The course is about 100 hours long. To keep the content up to date, I replaced myself with a bot, a virtual copy of myself. This allows the course material to stay current without requiring me to manually update everything. It's an example of how AI can maintain educational content in a scalable way while I focus on other work, including running my Gen AI platform for e-commerce.\n\n— [Disrupting Traditional Banking, with Colin Walsh](https://www.lutzfinger.com/transcript/2025-05-22-disrupting-traditional-banking-with-colin-walsh/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Disrupting Traditional Banking, with Colin Walsh",
+          "url": "https://www.lutzfinger.com/transcript/2025-05-22-disrupting-traditional-banking-with-colin-walsh/"
+        }
+      ]
+    },
+    {
+      "question": "Why weren't traditional banks serving the underserved population before Varo?",
+      "category": "Financial Inclusion Barriers",
+      "tags": [
+        "startup",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Economic incentives and outdated systems excluded millions from banking._\n\nThere are two main reasons, focusing on economic incentives. It was really difficult for banks to make money off consumers with low-value, high-frequency transactions. Banks perceived them as higher credit risk because they used backward-looking systems instead of monitoring real-time cash flow. Vulnerable populations are also more susceptible to fraud and scams, creating high costs for dispute processing. The economic incentives made it very difficult for incumbent institutions to effectively serve this large population. Technology was needed to solve this.\n\n— [Disrupting Traditional Banking, with Colin Walsh](https://www.lutzfinger.com/transcript/2025-05-22-disrupting-traditional-banking-with-colin-walsh/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Disrupting Traditional Banking, with Colin Walsh",
+          "url": "https://www.lutzfinger.com/transcript/2025-05-22-disrupting-traditional-banking-with-colin-walsh/"
+        }
+      ]
+    },
+    {
+      "question": "How did Varo use AI to reduce operational costs while improving customer service?",
+      "category": "AI-Powered Customer Service",
+      "tags": [
+        "ai-workflows",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_An AI chatbot cut costs 60% while handling most inquiries._\n\nWe started by providing voice support for everybody, but it got very expensive. We moved to live person chat, then built an AI chatbot. That chatbot now contains over 55% of our inbound inquiries and allowed us to reduce operational costs by about 60%. This is part of solving the high-cost problem that made serving underserved populations uneconomical for traditional banks. The AI handles routine questions efficiently while maintaining service quality for customers who value access and responsiveness.\n\n— [Disrupting Traditional Banking, with Colin Walsh](https://www.lutzfinger.com/transcript/2025-05-22-disrupting-traditional-banking-with-colin-walsh/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Disrupting Traditional Banking, with Colin Walsh",
+          "url": "https://www.lutzfinger.com/transcript/2025-05-22-disrupting-traditional-banking-with-colin-walsh/"
+        }
+      ]
     }
   ]
 }

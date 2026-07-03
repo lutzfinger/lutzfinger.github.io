@@ -2,7 +2,7 @@
 question: "How do you measure quality in healthcare data?"
 category: "Healthcare"
 tags: ["healthcare", "measurement", "analytics"]
-updated: 2026-07-02
+updated: 2026-07-03
 sources:
   - title: "Healthcare And Data - How To Measure Quality"
     url: "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"

@@ -2,7 +2,7 @@
 question: "Is AGI near?"
 category: "AI Predictions"
 tags: ["risks"]
-updated: 2026-07-03
+updated: 2026-07-04
 sources:
   - title: "No AGI But A 'Killer App' — 2025 AI Prediction"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"

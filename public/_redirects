@@ -1,9 +1,14 @@
-# Cloudflare Pages redirects: map old Google Sites paths to new equivalents.
+# Cloudflare Pages redirects: map old paths to new equivalents.
+# NOTE: the site is currently hosted on GitHub Pages, which does NOT honor
+# this file. The LIVE redirects are defined in astro.config.mjs (`redirects`),
+# which emits static meta-refresh pages. This file is kept in sync only so it
+# is correct if/when the site moves to Cloudflare Pages.
 # Format: <source> <target> <status>
 
-/home              /                   301
-/ai-lutz           /qa/                301
-/podcast           /writing/           301
-/ecornell-certificate /ecornell/       301
+/home                  /                                                            301
+/ai-lutz               /qa/                                                         301
+/ecornell-certificate  /ecornell/                                                   301
+/qa/what-patterns-appear-across-thousands-of-ai-startup-pitches/  /qa/              301
+/speaking/2025-02-19-ai-innovation-and-risk/  /speaking/2025-02-19-ai-innovation-and-risk-with-aneesh-chopra/  301
 
 # Any unknown subpath: let Astro's built-in 404 handle it.

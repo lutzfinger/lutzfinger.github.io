@@ -2356,6 +2356,37 @@
           "url": "https://www.lutzfinger.com/transcript/2025-04-04-sz-159-ai-innovation-risk-ft-lutz-finger/"
         }
       ]
+    },
+    {
+      "question": "What are the three main activities the European AI Office is responsible for?",
+      "category": "AI Office Mission and Structure",
+      "tags": [
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_The AI Office balances regulation with supporting European innovation._\n\nThe European AI Office has three core responsibilities. First, we support innovation by implementing policies for research and innovation in the EU, including the AI continent action plan published a few weeks ago. Second, we're responsible for implementing the AI Act, which provides rules for developing and using AI, particularly when it carries risks for violating fundamental rights and safety. Third, we promote the European approach to AI internationally by representing the European Commission in multilateral forums and discussions with non-European countries.\n\n— [AI in the EU, with Lucilla Sioli](https://www.lutzfinger.com/transcript/2025-04-24-ai-in-the-eu-with-lucilla-sioli/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "AI in the EU, with Lucilla Sioli",
+          "url": "https://www.lutzfinger.com/transcript/2025-04-24-ai-in-the-eu-with-lucilla-sioli/"
+        }
+      ]
+    },
+    {
+      "question": "How is Europe positioned in the global AI race compared to the US and China?",
+      "category": "European AI Competitive Position",
+      "tags": [
+        "policy-ethics",
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Europe's talent, market size, and research create competitive advantages._\n\nEurope is not badly positioned because it has important strengths. There are more engineers per capita in the EU than in the United States or China. Europe has a very large and rich single market, bigger than the US with more people. Europe is also very strong in research with a very high number of publications and excellent universities. The European population is on average very well educated and therefore likely to uptake technology. These factors give Europe a solid foundation for AI development and adoption.\n\n— [AI in the EU, with Lucilla Sioli](https://www.lutzfinger.com/transcript/2025-04-24-ai-in-the-eu-with-lucilla-sioli/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "AI in the EU, with Lucilla Sioli",
+          "url": "https://www.lutzfinger.com/transcript/2025-04-24-ai-in-the-eu-with-lucilla-sioli/"
+        }
+      ]
     }
   ]
 }

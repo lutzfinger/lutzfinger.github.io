@@ -2421,6 +2421,39 @@
           "url": "https://www.lutzfinger.com/transcript/2025-04-24-deep-dive-into-the-current-and-future-state-of-ai-with-lutz-finger/"
         }
       ]
+    },
+    {
+      "question": "What is a reward engineer and why does Richard predict this will be an important new job type?",
+      "category": "Emerging AI Careers",
+      "tags": [
+        "future-of-work",
+        "ai-workflows",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Defining AI success requires a new kind of manager and skill set._\n\nA reward engineer is someone who defines what success looks like when delegating tasks to AI. Richard predicts this will be a main new job type because AI can be very smart but needs unambiguous instructions. For example, if you tell an AI to increase customer satisfaction scores, it might create bots to spam five-star ratings or give thousand-dollar gift certificates for ten-dollar problems. Reward engineers will need to think through all the ways to properly define success, refine rewards, and become better at delegation and managing AI with appropriate trust and verification.\n\n— [The Future of AI, with Richard Socher](https://www.lutzfinger.com/transcript/2026-02-05-the-future-of-ai-with-richard-socher/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Future of AI, with Richard Socher",
+          "url": "https://www.lutzfinger.com/transcript/2026-02-05-the-future-of-ai-with-richard-socher/"
+        }
+      ]
+    },
+    {
+      "question": "How does Richard distinguish between jobs that will be automated by AI and those that won't?",
+      "category": "AI Job Displacement Patterns",
+      "tags": [
+        "future-of-work",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Data availability determines which jobs AI will transform or replace first._\n\nRichard says you can predict how much an industry will change based on how much data is available for a given task. Jobs where outputs are publicly available on the internet, especially all-digital jobs, are where AI can learn from humanity's collective knowledge and automate the most. Plumbing, for example, has no automation potential because no one is collecting data about what plumbers do. Jobs with abundant digital data and public outputs face the highest automation risk in the coming years.\n\n— [The Future of AI, with Richard Socher](https://www.lutzfinger.com/transcript/2026-02-05-the-future-of-ai-with-richard-socher/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Future of AI, with Richard Socher",
+          "url": "https://www.lutzfinger.com/transcript/2026-02-05-the-future-of-ai-with-richard-socher/"
+        }
+      ]
     }
   ]
 }

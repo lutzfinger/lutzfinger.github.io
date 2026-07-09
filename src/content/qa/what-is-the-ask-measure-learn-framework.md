@@ -2,7 +2,7 @@
 question: "What is the 'Ask, Measure, Learn' framework?"
 category: "Data & Measurement"
 tags: ["measurement", "analytics"]
-updated: 2026-07-08
+updated: 2026-07-09
 sources:
   - title: "Ask Measure Learn"
     url: "https://www.lutzfinger.com/book/"

@@ -2521,6 +2521,38 @@
           "url": "https://www.lutzfinger.com/transcript/2026-03-24-marketing-to-humans-changed-with-alex-dees/"
         }
       ]
+    },
+    {
+      "question": "What makes the grid so complex and difficult to manage compared to other infrastructure?",
+      "category": "Grid Complexity and Infrastructure",
+      "tags": [
+        "ai-workflows",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_The grid is an electron highway with no traffic lights or routing._\n\nThe grid is mankind's largest and most complex machine. It is a continuous supply and demand balancing mechanism connecting generation with demand across various voltage levels. Electrons follow the laws of physics, from high potential to low potential, like a river system. There are no stop signs, and we cannot assign electrons an IP address and route them easily. The grid is also very opaque, with not enough sensors and monitors. Most of it was built during the post World War II period. Now it is becoming a two way system with distributed solar and wind, which becomes extremely complicated to manage.\n\n— [AI Needs Power, the Grid Needs AI, with Josh Wong](https://www.lutzfinger.com/transcript/2026-04-02-ai-needs-power-the-grid-needs-ai-with-josh-wong/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "AI Needs Power, the Grid Needs AI, with Josh Wong",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-02-ai-needs-power-the-grid-needs-ai-with-josh-wong/"
+        }
+      ]
+    },
+    {
+      "question": "How does Think Labs AI use physics informed AI differently than general purpose models like ChatGPT?",
+      "category": "Physics Informed AI for Grids",
+      "tags": [
+        "ai-product",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Grid AI must be grounded in physics, not just patterns in data._\n\nWe cannot just put SCADA measurements and smart metering information into ChatGPT or Microsoft Copilot or Gemini and ask how the grid works. It does not work like that. We lean into something called Physics Informed AI. We train our AI models using physics. It is physics driven, physics based, and physics accurate. We teach AI how the grid works and reproduce engineering analysis faithfully. The AI can turn traditional studies that take weeks to months into minutes, and go from analyzing one feeder at a time into full system analysis.\n\n— [AI Needs Power, the Grid Needs AI, with Josh Wong](https://www.lutzfinger.com/transcript/2026-04-02-ai-needs-power-the-grid-needs-ai-with-josh-wong/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "AI Needs Power, the Grid Needs AI, with Josh Wong",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-02-ai-needs-power-the-grid-needs-ai-with-josh-wong/"
+        }
+      ]
     }
   ]
 }

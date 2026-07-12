@@ -2553,6 +2553,74 @@
           "url": "https://www.lutzfinger.com/transcript/2026-04-02-ai-needs-power-the-grid-needs-ai-with-josh-wong/"
         }
       ]
+    },
+    {
+      "question": "What do you mean when you say winners won't be those who use AI, but those who redesign work around it?",
+      "category": "Redesigning Work Around AI",
+      "tags": [
+        "ai-workflows",
+        "leadership",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Business needs remain constant, workflows must evolve._\n\nOur business hasn't changed. We still have needs, we still travel, we still consume, we still build. The only question is how can I do this business more effectively? Yes, there will be people who use ChatGPT to write an email, but the winners will be those who either build the platforms or rearrange the workflows in order to be effective. The focus is on the workflow, the surrounding, the setup. How do we empower you in your environment, not can you use it?\n\n— [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/) · _Build AI_",
+      "sources": [
+        {
+          "title": "From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/"
+        }
+      ]
+    },
+    {
+      "question": "How does accountability work when AI agents are doing tasks for us?",
+      "category": "AI Accountability and Responsibility",
+      "tags": [
+        "ai-workflows",
+        "leadership",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_You remain accountable for your AI agents, like a CEO for employees._\n\nIf people write an email and that email is wrong, who is accountable for it? Should I say it was my AI agent? Not quite. It was me who trained and set up and focused an AI agent. We talk about the new role that all of us become managers or CEOs of many agents. If that description is true, then the accountability lies in you, the CEO. When something happens at a traditional corporate, the CEO might lose their job if somebody of their employees did not do the right thing, because ultimately they are responsible.\n\n— [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/) · _Build AI_",
+      "sources": [
+        {
+          "title": "From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/"
+        }
+      ]
+    },
+    {
+      "question": "Why do you say the website is dead, and what does that mean for brands?",
+      "category": "The Future of Websites and Traffic",
+      "tags": [
+        "ecommerce",
+        "agents",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Websites lose traffic but gain higher intent visitors via agents._\n\nIt's hyperbolic. The website is not dead. The newspaper is not dead, the homepage is not dead. It's only reduced in importance. An agent can go look up websites, read those websites, do the research, compare it, create a metric for themselves to say what is the most explosive or most fruitiest and then give me back an answer. Your traffic goes down, but your revenue probably doesn't because you should see more high intent consumers. Consumers that used an agent to be informed and then they come to your website.\n\n— [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/) · _Build AI_",
+      "sources": [
+        {
+          "title": "From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/"
+        }
+      ]
+    },
+    {
+      "question": "Why is memory the next AI battleground, not prompts or agentic systems?",
+      "category": "Memory as AI Battleground",
+      "tags": [
+        "agents",
+        "risks",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI memory systems create new risks and control challenges._\n\nMemory is essentially part of our context window. Models now start to keep information about our memory. I asked ChatGPT about using AI in student interviews and it scolded me, saying as a faculty member I should be extremely careful. But even worse, it noted down in my memory that I wanted to use that tool. That's pretty much a good idea for a big disaster. How do I as an organization ensure that my memory is kept in the correct form? What is the memory you want to capture?\n\n— [From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17](https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/) · _Build AI_",
+      "sources": [
+        {
+          "title": "From Google to Cornell: Rethinking AI Workflows | Lutz Finger | Build AI Podcast 17",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-16-from-google-to-cornell-rethinking-ai-workflows-lutz-finger-build-ai-podcast-17/"
+        }
+      ]
     }
   ]
 }

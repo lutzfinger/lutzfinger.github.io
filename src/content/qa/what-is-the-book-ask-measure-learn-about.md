@@ -2,7 +2,7 @@
 question: "What is the book Ask, Measure, Learn about?"
 category: "Book & Teaching"
 tags: ["measurement", "analytics", "education"]
-updated: 2026-07-12
+updated: 2026-07-13
 sources:
   - title: "Ask Measure Learn"
     url: "https://www.lutzfinger.com/book/"

@@ -2,7 +2,7 @@
 question: "What does the eCornell AI certificate cover?"
 category: "Book & Teaching"
 tags: ["education"]
-updated: 2026-07-12
+updated: 2026-07-13
 sources:
   - title: "Overhyped: Manus From Monica — AI Made In China"
     url: "https://www.forbes.com/sites/lutzfinger/2025/03/10/overhyped-manus-from-monicaai-made-in-china/"

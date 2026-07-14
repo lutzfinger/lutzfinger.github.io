@@ -2670,6 +2670,57 @@
           "url": "https://www.lutzfinger.com/transcript/2026-04-30-ai-on-the-front-lines-with-alexander-fink/"
         }
       ]
+    },
+    {
+      "question": "Why does Ben say agriculture uses more technology than early stage venture capital?",
+      "category": "Technology Gap in Venture Capital",
+      "tags": [
+        "investment",
+        "analytics",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Early stage VC relies on gut instinct without data validation._\n\nAt the early stages, VCs don't tend to use any data or technology. Growth stage is mostly a signal and projections problem, basically science at this point. But early stage venture is still very much a craft, flying blind mostly on gut instinct and what people have learned over time without really even having the datasets to figure out if what they're doing is true or not. VCs are starting to use Claude or ChatGPT but mostly to reproduce whatever they're doing. It's a sustaining innovation. They want Claude to evaluate a company like they've been evaluating them without asking if they're even evaluating them right.\n\n— [The Hidden Patterns, with Ben Orthlieb](https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Hidden Patterns, with Ben Orthlieb",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/"
+        }
+      ]
+    },
+    {
+      "question": "What did Ben learn at LinkedIn about predicting company success with data?",
+      "category": "Predictive Signals in Early Stage Investing",
+      "tags": [
+        "investment",
+        "analytics",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Only founder data predicts early stage success, not company metrics._\n\nWorking with the data science team at LinkedIn, we evaluated whether there are signals in the data to predict future company success. After series B, there are signals. Market signals and signals internal to LinkedIn data are predictive. Things like the quality of where you're hiring from, how many people you win compared to how many you lose to other companies. Those are very predictive. In the early stages, no company level data works. The only thing that works is data around founders specifically. This was truly revelating, showing that at the early stages, it's all about the founders.\n\n— [The Hidden Patterns, with Ben Orthlieb](https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Hidden Patterns, with Ben Orthlieb",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/"
+        }
+      ]
+    },
+    {
+      "question": "What makes companies investable in the current AI era according to Ben?",
+      "category": "Investment Thesis in the AI Era",
+      "tags": [
+        "investment",
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Harder problems requiring deep industry insight are the new opportunities._\n\nWhat used to be somewhat hard is not hard anymore, like pure workflow systems. The classic startup of a new SaaS replacing your finance process is gonna be tough. What I'm seeing more and more is people going after harder problems. Harder problems require deeper product insight and market knowledge. Ironically, in the world of AI, the clearer choices actually are worth it. All the bashing on SaaS was based on average workflow, but SaaS still has the database, privacy, enterprise scalability, customer support. You can plug any workflow on top, but that means you have to understand the industry deeply.\n\n— [The Hidden Patterns, with Ben Orthlieb](https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "The Hidden Patterns, with Ben Orthlieb",
+          "url": "https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/"
+        }
+      ]
     }
   ]
 }

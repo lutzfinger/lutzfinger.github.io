@@ -2721,6 +2721,54 @@
           "url": "https://www.lutzfinger.com/transcript/2026-04-23-the-hidden-patterns-with-ben-orthlieb/"
         }
       ]
+    },
+    {
+      "question": "How much higher are conversion rates when using AI-powered search compared to traditional keyword search?",
+      "category": "GEO Conversion Impact",
+      "tags": [
+        "search-geo",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI search delivers up to 500% higher conversion than keyword search._\n\nI did research comparing traditional keyword search with a more explanatory AI approach. When someone searches for a car like a Honda Odyssey, instead of just showing a list, the AI provides context about the car, options, and nearby dealerships with pricing. The conversion rate from search to buy can be five times higher in some cases. That's a 500% increase. This happens because the chatbot gives personalized recommendations based on knowing the user's full background and context, making the information land much more effectively than traditional search results.\n\n— [Lutz Finger | From SEO to GEO: How AI is Changing How Car Buyers Find You](https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/) · _Three Key Insights_",
+      "sources": [
+        {
+          "title": "Lutz Finger | From SEO to GEO: How AI is Changing How Car Buyers Find You",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/"
+        }
+      ]
+    },
+    {
+      "question": "What is the most important format for presenting dealership content to AI models?",
+      "category": "Content Formatting Strategy",
+      "tags": [
+        "search-geo",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Q&A format reduces cognitive load and increases AI model pickup._\n\nPackage your content in Q&A format. When someone asks a question, the model looks for the least cognitive load, very much like humans. If it finds the exact question already formatted with an answer, it just picks that up rather than reading a sentence and having to think about extracting the answer. That costs money for the model. So take your newsletters from the last 10 years, use an AI tool to generate Q&As from that authentic content, and put it on your website. The content should be human generated, ideally based on your own customer data.\n\n— [Lutz Finger | From SEO to GEO: How AI is Changing How Car Buyers Find You](https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/) · _Three Key Insights_",
+      "sources": [
+        {
+          "title": "Lutz Finger | From SEO to GEO: How AI is Changing How Car Buyers Find You",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/"
+        }
+      ]
+    },
+    {
+      "question": "Why shouldn't dealerships use ChatGPT or other AI tools to create content for GEO?",
+      "category": "Content Creation Warning",
+      "tags": [
+        "search-geo",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI-generated content harms your visibility in generative search results._\n\nDo not ask ChatGPT, Gemini, or other tools to create content for you. It will not work. All model providers are extremely careful about trying to figure out slop, which is AI-generated content. The model doesn't learn from content it just created. This is the snake eating its own tail. If you create slop, you will lose out. Use your human team to bring content in. Your content needs to be authentic, novel, and unique. You can use AI tools to help organize your authentic content, like generating Q&As from your existing newsletters, but not to create the original content.\n\n— [Lutz Finger | From SEO to GEO: How AI is Changing How Car Buyers Find You](https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/) · _Three Key Insights_",
+      "sources": [
+        {
+          "title": "Lutz Finger | From SEO to GEO: How AI is Changing How Car Buyers Find You",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/"
+        }
+      ]
     }
   ]
 }

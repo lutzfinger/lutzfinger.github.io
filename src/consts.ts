@@ -1,6 +1,6 @@
 export const SITE = {
   url: 'https://www.lutzfinger.com',
-  title: 'Lutz Finger | Head of AI at Zoovu, Cornell faculty, Forbes contributor',
+  title: 'Lutz Finger | Chief AI Officer at OMMAX, Cornell faculty, Forbes contributor',
   description:
     'Lutz Finger writes for Forbes, teaches the eCornell AI certificate, and speaks on building AI products, generative search (GEO), and data strategy. Find his Forbes column, talks, book, and Q&A.',
   author: 'Lutz Finger',

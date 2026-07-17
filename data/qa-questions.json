@@ -2769,6 +2769,84 @@
           "url": "https://www.lutzfinger.com/transcript/2026-05-22-lutz-finger-from-seo-to-geo-how-ai-is-changing-how-car-buyers-find-you/"
         }
       ]
+    },
+    {
+      "question": "How did you use quizzes to improve the flipped classroom model?",
+      "category": "Flipped Classroom Strategy",
+      "tags": [
+        "education",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Quizzes revealed where students struggled before class even started._\n\nI asked students to do a quiz before coming to class to find out which areas they didn't understand. For example, a FiveThirtyEight video on k-means clustering Margaritas was fun, but the quiz revealed it failed to explain where the 'k' in k-means came from. This feedback let me spend more time on that point in class than I would have usually done. Content curation became the critical path, and quizzes helped me identify gaps.\n\n— [How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.](https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/) · _Forbes_",
+      "sources": [
+        {
+          "title": "How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/"
+        }
+      ]
+    },
+    {
+      "question": "What engagement methods did you test and which worked best?",
+      "category": "Student Engagement Measurement",
+      "tags": [
+        "education",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Student surveys revealed multiple-choice questionnaires won for engagement._\n\nI experimented with cold-calling via a random number generator, multiple-choice questionnaires, discussions in smaller groups, and other methods. After surveying students after each class, multiple-choice questionnaires came out on top. I created them for every 10 minutes of my course to ensure my speed was right and measure my teaching performance. I also used a Google Spreadsheet where students outlined answers in one to two sentences, then picked the most interesting ones to discuss.\n\n— [How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.](https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/) · _Forbes_",
+      "sources": [
+        {
+          "title": "How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/"
+        }
+      ]
+    },
+    {
+      "question": "How did online teaching create a more inclusive classroom?",
+      "category": "Inclusive Learning Environments",
+      "tags": [
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Pre-screening answers leveled the playing field for introverts and extroverts._\n\nTraditional classrooms favored extroverts, but pre-screening answers and quizzes let everyone participate. I used multiple-choice questionnaires and a Google Spreadsheet where students outlined discussion answers in one to two sentences. I could follow live and pick the most interesting answers to discuss in class. This pre-screening of arguments worked extremely well to create robust class discussion outcomes, giving all students a voice regardless of personality type.\n\n— [How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.](https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/) · _Forbes_",
+      "sources": [
+        {
+          "title": "How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/"
+        }
+      ]
+    },
+    {
+      "question": "What specific techniques did you use to build personal connection online?",
+      "category": "Building Personal Connection",
+      "tags": [
+        "education",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Being visible and playful helped create bonds in virtual classrooms._\n\nCreating a bond is challenging when you're a small sub-window on top of a Google presentation. I went off presentation mode as often as possible so that everyone is more visible. I also spiced up the course with fun actions using Snap Cam to change myself into a potato or come in a Tuxedo to class. A personal relationship between a prof and a student is a key driver for learning, so being approachable required creative approaches.\n\n— [How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.](https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/) · _Forbes_",
+      "sources": [
+        {
+          "title": "How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/"
+        }
+      ]
+    },
+    {
+      "question": "Why didn't MOOCs revolutionize education as predicted in 2012?",
+      "category": "MOOC Revolution Limitations",
+      "tags": [
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Traditional classrooms remained more adaptive than early online learning platforms._\n\nIn 2012, companies like Coursera and edX were going to change the world of education, but this revolution has not happened, at least not yet. Universities have high fixed costs, and online so far offered only minimal marginal revenue. More importantly, a traditional classroom was more adaptive than MOOCs. Teachers adapt their speed to students, and students bring diverse previous experiences that are as important as the actual lecture itself.\n\n— [How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.](https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/) · _Forbes_",
+      "sources": [
+        {
+          "title": "How COVID Changed Our Classrooms? A Self-Experiment Of Online Teaching.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/"
+        }
+      ]
     }
   ]
 }

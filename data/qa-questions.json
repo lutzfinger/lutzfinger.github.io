@@ -2847,6 +2847,74 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2020/05/14/how-covid-changed-our-classrooms-a-self-experiment-of-online-teaching/"
         }
       ]
+    },
+    {
+      "question": "What is the difference between AGI, singularity, and superintelligence?",
+      "category": "Defining AGI and Beyond",
+      "tags": [
+        "agi",
+        "future-of-work",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Understanding the core terms of the AGI conversation today_\n\nAGI, or artificial general intelligence, is the ability to generalize beyond what you were trained for. If given an unfamiliar environment and goal, it should figure out how to achieve that goal through creative imagination and trial and error. Singularity, coined by Vernor Vinge and popularized by Ray Kurzweil, refers to a point where the rate of progress feels infinite to legacy humans. This happens through recursive self-improvement, where an AI makes a smarter AI. Superintelligence follows AGI. Many believe that once we achieve human-level AGI, it will optimize its own code and exceed human levels much faster than predicted, creating a steep exponential curve rather than gradual progress.\n\n— [Rethinking the AGI Race, with Benjamin Goertzel](https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/"
+        }
+      ]
+    },
+    {
+      "question": "Why are current large language models not considered true AGI?",
+      "category": "LLM Limitations",
+      "tags": [
+        "llm-moats",
+        "agi",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Catastrophic forgetting and frozen weights limit today's LLMs_\n\nLLMs have significant limitations that prevent them from being AGI. First, they suffer from catastrophic forgetting because learning and inference are separate phases. The weights freeze after training, so the system cannot continuously learn in real time. Second, they store knowledge more like a huge catalog of special cases rather than true abstraction. Third, they do not reorganize themselves in context of real-time interactions the way human brains do. While LLMs can do impressive things like math proofs and reasoning about novel scenarios, they lack the kind of generalizable, self-integrating knowledge system needed for AGI. They are more like an off-ramp on the path to AGI.\n\n— [Rethinking the AGI Race, with Benjamin Goertzel](https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/"
+        }
+      ]
+    },
+    {
+      "question": "Why do major tech CEOs keep claiming AGI is imminent when current AI still has obvious limitations?",
+      "category": "AGI Communication Strategy",
+      "tags": [
+        "leadership",
+        "agi",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Market pressures shape how companies talk about AGI timelines publicly_\n\nThere is tension between AGI timelines and current product reality. While Altman, Musk, and Hassabis suggest AGI is near or already here, anyone who codes knows current systems still fail frequently. At Google I/O, Demis Hassabis mentioned AGI by 2029 and being at the foothills of singularity, but this was buried at the end. Most of the keynote focused on incremental AI features in products. This makes sense because publicly listed companies need to highlight quarterly profits. Saying AGI comes in 2029 might cause investors to dump stock and wait. So companies focus on near-term utility while their research arms pursue AGI separately. The timeline itself has become more plausible to many, though skeptics remain.\n\n— [Rethinking the AGI Race, with Benjamin Goertzel](https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/"
+        }
+      ]
+    },
+    {
+      "question": "What makes achieving general intelligence fundamentally different from doing many specialized tasks well?",
+      "category": "Core AGI Definition",
+      "tags": [
+        "agi",
+        "measurement",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Generalization beyond training data defines AGI, not task breadth alone_\n\nThe key difference is the learning and generalization capability, not breadth of tasks. A system that does 95% of human jobs by copying millions of training examples is not AGI, even if economically valuable. True AGI must take a leap beyond what it was prepared for and generalize from what it knows to do new things. If you describe a novel alien civilization with bizarre customs never in training data, and the system reasons about it from multiple perspectives, that shows real inductive and abductive reasoning. AGI should figure out how to achieve unfamiliar goals in unfamiliar environments through creative imagination and trial and error, not just pattern matching against a massive catalog of prior examples.\n\n— [Rethinking the AGI Race, with Benjamin Goertzel](https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/) · _The Keynote on AI_",
+      "sources": [
+        {
+          "title": "Rethinking the AGI Race, with Benjamin Goertzel",
+          "url": "https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/"
+        }
+      ]
     }
   ]
 }

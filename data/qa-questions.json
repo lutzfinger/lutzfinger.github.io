@@ -2915,6 +2915,87 @@
           "url": "https://www.lutzfinger.com/transcript/2026-05-28-rethinking-the-agi-race-with-benjamin-goertzel/"
         }
       ]
+    },
+    {
+      "question": "Why don't people trust Facebook with their data anymore?",
+      "category": "Data Trust And Transparency",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Trust erodes when data sharing is careless and opaque._\n\nWe don't trust Facebook anymore because we learned that they gave away our data way too carelessly. The real issue isn't about who has access to our data, but rather what the data is actually used for. Since we don't know what happens with our data once Facebook has it, trust has eroded. The outcry over WhatsApp's updated privacy policy, which disclosed data sharing with Facebook, reflects this deeper mistrust. It doesn't matter what Facebook does at this point because the trust is already broken.\n\n— [WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It](https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/"
+        }
+      ]
+    },
+    {
+      "question": "What kinds of personal characteristics can be predicted from Facebook data?",
+      "category": "Predictive Power Of Social Data",
+      "tags": [
+        "policy-ethics",
+        "risks",
+        "bias"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Facebook data reveals far more about us than we realize._\n\nMichal Kosinski showed in 2013 that using Facebook data could accurately predict sexual orientation, ethnicity, personality traits, intelligence, happiness, addictive substances use, parental separation, age, and gender. The model even managed to separate between Democrat and Republican in 85% of cases. This research demonstrates how powerful social media data can be for profiling individuals, which contributes to why people feel uncomfortable when they don't know how their data is being used without their knowledge.\n\n— [WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It](https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/"
+        }
+      ]
+    },
+    {
+      "question": "How did we learn that location data from our phones was being sold?",
+      "category": "Location Data Sharing Ecosystem",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Pandemic dashboards exposed a hidden ecosystem of location tracking._\n\nDuring the pandemic, many companies created dashboards showing aggregated movement data. This revealed that smaller companies like Unacast and Placer.ai gathered location information via hundreds of apps on your phone. Additionally, phone companies Sprint, AT&T, T-Mobile, and Verizon sold our location data. There is an entire ecosystem of apps that share a lot of information about us. WhatsApp is probably not the biggest privacy offender we have in our phones when you consider this broader data sharing landscape.\n\n— [WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It](https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/"
+        }
+      ]
+    },
+    {
+      "question": "What example shows how data use in one industry could be inappropriate in another?",
+      "category": "Appropriate Versus Inappropriate Data Use",
+      "tags": [
+        "healthcare",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Healthcare data belongs with doctors, not insurance pricing algorithms._\n\nIn healthcare, we want doctors to use health data to diagnose our potential issues. But we do not expect our doctor to share health information with an insurance company that will then change the pricing of our life insurance. The healthcare industry is regulated to prevent this kind of misuse. However, the social media industry is not similarly regulated. This example illustrates why we should focus on what data is used for, not just who has it, and why regulation matters.\n\n— [WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It](https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/"
+        }
+      ]
+    },
+    {
+      "question": "How might data regulation affect innovation and global competition?",
+      "category": "Innovation Versus Regulation Tradeoffs",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Regulation may slow innovation but remains necessary for trust._\n\nRegulation of data use will force companies to ask for consent before developing new algorithms. This extra step will inadvertently slow down innovation and might be a factor in the global innovation competition. China can correlate and analyze datasets without regulatory constraints, creating a competitive advantage. Despite this challenge, we need to regulate our markets and expect international partners to comply with the same rules. We should push for clear regulations and international norms on transparency, accountability, and data ownership.\n\n— [WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It](https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "WhatsApp: We Should Discuss What Our Data Is Used For, Not Who Has It",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/"
+        }
+      ]
     }
   ]
 }

@@ -2996,6 +2996,74 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2021/01/26/whatsapp-we-should-discuss-what-our-data-is-used-for-not-who-has-it/"
         }
       ]
+    },
+    {
+      "question": "What are the three main problems with training data that can cause AI to get things wrong?",
+      "category": "Data Quality Issues in AI",
+      "tags": [
+        "ai-product",
+        "bias",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Three critical failures that undermine machine learning accuracy and fairness._\n\nTraining data can fail in three ways. First, it might not be sufficient. The data may lack context or situations the algorithm will encounter in the real world. Second, it might be biased. This means data is systematically missing certain perspectives or groups. For example, if texts predominantly show nurses as women, the algorithm learns that pattern without understanding societal goals like gender equality. Third, the data might be outright wrong. Labels may be inaccurate or based on performances rather than reality, leading algorithms to learn incorrect associations.\n\n— [It's The Data, Stupid! Why AI Might Get It Wrong.](https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/) · _Forbes_",
+      "sources": [
+        {
+          "title": "It's The Data, Stupid! Why AI Might Get It Wrong.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/"
+        }
+      ]
+    },
+    {
+      "question": "How did the Apple Card algorithm discriminate despite not using gender as a direct feature?",
+      "category": "Algorithmic Bias in Credit",
+      "tags": [
+        "bias",
+        "policy-ethics",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Apple Card offered vastly different limits to spouses with identical assets._\n\nDavid Heinemeier Hansson was offered a credit limit 20 times higher than his wife despite having the same shared assets. The algorithm likely learned from a world where men earn on average more than women and concluded that men are more creditworthy. This shows how bias creeps in even when protected characteristics like gender aren't direct features. The training data itself was biased, reflecting existing societal inequalities, and the algorithm learned to perpetuate them without explicitly considering gender.\n\n— [It's The Data, Stupid! Why AI Might Get It Wrong.](https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/) · _Forbes_",
+      "sources": [
+        {
+          "title": "It's The Data, Stupid! Why AI Might Get It Wrong.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/"
+        }
+      ]
+    },
+    {
+      "question": "Why is emotion detection training data problematic, according to the article?",
+      "category": "Emotion Detection Problems",
+      "tags": [
+        "ai-product",
+        "bias",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Algorithms learn performed emotions, not real ones, from limited datasets._\n\nEmotion detection algorithms were often trained on the JAFFE dataset, which contains images of 10 Japanese female models performing seven facial expressions. The problem is the algorithm doesn't learn how someone actually looks when angry, but rather how those specific women performed an angry expression. This distinction is critical. The models were acting out emotions rather than genuinely experiencing them, so the training data captures performance, not authentic emotional states. This makes the foundation of emotion detection fundamentally flawed.\n\n— [It's The Data, Stupid! Why AI Might Get It Wrong.](https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/) · _Forbes_",
+      "sources": [
+        {
+          "title": "It's The Data, Stupid! Why AI Might Get It Wrong.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/"
+        }
+      ]
+    },
+    {
+      "question": "What does the article say we need to address AI data problems going forward?",
+      "category": "Path Forward for AI Fairness",
+      "tags": [
+        "policy-ethics",
+        "bias",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_No quick solutions exist; fairness itself remains hard to define precisely._\n\nThere's no easy fix coming. Beyond technical difficulties, researchers struggle with defining what is fair. We need tools to check for biases and missing data in our models. We also need the right incentives to check for drift and update algorithms as society changes. Drift happens when datasets become biased over time even if initially unbiased, because society and beliefs evolve. Machine learning and AI will be powerful forces for good, but only if the training data is correct and fair.\n\n— [It's The Data, Stupid! Why AI Might Get It Wrong.](https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/) · _Forbes_",
+      "sources": [
+        {
+          "title": "It's The Data, Stupid! Why AI Might Get It Wrong.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/"
+        }
+      ]
     }
   ]
 }

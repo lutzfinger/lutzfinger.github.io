@@ -3064,6 +3064,90 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2020/05/28/its-the-data-stupid-why-ai-might-get-it-wrong/"
         }
       ]
+    },
+    {
+      "question": "Why does Clubhouse's future success depend on using user data?",
+      "category": "Social Media Content Discovery",
+      "tags": [
+        "analytics",
+        "startup",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Finding content on Clubhouse is hard without better data use._\n\nClubhouse's future success depends on how it can help users find content and enable engagement through the use of user data. At the core, any social app solves two issues: to find and enable social interactions. Currently, finding interesting conversations on Clubhouse is not easy. You curate your own content by following people, similar to how Twitter used the social graph as a first approximation for your interest. A social graph is a clunky way to curate your feed. In order to scale, Clubhouse will need data and engagement metrics.\n\n— [Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm](https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/"
+        }
+      ]
+    },
+    {
+      "question": "How does TikTok's algorithm differ from Clubhouse's approach to content discovery?",
+      "category": "Algorithm-First Recommendation Systems",
+      "tags": [
+        "ai-product",
+        "analytics",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_TikTok uses behavior and content analysis, not social graphs._\n\nTikTok is an algorithm-first company. Unlike Clubhouse or Facebook, it does not mainly rely on the social graph but has built a powerful recommendation engine. TikTok's machine learning magic is a supervised learning system that finds videos interesting to the user by measuring how long you look, how fast you scroll, and many other behavioral features. Additionally, the algorithm evaluates the actual video clip: content, speed, sound, colors, words. Bytedance has an absurd proportion of their software engineers focused on their algorithms. This data has created a sizable moat that not even Facebook could cross easily.\n\n— [Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm](https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/"
+        }
+      ]
+    },
+    {
+      "question": "What would Clubhouse need to do to understand conversations and improve content discovery?",
+      "category": "Audio Transcription for Recommendations",
+      "tags": [
+        "ai-product",
+        "analytics",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Live transcription is technically possible but not currently implemented._\n\nTo find the right discussion for you, Clubhouse would need to understand all conversations, meaning it would need to live-transcribe them. Technically this is feasible. Speech to text algorithms have become very powerful. Clubhouse is currently not transcribing conversations, presumably to preserve the authenticity of the moment. However, streaming companies like Spotify or Deezer can tell you that a delay between the user's dislike and an action such as skip makes it harder for the algorithm to work correctly. Clubhouse will need data and engagement metrics to scale.\n\n— [Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm](https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/"
+        }
+      ]
+    },
+    {
+      "question": "Who does Lutz expect will be Clubhouse's fiercest competitors and why?",
+      "category": "Competitive Landscape Analysis",
+      "tags": [
+        "startup",
+        "analytics",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Twitter and Facebook have social graphs and content spread measurement._\n\nI expect the fiercest competitors to be Twitter and Facebook, as they bring existing social network graphs and also measure how content spreads. As Clubhouse grows, their design choices will be necessary. Whether or not Clubhouse will become a super-aggregator will depend on their ability to create a multi-sided network with decreasing acquisition costs. In order to scale, they will need data and engagement metrics. The trend Clubhouse started is undoubtedly not a covid19 fad. It's the unbundling of content creation and distribution.\n\n— [Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm](https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/"
+        }
+      ]
+    },
+    {
+      "question": "How does Lutz compare Clubhouse to the early internet and talk radio?",
+      "category": "Historical Technology Parallels",
+      "tags": [
+        "startup",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Clubhouse mirrors talk radio but doesn't exploit digital advantages._\n\nClubhouse is Internet 1.0 of Talk Radio. Ten years before the internet browser was invented, Talk Radio became popular for similar reasons: ease in distribution and proliferation of content. AM Bands allowed for more bandwidth to distribute content. Four decades later, the internet brought the same two effects. Clubhouse follows the rules of Internet 1.0, meaning it is not using the properties of digital to their full advantage. This is why it faces challenges in helping users find content and enable engagement.\n\n— [Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm](https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Clubhouse's Future Depends On Data - How To Build A TikTok Like Algorithm",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/"
+        }
+      ]
     }
   ]
 }

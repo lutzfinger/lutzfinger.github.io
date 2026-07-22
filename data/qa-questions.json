@@ -3148,6 +3148,91 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2021/02/09/clubhouses-future-depends-on-datahow-to-build-a-tiktok-like-algorithm/"
         }
       ]
+    },
+    {
+      "question": "How did you isolate trust as a factor in COVID vaccination rates?",
+      "category": "Research Design for Trust Analysis",
+      "tags": [
+        "measurement",
+        "healthcare",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Using the EU to study trust's role in vaccination._\n\nWe looked towards the EU because the distribution of vaccines to Member States happened simultaneously and under the same conditions. But not all member states show the same trust, allowing us to isolate trust as a variable. We used the European Social Survey, a bi-annually collected survey of thousands of EU citizens from 29 countries, to measure trust levels. We then correlated that data with vaccination data from the European Centre for Disease Prevention and Control.\n\n— [Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU](https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
+        }
+      ]
+    },
+    {
+      "question": "What did the data show about high trust versus low trust countries?",
+      "category": "Vaccination Rate Findings",
+      "tags": [
+        "healthcare",
+        "measurement",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_High trust countries vaccinate more, and the gap widens._\n\nWe plotted a historical trend of vaccine uptake delineated into high and low trust countries. The plot shows clearly that high trust countries have a higher mean vaccine uptake over low trust countries, with the gap widening over time. We regressed vaccine uptake as of April 18, 2021 with trust in EU institutions. A positive coefficient for trust in EU institutions along with a p-value of less than 0.05 clearly indicates a statistically positive relationship.\n\n— [Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU](https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
+        }
+      ]
+    },
+    {
+      "question": "Did you find other factors that influenced vaccination rates besides trust?",
+      "category": "Additional Variables Analyzed",
+      "tags": [
+        "analytics",
+        "healthcare",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Other factors tested but trust stood out statistically._\n\nThere are other factors besides trust that might influence vaccination rates, including accessibility and vulnerability. We analyzed the old-age dependency ratio and health care expenditure per inhabitant but did not find statistically significant dependencies. This suggests that while these factors could theoretically matter, in our analysis trust emerged as the key differentiator when controlling for these other variables across EU member states.\n\n— [Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU](https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
+        }
+      ]
+    },
+    {
+      "question": "Why might minorities in the US have lower vaccination rates?",
+      "category": "Trust and US Minority Vaccination",
+      "tags": [
+        "healthcare",
+        "bias",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Historical injustices create a healthcare trust gap for minorities._\n\nThese differences might be due to access or availability, but they might also be due to missing trust. Minorities in the US have experienced an unfair healthcare system: from the unethical Tuskegee Syphilis Study to racial bias in pain assessment to the ingrained racial skew in AI models. The Kaiser Family Foundation reported stark differences among different states and different ethnicities that could reflect this trust gap.\n\n— [Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU](https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
+        }
+      ]
+    },
+    {
+      "question": "Can we conclude that trust causes higher vaccination rates?",
+      "category": "Causation Versus Correlation",
+      "tags": [
+        "measurement",
+        "policy-ethics",
+        "healthcare"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Correlation found, but causation works both ways with trust._\n\nWhile we have shown the impact of trust on covid vaccination, correlations do not indicate causation. Trust is a two-way street. If governments do an excellent job vaccinating their population, it might alter people's overall trust in their institutions. Appropriate, transparent responses will improve the ability of countries to deal with the effects of the COVID pandemic in a virtuous cycle, suggesting the relationship flows both ways.\n\n— [Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU](https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Get Vaccinated? How Trust In Institutions Determines COVID Vaccination Rates In The EU",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
+        }
+      ]
     }
   ]
 }

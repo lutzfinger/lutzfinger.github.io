@@ -3233,6 +3233,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2021/05/06/get-vaccinated-how-trust-into-the-institutions-determines-vaccination-rates-in-the-eu/"
         }
       ]
+    },
+    {
+      "question": "What happened when Microsoft Azure's Vision API analyzed images of Angela Merkel and Joe Biden?",
+      "category": "Algorithm Errors and Bias",
+      "tags": [
+        "bias",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI misidentified world leaders' genders, sparking calls for accountability._\n\nMicrosoft Azure's Vision API made significant errors when analyzing political leaders' images. It identified Angela Merkel as a boy and classified Joe Biden as both a man and a woman. After online mockery about Merkel's misjudged gender, Microsoft changed their algorithm. However, this update happened without transparency about when and how the algorithm changed, illustrating a broader problem with AI systems that can be wrong and biased but operate without public accountability.\n\n— [President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency](https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/) · _Forbes_",
+      "sources": [
+        {
+          "title": "President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/"
+        }
+      ]
+    },
+    {
+      "question": "How did racial bias in a healthcare algorithm affect Black patients according to the Science study?",
+      "category": "Healthcare Algorithm Bias",
+      "tags": [
+        "healthcare",
+        "bias",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Training data bias reduced Black patient care identification by half._\n\nA study published in Science revealed that a healthcare algorithm showed racial bias in patient care. Specifically, Black patients who were assigned the same risk level as White patients were actually sicker. This bias had serious consequences, reducing the number of Black patients identified for extra care by more than half. The study points to initial training data as often being the culprit for such algorithmic bias, demonstrating how AI systems can perpetuate inequities in critical areas like healthcare.\n\n— [President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency](https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/) · _Forbes_",
+      "sources": [
+        {
+          "title": "President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/"
+        }
+      ]
+    },
+    {
+      "question": "What happened in Eric Loomis's case regarding algorithmic transparency and trade secrets?",
+      "category": "Criminal Justice and AI Accountability",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Trade secrets blocked a defendant from analyzing his sentencing algorithm._\n\nEric Loomis was sentenced to seven years in prison partly based on an algorithmic assessment labeling him high risk. When he wanted to independently analyze the algorithm, the private company responsible denied access, claiming they needed to protect their trade secrets. Wisconsin's Supreme Court sided with the private company. This case illustrates how companies can behave as much of a black box as the algorithms themselves, preventing defendants from understanding or challenging the automated systems used against them.\n\n— [President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency](https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/) · _Forbes_",
+      "sources": [
+        {
+          "title": "President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/"
+        }
+      ]
+    },
+    {
+      "question": "What is LIME and how does it help with explainable AI?",
+      "category": "Explainable AI Tools",
+      "tags": [
+        "ai-product",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LIME removes pixels to reveal what triggers AI decisions._\n\nLIME is a tool designed to help with explainability in AI systems, particularly for complex models like deep learning that create their own variables which might not make immediate sense for humans. LIME works by creating many different versions of the same image through removing pixels. This process helps researchers and users understand what specifically triggered a given AI response. It addresses the challenge that while decision trees, Bayesian classifiers, and linear models are easy to interpret, deep learning models cannot be explained so easily.\n\n— [President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency](https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/) · _Forbes_",
+      "sources": [
+        {
+          "title": "President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/"
+        }
+      ]
+    },
+    {
+      "question": "How do transparency requirements differ between the EU and the US regarding algorithmic decision making?",
+      "category": "International AI Regulation",
+      "tags": [
+        "policy-ethics",
+        "bias"
+      ],
+      "updated": "2026-06-02",
+      "body": "_EU grants rights against automated decisions; US relies on external investigations._\n\nIn the US, algorithms are not allowed to discriminate against race, but without transparency it is hard to surface those biases. It often takes external investigations like ProPublica's study showing Asian families were charged higher prices or the ACLU's analysis revealing Amazon's AI incorrectly identified 28 Congress members as criminals. In the EU, citizens have the right not to be subject to decisions based solely on automated means. However, it would be more powerful if mandatory registers were established making this information publicly accessible.\n\n— [President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency](https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/) · _Forbes_",
+      "sources": [
+        {
+          "title": "President Biden Is Man, Woman And 40 Years Old - Why We Need Algorithmic Transparency",
+          "url": "https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/"
+        }
+      ]
     }
   ]
 }

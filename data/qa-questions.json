@@ -3314,6 +3314,84 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2021/02/04/president-biden-is-man-woman-and-40-years-old---why-we-need-algorithmic-transparency/"
         }
       ]
+    },
+    {
+      "question": "How accurate are current deepfake detection technologies?",
+      "category": "Current Detection Accuracy",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Detection tools fail more often than they succeed right now._\n\nCurrent deepfake detection technology isn't very good yet. The best deepfake detector is only 65% accurate. Even Microsoft's Azure Cognitive Services was fooled over 78% of the time. This means detection tools fail more often than they succeed. The future of these detectors will mirror bot detectors, spam detectors, or any other cyber threat detectors. It will be an arms race between those creating deepfakes and those trying to detect them, similar to how spam and virus detection evolved over time.\n\n— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
+        }
+      ]
+    },
+    {
+      "question": "What legitimate uses do deepfakes have in the entertainment industry?",
+      "category": "Legitimate Entertainment Applications",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Hollywood already uses this technology to save time and money._\n\nDeepfakes are widely used in Hollywood today for legitimate purposes. They're used for de-aging actors in Marvel movies and brought back the late Paul Walker in Fast and Furious 7. Deepfakes have the potential to replace high-end CGI, which could save the film industry millions of dollars and countless hours of processing time in filmmaking. So while deepfakes can be abused, they're already a valuable tool in professional entertainment production where expensive visual effects would otherwise be needed.\n\n— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
+        }
+      ]
+    },
+    {
+      "question": "What regulations exist or are being proposed to control deepfake misuse?",
+      "category": "Regulatory Response",
+      "tags": [
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Governments began addressing deepfake threats as early as 2019._\n\nRegulators around the globe have started to take deepfakes seriously. Already in 2019, there were about a dozen federal and state level bills to regulate deepfakes. These ranged from criminalizing the use of a woman's likeness in a pornographic film without her consent to dealing with cheap fakes. The key principle is that misuse of deepfakes without clear identification should be outlawed. This regulatory activity shows governments are beginning to address the threat, though implementation and enforcement vary.\n\n— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
+        }
+      ]
+    },
+    {
+      "question": "How can transparency tools like NFTs help combat deepfakes?",
+      "category": "Transparency Solutions",
+      "tags": [
+        "ai-product",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_NFTs could verify authentic videos by tracking their original sources._\n\nIn a world of deepfake abundance, verified accounts alone will not be sufficient to instill trust. One proposition to combat deepfakes points to the usage of NFTs. If everyone encrypted their videos as NFTs, it would be easy to find and compare different sources of the same moment. This transparency mechanism would help establish which version of a video is authentic by creating a verifiable chain of custody. Social media companies created verified accounts as one trust mechanism, but new technologies like NFTs may be needed as the deepfake threat grows.\n\n— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
+        }
+      ]
+    },
+    {
+      "question": "Why is education the most important defense against deepfakes?",
+      "category": "Education As Defense",
+      "tags": [
+        "education",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Like Nigerian Prince scams, awareness makes people harder to fool._\n\nEducation is the best protection against deepfakes, just like with Nigerian Prince scams. Many people won't fall for those scams anymore because they've heard about them. We need the same degree of education for deepfakes. Examples like Channel 4 in the UK creating a deepfake of the Queen's speech bring deepfakes into public discussion. At Cornell, I start each term with a one minute deepfake video welcoming MBA students. It's fun, but it's also a reminder that great technology can be abused. User awareness is critical.\n\n— [Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better](https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Deepfakes - The Danger Of Artificial Intelligence That We Will Learn To Manage Better",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
+        }
+      ]
     }
   ]
 }

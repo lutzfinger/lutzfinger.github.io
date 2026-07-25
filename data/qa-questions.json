@@ -3392,6 +3392,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/deepfakesthe-danger-of-artificial-intelligence-that-we-will-learn-to-manage-better/"
         }
       ]
+    },
+    {
+      "question": "How will Large Language Models impact healthcare according to Lutz?",
+      "category": "Impact of LLMs on Healthcare",
+      "tags": [
+        "healthcare",
+        "llm-moats",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs will save lives by transforming patient engagement and interaction._\n\nLarge Language Models will improve the last mile with patients, which is huge because engaging patients improves outcomes. In other words, LLMs will save lives. The major impact in healthcare is that we're about to change the way human-AI interaction works. LLMs allow a new way to interact with technology, enabling personalized messages, AI-powered chatbots that send tailored advice based on personal preferences, and knowledge base systems that explain diagnoses and educate patients on pathways.\n\n— [Large Language Models & AI In Healthcare](https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Large Language Models & AI In Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/"
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between LLMs and traditional machine learning models in healthcare?",
+      "category": "LLMs vs Traditional AI",
+      "tags": [
+        "healthcare",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs go beyond prediction to transform how humans interact with technology._\n\nTraditional AI is used for tasks like recommending movies on Netflix or detecting spam. In healthcare, traditional models predicted disease deterioration or helped detect cancer. LLMs can be used for those same tasks formerly done by traditional models, and foundation models might have better predictive accuracy and work with multimodal data. However, the major difference is that LLMs change the way human-AI interaction works, allowing a new way to interact with technology rather than just making predictions.\n\n— [Large Language Models & AI In Healthcare](https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Large Language Models & AI In Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/"
+        }
+      ]
+    },
+    {
+      "question": "What are some examples of how healthcare providers are using LLMs with patients?",
+      "category": "Healthcare AI Applications",
+      "tags": [
+        "healthcare",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Chatbots and knowledge systems deliver personalized, educational patient engagement._\n\nHealthcare providers are using AI-powered chatbots from Value-Based Care providers that send tailored advice based on a user's personal preferences. They're also using knowledge base systems that explain a potential diagnosis and educate patients on pathways. By combining AI technology with traditional methods such as care management programs or wellness initiatives, healthcare providers have an enhanced opportunity for achieving better outcomes at lower costs while providing personalized, human-centric care.\n\n— [Large Language Models & AI In Healthcare](https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Large Language Models & AI In Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/"
+        }
+      ]
+    },
+    {
+      "question": "How much capital was invested in the digital health startup landscape in 2021?",
+      "category": "Digital Health Investment",
+      "tags": [
+        "healthcare",
+        "investment",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Venture capitalists invested $29.1B in digital health startups in 2021._\n\nIn 2021 alone, the digital health startup landscape saw $29.1B of capital being invested by Venture Capitalists, and many of these startups are adding LLMs to their products. The landscape is exploding. At my day job as President of Product and Technology at Marpai Inc., our core aim is to help self-insured companies not only administer their claims but also help members find the best provider for their needs.\n\n— [Large Language Models & AI In Healthcare](https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Large Language Models & AI In Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/"
+        }
+      ]
+    },
+    {
+      "question": "What are some well-known Large Language Models besides ChatGPT?",
+      "category": "LLM Landscape",
+      "tags": [
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Many transformer-based models exist beyond ChatGPT, dating to the mid-2010s._\n\nChatGPT4 has dominated public discussion lately, but other well-known Large Language Models include GPT, BERT, Chinchilla, Gopher, Bloom, MT-NLG, PaLM, and LaMDA. All of these models are so-called transformers, initially introduced in 2017. Large Language Models have existed for several years, with their development and popularity growing rapidly since the mid-2010s. There were a few very successful early adopters, for example ultimate.ai, a company that automates every aspect of customer support.\n\n— [Large Language Models & AI In Healthcare](https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Large Language Models & AI In Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/"
+        }
+      ]
     }
   ]
 }

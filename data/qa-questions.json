@@ -3473,6 +3473,83 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2023/03/27/large-language-models--ai-in-healthcare/"
         }
       ]
+    },
+    {
+      "question": "What are some of the dangerous ways deepfakes could be misused beyond pornography?",
+      "category": "Dangerous Deepfake Applications",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From pornography to courtrooms, the threat landscape is expanding._\n\nWhile early deepfakes were focused on pornography, there are more terrifying use cases that concern me. These include creating fake alibis in courtrooms, which could undermine the justice system. Extortion is another serious threat, where fabricated videos could be used to blackmail individuals. Terrorism is also a potential danger. These applications show why the simplicity of creating deepfakes is so concerning when we think about abuse and manipulation.\n\n— [Overview Of How To Create Deepfakes - It's Scarily Simple](https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Overview Of How To Create Deepfakes - It's Scarily Simple",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/"
+        }
+      ]
+    },
+    {
+      "question": "How do Generative Adversarial Networks make deepfakes more realistic?",
+      "category": "GAN Architecture Explained",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Two competing neural networks train each other to create realistic fakes._\n\nGenerative Adversarial Networks, or GANs, were introduced in a 2014 academic study by Goodfellow and colleagues. GANs set up two neural networks to compete against each other. The first network, a generative neural network, creates a realistic image from a random seed through decoding. The second, a discriminative classifier, checks whether the image is real or fake. Through this competition, the two neural networks train each other and become more and more realistic over time. This architecture reinvigorated interest in deepfakes.\n\n— [Overview Of How To Create Deepfakes - It's Scarily Simple](https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Overview Of How To Create Deepfakes - It's Scarily Simple",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/"
+        }
+      ]
+    },
+    {
+      "question": "What is the difference between using a deepfake model and training one?",
+      "category": "Model Usage Versus Training",
+      "tags": [
+        "ai-product",
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Using deepfakes is simple, but building the underlying models is not._\n\nThere is a big difference between using a model and training a model. Today, you can create a deepfake for free in less than 30 seconds using sites like MyHeritage, D-ID, or many free deepfake applications without any programming skills. However, before we reach that self-serve tool point, we must first build a model that enables it. Underlying all deepfake tools are AI models based on neural networks. These models need a lot of training data, and creating them is not simple at all.\n\n— [Overview Of How To Create Deepfakes - It's Scarily Simple](https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Overview Of How To Create Deepfakes - It's Scarily Simple",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/"
+        }
+      ]
+    },
+    {
+      "question": "How do encoder-decoder pairs work to create deepfakes?",
+      "category": "Encoder-Decoder Technology",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Extracting and reconstructing facial features to swap identities in images._\n\nEncoder-decoder pairs are one of the main tools for creating deepfakes today. Going from an original image to a latent image is called encoding. Going from latent back to image is called decoding, similar to how you close your eyes and picture a cat based on knowledge stored in your brain. The encoder extracts latent features of face images, and the decoder reconstructs the face images from those features. To generate a deepfake, the decoder for the target draws the target image with the source's latent features, such as expressions.\n\n— [Overview Of How To Create Deepfakes - It's Scarily Simple](https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Overview Of How To Create Deepfakes - It's Scarily Simple",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/"
+        }
+      ]
+    },
+    {
+      "question": "What is the first-order motion model approach to creating deepfakes?",
+      "category": "Motion Model Deepfakes",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Motion detection technology superimposes expressions onto target faces in real time._\n\nThe first-order motion model takes a slightly different approach by replacing the encoder with a motion model. The underlying AI detects facial expressions, eye movements, and head position, which are then superimposed on a destination image. Anyone who has used Snap will have used this approach. The neural network is trained on many hours of real video footage to recognize various important features of a person's face. Since a video is a collection of images or frames, this allows photoshopping each frame in a video.\n\n— [Overview Of How To Create Deepfakes - It's Scarily Simple](https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Overview Of How To Create Deepfakes - It's Scarily Simple",
+          "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/"
+        }
+      ]
     }
   ]
 }

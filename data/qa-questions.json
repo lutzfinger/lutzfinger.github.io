@@ -3550,6 +3550,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2022/09/08/overview-of-how-to-create-deepfakesits-scarily-simple/"
         }
       ]
+    },
+    {
+      "question": "Why doesn't OpenAI have a lasting model moat with ChatGPT?",
+      "category": "Model Moat Limitations",
+      "tags": [
+        "llm-moats",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_OpenAI's technical advantage disappeared faster than most expected._\n\nOpenAI's model moat expired quickly after ChatGPT launched. We saw BARD, LLaMA, FLAN UL2, BLOOM, and then Stanford's Alpaca, a variant of Meta's LLaMA cross-trained by OpenAI's GPT-3.5. Everyone is now fine-tuning and cross-training models based on other models. A model moat does not exist for OpenAI. This is not surprising, such a moat also did not exist in previous Machine Learning waves. The only argument is that LLMs are expensive to train, so there's a barrier to entry, not a model moat.\n\n— [What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.](https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/) · _Forbes_",
+      "sources": [
+        {
+          "title": "What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"
+        }
+      ]
+    },
+    {
+      "question": "What makes a data moat actually defensible in the LLM era?",
+      "category": "Data Moat Requirements",
+      "tags": [
+        "llm-moats",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Ownership and unique value creation are both required for protection._\n\nA data moat is created when the data you have creates value no one else can easily create, and you own the data. Google has a data moat because they know how to link a search query to a click, while ChatGPT does not know whether the user found an answer helpful. I failed with my own company Fisheye Analytics because our scraped data was not protected. If I can scrape it, anyone can scrape it. Bloomberg launched a massive financial LLM only they could have trained. In this new world, data access is key.\n\n— [What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.](https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/) · _Forbes_",
+      "sources": [
+        {
+          "title": "What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"
+        }
+      ]
+    },
+    {
+      "question": "What example shows that brand moats can be more valuable than AI moats?",
+      "category": "Brand Over Technology",
+      "tags": [
+        "llm-moats",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_The luxury goods magnate outpaces AI investors through brand power._\n\nBernard Arnault of LVMH is currently the richest person in the world, not someone who invested in AI or data but in a brand moat. Stickiness or brand moat is achieved when customers are loyal due to the brand's reputation, user experience, or network effects. That might be the reason to be hopeful for ChatGPT. As Ben Thompson wrote, ChatGPT became the Accidental Consumer Tech Company. If OpenAI keeps ChatGPT sticky, then they might be onto something.\n\n— [What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.](https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/) · _Forbes_",
+      "sources": [
+        {
+          "title": "What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"
+        }
+      ]
+    },
+    {
+      "question": "What does 'bring your own data' mean for competitive advantage with LLMs?",
+      "category": "Proprietary Data Access",
+      "tags": [
+        "llm-moats",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Proprietary data access separates sustainable advantages from temporary ones._\n\nIn this new world of foundation models, data access is key. Bring your own data will be a game-changer for this young industry. Bloomberg launched a massive financial LLM only they could have trained because they had proprietary data access. Data moats offer a more sustainable advantage, and exclusive access to proprietary data can be a significant barrier to entry. But data in itself is not helpful, data needs to create value. This contrasts with scraped internet data that anyone can access.\n\n— [What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.](https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/) · _Forbes_",
+      "sources": [
+        {
+          "title": "What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"
+        }
+      ]
+    },
+    {
+      "question": "What are the three key takeaways about competitive advantages with LLMs?",
+      "category": "Three Moat Strategies",
+      "tags": [
+        "llm-moats",
+        "startup",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Model advantages fade, data and brand loyalty offer lasting protection._\n\nFirst, be cautious with claims about a Model Moat. A model moat is most likely only transient at best, and models will often be available as open source. Second, focus on Data Moats. Data moats offer a more sustainable advantage, and exclusive access to proprietary data can be a significant barrier to entry, but data needs to create value. Third, Stickiness Moat. Brand can create a powerful competitive advantage if startups focus on user happiness.\n\n— [What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.](https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/) · _Forbes_",
+      "sources": [
+        {
+          "title": "What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"
+        }
+      ]
     }
   ]
 }

@@ -3698,6 +3698,88 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/"
         }
       ]
+    },
+    {
+      "question": "Why is it so hard to know the quality of healthcare we receive?",
+      "category": "Healthcare Quality Transparency",
+      "tags": [
+        "healthcare",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Patients lack data because they are not the customer._\n\nWe rate Uber drivers, restaurants, and Amazon delivery, but when it comes to our own health experience, we have little to no data. The reason is structural: the business model of the healthcare provider is to get money from the insurance company, not the patient. The patient is not the customer. Because of this misalignment, knowing quality is of utmost importance, yet the information is not readily available to us as patients.\n\n— [Healthcare And Data - How To Measure Quality](https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare And Data - How To Measure Quality",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"
+        }
+      ]
+    },
+    {
+      "question": "What are the three broad measurement areas in today's healthcare?",
+      "category": "Healthcare Measurement Categories",
+      "tags": [
+        "healthcare",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Quality, utilization, and value-based prevention are the three areas._\n\nThere are three broad measurement areas. First, metrics about quality of care, which relate to treatment effectiveness and patient satisfaction. Second, metrics about need and utilization of care, gauging health requirements of a population and how often one uses what type of service. Third, metrics about value-based healthcare, which measure disease prevention rather than disease treatment, measuring actions taken to prevent or reverse illnesses instead of just treating them.\n\n— [Healthcare And Data - How To Measure Quality](https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare And Data - How To Measure Quality",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"
+        }
+      ]
+    },
+    {
+      "question": "What unintended consequences can quality metrics create in healthcare?",
+      "category": "Measurement Risks and Perverse Incentives",
+      "tags": [
+        "healthcare",
+        "measurement",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Mortality metrics can discourage doctors from treating complex cases._\n\nAs Michael Howell reminded me, the real challenges are in finding the metrics that matter and preventing unintended consequences with any given metric. Take a simple metric on mortality for surgery: patients should not die during surgery. But what if the patient's situation was complex to start with? There are cases where a patient did not receive care and died because giving him appropriate care could have resulted in a worse quality score for the doctor.\n\n— [Healthcare And Data - How To Measure Quality](https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare And Data - How To Measure Quality",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"
+        }
+      ]
+    },
+    {
+      "question": "Why is it important to measure appropriateness of medical interventions, not just quality?",
+      "category": "Appropriateness of Medical Care",
+      "tags": [
+        "healthcare",
+        "measurement",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Fee-for-service payment can incentivize unnecessary procedures._\n\nAs Marty Makary told me, it is not sufficient to just measure the quality of medical procedures, but we also need to evaluate the appropriateness of these interventions. The current fee-for-service payment structure might encourage some doctors to perform multiple surgeries rather than one, as they are paid per procedure. Transparency in correcting misalignments is key. This is why utilization metrics look at whether someone should have gotten a given intervention in the first place.\n\n— [Healthcare And Data - How To Measure Quality](https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare And Data - How To Measure Quality",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"
+        }
+      ]
+    },
+    {
+      "question": "What does Marpai Connect measure in value-based care, and what do you de-emphasize?",
+      "category": "Value-Based Care Measurement",
+      "tags": [
+        "healthcare",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Clinical markers and outcomes matter more than engagement metrics._\n\nAt Marpai Connect we use bio markers that are clinically proven, like HBA1C measurements for diabetes. We also use other measured outcomes such as pain reduction scores and functional health improvement scores. We include cost, which is easy for a third-party administrator to measure via claims, but cost alone is not sufficient. What we de-emphasize: engagement metrics, because they often lack evidence that they work. Our approach is working. 40% of the commercial market wants to get access to value-based care.\n\n— [Healthcare And Data - How To Measure Quality](https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare And Data - How To Measure Quality",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"
+        }
+      ]
     }
   ]
 }

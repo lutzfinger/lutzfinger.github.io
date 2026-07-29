@@ -3631,6 +3631,73 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"
         }
       ]
+    },
+    {
+      "question": "How did you solve the fairness problem in peer reviews for your Cornell data products course?",
+      "category": "Fair Peer Review Systems",
+      "tags": [
+        "education",
+        "measurement",
+        "bias"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Statistical personas identify unfair reviewers in peer grading systems._\n\nWe developed a data validation process to ensure fairness in peer reviews. The process analyzes metrics like total review time, time spent on each review, and number of comments left on each project. Most variables followed a Gaussian distribution, letting us use statistical tools to identify problematic reviewers. We built student personas including Lazy Graders, Harsh and Happy Graders, and Misaligned Students. Examining just three to four projects from a single student typically gave us enough insight to determine if they fit these personas, and we would re-evaluate their feedback accordingly.\n\n— [Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education](https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/"
+        }
+      ]
+    },
+    {
+      "question": "What are the three student personas you identified through data validation in peer reviews?",
+      "category": "Student Reviewer Personas",
+      "tags": [
+        "education",
+        "analytics",
+        "bias"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Three types of problematic reviewers emerged from our validation process._\n\nWe identified three distinct student personas. Lazy Graders select largely the same answer for all questions regardless of whether responses are warranted, or spend minimal time on reviews. Harsh and Happy Graders are students who were unexpectedly strict or lenient on one project compared to others who graded that same project. Misaligned Students consistently rate all their projects significantly more positively or negatively compared to the rest of the class. These personas help us identify which feedback needs re-evaluation to maintain fairness.\n\n— [Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education](https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/"
+        }
+      ]
+    },
+    {
+      "question": "What metrics do you use for data validation in peer review quality assurance?",
+      "category": "Data Validation Metrics",
+      "tags": [
+        "education",
+        "measurement",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Review time and comment patterns reveal data quality issues._\n\nOur data validation process is based on total review time, time spent on each review, the number of comments left on each project, and more. Most variables followed a Gaussian distribution, allowing us to use various statistical tools similar to those that identified cheating sumo wrestlers or overlooked baseball players. Based on predicted values from these metrics, we can identify problematic reviewing patterns. This approach mirrors data quality assurance in machine learning, where high-quality labeled data leads to better model performance.\n\n— [Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education](https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/"
+        }
+      ]
+    },
+    {
+      "question": "What has been the impact of implementing data validation in your peer review process?",
+      "category": "Impact on Teaching Efficiency",
+      "tags": [
+        "education",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Instructors now focus time on critical reviews, elevating course quality._\n\nEmploying data validation and data quality assurance has been a game-changer for the class. As instructors, we can now concentrate on the most critical reviews, ultimately elevating the course's quality. Instead of reviewing every piece of feedback, we focus our time on re-evaluating feedback from students who fit problematic personas. Our toolset is coded in Python and can be adapted for various courses using FeedbackFruits, making this approach scalable beyond just our Designing Data Products course.\n\n— [Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education](https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Hack For Fairness: Unlocking The Predictive Power Of Data Validation And Quality Assurance In Education",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/04/03/hack-for-fairness-unlocking-the-predictive-power-of-data-validation-and-quality-assurance-in-education/"
+        }
+      ]
     }
   ]
 }

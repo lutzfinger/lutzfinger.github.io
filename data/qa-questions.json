@@ -3780,6 +3780,55 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2023/06/27/healthcare-and-datahow-to-measure-quality/"
         }
       ]
+    },
+    {
+      "question": "Why do self-insured companies have different incentives than traditional healthcare payers when it comes to preventing avoidable admissions?",
+      "category": "Self-Insured Healthcare Economics",
+      "tags": [
+        "healthcare",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Self-insured companies bear actual costs, creating aligned health incentives._\n\nResearch shows that one third to one quarter of hospital admissions in the US are avoidable. In traditional healthcare, hospitals view admissions as revenue and insurance companies have already priced those risks into premiums, so there's little incentive to prevent them. Self-insured companies are different because they pay the actual care their employees receive and bear the actual cost of healthcare. This creates alignment between the payer and the patient, giving self-insured companies a vested interest in promoting healthier lifestyles and a shared commitment to health that didn't exist before.\n\n— [Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare](https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/"
+        }
+      ]
+    },
+    {
+      "question": "What is the potential financial impact of addressing Type 2 Diabetes in self-insured populations?",
+      "category": "Healthcare Cost Reduction Opportunity",
+      "tags": [
+        "healthcare",
+        "analytics",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Type 2 Diabetes costs are avoidable with right interventions._\n\nLooking at Marpai's data, about 6% of members have Type 2 Diabetes, costing self-insured clients 35 million USD. The key insight is that Type 2 Diabetes can be reversed and these costs are avoidable. This represents a significant opportunity for self-insured companies. By using AI and data to match the best intervention to the best use case, we can maximize therapeutic success and improve ROI. At Marpai we evaluated over 60 different healthcare programs to partner with, specifically to address conditions like this where costs are preventable.\n\n— [Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare](https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/"
+        }
+      ]
+    },
+    {
+      "question": "How is Value-Based Care different from traditional fee-for-service healthcare, and how fast is it growing?",
+      "category": "Value-Based Care Growth",
+      "tags": [
+        "healthcare",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_VBC shifts to fee for value, reaching 42% by 2030._\n\nValue-Based Care, introduced in 2008, aims to shift risk from the payer to the provider. It incentivizes providers to deliver value, or fee for value, rather than just services under the traditional fee for service model. The VBC industry has been growing constantly, with the US expected to have 42% of national health expenditures in some form of risk sharing arrangement by 2030. This growth is significant because VBC providers are actively focused on reducing risk, which aligns perfectly with the needs of self-insured companies and the capabilities of AI predictions.\n\n— [Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare](https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/"
+        }
+      ]
     }
   ]
 }

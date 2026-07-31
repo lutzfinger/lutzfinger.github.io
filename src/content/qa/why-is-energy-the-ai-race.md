@@ -2,7 +2,7 @@
 question: "Why is energy the AI race?"
 category: "AI Predictions"
 tags: ["risks", "policy-ethics"]
-updated: 2026-07-29
+updated: 2026-07-31
 sources:
   - title: "The Missing Moat In AI: Your Eval Data"
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/26/the-missing-moat-in-ai-your-eval-data/"

@@ -2,7 +2,7 @@
 question: "What about deepfakes?"
 category: "Policy & Ethics"
 tags: ["policy-ethics", "risks"]
-updated: 2026-07-29
+updated: 2026-07-31
 sources:
   - title: "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S."
     url: "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"

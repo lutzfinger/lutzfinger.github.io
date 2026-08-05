@@ -3829,6 +3829,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/"
         }
       ]
+    },
+    {
+      "question": "What percentage of healthcare costs are linked to reversible or manageable diseases?",
+      "category": "Avoidable Healthcare Costs",
+      "tags": [
+        "healthcare",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Nearly half of healthcare spending could be avoided with better care._\n\nAt Marpai Inc., we discovered that 23% of all healthcare costs are linked to reversible diseases. An additional 18% could remain stable with better management. That's a staggering 42% of essentially avoidable costs. This finding highlights the enormous opportunity to reduce healthcare spending by focusing on prevention and better disease management rather than just treating illness.\n\n— [Changing Healthcare - A Platform Approach Using Data & AI](https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Changing Healthcare - A Platform Approach Using Data & AI",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/"
+        }
+      ]
+    },
+    {
+      "question": "How does value-based care differ from traditional fee-for-service payment?",
+      "category": "Value-Based Care Model",
+      "tags": [
+        "healthcare",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Payment tied to outcomes, not just services rendered._\n\nValue-based care shifts risk to providers by changing how they're paid. Since 2008, the Centers for Medicare & Medicaid Services has been moving away from fee-for-service, where providers are paid for services rendered. Instead, under value-based care, CMS only pays if health outcomes actually improve. Today all of Medicare and most of Medicaid are expected to adopt a VBC model by 2030. This approach aims to focus on keeping people healthy rather than just treating sickness.\n\n— [Changing Healthcare - A Platform Approach Using Data & AI](https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Changing Healthcare - A Platform Approach Using Data & AI",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/"
+        }
+      ]
+    },
+    {
+      "question": "What are the two main challenges value-based care aggregators must overcome?",
+      "category": "Value-Based Care Challenges",
+      "tags": [
+        "healthcare",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Small patient pools and personalization create unique VBC obstacles._\n\nValue-based care aggregators face two key challenges. First is the issue of small numbers. Self-insured companies can't offer a large patient pool, only their own employees. VBC providers willing to risk fees with 66 million Medicare patients may see their approaches work on average, but with only 100 employees, those averages might not hold. Second is personalizing healthcare. While treatment is standardized, behavioral changes are unique to each individual. Weight loss alone has over 77,000 books, showing no one-size-fits-all solution exists.\n\n— [Changing Healthcare - A Platform Approach Using Data & AI](https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Changing Healthcare - A Platform Approach Using Data & AI",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/"
+        }
+      ]
+    },
+    {
+      "question": "How does Marpai Connect use AI to overcome the small numbers problem?",
+      "category": "AI-Powered Risk Prediction",
+      "tags": [
+        "healthcare",
+        "ai-product",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Pooling clients and predictive AI create scale for small employers._\n\nMarpai Connect addresses the small numbers challenge by pooling all self-insured clients and anticipating an overall reduction in aggregate. We use various approaches from simple time series modeling to advanced deep learning models like Neural Prophet to predict risk based on longitudinal claims records. This pooling strategy allows us to achieve the statistical power that individual small employers lack, while still delivering personalized care through AI matchmaking that pairs each user with the most suitable value-based care partner.\n\n— [Changing Healthcare - A Platform Approach Using Data & AI](https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Changing Healthcare - A Platform Approach Using Data & AI",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/"
+        }
+      ]
+    },
+    {
+      "question": "What outcome metrics does Marpai Connect use to evaluate care effectiveness?",
+      "category": "Healthcare Performance Metrics",
+      "tags": [
+        "healthcare",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Specific metrics track adherence, improvement, and patient participation._\n\nMy team at Marpai designed outcome metrics with our value-based care partners to evaluate the effectiveness of care. These include medication adherence, functional health improvement, flu vaccination rate, and patient engagement. We also built financial alignment into the platform, where providers should only receive payment if they effectively help reduce costs and improve health on average. For example, NuvoAir committed to a total cost of care reduction of 35% based on claims analysis with their virtual-first care model.\n\n— [Changing Healthcare - A Platform Approach Using Data & AI](https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Changing Healthcare - A Platform Approach Using Data & AI",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/07/05/changing-healthcarea-platform-approach-using-data--ai/"
+        }
+      ]
     }
   ]
 }

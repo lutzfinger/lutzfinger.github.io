@@ -2,7 +2,7 @@
 question: "Should AI be regulated?"
 category: "Policy & Ethics"
 tags: ["policy-ethics", "leadership"]
-updated: 2026-08-04
+updated: 2026-08-08
 sources:
   - title: "Emmanuel Macron On AI: We Are Regulating Ourselves Out Of The Market"
     url: "https://www.forbes.com/sites/lutzfinger/2024/10/22/emmanuel-macron-is-right-about-ai-over-regulatingi-have-no-doubt/"

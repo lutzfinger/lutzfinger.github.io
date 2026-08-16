@@ -2,7 +2,7 @@
 question: "What is value-based care and how does AI enable it?"
 category: "Healthcare"
 tags: ["healthcare", "measurement"]
-updated: 2026-08-09
+updated: 2026-08-16
 sources:
   - title: "Three Trends Of Transformation: How AI & Value-Based Care (VBC) Will Drive Transformation Of Self-Insured Healthcare"
     url: "https://www.forbes.com/sites/lutzfinger/2023/05/01/three-trends-of-transformation-how-ai--value-based-care-vbc-will-drive-transformation-of-self-insured-healthcare/"

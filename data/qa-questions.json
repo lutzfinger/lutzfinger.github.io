@@ -4075,6 +4075,89 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2024/10/22/emmanuel-macron-is-right-about-ai-over-regulatingi-have-no-doubt/"
         }
       ]
+    },
+    {
+      "question": "Why doesn't training a Large Language Model create a lasting competitive advantage?",
+      "category": "Competitive Advantage In AI",
+      "tags": [
+        "llm-moats",
+        "investment",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Three reasons LLM training costs fail to protect market position_\n\nTraining costs for LLMs don't create a business moat for three reasons. First, training costs are decreasing as data growth plateaus and software improves, so competitors can build similar models with lower R&D costs. Second, having a trained LLM doesn't inherently create economic value. It's just a new machine learning tool for sequence-to-sequence predictions. Third, economic value comes only from the application, not the algorithm itself. Algorithms become valuable when integrated into products that influence actionable outcomes. The algorithm alone isn't sufficient for value creation.\n\n— [OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem](https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/) · _Forbes_",
+      "sources": [
+        {
+          "title": "OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/"
+        }
+      ]
+    },
+    {
+      "question": "Where does OpenAI actually create value if not from its models?",
+      "category": "AI Value Creation",
+      "tags": [
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Value lives in applications like ChatGPT, not in models themselves_\n\nThe main value creation from OpenAI models comes from three areas: ChatGPT itself, the various Co-Pilots, and the OpenAI API integration with Microsoft. The important part is integrating the algorithm into the product, not the algorithm alone. For ChatGPT specifically, rumors suggest that running costs surpass its revenues. So while the models themselves don't create a moat, the application of those models in consumer-facing products is where actual value emerges. The integration and use case drive value, not just having trained an LLM.\n\n— [OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem](https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/) · _Forbes_",
+      "sources": [
+        {
+          "title": "OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/"
+        }
+      ]
+    },
+    {
+      "question": "Is ChatGPT actually at risk of shutting down despite the bankruptcy headlines?",
+      "category": "OpenAI Viability",
+      "tags": [
+        "investment",
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Microsoft backing ensures survival despite user decline and cost concerns_\n\nNo. ChatGPT has rapidly evolved into a prominent consumer service. No other application has grown at such a pace, and it's here to stay. Microsoft sees value in OpenAI as a tool to compete with Google and will likely continue funding server costs. While OpenAI has seen a drop in users, bankruptcy is off the table. The attention-grabbing headlines don't reflect the reality. ChatGPT isn't going anywhere. The real issue isn't survival but rather the underlying business model, which has concerning weaknesses around creating sustainable competitive advantages.\n\n— [OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem](https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/) · _Forbes_",
+      "sources": [
+        {
+          "title": "OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/"
+        }
+      ]
+    },
+    {
+      "question": "What does Google mean by saying neither they nor OpenAI have a moat?",
+      "category": "Competitive Landscape",
+      "tags": [
+        "llm-moats",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Open-source alternatives and falling costs eliminate model-based protection_\n\nGoogle's statement that neither company has a moat reflects how the market is flooded with new algorithms regularly, with open-source versions offering viable alternatives. Meta open-sourcing LLaMA essentially finalized this setup. With training costs decreasing and the pivotal role of application use cases, investing in Large Language Models is challenging to safeguard. There's no inherent protection from just having trained models. The lack of a moat means competitors can easily enter with similar technology, especially as open-source options proliferate and costs continue declining.\n\n— [OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem](https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/) · _Forbes_",
+      "sources": [
+        {
+          "title": "OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/"
+        }
+      ]
+    },
+    {
+      "question": "If OpenAI doesn't have a model moat, what kind of moat does it actually have?",
+      "category": "Building Defensibility",
+      "tags": [
+        "llm-moats",
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_User base of 100M offers paths to sustainable competitive advantage_\n\nOpenAI doesn't have a model moat, but it has a 100 million users moat. ChatGPT currently has over 100 million users, which creates opportunities to build sustainable advantages. There's much that can be done to create lasting competitive protection: User Experience, Data Access, Workflow Integration, LLM governance, and regulatory protection. While the business model should give us pause, the user base provides a foundation for building real defensibility. The moat comes from how you serve and retain those users, not from the underlying technology itself.\n\n— [OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem](https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/) · _Forbes_",
+      "sources": [
+        {
+          "title": "OpenAI Isn't Going Bankrupt, But It Has A Business Model Problem",
+          "url": "https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/"
+        }
+      ]
     }
   ]
 }

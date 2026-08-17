@@ -4158,6 +4158,84 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2023/08/18/is-openai-going-bankrupt-no-but-ai-models-dont-create-moats/"
         }
       ]
+    },
+    {
+      "question": "Why do you say 2025 will be the year of search?",
+      "category": "AI Search Predictions",
+      "tags": [
+        "ai-product",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Search poised to dominate 2025 as game-changing AI solution._\n\nI believe if you're placing bets on a single technology to dominate the conversation in 2025, bet on search. By merging large language models, retrieval-augmented data, and intuitive user interfaces, search is poised to be the game-changing AI solution for both individual users and global enterprises. Technology has transformed the way we search for and interact with information, and if past patterns hold true, this is search's moment.\n\n— [2025: The Year Of Search But Not The End Of Google](https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/) · _Forbes_",
+      "sources": [
+        {
+          "title": "2025: The Year Of Search But Not The End Of Google",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"
+        }
+      ]
+    },
+    {
+      "question": "What makes large language models so good at AI search?",
+      "category": "LLM Technology Foundation",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Attention mechanism and summarization enable LLM-powered search breakthroughs._\n\nLarge language models are trained on vast amounts of text, and the underlying innovation is the attention mechanism. Not every word is important, so models learn to extract the key ideas for a given context. This ability, combined with their ability to complete the next best word, makes them excellent at summarization. That summarization capability is exactly what makes them powerful for search applications.\n\n— [2025: The Year Of Search But Not The End Of Google](https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/) · _Forbes_",
+      "sources": [
+        {
+          "title": "2025: The Year Of Search But Not The End Of Google",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"
+        }
+      ]
+    },
+    {
+      "question": "Which companies are competing in AI search right now?",
+      "category": "AI Search Competitive Landscape",
+      "tags": [
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Major tech players and startups racing to dominate AI search._\n\nEvery major tech company and many startups are now racing to build or enhance AI-driven search. Google was late to the game, but its generative search experience is coming back quite strong. Microsoft has boosted Bing by integrating ChatGPT. Meta is developing its own search. OpenAI went from being a research organization to becoming a full-on consumer-focused search company. Perplexity focused on citation-based answers with source links. Many startups are also coming to AI-based search.\n\n— [2025: The Year Of Search But Not The End Of Google](https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/) · _Forbes_",
+      "sources": [
+        {
+          "title": "2025: The Year Of Search But Not The End Of Google",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"
+        }
+      ]
+    },
+    {
+      "question": "What do companies need to win the AI search war?",
+      "category": "Winning Search Strategy",
+      "tags": [
+        "ai-product",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_User engagement and understanding context are keys to winning search._\n\nLike in the 1990s, it all boils down to users. If a search tool can grab enough attention, keep people engaged, and build loyalty, it has a shot at success. Companies need to grasp the concept of the long tail in search. Human queries are inherently complex, which is why keyword-based search initially struggled. Understanding context while providing the right level of information is a challenging task that winners must master.\n\n— [2025: The Year Of Search But Not The End Of Google](https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/) · _Forbes_",
+      "sources": [
+        {
+          "title": "2025: The Year Of Search But Not The End Of Google",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"
+        }
+      ]
+    },
+    {
+      "question": "Does Google still have a chance against the new AI search competitors?",
+      "category": "Google's AI Search Position",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Google's experience and data give it staying power in AI search._\n\nYes. Don't count Google out just yet. Google has a significant advantage with its years of experience and vast amounts of data. The comeback it made with its generative search experience was impressive. While Google was late to the game, its generative search experience is coming back quite strong. It won't be the end of Google, but the fight is definitely on.\n\n— [2025: The Year Of Search But Not The End Of Google](https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/) · _Forbes_",
+      "sources": [
+        {
+          "title": "2025: The Year Of Search But Not The End Of Google",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"
+        }
+      ]
     }
   ]
 }

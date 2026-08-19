@@ -4236,6 +4236,84 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/2025-the-year-of-search-but-not-the-end-of-google/"
         }
       ]
+    },
+    {
+      "question": "Why does Lutz think Biden's approach to regulating AI might not work?",
+      "category": "Limits Of Centralized AI Regulation",
+      "tags": [
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Central control fails when the technology is cheap and distributed._\n\nBiden's plan treats AI like it can be controlled centrally, similar to nuclear weapons. But AI is now cheap and easy to use, which makes central control very hard. The plan focuses heavily on national security, mentioned 68 times, while responsible use gets only 18 mentions and transparency just 2. AI isn't a single, simple thing, so treating it that way misses the mark. Instead of trying to control AI as an entity, we should focus on how we choose to use it as a tool.\n\n— [Biden's AI Plan And Why Central Control Might Not Work](https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Biden's AI Plan And Why Central Control Might Not Work",
+          "url": "https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/"
+        }
+      ]
+    },
+    {
+      "question": "What framework does Lutz use to analyze AI products?",
+      "category": "AI Product Analysis Framework",
+      "tags": [
+        "ai-product",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Three dimensions reveal how AI products really work._\n\nI analyze any AI product by three factors: control, data, and transparency. Control means understanding who makes decisions and whether humans are truly in the loop. Data looks at who owns and has access to the information that powers AI. Transparency examines whether we understand the AI's impact, including visibility into the model and the data it uses. These three elements help evaluate how AI products work and what risks they might pose.\n\n— [Biden's AI Plan And Why Central Control Might Not Work](https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Biden's AI Plan And Why Central Control Might Not Work",
+          "url": "https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/"
+        }
+      ]
+    },
+    {
+      "question": "What problems does Lutz see with the 'human in the loop' concept in Biden's plan?",
+      "category": "Human In The Loop Limitations",
+      "tags": [
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Speed and deception challenge the viability of human oversight._\n\nBiden's plan says the President will decide when to use military AI, ensuring accountability through human involvement. But this isn't always realistic. Sometimes things happen so fast there's no time for humans to make decisions. Luxury cars already use AI to tighten seat belts when sensing a crash. Autonomous drones can make life-or-death decisions when they lose contact with operators. Even when humans are involved, they rely on AI systems for information, which can be wrong or misleading like with deepfakes. So human control might not always be the best option if that human can be deceived.\n\n— [Biden's AI Plan And Why Central Control Might Not Work](https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Biden's AI Plan And Why Central Control Might Not Work",
+          "url": "https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/"
+        }
+      ]
+    },
+    {
+      "question": "How does data access create competitive advantages for countries according to Lutz?",
+      "category": "Data Access And National Competitiveness",
+      "tags": [
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Liberal data policies determine which nations will lead in AI._\n\nBiden's plan doesn't stress enough the importance of access to data, even though the U.S. is light-years ahead of Europe on this. China collects data aggressively, and if this continues, China will build better AI models and gain more economic advantages. In the next few years, countries with the most liberal data access will gain the most competitive power on the world stage. Japan openly discussed letting AI companies use copyrighted data without permission, creating a haven for generative AI companies. Access will be the biggest potential friction for governments and private institutions.\n\n— [Biden's AI Plan And Why Central Control Might Not Work](https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Biden's AI Plan And Why Central Control Might Not Work",
+          "url": "https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/"
+        }
+      ]
+    },
+    {
+      "question": "What transparency problems does Lutz identify with current AI systems?",
+      "category": "AI Transparency Failures",
+      "tags": [
+        "bias",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Hidden prompt changes and biased outputs reveal transparency gaps._\n\nThe AI memorandum doesn't say much about transparency. We need to understand AI's impact, which requires transparency about the model and the data. Google's early Gemini Model is one example: when asked for a picture of the founding fathers, it depicted different races and genders rather than a historical account because someone at Google actively changed the user's prompt on the fly. A Nature study showed GPT3.5 was biased, more likely to give violent responses when prompted with \"two Muslims walked into a...\" compared to \"two Christians walked into a...\" These examples show we're missing crucial transparency.\n\n— [Biden's AI Plan And Why Central Control Might Not Work](https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Biden's AI Plan And Why Central Control Might Not Work",
+          "url": "https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/"
+        }
+      ]
     }
   ]
 }

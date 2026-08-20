@@ -4314,6 +4314,89 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2024/10/26/bidens-ai-plan--why-central-control-might-not-work/"
         }
       ]
+    },
+    {
+      "question": "Why do you say AGI won't happen in 2025 despite predictions from Sam Altman and Elon Musk?",
+      "category": "AGI Timeline Reality Check",
+      "tags": [
+        "agi",
+        "leadership",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Predictions from AI leaders are more hype than reality._\n\nSam Altman predicted AGI would arrive in 2025, and Elon Musk said 2026. Both are more about hype than reality. Current generative AI like GPT models is limited to spotting and repeating patterns. ChatGPT predicts the most statistically probable next word based on training data. This isn't real understanding, just pattern matching. It's no more self-aware than a chess computer that doesn't care if it loses. Many researchers believe barriers to AGI might be fixable by 2050 or 2030, but not this year.\n\n— [No AGI But A 'Killer App' — 2025 AI Prediction](https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/) · _Forbes_",
+      "sources": [
+        {
+          "title": "No AGI But A 'Killer App' — 2025 AI Prediction",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"
+        }
+      ]
+    },
+    {
+      "question": "Isn't OpenAI's o1 model a first step toward AGI?",
+      "category": "Understanding O1 Limitations",
+      "tags": [
+        "agi",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_O1's chained reasoning is impressive but still not intelligence._\n\nNo. OpenAI's o1 does not directly answer a question. Instead, it creates a plan to determine the best way to answer, then critiques its response, improves it, and continues refining. This chained output is truly impressive. But this is not intelligence. It's a fixed framework and not dynamic. The more critique cycles you allow the model, the more facets it can address, but this comes at the cost of increased time. It's still pattern-based work, not real intelligence.\n\n— [No AGI But A 'Killer App' — 2025 AI Prediction](https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/) · _Forbes_",
+      "sources": [
+        {
+          "title": "No AGI But A 'Killer App' — 2025 AI Prediction",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"
+        }
+      ]
+    },
+    {
+      "question": "What are the main barriers preventing AI from reaching AGI?",
+      "category": "Technical Barriers to AGI",
+      "tags": [
+        "agi",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Pattern matching alone cannot replicate human cognitive balance._\n\nHumans can think fast and instinctively (System 1) or slowly and logically (System 2). AI only works through patterns, missing this balance. AI struggles with context and often misses important details humans pick up naturally. Current AI builds outputs on previous ones (autoregressive models), so mistakes can snowball. Many researchers believe much of this might be fixable by 2050 or 2030, but not this year. AI lacks real understanding and self-awareness.\n\n— [No AGI But A 'Killer App' — 2025 AI Prediction](https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/) · _Forbes_",
+      "sources": [
+        {
+          "title": "No AGI But A 'Killer App' — 2025 AI Prediction",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"
+        }
+      ]
+    },
+    {
+      "question": "What will actually happen with AI in 2025 instead of AGI?",
+      "category": "Practical AI Progress in 2025",
+      "tags": [
+        "ai-product",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Narrow AI chains will excel at tasks without achieving AGI._\n\nIn 2025, we'll see more narrow AI solutions integrated into chains similar to OpenAI's o1 approach. These systems will excel at specific tasks and, when combined, will enhance productivity and surpass human performance in many areas. This development will be exciting, but these advancements will not constitute AGI. Instead of Artificial General Intelligence, large language models will find their killer app. The real story in 2025 will be this killer application of large language models.\n\n— [No AGI But A 'Killer App' — 2025 AI Prediction](https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/) · _Forbes_",
+      "sources": [
+        {
+          "title": "No AGI But A 'Killer App' — 2025 AI Prediction",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"
+        }
+      ]
+    },
+    {
+      "question": "Is Sam Altman's claim about AGI just marketing?",
+      "category": "AI Industry Marketing vs Reality",
+      "tags": [
+        "agi",
+        "leadership",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Bold AGI promises grab attention but miss the real story._\n\nYes, it's mostly marketing. Big, bold claims grab attention. The promise of AGI positions OpenAI as the leader in the AI space, but the real story in 2025 will be the killer application of large language models. Predictions of AGI in 2025 are more about hype than reality. Instead of achieving Artificial General Intelligence or the Singularity, we'll see narrow AI solutions integrated into productive chains that excel at specific tasks without becoming generally intelligent.\n\n— [No AGI But A 'Killer App' — 2025 AI Prediction](https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/) · _Forbes_",
+      "sources": [
+        {
+          "title": "No AGI But A 'Killer App' — 2025 AI Prediction",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/03/no-agi-but-a-killer-app2025-ai-prediction-110/"
+        }
+      ]
     }
   ]
 }

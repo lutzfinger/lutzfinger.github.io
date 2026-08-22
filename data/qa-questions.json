@@ -4478,6 +4478,73 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/07/sam-altman---agi--ai-workforce-in-2025-the-battle-of-tech-giants/"
         }
       ]
+    },
+    {
+      "question": "Why is Microsoft considered to be in pole position in the race for AI agents?",
+      "category": "Market Position and User Access",
+      "tags": [
+        "agents",
+        "future-of-work",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Why workforce tool dominance puts Microsoft ahead in AI agents_\n\nMicrosoft is in pole position because it has direct access to users through workforce tools most people already use. AI is becoming deeply integrated into these Microsoft products, with Copilots appearing everywhere. This market access is a big advantage. In 2023 and 2024, many startups launched impressive AI services, only to be quickly overshadowed by giants like Microsoft and Google, which have direct access to customers. For example, Jasper.ai saw similar features built directly into Google and Microsoft products.\n\n— [The Race For AI Agents. Who Will Supply Tomorrow's Workforce?](https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The Race For AI Agents. Who Will Supply Tomorrow's Workforce?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/"
+        }
+      ]
+    },
+    {
+      "question": "Why does Salesforce believe it can compete in supplying AI agents to enterprises?",
+      "category": "Enterprise Data Advantage",
+      "tags": [
+        "agents",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Salesforce leverages its treasure trove of enterprise data for AI_\n\nSalesforce holds an enormous trove of valuable data, including customer interactions, discussions, process documents, and marketing strategies. Access to enterprise data is one of two things companies need to become the main supplier of AI agents. Salesforce CEO Marc Benioff took a jab at Microsoft's Copilot, calling it disappointing and dubbing it Clippy 2.0, before introducing Salesforce's own AI solution, Agent Forces. This data advantage positions Salesforce alongside Microsoft, Amazon, and Google as a major player.\n\n— [The Race For AI Agents. Who Will Supply Tomorrow's Workforce?](https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The Race For AI Agents. Who Will Supply Tomorrow's Workforce?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/"
+        }
+      ]
+    },
+    {
+      "question": "What kind of AI agents will actually enter the workforce in 2025?",
+      "category": "Future AI Workforce Characteristics",
+      "tags": [
+        "agents",
+        "future-of-work",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Specialized workflow agents, not AGI, will join teams in 2025_\n\nIn 2025, we'll see more AI agents entering the workforce, transforming workflows by simplifying, enhancing, and automating tasks across industries. These won't be all encompassing AGI models but smaller, specialized models designed for dedicated workflows. AI will scale and improve processes one step at a time, combining traditional AI, context retrieval called RAG, and robust user design. Soon, there will be job websites with posts that only AI agents can apply for. 2025 will be the year AI colleagues enter our lives.\n\n— [The Race For AI Agents. Who Will Supply Tomorrow's Workforce?](https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The Race For AI Agents. Who Will Supply Tomorrow's Workforce?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/"
+        }
+      ]
+    },
+    {
+      "question": "Why will 2025 be the year of enterprise search for AI?",
+      "category": "Enterprise Search and Data Requirements",
+      "tags": [
+        "agents",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Enterprise search becomes critical as AI agents need company data_\n\nAI needs data to be effective. What we need are tools that can read and summarize company documents, tailored for enterprise use. 2025 will be the year of search, especially enterprise search. Companies that have access to this kind of data, like Microsoft, Amazon, Google, and Salesforce, are major players in the race to supply AI agents. Access to enterprise data is one of the two critical things companies need to become the main supplier of AI agents for tomorrow's workforce.\n\n— [The Race For AI Agents. Who Will Supply Tomorrow's Workforce?](https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The Race For AI Agents. Who Will Supply Tomorrow's Workforce?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/07/the-race-for-ai-agents-who-will-supply-tomorrows-workforce/"
+        }
+      ]
     }
   ]
 }

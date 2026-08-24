@@ -4630,6 +4630,86 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/05/ai-agents-in-2025-what-enterprise-leaders-need-to-know/"
         }
       ]
+    },
+    {
+      "question": "How does multimodal AI improve the healthcare experience for doctors dealing with overwhelming patient data?",
+      "category": "Healthcare Data Overload",
+      "tags": [
+        "healthcare",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Summarizing mountains of patient data to surface what truly matters._\n\nIn healthcare, patients often overwhelm doctors with massive amounts of data. For example, a patient with atrial fibrillation might bring five years of sleep data from their smartwatch, or a cancer patient could arrive with a 20-pound stack of medical records. What's needed is an AI that can summarize and highlight the key points. Multimodal AI handles diverse data sources like text, images, audio, video, and time-series data simultaneously, offering a richer, more comprehensive understanding to help doctors focus on what matters most.\n\n— [Multimodal AI In 2025: From Healthcare To eCommerce And Beyond](https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Multimodal AI In 2025: From Healthcare To eCommerce And Beyond",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/"
+        }
+      ]
+    },
+    {
+      "question": "What are the three main components of a multimodal AI system?",
+      "category": "Technical Architecture",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Encoders, fusion, and decoders work together to understand diverse data._\n\nA multimodal AI system consists of three main components. First, encoders convert raw data like text, images, sound, log files, videos, IoT sensor information, and time series into vectors stored in a latent space. Second, the fusion mechanism combines multiple types of data to find what's most relevant. Third, decoders deliver information from the latent space into something we understand, for example, finding an image of a house. These components work together to process virtually any data type.\n\n— [Multimodal AI In 2025: From Healthcare To eCommerce And Beyond](https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Multimodal AI In 2025: From Healthcare To eCommerce And Beyond",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/"
+        }
+      ]
+    },
+    {
+      "question": "How is r2decide using multimodality to transform the online shopping experience?",
+      "category": "eCommerce Innovation",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Merging search, browse, and chat into one seamless shopping flow._\n\nAt r2decide, we're using multimodality to merge Search, Browse, and Chat into one seamless flow. In an online jewelry store, a user searching for \"green\" would see results based on both text and images, since our AI encodes images into a shared latent space. Users can also search for broader contexts like \"wedding,\" \"red dress,\" or \"gothic.\" This capability even extends to brand names like \"Swarovski,\" surfacing relevant items even if the shop doesn't officially carry Swarovski products.\n\n— [Multimodal AI In 2025: From Healthcare To eCommerce And Beyond](https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Multimodal AI In 2025: From Healthcare To eCommerce And Beyond",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/"
+        }
+      ]
+    },
+    {
+      "question": "What is the core discovery mechanism behind multimodal AI, and how does it relate to Amazon's recommendation approach?",
+      "category": "Discovery Mechanism",
+      "tags": [
+        "ai-product",
+        "healthcare",
+        "ecommerce"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Finding close connections across data types, like Amazon's recommendations scaled up._\n\nMultimodal AI is more of a discovery tool. Different data modalities are stored by the AI, and once a new data point is input, the AI finds topics that are close. For example, inputting sleep data from a smartwatch alongside information about atrial fibrillation episodes might find indications of sleep apnea. This is the scaled-up version of what Amazon popularized: \"people who shopped for this item also bought this item.\" In this case, it becomes \"People with this type of sleep pattern have also been diagnosed with AFIB.\"\n\n— [Multimodal AI In 2025: From Healthcare To eCommerce And Beyond](https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Multimodal AI In 2025: From Healthcare To eCommerce And Beyond",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/"
+        }
+      ]
+    },
+    {
+      "question": "What are AI-generated nudges and how do they work in r2decide's system?",
+      "category": "Guided Shopping Experience",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Contextual recommendations that guide shoppers toward the best options._\n\nAlongside search results, r2decide also generates AI-driven nudges, which are contextual recommendations designed to guide users effortlessly toward the most relevant options. These nudges provide chat-like advice, helping shoppers make better decisions without having to manually filter through endless product listings. By combining multimodal understanding with these intelligent prompts, the system transforms the traditional eCommerce interface into something more interactive and helpful, moving beyond the keyword-and-scroll experience that has dominated for 25 years.\n\n— [Multimodal AI In 2025: From Healthcare To eCommerce And Beyond](https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Multimodal AI In 2025: From Healthcare To eCommerce And Beyond",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/"
+        }
+      ]
     }
   ]
 }

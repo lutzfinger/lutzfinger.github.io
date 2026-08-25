@@ -4710,6 +4710,86 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/06/multimodal-ai-in-2025-from-healthcare-to-ecommerce-and-beyond/"
         }
       ]
+    },
+    {
+      "question": "Did you actually replace yourself as a teacher with an AI clone?",
+      "category": "AI Clone Teaching Experiment",
+      "tags": [
+        "education",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A teaching experiment reveals AI's limits in education._\n\nI built one of the first online certificates, Designing and Building AI Solutions, where I replaced myself with an AI clone. The clone is public. It's now a no-code course where students can imagine business ideas and have the AI clone write the necessary code. We have a 24/7 teaching assistant. But did this mean I replaced myself as a teacher? Not even close. AI can summarize information, but it can't predict future trends. Teaching is more than just delivering knowledge. It's about understanding and evaluating AI trends to find the best ways to use AI for business.\n\n— [Is AI Replacing Us — Good News For Knowledge Workers](https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is AI Replacing Us — Good News For Knowledge Workers",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/"
+        }
+      ]
+    },
+    {
+      "question": "How did OCR technology affect the number of lawyers?",
+      "category": "Legal Automation Case Study",
+      "tags": [
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_OCR reduced costs but increased demand for lawyers overall._\n\nBefore OCR, legal teams relied on staff to manually read, annotate, and organize documents, a slow and expensive process. With OCR, lawyers could search and analyze text instantly, dramatically reducing costs. By lowering costs, OCR democratized access to legal services, increasing the overall demand for lawyers. Today, AI is once again reshaping legal work. FLANK.AI automates legal document summarization. Instead of spending hours reviewing paperwork, lawyers can now focus on higher-value tasks like strategy, case analysis, and client advocacy.\n\n— [Is AI Replacing Us — Good News For Knowledge Workers](https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is AI Replacing Us — Good News For Knowledge Workers",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/"
+        }
+      ]
+    },
+    {
+      "question": "What happened to switchboard operators when automation arrived?",
+      "category": "Telecommunications Automation",
+      "tags": [
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Switchboard jobs vanished but sparked industry-wide growth._\n\nThe AT&T switchboard study analyzed how automation replaced switchboard operators. Those jobs disappeared, but cheaper, more accessible communication fueled an explosion of new industries, businesses, and job opportunities. This case from telecommunications demonstrates a pattern where automation eliminates specific roles but creates broader economic opportunities. The reduced cost of communication enabled growth across many sectors, generating more jobs overall than were lost in the single occupation that was automated.\n\n— [Is AI Replacing Us — Good News For Knowledge Workers](https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is AI Replacing Us — Good News For Knowledge Workers",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/"
+        }
+      ]
+    },
+    {
+      "question": "How is the key skill for doctors changing because of AI?",
+      "category": "AI Impact on Healthcare",
+      "tags": [
+        "healthcare",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Medical skills evolved from memorization to critical thinking._\n\nDuring medical training, memorization was key. Then, as the internet made digital information easily accessible, effective summarization became the key skill. With AI, transformer models can summarize better than humans. The key skill now is critical thinking. But those advancements will free doctors to focus on human connection, improving medicine overall. This evolution shows how each technological wave shifts what matters most in medical practice, from memorizing facts to thinking critically and connecting with patients.\n\n— [Is AI Replacing Us — Good News For Knowledge Workers](https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is AI Replacing Us — Good News For Knowledge Workers",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/"
+        }
+      ]
+    },
+    {
+      "question": "Why do business consulting firms get the AI job replacement question wrong?",
+      "category": "AI Job Creation Reality",
+      "tags": [
+        "future-of-work",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Consulting firms miss how efficiency creates demand, not scarcity._\n\nBusiness consulting firms often push the narrative that AI automation means fewer jobs, but they're missing the bigger picture. AI is augmenting knowledge workers, not replacing them. It makes them more efficient, allowing them to create more value. As any enterprise leader or CEO knows, when more value is created, the demand for skilled professionals increases. In the long run, AI will generate more jobs, not fewer. The real question is how we, as a society, support those who need to learn new skills.\n\n— [Is AI Replacing Us — Good News For Knowledge Workers](https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is AI Replacing Us — Good News For Knowledge Workers",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/22/is-ai-replacing-us-good-news-for-knowledge-workers/"
+        }
+      ]
     }
   ]
 }

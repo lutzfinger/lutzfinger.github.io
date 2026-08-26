@@ -2,7 +2,7 @@
 question: "How is AI changing e-commerce?"
 category: "E-commerce"
 tags: ["ecommerce", "search-geo"]
-updated: 2026-08-25
+updated: 2026-08-26
 sources:
   - title: "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max"
     url: "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"

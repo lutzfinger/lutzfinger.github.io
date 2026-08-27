@@ -2,7 +2,7 @@
 question: "What mistakes do brands make in AI-driven e-commerce?"
 category: "E-commerce"
 tags: ["ecommerce", "leadership"]
-updated: 2026-08-27
+updated: 2026-08-28
 sources:
   - title: "Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce"
     url: "https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/"

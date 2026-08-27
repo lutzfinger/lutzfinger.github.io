@@ -4874,6 +4874,86 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/22/stargate-the-500b-message-to-china---the-future-of-ai-regulation/"
         }
       ]
+    },
+    {
+      "question": "Why did DeepSeek's announcement cause NVIDIA's stock to drop so dramatically?",
+      "category": "Market Impact of AI Cost Reduction",
+      "tags": [
+        "investment",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A $600 billion market cap loss revealed AI's commodity future._\n\nDeepSeek's announcement sent NVIDIA's stock tumbling, shedding $600 billion in market cap. Wall Street woke up to the fact that AI is becoming cheaper to train, and AI models can train themselves, further lowering the cost. This cost erosion creates an economic reality in which AI becomes a commodity. DeepSeek-V3's last training run cost just $5.576 million, compared to the $100 million that GPT-4 supposedly cost. That is 18 times smaller. This demonstrated that high-quality AI can be built inexpensively without necessarily requiring the most advanced hardware.\n\n— [DeepSeek - New Economic Rules And Regulatory Challenge](https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/) · _Forbes_",
+      "sources": [
+        {
+          "title": "DeepSeek - New Economic Rules And Regulatory Challenge",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
+        }
+      ]
+    },
+    {
+      "question": "What makes DeepSeek-R1-Zero different from previous large language models?",
+      "category": "DeepSeek Technical Innovation",
+      "tags": [
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Self-training AI slashes costs and eliminates human feedback dependency._\n\nDeepSeek-R1-Zero was the first large-scale AI model trained purely with reinforcement learning, eliminating the need for human feedback. This means an AI can now train itself and improve its reasoning autonomously. The impressive part was the cost. DeepSeek-V3's last training run cost just $5.576 million, 18 times smaller than GPT-4's supposed $100 million cost. DeepSeek's team improved how to effectively train and manage resources through smart resource utilization, mixture of experts, and multi-head latent attention.\n\n— [DeepSeek - New Economic Rules And Regulatory Challenge](https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/) · _Forbes_",
+      "sources": [
+        {
+          "title": "DeepSeek - New Economic Rules And Regulatory Challenge",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
+        }
+      ]
+    },
+    {
+      "question": "Why do you argue that foundation models have a first-mover disadvantage?",
+      "category": "First-Mover Economics in AI",
+      "tags": [
+        "investment",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Later entrants build on frontier research at tiny fraction of cost._\n\nFoundation models have a first-mover disadvantage because AI models can train other AI models. Stanford's Alpaca model was fine-tuned for less than $100, utilizing existing GPT-3 that had cost over $4.6 million. That's 46,000 times cheaper. Research into frontier models presents an economic disadvantage. If we apply the same 18x discount to Trump's Stargate $500 billion announcement, someone could do the same value creation with just a $27 billion investment. Models are difficult to protect from other companies or countries.\n\n— [DeepSeek - New Economic Rules And Regulatory Challenge](https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/) · _Forbes_",
+      "sources": [
+        {
+          "title": "DeepSeek - New Economic Rules And Regulatory Challenge",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
+        }
+      ]
+    },
+    {
+      "question": "How did the U.S. chip ban inadvertently help DeepSeek become more competitive?",
+      "category": "Unintended Consequences of Export Controls",
+      "tags": [
+        "policy-ethics",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Hardware restrictions forced resourceful innovation that beat U.S. competitors._\n\nThe U.S. imposed chip export bans to limit China's AI capabilities, assuming that without advanced hardware, AI development would stall. However, AI is software, created differently compared to a nuclear facility, making traditional protectionist measures ineffective or even counterproductive. DeepSeek, banned from using top hardware, ended up building a really resourceful approach and became better than top U.S. AI companies. This demonstrates that AI models are math and neural networks, essentially stacked linear regressions within activation functions that one cannot protect easily.\n\n— [DeepSeek - New Economic Rules And Regulatory Challenge](https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/) · _Forbes_",
+      "sources": [
+        {
+          "title": "DeepSeek - New Economic Rules And Regulatory Challenge",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
+        }
+      ]
+    },
+    {
+      "question": "What do you see as the real challenge now that AI is becoming commoditized?",
+      "category": "Regulatory Challenge of AI Democratization",
+      "tags": [
+        "policy-ethics",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Governance, not technology, is the frontier as barriers disappear._\n\nThe real challenge now is not technological but economic and regulatory: how do we govern an industry where barriers to entry are disappearing? If the cost for AI continues to drop, more processes, tools, and services will use AI. This democratization of AI will be excellent for users and businesses alike. The winners of all this innovation will be us, the users. AI infrastructure might become a common good like a lighthouse. AI research benefits everyone. Models are difficult to protect from other companies or countries.\n\n— [DeepSeek - New Economic Rules And Regulatory Challenge](https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/) · _Forbes_",
+      "sources": [
+        {
+          "title": "DeepSeek - New Economic Rules And Regulatory Challenge",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
+        }
+      ]
     }
   ]
 }

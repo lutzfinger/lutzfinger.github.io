@@ -2,7 +2,7 @@
 question: "How is AI changing education?"
 category: "Education"
 tags: ["education", "leadership"]
-updated: 2026-08-26
+updated: 2026-08-27
 sources:
   - title: "AI In Education — Up-level Your Teaching With AI By Cloning Yourself"
     url: "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"

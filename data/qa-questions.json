@@ -4954,6 +4954,56 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"
         }
       ]
+    },
+    {
+      "question": "What is the irony in OpenAI complaining about DeepSeek's potential IP violation?",
+      "category": "IP Rights Hypocrisy",
+      "tags": [
+        "policy-ethics",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_OpenAI criticizes others for what it once did itself_\n\nThe irony is that OpenAI trained on Forbes, NYT, and other sources without permission. We can assume that some of my articles helped OpenAI's initial models. Now they complain that DeepSeek might have used them. Distillation will violate most terms of service, but that did not stop OpenAI from doing the same kind of violation with news organizations. Knowledge is free, which is good and the basis for much of our growth. On the other hand, it means knowledge is hard to protect.\n\n— [Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders](https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/"
+        }
+      ]
+    },
+    {
+      "question": "What four tactics does Sam Altman use to protect OpenAI's market position?",
+      "category": "Competitive Strategy Playbook",
+      "tags": [
+        "leadership",
+        "policy-ethics",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Sam Altman's strategic moves to maintain competitive advantage_\n\nFirst, claiming AGI is here and OpenAI is the only one who knows how to build it, positioning itself as the thought leader. DeepSeek has shown they are not the only ones. Second, Stargate's 500 billion dollar investment meant to intimidate potential challengers with overwhelming financial backing. Third, saying AI is extremely dangerous and only a select few should develop it, using safety concerns as justification for regulatory barriers. Fourth, saying models should respect IP rights, despite OpenAI ignoring IP rights to gain competitive edge while shutting the door on newcomers.\n\n— [Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders](https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/"
+        }
+      ]
+    },
+    {
+      "question": "Why does OpenAI argue that AI is extremely dangerous and should be restricted?",
+      "category": "Regulatory Strategy",
+      "tags": [
+        "policy-ethics",
+        "llm-moats",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Safety rhetoric as a competitive moat building strategy_\n\nOpenAI's storyline that AI is extremely dangerous and only a select few should be allowed to develop it is meant to use safety concerns as justification for a regulatory setup that creates barriers to entry and gives them more monopolistic power. This is part of Sam Altman's classical playbook to protect their business. All of OpenAI's core statements over the past few months come down to one focus: OpenAI tries to protect their market position.\n\n— [Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders](https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Is OpenAI A Victim — DeepSeek And IP Rights — A Playbook For Leaders",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/01/29/is-openai-a-victim---deepseek-and-ip-rights---a-playbook-for-leaders/"
+        }
+      ]
     }
   ]
 }

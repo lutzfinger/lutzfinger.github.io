@@ -2,7 +2,7 @@
 question: "How is the Amazon homepage dying?"
 category: "E-commerce"
 tags: ["ecommerce", "search-geo"]
-updated: 2026-08-28
+updated: 2026-08-29
 sources:
   - title: "The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling"
     url: "https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/"

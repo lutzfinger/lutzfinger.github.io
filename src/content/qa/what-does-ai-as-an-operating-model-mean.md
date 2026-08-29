@@ -2,7 +2,7 @@
 question: "What does 'AI as an operating model' mean?"
 category: "Future of Work"
 tags: ["future-of-work", "ai-workflows", "leadership"]
-updated: 2026-08-28
+updated: 2026-08-29
 sources:
   - title: "Stargate: The $500 Billion Message To China — The Future Of AI Regulation"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/22/stargate-the-500b-message-to-china---the-future-of-ai-regulation/"

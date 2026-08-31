@@ -5151,6 +5151,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/02/10/musk-vs-altman-value-and-reality-of-open-ai/"
         }
       ]
+    },
+    {
+      "question": "What is Goku and what makes it technically different from other AI models?",
+      "category": "AI Model Innovation",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_ByteDance's Goku uses rectified flow transformers for smoother AI-generated visuals._\n\nGoku is an advanced AI model for image and video generation launched by ByteDance. It produces high-quality visuals from text prompts using rectified flow transformers, a type of AI model that generates images and videos more smoothly and accurately by improving the way information flows through the model. Think of it like a high-tech artist that refines its brushstrokes to make digital creations look more natural and realistic. The result is fewer glitches and distortions compared to other models.\n\n— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"
+        }
+      ]
+    },
+    {
+      "question": "Why is Goku's open-source nature bad news for OpenAI and U.S. regulation efforts?",
+      "category": "AI Regulation Challenges",
+      "tags": [
+        "policy-ethics",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Open-source models like Goku expose limits of U.S. AI regulation strategies._\n\nGoku is an open-source AI model like Llama and DeepSeek. This is good news for many businesses and startups around the world but bad news for OpenAI, as it is becoming clear that having the best model alone does not ensure long-term success. It reinforces that model regulation will not work as the U.S. might have envisioned. Open-source software cannot be easily restricted by trade barriers, making it difficult for governments to control access to AI technology.\n\n— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"
+        }
+      ]
+    },
+    {
+      "question": "Where does the real business value lie when models like Goku make content creation so easy?",
+      "category": "AI Application Strategy",
+      "tags": [
+        "ai-workflows",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Business value shifts from content creation to selection and implementation strategy._\n\nThe true value lies in how businesses integrate and utilize AI-generated videos, text and images. In marketing, creative directors come back with 20 different ideas. But having creative ideas is not enough. The real challenge is deciding which of the 20 to choose and how to implement them effectively. Our focus will shift from creation to selection and implementation. AI's success will depend on its practical applications, not just on having advanced models like Goku.\n\n— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"
+        }
+      ]
+    },
+    {
+      "question": "What deepfake risks does Goku introduce and how should society respond?",
+      "category": "AI Safety and Deepfakes",
+      "tags": [
+        "risks",
+        "policy-ethics",
+        "education"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Goku makes deepfakes easier, requiring skepticism and AI literacy investments._\n\nAs AI lowers the barriers to content creation, abuse is also becoming more feasible. Deepfakes, AI-generated images, videos and audio designed to mimic real people, pose serious risks. This increases the risk of misinformation, identity theft and political manipulation. With tools like Goku making hyper-realistic content easier to produce, responsible AI use and deepfake detection must become priorities. Society must become more skeptical of digital content and invest in solutions to identify and counteract fakes. The only effective cure is to invest in AI literacy.\n\n— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"
+        }
+      ]
+    },
+    {
+      "question": "Why must companies prioritize AI literacy to successfully integrate generative AI?",
+      "category": "Organizational AI Adoption",
+      "tags": [
+        "education",
+        "leadership",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI literacy essential because AI impacts every business function, not just one._\n\nTo help integrate AI and generative AI into every part of a business, companies need to prioritize AI literacy. A top-down approach will not work, as there is no single AI application. AI will impact every aspect, from marketing and sales to customer experience and production. To stay competitive, organizations must understand and effectively use these technologies. Sustainable success will depend on building ecosystems that make AI tools accessible, adaptable and valuable in real-world scenarios.\n\n— [Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.](https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Goku, A Chinese Open-Source Model, Challenges OpenAI And The U.S.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/02/11/goku---a-chinese-open-source-model-challenges-openai-and-the-us/"
+        }
+      ]
     }
   ]
 }

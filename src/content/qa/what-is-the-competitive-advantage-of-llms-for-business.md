@@ -2,7 +2,7 @@
 question: "What is the competitive advantage of LLMs for business?"
 category: "LLM Moats"
 tags: ["llm-moats", "leadership"]
-updated: 2026-08-31
+updated: 2026-09-01
 sources:
   - title: "What Is The Competitive Advantage Of LLMs Like ChatGPT For Your Business? Three Takeaways."
     url: "https://www.forbes.com/sites/lutzfinger/2023/04/04/what-is-the-competitive-advantage-of-llms-like-chatgpt-for-your-business-three-takeaways/"

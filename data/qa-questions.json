@@ -5298,6 +5298,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/03/10/overhyped-manus-from-monicaai-made-in-china/"
         }
       ]
+    },
+    {
+      "question": "How did you create the Lutz-Clone and what can it do for students?",
+      "category": "AI Clone for Teaching",
+      "tags": [
+        "education",
+        "ai-workflows",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_An AI teaching assistant that mirrors knowledge and teaching style._\n\nI created the Lutz-Clone as an AI version of myself designed to teach my online certificate about AI with eCornell. This clone looks like me, but more importantly, it contains my knowledge and teaching style. It can help students code, discuss AI applications, and raise awareness of ethical challenges, all without me being physically present. The AI mirrors my teaching style and follows the course's learning path. Unlike generic AI tools, this clone is fine-tuned to introduce concepts logically and progressively.\n\n— [AI In Education — Up-level Your Teaching With AI By Cloning Yourself](https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI In Education — Up-level Your Teaching With AI By Cloning Yourself",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
+        }
+      ]
+    },
+    {
+      "question": "Why are you moving away from multiple-choice quizzes in your AI course?",
+      "category": "Assessment Transformation",
+      "tags": [
+        "education",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Conversations replace quizzes when AI can pass every test._\n\nTraditional quizzes are becoming obsolete. Standardized tests like the Medical College Admission Test can now easily be solved by AI. Since 2023, ChatGPT has consistently passed every single one of my multiple-choice questions on machine learning and real-world AI applications. Instead, we should shift from quizzes to conversations. In a world where knowledge is instantly accessible, education should focus on critical thinking and dialogue. I now use AI to discuss outcomes with students, encouraging them to evaluate, question, and apply their knowledge.\n\n— [AI In Education — Up-level Your Teaching With AI By Cloning Yourself](https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI In Education — Up-level Your Teaching With AI By Cloning Yourself",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
+        }
+      ]
+    },
+    {
+      "question": "What specific challenges come with implementing AI-based teaching assistants?",
+      "category": "Implementation Challenges",
+      "tags": [
+        "education",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From curated content to equal access and dynamic guidance._\n\nLike any change, it comes with challenges. First, teachers can't just post articles anymore. To enable meaningful AI discussions, we need to highlight the key takeaways. Second, not every student has access to paid versions of ChatGPT or similar tools. That's why the team at eCornell integrated my Lutz-Clone and ChatGPT into the Canvas learning platform, ensuring teaching assistants can follow all student discussions and step in when needed. We also use AI co-pilots to make checklists dynamic instead of static.\n\n— [AI In Education — Up-level Your Teaching With AI By Cloning Yourself](https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI In Education — Up-level Your Teaching With AI By Cloning Yourself",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
+        }
+      ]
+    },
+    {
+      "question": "How do AI teaching assistants provide personalized feedback in your course?",
+      "category": "Personalized AI Feedback",
+      "tags": [
+        "education",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Capstone critiques available anytime, mirroring the instructor's feedback style._\n\nIn my course, AI-based teaching assistants provide tailored feedback on student projects. Students upload their capstone work, and the AI critiques it, just like I would. This gives students access to a personalized teacher anytime, anywhere. Am I truly replaced? Not entirely. What I've done is scale myself. The AI mirrors my teaching style and follows the course's learning path. This way, students can learn at their own pace with personalized AI tutors available 24/7.\n\n— [AI In Education — Up-level Your Teaching With AI By Cloning Yourself](https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI In Education — Up-level Your Teaching With AI By Cloning Yourself",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
+        }
+      ]
+    },
+    {
+      "question": "What two essential skills must educators focus on when using AI?",
+      "category": "Essential AI Skills for Educators",
+      "tags": [
+        "education",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Understanding both AI's capabilities and its limitations in teaching._\n\nWe must focus on two essential skills: how to use AI effectively, and how to recognize its limits. AI models like ChatGPT excel at predictable, patterned tasks but struggle with novelty and edge cases. AI is a powerful tool, but it's still just a tool. The future of education is not about letting ChatGPT teach students directly. It's about educators designing learning paths and then using AI to scale their impact. The core responsibility remains with educators.\n\n— [AI In Education — Up-level Your Teaching With AI By Cloning Yourself](https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI In Education — Up-level Your Teaching With AI By Cloning Yourself",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
+        }
+      ]
     }
   ]
 }

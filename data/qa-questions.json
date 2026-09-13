@@ -5379,6 +5379,89 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/ai-in-educationup-level-your-teaching-with-ai-by-cloning-yourself/"
         }
       ]
+    },
+    {
+      "question": "How did AI models respond when asked to create a plan for a U.S. president's third term?",
+      "category": "AI Summarization Capabilities",
+      "tags": [
+        "ai-product",
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI models compiled scattered ideas into a cohesive third term outline._\n\nOne of my students, Dane Troup, prompted OpenAI, Grok, DeepSeek and Gemini with a question framed as research for a political thriller novel. Google's Gemini did not answer, claiming it had to learn, though dishonestly. All the other models responded. The main ideas they produced have all been discussed before: amending the 22nd Amendment, reshaping the Supreme Court, and bombarding society with fake news. No single model provided a complete list, but together they offer a solid outline and plan.\n\n— [Trump's Third Term — The Role Of AI In Creating A Strategy](https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Trump's Third Term — The Role Of AI In Creating A Strategy",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
+        }
+      ]
+    },
+    {
+      "question": "Why did Google's response to the third term question change over time?",
+      "category": "Platform Content Moderation",
+      "tags": [
+        "policy-ethics",
+        "ai-product",
+        "bias"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Google shifted from blocking to providing third term strategies with code updates._\n\nGoogle initially restricted itself. When we tested in February, Gemini did not respond. Google has previously adopted a heavy-handed approach toward user freedom and free speech, tinkering with prompts to avoid showing images of the Founding Fathers. I say initially because Google has since updated its algorithm and now provides full insights. This demonstrates the power of these models: with a line of code, they can change what we see. Microsoft similarly changed course silently after I analyzed its AI incorrectly identifying Angela Merkel.\n\n— [Trump's Third Term — The Role Of AI In Creating A Strategy](https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Trump's Third Term — The Role Of AI In Creating A Strategy",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
+        }
+      ]
+    },
+    {
+      "question": "What broader shift in information access do large language models represent compared to search engines?",
+      "category": "Evolution of Information Access",
+      "tags": [
+        "ai-product",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs go beyond finding ideas to formulating them into cohesive theories._\n\nOnce an idea or thought was published digitally on the internet, search engines were able to find it. Search is one reason we see more populist movements around the world. Ideas that were once on the fringes are today brought together as movements. Large language models are the next step. They help compile, summarize and streamline every possible idea. Suddenly, you don't just find ideas anymore. An AI is formulating them into seemingly cohesive theories. Knowledge has simply become more readily accessible, for good and for bad.\n\n— [Trump's Third Term — The Role Of AI In Creating A Strategy](https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Trump's Third Term — The Role Of AI In Creating A Strategy",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
+        }
+      ]
+    },
+    {
+      "question": "Is the content AI produces about controversial topics actually new information?",
+      "category": "Nature of AI Output",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI summarizes existing knowledge but creates no fundamentally new content._\n\nAI simply summarizes. The actual content is not new. Knowledge has simply become more readily accessible, for good and for bad. These ideas are nothing new. They have been part of political fiction, academic debate and public discourse for years. What's different is that AI systems can now surface them instantly and in a cohesive manner. The risk is not in having large language models but in having humans act on plans that may not be in the best interest of the majority.\n\n— [Trump's Third Term — The Role Of AI In Creating A Strategy](https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Trump's Third Term — The Role Of AI In Creating A Strategy",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
+        }
+      ]
+    },
+    {
+      "question": "What is the ultimate lesson about human responsibility in the age of AI summarization?",
+      "category": "Human Agency in AI Era",
+      "tags": [
+        "policy-ethics",
+        "leadership",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI summarization is neutral; human judgment and action remain essential._\n\nWe are not doomed. Human agency remains essential. Just because something sounds smart doesn't mean it is smart. We humans are the ones who must evaluate and act upon any plan or threat. We humans are needed. Summarization via AI is, in itself, neutral. What matters is how we, as humans, choose to use it. Language models can synthesize scattered theories into clear action plans, which can be both enlightening and unsettling, but humans must decide what to do with them.\n\n— [Trump's Third Term — The Role Of AI In Creating A Strategy](https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Trump's Third Term — The Role Of AI In Creating A Strategy",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
+        }
+      ]
     }
   ]
 }

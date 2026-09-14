@@ -5462,6 +5462,90 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/03/31/trumps-third-termhow-ai-can-help-to-overthrow-the-us-government/"
         }
       ]
+    },
+    {
+      "question": "What did your analysis of ShopTalk 2025 vendors reveal about generative AI adoption in e-commerce?",
+      "category": "E-Commerce AI Adoption Analysis",
+      "tags": [
+        "ecommerce",
+        "ai-product",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Only 1% of 700 vendors offer truly integrated generative AI solutions._\n\nI analyzed all 683 vendors at ShopTalk, the biggest e-commerce conference. While 40% claim to offer AI capabilities, only 25% (169 vendors) mention generative AI explicitly. That's surprisingly low given the hype. Even more striking, I found only seven companies, just 1% of all vendors, offering merged solutions that combine search, content personalization and chatbots using multimodal capabilities. Only one of those seven was an established player; the rest were startups. About 70% of companies focused on data and AI were startups, suggesting generative AI in e-commerce is still nascent.\n\n— [ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max](https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"
+        }
+      ]
+    },
+    {
+      "question": "Why did you choose e-commerce to study generative AI adoption rather than other industries?",
+      "category": "Industry AI Readiness",
+      "tags": [
+        "ecommerce",
+        "ai-workflows",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_E-commerce leads AI adoption, making it the ideal test case._\n\nIn my online certificate programs, I've explored AI use cases across healthcare, media, coffee, finance and e-commerce. Healthcare tends to be slowest to adopt AI, while e-commerce consistently leads. E-commerce already uses AI for targeting ads and emails, product recommendations, and SEO. Since e-commerce leads in AI adoption generally, I assumed they would readily embrace generative AI. That's why I chose to analyze this industry at ShopTalk, expecting to see the generative AI future already happening there if anywhere.\n\n— [ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max](https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"
+        }
+      ]
+    },
+    {
+      "question": "What makes generative AI the 'Holy Grail' for personalization compared to traditional AI tools?",
+      "category": "Personalization Technology Shift",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Multimodal generative AI enables true one-to-one personalization at scale._\n\nYesterday's tools rely on manual pre-written templates that AI dynamically selects. For example, ads have to be prewritten and AI just selects the best one for a user. Filters and landing pages stay static. Personalization happens on the margin; Amazon 1999 and 2025 look essentially the same. Real personalization would require billions of unique templates, filters and images, which wasn't feasible until now. Generative AI changes this. Our ability to store all kinds of data formats like product data, user-generated content and images, this multimodality makes it possible to switch and adjust each modality for the user.\n\n— [ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max](https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"
+        }
+      ]
+    },
+    {
+      "question": "What does your ShopTalk analysis suggest about the timeline for generative AI disruption in business?",
+      "category": "AI Adoption Timeline",
+      "tags": [
+        "ecommerce",
+        "leadership",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Generative AI disruption may take longer than Silicon Valley expects._\n\nThe floors at ShopTalk reveal that generative AI in e-commerce is still nascent, even though the direction is clear. Despite working in AI for 35 years and believing generative AI will change every industry, the current reality surprised me. Business leaders are still figuring out how to use generative AI. Maybe disruption takes longer than expected? Maybe this is like the tale about self-driving cars that we were promised for decades and are only now arriving? It seems early for generative AI, suggesting Silicon Valley may be getting ahead of itself.\n\n— [ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max](https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"
+        }
+      ]
+    },
+    {
+      "question": "Who is investing in these early-stage generative AI e-commerce companies you identified?",
+      "category": "Venture Investment Landscape",
+      "tags": [
+        "ecommerce",
+        "startup",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Top VCs attend ShopTalk as startups drive generative AI innovation._\n\nAbout 70% of the companies focused on data and AI at ShopTalk were startups, so it's no surprise that many top VC firms attend the event as well. I participated in a roundtable with Martin Casado from a16z at the conference. The fact that established VCs are present while most generative AI innovation comes from startups rather than established players, with only one out of the seven merged-solution vendors being an established company, shows where the smart money is watching this nascent space develop.\n\n— [ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max](https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/) · _Forbes_",
+      "sources": [
+        {
+          "title": "ShopTalk 2025: Just 1% Of Vendors Use Generative AI To The Max",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/03/21/state-of-genai--only-1---shoptalk-2025-in-numbers/"
+        }
+      ]
     }
   ]
 }

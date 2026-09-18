@@ -5691,6 +5691,73 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/06/16/nvidia-wants-to-power-europes-ai-dreams-the-eu-isnt-ready/"
         }
       ]
+    },
+    {
+      "question": "What conversion rate difference did you find between LLM-driven traffic and traditional search traffic?",
+      "category": "LLM Conversion Performance",
+      "tags": [
+        "measurement",
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLM traffic converts nearly nine times better than traditional search._\n\nIn A/B tests I conducted with Cornell Master's students, we compared regular keyword search with an AI-guided, conversational search experience inside the site search of several e-commerce stores. The difference was stunning: LLM-generated traffic converted at almost 9x higher rates than traditional search. This isn't just about volume, it's about value. LLM-driven traffic behaves more like a personal recommendation than a keyword query, which explains why users convert at dramatically higher rates when they follow those links or act on suggestions.\n\n— [Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming](https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"
+        }
+      ]
+    },
+    {
+      "question": "How have search queries changed with LLM-style interfaces compared to traditional search?",
+      "category": "Search Behavior Evolution",
+      "tags": [
+        "ai-product",
+        "measurement",
+        "ecommerce"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Queries grew from one word to 23 words with conversational interfaces._\n\nThe way people search is evolving dramatically. In the past, users typed one or two words like camera. Now, when shown more natural and detailed responses, they respond in kind with much longer, conversational queries like \"What's a compact camera for wildlife photography that fits in a carry-on?\" Semrush backs this up: average query length is now 23 words, and sessions last over 6 minutes. Users expect answers that feel personalized and human. In our interviews, shoppers said they felt more understood and better about their purchase.\n\n— [Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming](https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"
+        }
+      ]
+    },
+    {
+      "question": "How do you categorize shoppers and how do LLMs serve all three types?",
+      "category": "Shopper Categories and LLMs",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLMs now serve inspirational, research, and high-intent shoppers equally well._\n\nIn my UX research, I classify shoppers into three categories. Inspirational shoppers browse without a clear goal, often on Instagram or TikTok. Research shoppers are eager to learn and explore the best option, diving into Reddit threads or YouTube reviews. High-intent shoppers are ready to buy but looking for specific product information, visiting brand websites and combing through reviews. It's easy to see how all these needs can now be met through a conversation with LLMs like ChatGPT, Claude, Gemini, or Perplexity.\n\n— [Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming](https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"
+        }
+      ]
+    },
+    {
+      "question": "Why was it difficult to measure LLM traffic conversion, and how did you solve it?",
+      "category": "Measuring LLM Impact",
+      "tags": [
+        "measurement",
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Tracking LLM conversions is hard because users don't leave clean trails._\n\nGood numbers are hard to come by because LLM traffic doesn't always leave a clean trail. Users might just copy and paste a product name and head to Amazon, making it hard to track. To get better data, we created a ChatGPT-style experience inside the site search of several e-commerce stores. This let us run A/B tests comparing regular keyword search with an AI-guided, conversational search experience. That's how we discovered the almost 9x higher conversion rate for the conversational approach.\n\n— [Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming](https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Study Shows LLM Conversion Rate Is 9x Better — AEO Is Coming",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"
+        }
+      ]
     }
   ]
 }

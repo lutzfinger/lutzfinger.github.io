@@ -5758,6 +5758,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/06/19/study-shows-llm-conversion-rate-is-9x-better---aeo-is-coming/"
         }
       ]
+    },
+    {
+      "question": "Why did Amazon's B2B distribution model fail for complex industrial products?",
+      "category": "B2B Distribution Challenges",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Simple products worked, but complex specs exposed a critical gap._\n\nAmazon's B2B distribution worked fine for simple products like paper towels, but the moment specs get tricky, its model breaks down. Most industrial products live or die on context: temperature thresholds, compliance codes, compatibility quirks. Amazon lacked this contextual ingredient. That's precisely what large-language models excel at. Transformer models can embed context, turning the messy details of industrial distribution into valuable assets for an industry still playing catch-up on technology.\n\n— [AI For Private Equity — The Future Of B2B Distribution](https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI For Private Equity — The Future Of B2B Distribution",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/"
+        }
+      ]
+    },
+    {
+      "question": "What lesson did you learn from private equity's data acquisition spree in the mid-2010s?",
+      "category": "Private Equity Lessons",
+      "tags": [
+        "investment",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Raw data alone didn't justify bigger multiples back then._\n\nIn the mid-2010s, private equity funds went on a purchasing spree with a simple thesis: merge data assets and sell at bigger multiple. I was skeptical. In my book Ask, Measure, Learn, I cautioned that raw data without a focus on impact is just noise. You can plot a line with two points; a million more won't raise valuation. Transformers will flip that script. Now, with generative AI, the situation is fundamentally different for private equity.\n\n— [AI For Private Equity — The Future Of B2B Distribution](https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI For Private Equity — The Future Of B2B Distribution",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/"
+        }
+      ]
+    },
+    {
+      "question": "How can fine-tuned language models transform B2B distributor expertise?",
+      "category": "AI-Powered Expertise",
+      "tags": [
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Decades of technical knowledge, now instantly accessible at scale._\n\nA fine-tuned, domain-specific LLM can capture and deliver what once lived only in the minds of seasoned technical staff. The accumulated knowledge behind decades of \"call Bob in tech support\" scenarios, including spec sheets, material tolerances, and compatibility nuances, can now be made instantly accessible at zero marginal cost. This scales expertise in a way that was previously impossible, turning institutional knowledge into a programmable, always-on asset.\n\n— [AI For Private Equity — The Future Of B2B Distribution](https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI For Private Equity — The Future Of B2B Distribution",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/"
+        }
+      ]
+    },
+    {
+      "question": "What is answer engine optimization and generative engine optimization in B2B distribution?",
+      "category": "AI-Driven Customer Acquisition",
+      "tags": [
+        "ai-product",
+        "search-geo"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Making expertise discoverable exactly when buyers need it most._\n\nAEO and GEO ensure your expertise is not just digitized, but discoverable at the moment of intent. In this new model, discovery no longer depends on trade shows, cold calls or client dinners. It happens in the flow of work, through AI interfaces already embedded in how people search and decide. This allows a buyer's query, typed in natural language, to route directly to your fine-tuned AI, delivering recommendations as accurate as a trusted expert.\n\n— [AI For Private Equity — The Future Of B2B Distribution](https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI For Private Equity — The Future Of B2B Distribution",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/"
+        }
+      ]
+    },
+    {
+      "question": "What makes AI-native B2B distributors different from traditional operational efficiency plays?",
+      "category": "Business Model Transformation",
+      "tags": [
+        "investment",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From people-driven sales to algorithmically preferred, systems-driven growth._\n\nFor private equity investors, this is a structural shift worth noting. B2B roll-ups that embed AI at the core aren't just streamlining, they're building programmable infrastructure that turns people-driven sales into systems-driven growth. The winners won't just be operationally efficient, they'll be algorithmically preferred. This transforms relationships that once lived in sales reps' heads into models, turning what was once bespoke selling into scalable, always-on recommendations.\n\n— [AI For Private Equity — The Future Of B2B Distribution](https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI For Private Equity — The Future Of B2B Distribution",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/"
+        }
+      ]
     }
   ]
 }

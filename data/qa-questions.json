@@ -5839,6 +5839,70 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/07/15/ai-for-private-equity---the-future-of-b2b-distribution/"
         }
       ]
+    },
+    {
+      "question": "What happened to media companies during unbundling, and how does this relate to retail?",
+      "category": "Lessons from Media Disruption",
+      "tags": [
+        "ecommerce"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Media's unbundling foreshadows what's happening to retail today._\n\nWhen HTML and social media transformed media, homepages lost their power. Readers no longer started on whatevernews.com but landed on single articles via Facebook, Twitter, or Google. The article became the atomic unit of value while media brands receded. Many scaled down, and only top outlets like The New York Times or The Economist built new businesses. The winners were creators and journalists on platforms like Substack and Medium. Retail is now entering the same cycle of disruption as AI becomes the new interface for shopping.\n\n— [The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling](https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/"
+        }
+      ]
+    },
+    {
+      "question": "What are the three survival strategies for traditional e-commerce retailers?",
+      "category": "Retailer Survival Strategies",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Three ways retailers can survive the AI-driven transformation of commerce._\n\nFirst is price leadership, the Walmart model. LLMs will query retailers about price, likely via agent protocols like Model Context Protocol, and companies with substantial purchasing power will win. Second is distribution network leadership, Amazon's edge. Speed and reliability in delivery matter even as homepages fade. Third is content and advisory leadership. Retailers will win by delivering expert advice, like REI for outdoor equipment or Tom's Guide instead of Best Buy. Brands with unique and authentic takes on questions will be remembered by the LLM.\n\n— [The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling](https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/"
+        }
+      ]
+    },
+    {
+      "question": "Why is expert knowledge becoming the winning strategy in retail unbundling?",
+      "category": "Expert Knowledge Advantage",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Specialized knowledge will define winners in the new retail landscape._\n\nJust as the media landscape now thrives with niche creators, e-commerce will follow the same path. Retail brands focusing on knowledge that general LLMs don't yet have will succeed, similar to how specialized bloggers like Ben Thompson emerged in media. The winners will embrace specialization, personalization, and advisory power. Two and a half years ago, when LLM hype started, I predicted the future would be indie, and that's exactly what we're seeing with retail brands now. Not everyone needs to be Amazon, Walmart or Best Buy.\n\n— [The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling](https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/"
+        }
+      ]
+    },
+    {
+      "question": "How much more valuable is LLM traffic compared to traditional search traffic?",
+      "category": "LLM Traffic Value",
+      "tags": [
+        "ecommerce",
+        "measurement",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_LLM traffic delivers nine times the value of traditional search._\n\nIn my research I show that the traffic from LLMs is 9x as valuable as traditional search traffic. This dramatic difference underscores why the shift to AI-powered assistants is so significant for retailers. For traditional retailers, this means the customer's path to your product no longer runs through your digital storefront. When AI becomes the curator, advisor, and shopping guide, the traditional digital mall will die. This is why retailers need to fundamentally rethink their strategies for the age of AI discovery.\n\n— [The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling](https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/) · _Forbes_",
+      "sources": [
+        {
+          "title": "The End Of Amazon, Walmart, Best Buy? AI-Driven Retail Unbundling",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/"
+        }
+      ]
     }
   ]
 }

@@ -5903,6 +5903,90 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/06/30/the-end-of-amazon-walmart-best-buy---ai-driven-retail-unbundling/"
         }
       ]
+    },
+    {
+      "question": "What is OpenAI's stated ambition for AI agents according to this article?",
+      "category": "OpenAI's Universal Interface Vision",
+      "tags": [
+        "agents",
+        "ecommerce",
+        "healthcare"
+      ],
+      "updated": "2026-06-02",
+      "body": "_OpenAI aims to become the universal interface for all internet activity._\n\nAccording to a recent OpenAI memo, their aim is to become the dominant interface for everything on the internet. Sam Altman's vision is clear: he wants to be the agent for healthcare, finance, e-commerce, and many other areas. Some founders have described this vision as wanting to forward integrate into their business or be Everyone's Agent, much like Amazon once wanted to be The Everything Store. OpenAI is extending the idea that Perplexity started with Shop Like a Pro to cover everything users do online.\n\n— [AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?](https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
+        }
+      ]
+    },
+    {
+      "question": "What real example shows how AI agents are already changing user behavior in healthcare?",
+      "category": "AI Agents in Personal Healthcare",
+      "tags": [
+        "agents",
+        "healthcare"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A user spent $200 based solely on ChatGPT's blood test analysis._\n\nDuring user research, one person uploaded his blood test to ChatGPT. The AI analyzed the results, suggested supplements, and recommended a web store. The user then spent over $200 at a retailer he had never visited before, simply because ChatGPT said so. In this single interaction, OpenAI became his personal health record, his doctor providing medical recommendations, his replacement for Google in searching where to buy, and his purchase guide, all while skipping traditional product pages entirely.\n\n— [AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?](https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
+        }
+      ]
+    },
+    {
+      "question": "How are users and brands responding differently to AI agents in e-commerce?",
+      "category": "E-Commerce AI Agent Dynamics",
+      "tags": [
+        "agents",
+        "ecommerce",
+        "search-geo"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Users bypass homepages while brands invest in generative engine optimization._\n\nIt's not yet clear how AI agents will win in e-commerce. Users prefer answer-first experiences powered by ChatGPT, Gemini, and Perplexity. They now bypass the homepage entirely, leading to a decline of the website. Brands, on the other hand, are pushing GEO, which is Generative Engine Optimization. They're also creating ChatGPT-like experiences on their site search. Meanwhile, LLMs like OpenAI and Perplexity want to integrate agent capabilities and the ability to place ads.\n\n— [AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?](https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
+        }
+      ]
+    },
+    {
+      "question": "Why is Lutz conducting this survey on AI agents and generative engine optimization?",
+      "category": "Understanding AI Agent Adoption",
+      "tags": [
+        "agents",
+        "search-geo",
+        "ecommerce"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Research aims to track how users and companies adapt to AI._\n\nLutz wants to find out how far users, organizations, and the ecosystem have evolved in adapting to AI agents. He's already looked at many areas like IDE for coding, finance for risk underwriting, and e-commerce. To track how users versus companies are adapting, he partnered with Chase Binnie from RetailWire to launch a survey focused on GEO. The data will help understand how brands show up in AI-generated answers, what strategies work, and what tooling is missing. All findings will be published openly.\n\n— [AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?](https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
+        }
+      ]
+    },
+    {
+      "question": "What industries has Lutz already identified as being changed by AI agents?",
+      "category": "Industries Impacted by AI Agents",
+      "tags": [
+        "agents",
+        "ecommerce",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Coding, finance, and e-commerce are already being transformed by AI agents._\n\nLutz has already looked at several areas being impacted. IDE, or how we code, has been changed. Finance, or how we underwrite risk, has been changed. E-commerce is being changed by AI in how we sell and shop, though it's not yet clear who is driving whom in that space. He mentions that many industries will be impacted by AI agents, and his research aims to understand how far different sectors have evolved in response to this transformation.\n\n— [AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?](https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Agents - The Internet Is Being Rewritten - Survey Users Vs Brands?",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
+        }
+      ]
     }
   ]
 }

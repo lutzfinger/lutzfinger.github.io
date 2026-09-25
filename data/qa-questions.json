@@ -5987,6 +5987,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2025/07/24/ai-agentsthe-internet-is-being-rewrittensurvey-users-vs-brands/"
         }
       ]
+    },
+    {
+      "question": "Why did YouTube transcribe 'Merz' as 'Merkel' when Trump introduced the German Chancellor?",
+      "category": "How AI Transcription Fails",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI leans toward historical patterns, not current reality._\n\nYouTube's AI transcription system made this mistake because for 16 years, 'German Chancellor' almost always meant Angela Merkel in the training data. When the model heard 'Merz,' which is acoustically close but far less common, it leaned toward the familiar, high-probability continuation: 'Merkel.' The model plays the odds based on historical patterns. It's like predictive text suggesting 'Year' after 'Happy New' instead of 'Birthday.' The AI isn't wrong in a statistical sense, it's just out of sync with the real-world moment.\n\n— [AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'](https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/"
+        }
+      ]
+    },
+    {
+      "question": "How does AI transcription technology actually work under the hood?",
+      "category": "AI Transcription Technology",
+      "tags": [
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Three-step process turns sound into text using probabilities, not understanding._\n\nAI transcription systems use neural networks trained on billions of examples of speech paired with text. The process has three steps. First, encoding sound by breaking audio into very short chunks and turning them into numerical features. Second, predicting text where a language model predicts the most likely word that fits both the sound and the context. Third, stringing it together, just like ChatGPT predicts the next word in a sentence. It's all probabilities. The model doesn't understand the words, it just plays the odds.\n\n— [AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'](https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/"
+        }
+      ]
+    },
+    {
+      "question": "What fundamental capability do AI transcription models lack that causes errors like this?",
+      "category": "AI Logic Gap",
+      "tags": [
+        "risks",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI generates likely sequences but cannot verify facts or cross-check reality._\n\nAI transcription models don't verify facts. They don't pause and think, 'Merkel is no longer Chancellor, so that must be wrong.' They don't access live knowledge graphs or cross-check reality. They just generate the most likely sequence of words based on historical data. That's why AI feels brilliant in some moments and brain-dead in others. It reflects the averages of the past, not necessarily the truth of the present. The crucial gap is that these models cannot apply logic or verify their outputs against current reality.\n\n— [AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'](https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/"
+        }
+      ]
+    },
+    {
+      "question": "What did the Harvard study with executives reveal about relying on AI for predictions?",
+      "category": "AI and Decision-Making Risks",
+      "tags": [
+        "risks",
+        "bias",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Executives using ChatGPT made worse predictions due to overconfidence and bias._\n\nHarvard conducted an experiment with nearly 300 executives and found that those who relied on ChatGPT for stock price forecasts grew more optimistic and overconfident, and ultimately made worse predictions than peers who worked with other humans to discuss the logic. The study shows how AI can amplify cognitive biases and distort judgment in high-stakes decisions. This demonstrates how easily the past can be a wrong predictor for current times, and why putting faith in AI without human judgment can lead to poor outcomes.\n\n— [AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'](https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/"
+        }
+      ]
+    },
+    {
+      "question": "What is your perspective on AI replacing human judgment and thinking?",
+      "category": "Human Role in AI Era",
+      "tags": [
+        "future-of-work",
+        "leadership",
+        "agi"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI remains a tool requiring human judgment, not a replacement for thinking._\n\nWe don't see an AGI moment. We humans are still needed, and that is good news. As I say in my eCornell certificate on Designing and Building AI Solutions, AI is a tool, not more, not less. It's an impressive tool, but it won't replace the need for thinking and human judgment. Because human excellence isn't about predicting averages. I always cringe about the faith some folks put into AI, especially given how easily it can fail by reflecting past patterns rather than current reality.\n\n— [AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'](https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Fail — Trump Says 'Merz' —YouTube Transcribes 'Merkel'",
+          "url": "https://www.forbes.com/sites/lutzfinger/2025/08/18/ai-fail---chancellor-merz-is-not-chancellor-merkel/"
+        }
+      ]
     }
   ]
 }

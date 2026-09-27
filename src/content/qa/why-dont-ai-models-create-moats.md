@@ -2,7 +2,7 @@
 question: "Why don't AI models create moats?"
 category: "LLM Moats"
 tags: ["llm-moats"]
-updated: 2026-09-25
+updated: 2026-09-27
 sources:
   - title: "DeepSeek - New Economic Rules And Regulatory Challenge"
     url: "https://www.forbes.com/sites/lutzfinger/2025/01/29/deepseeknew-economic-rules-and-regulatory-challenge/"

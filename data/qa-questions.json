@@ -6301,6 +6301,91 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/02/10/even-if-ai-could-kill-chris-hemsworth-convenience-beats-fear/"
         }
       ]
+    },
+    {
+      "question": "What's the difference between how transformers are used in healthcare interfaces versus drug discovery?",
+      "category": "AI Capabilities in Healthcare",
+      "tags": [
+        "healthcare",
+        "ai-product",
+        "llm-moats"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Transformers shine at interface tasks, struggle with mechanistic understanding._\n\nTransformers excel as interfaces to messy healthcare data because they're great at sequence modeling like language and longitudinal notes. They summarize records, find context, and support decisions. They work well over EHR data or ICD-10 codes to predict likely codes or find patients for trials. However, for drug discovery, most transformers just do next-token prediction through autoregression. This creates impressive language competence but doesn't automatically give you conceptual understanding or reliable causal reasoning. Drug development needs mechanism understanding and generalization under uncertainty, and in regulated settings, outputs need guardrails and real-world validation.\n\n— [Healthcare's AI Lesson: Autocomplete Isn't Understanding](https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare's AI Lesson: Autocomplete Isn't Understanding",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
+        }
+      ]
+    },
+    {
+      "question": "What are JEPA and world models, and how do they differ from token prediction?",
+      "category": "AI Architecture Approaches",
+      "tags": [
+        "healthcare",
+        "ai-product",
+        "agi"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A research direction aiming for conceptual understanding beyond autocomplete._\n\nJEPA stands for Joint-Embedding Predictive Architecture. Instead of predicting the next token, it aims to predict the latent embedding context. The goal is to understand predictable structure by predicting mechanisms rather than reconstructing raw pixels or words. It tries to learn more grounded representations like concepts, invariants, and causal structure, all in embedding space where the model keeps its knowledge. This is the direction Yann LeCun has been calling out, because token prediction doesn't equal conceptual understanding. However, it's still research and not yet a proven industrial foundation for mechanistic biology or end-to-end drug design.\n\n— [Healthcare's AI Lesson: Autocomplete Isn't Understanding](https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare's AI Lesson: Autocomplete Isn't Understanding",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
+        }
+      ]
+    },
+    {
+      "question": "What does AI actually contribute to drug development today, according to what you saw at JP Morgan?",
+      "category": "Real AI Impact on Drug Development",
+      "tags": [
+        "healthcare",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI accelerates iteration and improves selection, but humans still validate._\n\nAI gives us better priors, better search, better filters, and faster loops. It narrows the hypothesis space, surfaces weak signals earlier, improves decision support, and accelerates the cycle of data to model to candidate to experiment and back to data. The headline-grabbing examples from Exscientia and Insilico Medicine don't mean AI replaces scientists. They fit this pattern: AI helps prioritize, propose, and optimize, while humans validate in wet labs and the clinic. The real impact shows up primarily as faster iteration and better selection under uncertainty, not autonomous discovery. It makes teams materially more effective.\n\n— [Healthcare's AI Lesson: Autocomplete Isn't Understanding](https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare's AI Lesson: Autocomplete Isn't Understanding",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
+        }
+      ]
+    },
+    {
+      "question": "Why did you mention Google's 2008 prediction capabilities and WIRED's 'end of theory' article?",
+      "category": "Historical AI Parallels",
+      "tags": [
+        "ai-product",
+        "risks",
+        "analytics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_History shows prediction capability doesn't eliminate need for theory._\n\nIn 2008, excited from Google's ability to predict the next click, WIRED magazine proclaimed 'the end of theory,' saying that all that was needed is data. That proved to be wrong. Now we have better models for the same approach with transformers doing next-token prediction, but we still have not seen the end of theory. This parallel shows that impressive prediction capabilities, whether for clicks or tokens, don't replace the need for underlying theory and understanding. It's a reminder that we've been at this place before with prediction hype.\n\n— [Healthcare's AI Lesson: Autocomplete Isn't Understanding](https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare's AI Lesson: Autocomplete Isn't Understanding",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
+        }
+      ]
+    },
+    {
+      "question": "What were your main takeaways from JP Morgan about AI in healthcare and beyond?",
+      "category": "Strategic AI Lessons",
+      "tags": [
+        "healthcare",
+        "leadership",
+        "investment"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Cash flow and operational impact matter more than AI hype._\n\nThree key learnings that apply to any industry, not just healthcare. First, humans plus AI will change the industry, not AI alone. Second, cash flow matters, not AI hype. Third, the real AI revolution is operational. As one leading investor said at the conference, 'I don't really care whether they use AI as long as they deliver the bottom line results.' It's not about hyping AI as such. It's about the impact, and to create impact we will need humans. AI plus humans making healthcare teams materially more effective is the massive change, not AI replacing people.\n\n— [Healthcare's AI Lesson: Autocomplete Isn't Understanding](https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Healthcare's AI Lesson: Autocomplete Isn't Understanding",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
+        }
+      ]
     }
   ]
 }

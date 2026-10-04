@@ -6386,6 +6386,89 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/01/16/healthcares-ai-lesson-autocomplete-isnt-understanding/"
         }
       ]
+    },
+    {
+      "question": "What happened when Meta's AI system changed True Classic's ad creative?",
+      "category": "AI Creative Failures",
+      "tags": [
+        "ai-workflows",
+        "leadership",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_When AI replaces your best ad, conversion rates can tank._\n\nIn late October 2025, Meta's system replaced True Classic's best-performing ad with an AI-generated image. The original ad featured a younger male model that fit their 30 to 45 year old male audience. Meta's AI replaced it with an older female model. The result was that conversion rates tanked. This example shows what happens when AI makes creative decisions without human oversight and judgment about what actually works for a specific audience.\n\n— [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
+        }
+      ]
+    },
+    {
+      "question": "Why does AI produce average creative output instead of breakthrough work?",
+      "category": "AI Creative Limitations",
+      "tags": [
+        "ai-product",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI optimizes for probability, not brave or emotionally resonant breakthroughs._\n\nAI, by design, is average. It's spectacular at pattern recognition and synthesis, but it produces the most statistically likely output, not the most surprising, brave, or emotionally resonant. Imagine asking an AI in the early 2000s to design a music player. An AI would have designed a better CD player, not reinvented music distribution like the iPod did. AI fundamentally cannot make the kind of judgment calls that lead to breakthrough innovation because it optimizes for what's most probable, not what's transformative.\n\n— [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
+        }
+      ]
+    },
+    {
+      "question": "How does AI change the workflow for creative and product teams?",
+      "category": "AI Workflow Transformation",
+      "tags": [
+        "ai-workflows",
+        "future-of-work",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Creation is now cheap; curation and courage become the scarce skills._\n\nAI inverts the economics of creation. In the old model, creation was expensive. Research, storyboarding, scripting, production all cost time and money before you knew if the idea was any good. Now creation is cheap, which means you don't end up with one concept. You end up with fifty. The craft doesn't vanish, it migrates. The center of gravity moves downstream into selection, refinement, and courage. Knowing which of the fifty concepts is actually good, and being willing to fight for it, becomes the scarce skill.\n\n— [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
+        }
+      ]
+    },
+    {
+      "question": "What is the problem with most brand chatbots today?",
+      "category": "Brand AI Challenges",
+      "tags": [
+        "ai-product",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Most chatbots are helpful but generic, lacking true brand identity._\n\nEvery brand now has a chatbot, and for certain tasks they're genuinely useful. But most of them are brand-less. They're helpful in a generic way that doesn't actually express anything about who you are or why someone should care. What comes next is not more chatbots. It's richer, taste-led interfaces that blend conversation with visual exploration and emotional resonance. The current wave of chatbots lacks the differentiation and emotional connection that brands actually need to stand out.\n\n— [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
+        }
+      ]
+    },
+    {
+      "question": "Why is cost cutting the wrong opportunity for AI in creative work?",
+      "category": "Strategic AI Leadership",
+      "tags": [
+        "leadership",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Using AI to cut costs produces average content that lands nowhere._\n\nThe opportunity isn't cost cutting, like reducing marketing budgets because AI can write the messages. If you let AI make the decisions, you'll get average. You'll get content that tests fine and lands nowhere. AI can generate options. It can't tell you which one feels right, which one is brave, which moment lands emotionally, or which visual breaks through. Companies need AI leadership that can steer probabilistic systems, defend a point of view against infinite AI output, and make judgment calls that machines genuinely cannot make.\n\n— [AI Cuts Creative Teams: What Companies Must Learn About AI Leadership](https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/) · _Forbes_",
+      "sources": [
+        {
+          "title": "AI Cuts Creative Teams: What Companies Must Learn About AI Leadership",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
+        }
+      ]
     }
   ]
 }

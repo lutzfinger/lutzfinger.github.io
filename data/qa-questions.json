@@ -6469,6 +6469,86 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/02/13/ai-cuts-creative-teams-what-companies-must-learn-about-ai-leadership/"
         }
       ]
+    },
+    {
+      "question": "How has the role of a software engineer changed with AI products?",
+      "category": "Engineering Skills Evolution",
+      "tags": [
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From writing code to spec to designing probabilistic loops._\n\nA traditional software engineer writes code to spec. The system does what it was told, and reliability comes from precise requirements and clean implementation. An engineer building AI products today works in a fundamentally different environment. The system does not do what it is told. LLMs write code and produce probabilistic outputs. The job is no longer writing features. It is designing loops: how does the agent decide when to stop? What happens when a tool call returns an invalid schema? How do you catch a hallucination midway through a workflow? These are not software questions. They are system judgment questions.\n\n— [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
+        }
+      ]
+    },
+    {
+      "question": "What is different about being an AI Product Manager compared to a traditional PM?",
+      "category": "Product Management Transformation",
+      "tags": [
+        "ai-product",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI PMs define failure modes first, not features first._\n\nA traditional PM defines requirements, manages a roadmap, and optimizes for conversion and retention. The job was to find the most average workflow that fits everyone. That is changing. The AI Product Manager assumes every workflow is feasible. Success is no longer \"did we build the feature?\" but \"how often does the system behave correctly, and how bad is the failure when it does not?\" Evaluation happens before the first line of code. You define failure modes before features, build golden datasets not just user stories, and design end-to-end outcomes across agents, tools, and human handoffs.\n\n— [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
+        }
+      ]
+    },
+    {
+      "question": "Are these layoffs really about AI replacing humans?",
+      "category": "Workforce Transformation",
+      "tags": [
+        "future-of-work",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Not fewer humans, but different humans with AI judgment skills._\n\nThis storyline is wrong. Meta needs different skills, AI focused skills. They need people who know how to work with AI. Engineers and Product Managers are replaced with AI Engineers and AI Product Managers. Companies are not firing engineers and product managers because they want fewer humans. They are hiring different humans. Humans who bring judgment into AI systems rather than working around them. Meta's departing employees are not being replaced by robots. They are being replaced by engineers who can define termination conditions for autonomous agents, and PMs who know how to build evaluation datasets.\n\n— [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
+        }
+      ]
+    },
+    {
+      "question": "What kind of retraining is needed for professionals in an AI-driven workplace?",
+      "category": "Professional Development",
+      "tags": [
+        "education",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Conceptual shifts matter more than learning to code._\n\nMcKinsey found that demand for AI fluency in job postings grew sevenfold in two years, concentrated in management and business roles, not just technical ones. This is not a story about coders. It is about every professional who touches a workflow. Retraining does not mean learning to code. The most important shift I see at Cornell is not technical. It is conceptual. Learning to ask: which step of this workflow does AI change? What does failure look like in a probabilistic system? How do I evaluate a system that does not behave the same way twice?\n\n— [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
+        }
+      ]
+    },
+    {
+      "question": "Why does AI still need human judgment if the workflows involve AI agents?",
+      "category": "Human-AI Collaboration",
+      "tags": [
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI generates options; humans decide which path to take._\n\nThose workflows are neither automatic and far from autonomous. Thus it needs new talent. Talent that can write code together with an LLM. Talent that can understand the new product design. While we see those layoffs I stay to my view that we will need humans. Humans that know how to work with AI. Humans that decide on options generated by an AI. This is the same argument I made for creative teams, we need them to work with AI tools but AI cannot replace human judgment.\n\n— [Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills](https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Meta Laid Off 8,000 And Launched AI - Why Jobs Need Different Skills",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
+        }
+      ]
     }
   ]
 }

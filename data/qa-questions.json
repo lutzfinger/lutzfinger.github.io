@@ -6549,6 +6549,87 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/04/25/meta-laid-off-8000-and-launched-aiwhy-jobs-need-different-skills/"
         }
       ]
+    },
+    {
+      "question": "What happened during the February 2026 SaaSpocalypse and what was the narrative?",
+      "category": "SaaS Market Shift",
+      "tags": [
+        "investment",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A quarter trillion dollars evaporated. But the diagnosis was wrong._\n\nIn February 2026, a 48-hour sell-off wiped roughly $285 billion from SaaS valuations. Wall Street called it the SaaSpocalypse. The narrative was simple: AI agents will replace software, the per-seat model is dead, and the incumbents are finished. I disagree with this narrative. The real story is that SaaS is not dead, but the interface is. The most forward-thinking SaaS companies are no longer selling you a user interface. They are selling you access to capabilities that an AI agent can call on your behalf.\n\n— [SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS](https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/) · _Forbes_",
+      "sources": [
+        {
+          "title": "SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
+        }
+      ]
+    },
+    {
+      "question": "Why can't vibecode simply replace SaaS platforms even though anyone can build anything now?",
+      "category": "Platform Architecture",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Building a tool and running a platform are fundamentally different jobs._\n\nThe trap is thinking that building a tool is the same as running a platform. It is not. Theoretically I can vibecode my own CRM system, an HR system, even a finance platform. But can I manage it? Who does the cybersecurity? Who handles compliance? How do you scale to millions of customers or app calls? Vibecode is changing how engineers work, but does not replace the need for scalable, secure software architecture. This is the trap that SaaS is dead thinking falls into.\n\n— [SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS](https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/) · _Forbes_",
+      "sources": [
+        {
+          "title": "SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
+        }
+      ]
+    },
+    {
+      "question": "What makes Intuit's data moat unique compared to companies like Amazon, Google, and OpenAI?",
+      "category": "Data Competitive Advantage",
+      "tags": [
+        "ai-product",
+        "startup"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A unique combination of financial and customer data no frontier model possesses._\n\nIntuit has data that Amazon, Google, and OpenAI do not have: 100 million customers whose tax filings, credit history, and business cash flow all live inside the same platform. Add Intuit Mailchimp and one gets a closed-loop financial plus marketing intelligence stack covering both the consumer and the small business. No frontier model has access to that combination. As Intuit's CEO Sasan Goodarzi put it directly in a February 2026 interview: data is the most important moat in all of this.\n\n— [SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS](https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/) · _Forbes_",
+      "sources": [
+        {
+          "title": "SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
+        }
+      ]
+    },
+    {
+      "question": "What is MCP and what security risk did Salesforce discover when they opened one?",
+      "category": "Platform Security",
+      "tags": [
+        "ai-product",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Opening your platform to AI agents expands your attack surface immediately._\n\nMCP stands for Model Context Protocol. It is the basis of the new user of SaaS platforms. Publishing an MCP endpoint means expanding the attack surface of your platform. Salesforce learned this directly: within weeks of launching Agentforce, researchers disclosed a critical vulnerability. Salesforce acted and built a governance layer on top: Agent Fabric and Trusted Agent Identity. This makes clear SaaS is needed as a trusted, governed layer that raw vibecoded alternatives can never be.\n\n— [SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS](https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/) · _Forbes_",
+      "sources": [
+        {
+          "title": "SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
+        }
+      ]
+    },
+    {
+      "question": "How is Intuit rebuilding its architecture for the AI agent era?",
+      "category": "Platform Transformation",
+      "tags": [
+        "ai-product",
+        "agents",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Not wrapping AI around features but treating agents as primary execution._\n\nIntuit is the furthest along in platform transformation. They rebranded their AI infrastructure as GenOS, a Generative AI Operating System. Specific agents handle accounting, payments, and customer interactions. The platform is not wrapping AI around existing features. It is rebuilding the architecture to treat agents as the primary execution layer. This represents a fundamental shift from defending their interface to positioning themselves to run the agent economy from underneath as the capability layer that the next generation of AI works through.\n\n— [SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS](https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/) · _Forbes_",
+      "sources": [
+        {
+          "title": "SaaSpocalypse Is Dead - The Future Of SaaS Is SaaS",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
+        }
+      ]
     }
   ]
 }

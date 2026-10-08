@@ -6630,6 +6630,89 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/04/24/saaspocalypse-is-deadthe-future-of-saas-is-saas/"
         }
       ]
+    },
+    {
+      "question": "Why does creating more AI-generated content fail at generative engine optimization?",
+      "category": "Generative Engine Optimization Mistakes",
+      "tags": [
+        "ecommerce",
+        "ai-product",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_More AI content does not win at generative engine optimization._\n\nExecutives wrongly assume that because more pages once won at SEO, more AI-generated content will win at GEO. The opposite is true. AI trained on AI degrades, and model providers actively suppress pages that read like machine-generated filler. Pumping out slop is the fastest way to become invisible to the very engines you are chasing. The fix is to give models what they actually reward: novel, unique, and authentic content. That is exactly why large language models lean so heavily on sources like Reddit and LinkedIn when they train.\n\n— [Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce](https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/"
+        }
+      ]
+    },
+    {
+      "question": "What is wrong with adding a chatbot that mimics ChatGPT to a retail site?",
+      "category": "Chat Interface Design Errors",
+      "tags": [
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Bolting on a ChatGPT clone creates friction, not service._\n\nBrands rush to add a chat box trying to mimic ChatGPT, and they fail. We saw the same pattern in the early days of Google, when every site tried to build search as good as Google's and could not. I launched a consultative bot for Decent in 2024 that nobody asked for. It was fun, but users did not really use it. Amazon later shipped Rufus, a clunky bolt-on that is often more wrong than right. A chat window you have to summon is friction, not service.\n\n— [Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce](https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/"
+        }
+      ]
+    },
+    {
+      "question": "How should brands handle product page personalization instead of using generic chatbots?",
+      "category": "Product Page Personalization Strategy",
+      "tags": [
+        "ecommerce",
+        "ai-workflows",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Personalize product pages by query, not by generic chatbot._\n\nThe fix is to weave conversation into the experience instead of pasting a clone on top. The clearest example is the product page. A product page no longer has to be average, stuffed with every keyword to please search while burying the reader in detail they never asked for. It can personalize to each shopper, based on their clicks and queries, surfacing what matters and hiding what does not. Based on my own A/B tests, this approach delivered 8.6 times better conversion.\n\n— [Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce](https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/"
+        }
+      ]
+    },
+    {
+      "question": "Why should brands stop manually overriding AI-driven product rankings?",
+      "category": "AI Ranking and Manual Overrides",
+      "tags": [
+        "ecommerce",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Manual ranking overrides lower revenue in AI-driven retail._\n\nBrand teams overwrite AI results by hand, pinning products and forcing rankings the algorithm did not choose. Fighting a modern AI system this way usually lowers revenue, not raises it. The fix is to let transformers and longitudinal behavioral data predict the next best product. As surely as we can finish life is like a box of, and you already thought chocolates, we can predict what a shopper most wants after a given query. The result is higher conversion and a lower return rate.\n\n— [Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce](https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/"
+        }
+      ]
+    },
+    {
+      "question": "What creates a defensible moat in the age of AI-driven e-commerce?",
+      "category": "Defensible Moats in AI Commerce",
+      "tags": [
+        "llm-moats",
+        "ecommerce",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI models commoditize. Your unique shopping data does not._\n\nI argued back in 2023 that AI models do not create moats. Models commoditize weekly. What cannot be copied is your record of real intent and real purchases. Every conversation and every click is, by definition, unique and authentic, the one signal no general model has. With it you can power discovery, personalize the page, and earn your place in AI answers. That is why the future belongs to branded AI models, trained on a brand's own behavior.\n\n— [Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce](https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Three Mistakes Brands Make In The Age Of AI-Driven E-Commerce",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/23/three-mistakes-brands-make-in-the-age-of-ai-driven-e-commerce/"
+        }
+      ]
     }
   ]
 }

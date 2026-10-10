@@ -6779,6 +6779,91 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/dna-is-becoming-programmable-curing-cancer-with-ai/"
         }
       ]
+    },
+    {
+      "question": "How are companies currently using AI tools to measure employee contributions?",
+      "category": "AI in Performance Reviews",
+      "tags": [
+        "ai-workflows",
+        "future-of-work",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI meeting tools are reshaping how companies evaluate employee performance._\n\nCompanies are using AI tools like Granola, Read.ai, Fireflies, and Avoma to record and transcribe meetings, tracking metrics like talk time and participation. Firms like Amazon and Meta are folding these AI-surfaced contributions into how they review people. The idea is that when the transcript becomes the record, ideas can propagate on merit rather than by who has the most power or the loudest voice. This shift means contribution gets measured by what you actually said, not by your title or office.\n\n— [If Your Name Isn't Western, AI Could Cost You The Promotion.](https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/) · _Forbes_",
+      "sources": [
+        {
+          "title": "If Your Name Isn't Western, AI Could Cost You The Promotion.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
+        }
+      ]
+    },
+    {
+      "question": "What evidence shows AI discriminates against non-Western names in hiring?",
+      "category": "AI Hiring Discrimination",
+      "tags": [
+        "bias",
+        "policy-ethics",
+        "risks"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Research reveals stark racial bias in AI resume screening systems._\n\nA University of Washington study found that large language models screening resumes favored white-associated names 85% of the time, and never once favored a Black male name over a white male one. This bias extends beyond names on paper to voices in the room. Speech models like Whisper produce significantly higher error rates for non-native and accented speakers because the audio they trained on skews American and native. The AI inherited our blind spots because it learned from us.\n\n— [If Your Name Isn't Western, AI Could Cost You The Promotion.](https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/) · _Forbes_",
+      "sources": [
+        {
+          "title": "If Your Name Isn't Western, AI Could Cost You The Promotion.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
+        }
+      ]
+    },
+    {
+      "question": "What did your classroom study reveal about AI bias in tracking participation?",
+      "category": "Measuring AI Bias",
+      "tags": [
+        "bias",
+        "education",
+        "measurement"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Classroom data shows AI heard Western names five times more often._\n\nI compared AI name recognition against my own participation ratings for students at Cornell and INSEAD. For Western names, my ratings and the AI's count had a correlation of 0.53, showing they moved together. For non-Western names, the correlation was just 0.27, statistically indistinguishable from noise. The AI also heard Western names about five times more often. For half my class, the AI's measure of contribution had almost nothing to do with how much they actually contributed.\n\n— [If Your Name Isn't Western, AI Could Cost You The Promotion.](https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/) · _Forbes_",
+      "sources": [
+        {
+          "title": "If Your Name Isn't Western, AI Could Cost You The Promotion.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
+        }
+      ]
+    },
+    {
+      "question": "What specific techniques can fix bias in AI systems?",
+      "category": "Fixing AI Bias",
+      "tags": [
+        "bias",
+        "ai-product",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Data science offers concrete tools to reduce algorithmic discrimination._\n\nWe can reweight a training set so underrepresented groups carry proper signal. We can transform features to break their correlation with sensitive attributes before a model learns. We can add fairness constraints during training, and audit predictions afterward against tests like demographic parity and equalized odds. The fix is not to switch AI off, but to test it by checking whether its score holds up across every group. The encouraging part is that the bias is measurable, and what is measurable can be fixed.\n\n— [If Your Name Isn't Western, AI Could Cost You The Promotion.](https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/) · _Forbes_",
+      "sources": [
+        {
+          "title": "If Your Name Isn't Western, AI Could Cost You The Promotion.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
+        }
+      ]
+    },
+    {
+      "question": "Why should we use AI for workplace decisions despite these bias problems?",
+      "category": "AI's Workplace Promise",
+      "tags": [
+        "future-of-work",
+        "leadership",
+        "bias"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI flattens hierarchies if we measure and fix its biases._\n\nAI will improve how we work and flatten hierarchies. For most of corporate history, being heard was a function of power, and ambiguity protected whoever was already in charge. AI changes that by making transcripts the record, so ideas can propagate on merit and good people become more valuable. The same tool used carelessly will do real harm, but we keep the rewards by demanding algorithmic transparency and accepting that every tool is biased, then fixing what we can measure.\n\n— [If Your Name Isn't Western, AI Could Cost You The Promotion.](https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/) · _Forbes_",
+      "sources": [
+        {
+          "title": "If Your Name Isn't Western, AI Could Cost You The Promotion.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
+        }
+      ]
     }
   ]
 }

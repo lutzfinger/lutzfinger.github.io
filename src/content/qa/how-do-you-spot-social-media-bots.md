@@ -2,7 +2,7 @@
 question: "How do you spot social media bots?"
 category: "Data & Measurement"
 tags: ["analytics", "risks"]
-updated: 2026-10-11
+updated: 2026-10-13
 sources:
   - title: "Finger Dutta Ask Measure Learn (1)"
     url: "https://www.lutzfinger.com/book/"

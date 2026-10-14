@@ -2,14 +2,14 @@
 question: "Why are radically lean teams the future?"
 category: "Startups"
 tags: ["startup", "ai-workflows"]
-updated: 2026-10-13
+updated: 2026-10-14
 sources:
-  - title: "Unit 5 Full Transcript"
-    url: "https://www.lutzfinger.com/ecornell/"
+  - title: "Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It."
+    url: "https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/"
 ---
 
 _How AI compresses the team size needed to ship._
 
-> But what hinders many of the large corporates to adapt them? >>Yeah, well, I think there's a lot of components there but in the end, it comes down to the size, and the politics, and the setup they built. Large companies are usually built to mitigate risk and focus on their core business. If there's a new technology that comes in that is not obviously threatening the core business, or opening a huge opportunity for the core business,…
+> We have not had "the iPhone moment," he said, meaning we have not reached the point where the technology stops being a tool and simply becomes the way we work. He blamed economic inertia: humans are too change resistant. One day later, news surfaced that Meta had quietly abandoned its plan to restructure its workforce around AI agents. The internal Project that was called “OT” (e.g. office transformation) would have cut some teams by…
 
-— [Unit 5 Full Transcript](https://www.lutzfinger.com/ecornell/) · _eCornell course_
+— [Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It.](https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/) · _Forbes_

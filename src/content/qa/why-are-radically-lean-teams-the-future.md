@@ -2,7 +2,7 @@
 question: "Why are radically lean teams the future?"
 category: "Startups"
 tags: ["startup", "ai-workflows"]
-updated: 2026-10-25
+updated: 2026-10-26
 sources:
   - title: "Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It."
     url: "https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/"

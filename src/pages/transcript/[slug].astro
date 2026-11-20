@@ -21,9 +21,13 @@ const isKeynote = d.kind === 'keynote';
 const backHref = isKeynote ? '/keynote/' : '/other-shows/';
 const backLabel = isKeynote ? 'All keynotes' : 'All shows';
 
-const descForHead = isKeynote
+const isEcornellSeries = isKeynote && d.show === 'The Keynote on AI';
+const descForHead = isEcornellSeries
   ? `Full transcript of the eCornell AI Keynote "${cleanTitle}"${guest ? ' with ' + guest : ''}, hosted by Lutz Finger.`
-  : `Full transcript of ${d.show}: "${cleanTitle}", featuring Lutz Finger.`;
+  : isKeynote
+    ? `Full transcript of Lutz Finger's keynote "${cleanTitle}" at ${d.show}.`
+    : `Full transcript of ${d.show}: "${cleanTitle}", featuring Lutz Finger.`;
+const originalVerb = d.sourceUrl && /youtube\.com|youtu\.be/.test(d.sourceUrl) ? 'Watch' : 'Listen to';
 
 const articleJsonLd: Record<string, unknown> = {
   '@context': 'https://schema.org',
@@ -74,7 +78,7 @@ const breadcrumbJsonLd = {
       Auto-transcribed and lightly edited for readability. Wording is the
       speakers' own; timestamps and speaker labels are not included.
       {d.sourceUrl && (
-        <> <a href={d.sourceUrl} rel="noopener" target="_blank">Listen to the original →</a></>
+        <> <a href={d.sourceUrl} rel="noopener" target="_blank">{originalVerb} the original →</a></>
       )}
     </aside>
 

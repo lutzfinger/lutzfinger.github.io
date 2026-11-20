@@ -10,7 +10,11 @@ const events = (await getCollection('events'))
 
 const now = Date.now();
 const upcoming = events.filter(e => e.data.date.getTime() >= now && e.data.status !== 'past');
-const past = events.filter(e => e.data.date.getTime() < now || e.data.status === 'past');
+const pastAll = events.filter(e => e.data.date.getTime() < now || e.data.status === 'past');
+// `live-stream` = the eCornell series ("Past guests"); `keynote` = talks Lutz
+// gives at other organizations' events, listed in their own section.
+const past = pastAll.filter(e => e.data.tag === 'live-stream');
+const otherKeynotes = pastAll.filter(e => e.data.tag === 'keynote');
 
 // Published transcripts, keyed by ISO date so each past keynote can link its own.
 const transcriptByDate = new Map(
@@ -111,6 +115,35 @@ const breadcrumbJsonLd = {
                 {ev.data.description && <p class="card-excerpt">{ev.data.description}</p>}
               </a>
               <a class="card-anchor" href={`#${ev.id}`} aria-label={`Link to "${cleanTitle}"`}>#</a>
+              {transcript && (
+                <a class="transcript-link" href={`/transcript/${transcript.id}/`}>Read transcript →</a>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  )}
+
+  {otherKeynotes.length > 0 && (
+    <section style="margin-top: 3rem">
+      <h2>Keynotes at other events</h2>
+      <ul class="card-list">
+        {otherKeynotes.map(ev => {
+          const transcript = transcriptByDate.get(ev.data.date.toISOString().slice(0, 10));
+          return (
+            <li id={ev.id}>
+              <a class="card" href={ev.data.url ?? `/speaking/${ev.id}/`} target={ev.data.url ? '_blank' : undefined} rel={ev.data.url ? 'noopener' : undefined}>
+                <div class="card-meta">
+                  <time datetime={ev.data.date.toISOString()}>
+                    {ev.data.date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}
+                  </time>
+                  {ev.data.organizer && <span>· <strong>{ev.data.organizer}</strong></span>}
+                </div>
+                <h3 class="card-title">{ev.data.title}</h3>
+                {ev.data.description && <p class="card-excerpt">{ev.data.description}</p>}
+              </a>
+              <a class="card-anchor" href={`#${ev.id}`} aria-label={`Link to "${ev.data.title}"`}>#</a>
               {transcript && (
                 <a class="transcript-link" href={`/transcript/${transcript.id}/`}>Read transcript →</a>
               )}

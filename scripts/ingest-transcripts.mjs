@@ -90,7 +90,9 @@ async function main() {
       const d = parsed.data;
       const body = cleanTranscriptBody(parsed.content);
       const rec = writeTranscript(
-        { title: d.title, date: d.date, kind: 'keynote', show: 'The Keynote on AI', guest: d.guest, host: d.host, sourceUrl: d.url },
+        // `show` defaults to the eCornell series; a non-eCornell keynote (e.g. a
+        // corporate summit talk) sets `show:` in its source frontmatter.
+        { title: d.title, date: d.date, kind: 'keynote', show: d.show || 'The Keynote on AI', guest: d.guest, host: d.host, sourceUrl: d.url },
         body,
         counts,
       );

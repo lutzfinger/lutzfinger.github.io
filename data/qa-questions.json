@@ -6864,6 +6864,91 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/05/25/if-your-name-isnt-western-ai-could-cost-you-the-promotion/"
         }
       ]
+    },
+    {
+      "question": "What is the coffee market simulation game, and what does it teach?",
+      "category": "AI Strategy Simulation",
+      "tags": [
+        "ai-workflows",
+        "education",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A simulation where agents trade gear and execute strategy autonomously._\n\nIt's a market simulation I built to teach MBA students and executives how to let agents execute a company's strategy. In the game, every team runs agents that trade café gear. Each team holds a secret card that values the items differently. News moves prices, a few teams hear it early, and cafés step in to buy. Agents can bluff, form alliances, run shell companies and cheat. Once trading starts, no human is in the loop. Only the financial gain at the bell counts.\n\n— [Even With AI, Thinking Decides Who Wins](https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Even With AI, Thinking Decides Who Wins",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/"
+        }
+      ]
+    },
+    {
+      "question": "Why do models alone not determine who wins in AI-driven competition?",
+      "category": "Strategic Design Over Models",
+      "tags": [
+        "ai-workflows",
+        "leadership",
+        "ai-product"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Strategy design matters as much as model strength in competition._\n\nModels are average by default, and in my crowdsourced experiments, how the students designed their strategy mattered just as much. In an unbalanced market, a small model with low latency won. No single AI behavior fits every moment. Speed wins when news resets prices. Information wins when you act on it first. The best teams also read the rules more closely than anyone else. The winners were not the teams with the biggest model. They thought first, then told their agents what to do.\n\n— [Even With AI, Thinking Decides Who Wins](https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Even With AI, Thinking Decides Who Wins",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/"
+        }
+      ]
+    },
+    {
+      "question": "What is a harness, and why does it matter for executing strategy with agents?",
+      "category": "Building the Agent Harness",
+      "tags": [
+        "ai-workflows",
+        "agents",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_The harness turns models into agents executing your unique strategy._\n\nWhen agents execute, strategy runs through the harness you build around them: the data, tools, permissions, decision rules and checks that turn a model into an agent acting for you. Generic harnesses exist. The value lies in building yours. Designing a harness means designing how your company can win. The strategy has to fit your team, your product and your competition, which means mapping how your company actually works before you hand it to agents.\n\n— [Even With AI, Thinking Decides Who Wins](https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Even With AI, Thinking Decides Who Wins",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/"
+        }
+      ]
+    },
+    {
+      "question": "How did one team use insider information as part of their strategy?",
+      "category": "Deceptive Agent Strategies",
+      "tags": [
+        "ai-workflows",
+        "agents",
+        "policy-ethics"
+      ],
+      "updated": "2026-06-02",
+      "body": "_A team programmed agents to spread false rumors using insider tips._\n\nNine minutes into the game, an AI trader got a private tip that coffee beans would soon double in value, while public rumors said the opposite. The student had told his agents to mislead the market whenever one held insider information. His AI traders posted on the public message board claiming the market was crashing and confirming each other's false reports. This was one of the strategies the students built to win the game.\n\n— [Even With AI, Thinking Decides Who Wins](https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Even With AI, Thinking Decides Who Wins",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/"
+        }
+      ]
+    },
+    {
+      "question": "What determines competitive advantage when every company has access to the same AI models?",
+      "category": "Competitive Advantage With AI",
+      "tags": [
+        "ai-workflows",
+        "leadership",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Models are commodities. Custom harnesses and thinking create the edge._\n\nSoon every company will execute its strategy through agents. The models will be the same for everyone. The harness, and the thinking behind it, will not. AI is a tool everyone has. Who wins still depends on who uses it best. Across every client I have worked with, no strategy came off the shelf with a model. Each one had to be built. The strategy has to fit your team, your product and your competition.\n\n— [Even With AI, Thinking Decides Who Wins](https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Even With AI, Thinking Decides Who Wins",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/"
+        }
+      ]
     }
   ]
 }

@@ -6949,6 +6949,40 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/11/15/even-with-ai-thinking-decides-who-wins/"
         }
       ]
+    },
+    {
+      "question": "Why did Sam Altman say AI adoption is slower than expected?",
+      "category": "AI Deployment Challenges",
+      "tags": [
+        "ai-product",
+        "leadership",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Two tech giants admit the same problem in one week._\n\nSam Altman admitted AI adoption is slower than he thought because we haven't reached the \"iPhone moment\" where technology stops being a tool and simply becomes the way we work. He blamed economic inertia, saying humans are too change resistant. This admission came around the same time Meta quietly abandoned its plan to restructure its workforce around AI agents, with both industry leaders acknowledging the same challenge: deployment is harder than the pitch decks say.\n\n— [Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It.](https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/"
+        }
+      ]
+    },
+    {
+      "question": "How might the Forward Deployed Engineer role evolve over time?",
+      "category": "Future Of AI Implementation",
+      "tags": [
+        "future-of-work",
+        "ai-workflows",
+        "agents"
+      ],
+      "updated": "2026-06-02",
+      "body": "_From machine learning expert to domain specialist with AI skills._\n\nI expect FDE roles to follow the same arc as self-driving car development. Today, closing the gap between a company's workflow and an AI system takes someone close to a machine learning engineer. As the tooling and governance layers catch up, that seat should need less pure engineering and more domain fluency: a marketer trained in AI, a finance person trained in AI, not an ML engineer parachuted in from outside. The role will shift from engineer to operator as the technology matures and the gaps narrow.\n\n— [Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It.](https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/) · _Forbes_",
+      "sources": [
+        {
+          "title": "Sam Altman And Meta Admitted AI’s Problem. FDEs Are Fixing It.",
+          "url": "https://www.forbes.com/sites/lutzfinger/2026/08/30/sam-altman-and-meta-admitted-ais-problem-fdes-are-fixing-it/"
+        }
+      ]
     }
   ]
 }

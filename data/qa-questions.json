@@ -7068,6 +7068,72 @@
           "url": "https://www.forbes.com/sites/lutzfinger/2026/07/27/openai-ai-hugging-face-containment-failure/"
         }
       ]
+    },
+    {
+      "question": "Why do you say METRO is already an AI company even though it delivers schnitzels, not AI products?",
+      "category": "AI in Food Distribution",
+      "tags": [
+        "ai-product",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Delivering millions of schnitzels requires AI at every step._\n\nMETRO delivers about 20 million schnitzels a year, and that happens because of AI. The company uses predictive algorithms and forecasting to figure out which produce goes where, when, and at what time. This is machine learning, regression algorithms, old-school AI, not just chatbots. AI looks at tiny clues like past orders, seasonality, weather, and local events to forecast demand. So when I say schnitzel is AI, I mean METRO is using AI throughout its operations. OpenAI delivers zero schnitzels. You are the AI company.\n\n— [Schnitzel is AI](https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/) · _METRO AI Summit 2026_",
+      "sources": [
+        {
+          "title": "Schnitzel is AI",
+          "url": "https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/"
+        }
+      ]
+    },
+    {
+      "question": "What data gives METRO a real competitive advantage in forecasting demand, and why isn't weather or past orders enough?",
+      "category": "Competitive Data Moats",
+      "tags": [
+        "llm-moats",
+        "ai-workflows"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Public data is not a moat. Customer integration is._\n\nWeather, local events, shelf life, and seasonality are available to everyone. Even past orders are not exclusive because I can estimate schnitzel consumption using satellite photos of parking lots to track foot traffic. The real competitive advantage comes from forward integration, getting closer to the customer. If METRO can access a customer's security camera feed, for example, you know what they are using, how often, which competitors they use, and when to deliver. That reduces their working capital, makes them more effective, and makes you stickier. Competitors and OpenAI do not have that data.\n\n— [Schnitzel is AI](https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/) · _METRO AI Summit 2026_",
+      "sources": [
+        {
+          "title": "Schnitzel is AI",
+          "url": "https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/"
+        }
+      ]
+    },
+    {
+      "question": "How has the cost and difficulty of building AI solutions changed with LLMs, and what is now the real bottleneck?",
+      "category": "Autonomous Coding and Business Acumen",
+      "tags": [
+        "ai-workflows",
+        "future-of-work",
+        "leadership"
+      ],
+      "updated": "2026-06-02",
+      "body": "_Coding is no longer the bottleneck. Business insight is._\n\nLLMs can complete sentences, so they can complete code. Technology should not be a barrier anymore. When I started as a product manager in Silicon Valley, the ratio was one PM to ten engineers. Now it is one to one. Why? Because the main language for coding is English. The bottleneck is not coding anymore. It is business acumen. It is all the people who make METRO happen. Software delivery is up for grabs. We can do autonomous coding. The important part is having the controls at the end to ensure engineering excellence.\n\n— [Schnitzel is AI](https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/) · _METRO AI Summit 2026_",
+      "sources": [
+        {
+          "title": "Schnitzel is AI",
+          "url": "https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/"
+        }
+      ]
+    },
+    {
+      "question": "What is the most important task for humans now that AI can code, analyze, and predict, and why can't AI replace that?",
+      "category": "Human Judgment in the AI Era",
+      "tags": [
+        "leadership",
+        "ai-workflows",
+        "future-of-work"
+      ],
+      "updated": "2026-06-02",
+      "body": "_AI enables, but only humans provide conviction and direction._\n\nYour task is finding the right data sets, the right processes, and the right moat for the future of METRO. AI is an enabler, but AI is not your brain. AI is average by definition. It does not know where you should go or what decisions to make. The biggest value is conviction. You decide where to start, what matters for your business. AI will just agree with you. It said 10 vegetarian options because that is the German average, not because it understood context. We are needed as humans to take decisions.\n\n— [Schnitzel is AI](https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/) · _METRO AI Summit 2026_",
+      "sources": [
+        {
+          "title": "Schnitzel is AI",
+          "url": "https://www.lutzfinger.com/transcript/2026-10-01-schnitzel-is-ai/"
+        }
+      ]
     }
   ]
 }
